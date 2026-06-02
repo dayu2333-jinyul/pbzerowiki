@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/weapons-guide">
+  <meta name="description" content="Complete Phantom Blade Zero weapons guide covering all 6 weapon types — Swords, Greatswords, Spears, Dual Blades, Arm Cannons, and Phantom Edges. Combat styles, Sha-Chi costs, and best weapon combos for every playstyle.">
+  <title>Phantom Blade Zero Weapons Guide — Types, Combat Styles & Best Combos</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Weapons Guide — Types, Combat Styles & Best Combos","description":"Complete Phantom Blade Zero weapons guide covering all 6 weapon types, combat styles, Sha-Chi costs, and the best primary blade and Phantom Edge combos for every playstyle.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-01","dateModified":"2026-06-01","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/weapons-guide"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Weapons Guide — Types, Combat Styles & Best Combos">
+  <meta property="og:description" content="Complete Phantom Blade Zero weapons guide — 6 weapon types, Sha-Chi costs, combat styles, and the best primary blade and Phantom Edge combos.">
+  <meta property="og:url" content="https://pbzerowiki.com/weapons-guide">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Weapons Guide — Types, Combat Styles & Best Combos">
+  <meta name="twitter:description" content="Complete Phantom Blade Zero weapons guide covering all 6 weapon types and best combos for every playstyle.">
+  <script defer src="js/analytics.js"></script>
+  <style>
+    .weapon-type-card {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0 32px;
+      transition: border-color 0.2s;
+    }
+    .weapon-type-card:hover { border-color: #ff6b35; }
+    .weapon-type-header {
+      padding: 20px 24px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .weapon-type-header h2 { margin: 0 0 4px; border-left: none; padding-left: 0; }
+    .weapon-type-body { padding: 18px 24px; }
+    .stat-bar-mini { height: 6px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; margin: 6px 0 10px; }
+    .stat-bar-mini-fill { height: 100%; border-radius: 3px; }
+    .stat-bar-mini-fill.damage { background: linear-gradient(90deg, #ff6b35, #ff8c5a); }
+    .stat-bar-mini-fill.speed { background: linear-gradient(90deg, #2ecc71, #27ae60); }
+    .stat-bar-mini-fill.range { background: linear-gradient(90deg, #3498db, #2980b9); }
+
+    .combo-box {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .combo-box strong { color: #ff6b35; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="weapons">Weapons</a>
+    <a href="builds">Builds</a>
+    <a href="bosses">Bosses</a>
+    <a href="guides">Guides</a>
+    <a href="faq">FAQ</a>
+    <a href="beginner-guide">Beginner Guide</a>
+    <a href="requirements">Requirements</a>
+    <a href="search">Search</a>
+    <a href="weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#9876;&#65039; Weapon Guide</div>
+  <h1>Weapons Guide</h1>
+  <p>A deep dive into every weapon type in Phantom Blade Zero — combat styles, Sha-Chi costs, and recommended combos for every playstyle.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="weapons">Weapons</a> / Weapons Guide</div>
+
+  <h2>Overview</h2>
+  <p>Phantom Blade Zero ships with <strong>30+ primary blades</strong> and <strong>20+ Phantom Edges</strong> at launch. You can carry two primary weapons and two Phantom Edges in your loadout at any time. Each primary blade has its own upgrade tree with 4 evolution levels, unlocking new combo strings, passive bonuses, and enhanced Power Surge abilities. Weapon choice defines your combat rhythm — picking the right setup for your playstyle is the single most impactful decision you will make.</p>
+
+  <h2>Weapon Type Overview</h2>
+
+  <table>
+    <thead>
+      <tr><th>Type</th><th>Damage</th><th>Speed</th><th>Sha-Chi Cost</th><th>Best For</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Sword</td><td>Medium</td><td>High</td><td>2-4 bars</td><td>Balanced all-rounder, parry builds</td></tr>
+      <tr><td>Greatsword</td><td>Very High</td><td>Low</td><td>3-5 bars</td><td>Guard break, burst damage</td></tr>
+      <tr><td>Spear</td><td>Medium</td><td>Medium</td><td>2-3 bars</td><td>Crowd control, spacing</td></tr>
+      <tr><td>Dual Blades</td><td>Low-Medium</td><td>Very High</td><td>1-4 bars</td><td>Sha-Chi generation, rapid combos</td></tr>
+      <tr><td>Arm Cannon</td><td>High</td><td>Very Low</td><td>4-5 bars</td><td>Ranged pressure, AoE</td></tr>
+      <tr><td>Phantom Edge (Secondary)</td><td>Low-Medium</td><td>Varies</td><td>1-2 bars</td><td>Utility, ranged, support</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Sword</h2>
+  <div class="weapon-type-card">
+    <div class="weapon-type-header">
+      <h2>Sword</h2>
+      <span style="color:#888;font-size:13px;">Balanced damage and speed. Jack of all trades, master of parrying.</span>
+    </div>
+    <div class="weapon-type-body">
+      <p>Swords sit in the middle of the damage/speed spectrum. They have the most generous parry windows in the game, making them the go-to choice for counter-focused players. The <strong>Venomous Softblade</strong> extends parry frames further and drains enemy Sha-Chi on successful parries. <strong>Jagged Steel</strong> trades some parry utility for bleed buildup, ideal for sustained pressure. <strong>Flame Tongue</strong> combusts bleed stacks into fire explosions for extra burst.</p>
+
+      <div class="combo-box">
+        <strong>Recommended Combo:</strong> Lead with 3 light attacks to build bleed stacks, then follow with a charged heavy to trigger combustion. Use parry to reset enemy aggression and repeat.
+      </div>
+
+      <p><strong>Best paired with:</strong> Blood Sigil (Phantom Edge) for sustain, or Chain Hook to close distance.</p>
+      <p><strong>Ideal build:</strong> Defensive Parry Master. Sword's extended parry windows reward counter-play over aggression.</p>
+    </div>
+  </div>
+
+  <h2>Greatsword</h2>
+  <div class="weapon-type-card">
+    <div class="weapon-type-header">
+      <h2>Greatsword</h2>
+      <span style="color:#888;font-size:13px;">Maximum damage per hit. Slow but devastating.</span>
+    </div>
+    <div class="weapon-type-body">
+      <p>Greatswords hit harder than any other weapon type. <strong>Savage Axe</strong> has absurd stagger damage and breaks enemy guard in 2-3 hits. <strong>Ironbreaker</strong> reduces enemy block efficiency with each landed blow. <strong>Thunder Edge</strong> releases AoE electric bursts on charged attacks. <strong>Earthshaker</strong> is the heaviest hitter in the game — 100 damage rating and massive stun potential, but its speed rating of 20 means you commit hard to every swing.</p>
+
+      <div class="combo-box">
+        <strong>Recommended Combo:</strong> Open with a charged heavy to break guard, then immediately Power Surge for full damage. Against mobile enemies, bait an attack, Ghoststep behind them, then unleash a fully charged heavy.
+      </div>
+
+      <p><strong>Best paired with:</strong> Dragon Fire (Arm Cannon) to poke during your own recovery frames, or Gale Fan for knockback.</p>
+      <p><strong>Ideal build:</strong> Aggressive Chi Rush — greatswords need maximum Sha-Chi generation to sustain their high-cost Power Surges.</p>
+    </div>
+  </div>
+
+  <h2>Spear</h2>
+  <div class="weapon-type-card">
+    <div class="weapon-type-header">
+      <h2>Spear</h2>
+      <span style="color:#888;font-size:13px;">Excellent reach and crowd control. Keep enemies at the tip of your blade.</span>
+    </div>
+    <div class="weapon-type-body">
+      <p>Spears excel at controlling space. <strong>Twilight Spear</strong> has sweeping attacks that hit multiple enemies, making it the best weapon for group fights. <strong>Shadow Stinger</strong> applies poison buildup with quick thrusts, slowing enemies over time. <strong>Storm Piercer</strong> fires a piercing gust through enemies in a line — devastating in corridors. <strong>Celestial Lance</strong> deals bonus holy damage and its Power Surge summons a beam from above for massive single-target damage.</p>
+
+      <div class="combo-box">
+        <strong>Recommended Combo:</strong> Sweeping light attacks to control spacing, then forward+heavy for a lunging thrust. Against groups, use charged heavy for the wide arc sweep, then follow with a Phantom Edge AoE.
+      </div>
+
+      <p><strong>Best paired with:</strong> Void Rift (Phantom Edge) to group enemies into your spear sweeps, or Ice Dart to slow dangerous targets.</p>
+      <p><strong>Ideal build:</strong> Hybrid Flex — spear's versatility lets you adapt to any situation without sacrificing effectiveness.</p>
+    </div>
+  </div>
+
+  <h2>Dual Blades</h2>
+  <div class="weapon-type-card">
+    <div class="weapon-type-header">
+      <h2>Dual Blades</h2>
+      <span style="color:#888;font-size:13px;">The fastest weapon class. Rapid hits build Sha-Chi faster than anything else.</span>
+    </div>
+    <div class="weapon-type-body">
+      <p>Dual blades sacrifice individual hit damage for the fastest attack speed in the game. <strong>White Python &amp; Red Viper</strong> are the signature dual blades — alternating strikes build Sha-Chi quickly and apply stacking damage. <strong>Crescent Moon</strong> has spinning slash attacks with wide arc coverage. <strong>Phoenix Wing</strong> triggers fire explosions on every third consecutive hit. <strong>Blood Thorn</strong> has the lowest damage but highest speed (98 rating) and lifesteal on every hit, making it the best sustain weapon in the game.</p>
+
+      <div class="combo-box">
+        <strong>Recommended Combo:</strong> Full light attack string to max out Sha-Chi, then spend it all on Power Surge. Against bosses, weave in dodges between light attacks to maintain pressure without taking damage.
+      </div>
+
+      <p><strong>Best paired with:</strong> Spirit Wolf (Phantom Edge) to create distractions while you build combos, or Thunderbolt Shard for AoE.</p>
+      <p><strong>Ideal build:</strong> Aggressive Chi Rush — dual blades generate Sha-Chi faster than any other weapon, maximizing Power Surge uptime.</p>
+    </div>
+  </div>
+
+  <h2>Arm Cannon</h2>
+  <div class="weapon-type-card">
+    <div class="weapon-type-header">
+      <h2>Arm Cannon</h2>
+      <span style="color:#888;font-size:13px;">Ranged pressure with high burst damage. High Sha-Chi cost, high payoff.</span>
+    </div>
+    <div class="weapon-type-body">
+      <p>Arm Cannons are ranged primary weapons that consume Sha-Chi to fire. <strong>Dragon Fire</strong> fires charged energy shots that pierce through enemies. <strong>Demon Arm</strong> drains Sha-Chi from enemies on hit, creating a self-sustaining loop. Arm Cannons have limited ammo that regenerates over time, so you cannot rely on them as your sole weapon — they are best used to apply pressure from range before closing in with your primary blade.</p>
+
+      <div class="combo-box">
+        <strong>Recommended Combo:</strong> Open with 1-2 charged shots to force the enemy to close distance, then parry their approach attack and switch to melee. Use Arm Cannon during enemy recovery windows for safe damage.
+      </div>
+
+      <p><strong>Best paired with:</strong> Any Greatsword — soften enemies from range, then finish with heavy melee blows.</p>
+      <p><strong>Ideal build:</strong> Hybrid Flex or Aggressive Chi Rush with ranged focus.</p>
+    </div>
+  </div>
+
+  <h2>Phantom Edges (Secondary Weapons)</h2>
+  <div class="weapon-type-card">
+    <div class="weapon-type-header">
+      <h2>Phantom Edges</h2>
+      <span style="color:#888;font-size:13px;">20+ utility tools that consume 1-2 Sha-Chi bars. Cooldown: 8-15 seconds.</span>
+    </div>
+    <div class="weapon-type-body">
+      <p>Phantom Edges are secondary weapons that complement your primary blade. They cost Sha-Chi to use and have individual cooldowns. They cannot be upgraded, but their effects scale with your primary weapon's evolution level. Phantom Edges cover six categories: ranged damage, crowd control, sustain, mobility, debuffs, and summons.</p>
+
+      <table>
+        <thead>
+          <tr><th>Phantom Edge</th><th>Cost</th><th>Effect</th><th>Best Use</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Shadow Chakram</td><td>2 bars</td><td>Boomerang projectile, returns on hit</td><td>Safe ranged poke</td></tr>
+          <tr><td>Chain Hook</td><td>1 bar</td><td>Pulls enemies toward you</td><td>Setup combos</td></tr>
+          <tr><td>Mist Step</td><td>1 bar</td><td>Short teleport (no i-frames)</td><td>Repositioning</td></tr>
+          <tr><td>Blood Sigil</td><td>2 bars</td><td>Heals 15% HP on next hit</td><td>Sustain</td></tr>
+          <tr><td>Spirit Wolf</td><td>2 bars</td><td>Summons spectral wolf (2 attacks)</td><td>Distraction</td></tr>
+          <tr><td>Void Rift</td><td>2 bars</td><td>Black hole that pulls enemies together</td><td>Group setup</td></tr>
+          <tr><td>Steel Thread</td><td>1 bar</td><td>Immobilizes enemy for 3s</td><td>Crowd control</td></tr>
+          <tr><td>Poison Mist</td><td>2 bars</td><td>Toxic cloud applying poison DoT</td><td>Area denial</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h2>Best Weapon Combos</h2>
+
+  <table>
+    <thead>
+      <tr><th>Slot 1 (Primary)</th><th>Slot 2 (Primary)</th><th>Phantom Edge 1</th><th>Phantom Edge 2</th><th>Playstyle</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Jagged Steel</td><td>Earthshaker</td><td>Chain Hook</td><td>Blood Sigil</td><td>Bleed into burst — soften with sword, finish with hammer</td></tr>
+      <tr><td>Venomous Softblade</td><td>Celestial Lance</td><td>Shadow Chakram</td><td>Steel Thread</td><td>Parry setup — counter into holy damage spike</td></tr>
+      <tr><td>White Python + Red Viper</td><td>Dragon Fire</td><td>Spirit Wolf</td><td>Thunderbolt Shard</td><td>All-rounder — dual blades for chi, cannon for range</td></tr>
+      <tr><td>Savage Axe</td><td>Twilight Spear</td><td>Gale Fan</td><td>Void Rift</td><td>Crowd control — spear groups, axe clears</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Weapon Evolution System</h2>
+  <p>Every primary blade has 4 evolution levels. Each level unlocks new abilities:</p>
+  <ul>
+    <li><strong>+1 Evolution:</strong> New basic combo string</li>
+    <li><strong>+2 Evolution:</strong> Passive stat bonus (crit rate, damage, or speed)</li>
+    <li><strong>+3 Evolution:</strong> Enhanced Power Surge ability</li>
+    <li><strong>+4 Evolution (Max):</strong> Unique weapon mastery skill</li>
+  </ul>
+
+  <div class="combo-box">
+    <strong>Key Tip:</strong> Evolution materials are found in specific regions. Before committing to a weapon, check whether you can farm its required materials at your current progress level. Some +3 and +4 materials are locked behind late-game bosses.
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="weapons">Weapons</a>
+      <a href="builds">Builds</a>
+      <a href="bosses">Bosses</a>
+      <a href="guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="guides">Sha-Chi System</a>
+      <a href="builds">Build Guides</a>
+      <a href="bosses">Boss Strategies</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

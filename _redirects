@@ -1,0 +1,9 @@
+# www redirect to non-www
+https://www.pbzerowiki.com/* https://pbzerowiki.com/:splat 301
+
+# Clean URLs handled automatically by Cloudflare Pages
+# Prevent redirect chain: /index.html → /index → /
+/index.html / 301
+
+# 301 redirect .html URLs to clean URLs (Google indexing fix)
+/*.html /:splat 301

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/combat-system">
+  <meta name="description" content="Phantom Blade Zero combat system deep dive — Sha-Chi explained, Brutal vs Killer Moves, Ghoststep mechanics, Power Surge, Chi Loop, weapon switching, and advanced techniques for intermediate and veteran players.">
+  <title>Phantom Blade Zero Combat System — Mechanics, Sha-Chi & Advanced Techniques</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Combat System — Mechanics, Sha-Chi & Advanced Techniques","description":"Deep dive into Phantom Blade Zero's combat system. Sha-Chi mechanics, Brutal vs Killer Moves, Ghoststep, Power Surge, Chi Loop, and advanced combat techniques for experienced players.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-01","dateModified":"2026-06-01","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/combat-system"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Combat System — Mechanics, Sha-Chi & Advanced Techniques">
+  <meta property="og:description" content="Deep dive into Phantom Blade Zero's combat system — Sha-Chi, Ghoststep, Power Surge, Chi Loop, and advanced combat techniques.">
+  <meta property="og:url" content="https://pbzerowiki.com/combat-system">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Combat System — Mechanics, Sha-Chi & Advanced Techniques">
+  <meta name="twitter:description" content="Deep dive into Phantom Blade Zero's combat system — Sha-Chi, Ghoststep, Power Surge, and advanced techniques.">
+  <script defer src="js/analytics.js"></script>
+  <style>
+    .mech-card {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0 32px;
+      transition: border-color 0.2s;
+    }
+    .mech-card:hover { border-color: #ff6b35; }
+    .mech-card-head {
+      padding: 20px 24px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .mech-card-head h2 { margin: 0 0 4px; border-left: none; padding-left: 0; }
+    .mech-card-body { padding: 18px 24px; }
+    .mech-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 10px;
+      margin-right: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .mech-tag.core { background: rgba(255,107,53,0.15); color: #ff6b35; }
+    .mech-tag.advanced { background: rgba(155,89,182,0.15); color: #9b59b6; }
+    .tip-block {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .tip-block strong { color: #ff6b35; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="weapons">Weapons</a>
+    <a href="builds">Builds</a>
+    <a href="bosses">Bosses</a>
+    <a href="guides">Guides</a>
+    <a href="faq">FAQ</a>
+    <a href="beginner-guide">Beginner Guide</a>
+    <a href="requirements">Requirements</a>
+    <a href="search">Search</a>
+    <a href="weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#9889; Combat Deep Dive</div>
+  <h1>Combat System</h1>
+  <p>Everything you need to know about Phantom Blade Zero's combat — Sha-Chi mechanics, Ghoststep, Power Surge, and the Chi Loop.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="guides">Guides</a> / Combat System</div>
+
+  <h2>Overview</h2>
+  <p>Phantom Blade Zero's combat system sits at the intersection of Wuxia film choreography and modern character-action game design. The developers at S-GAME describe it as <strong>"Kungfupunk"</strong> — ancient martial arts meets industrial dark fantasy. At its core is the Sha-Chi gauge, a shared resource that both you and your enemies manage, and the color-coded attack system that dictates how every exchange plays out. Understanding these systems at a mechanical level separates a player who scrapes through fights from one who dominates them.</p>
+
+  <h2>Sha-Chi — The Core Resource</h2>
+  <div class="mech-card">
+    <div class="mech-card-head">
+      <h2>Sha-Chi</h2>
+      <span class="mech-tag core">Core Mechanic</span>
+    </div>
+    <div class="mech-card-body">
+      <p>Sha-Chi is the resource bar that governs your combat effectiveness. Unlike stamina in Soulslikes, Sha-Chi serves dual purposes:</p>
+
+      <h3>What Depletes Sha-Chi</h3>
+      <ul>
+        <li><strong>Blocking attacks</strong> — each blocked hit drains your bar significantly</li>
+        <li><strong>Heavy attacks</strong> — charged swings consume a portion of your gauge</li>
+        <li><strong>Using Phantom Edges</strong> — secondary weapons cost 1-2 bars per use</li>
+      </ul>
+
+      <h3>What Generates Sha-Chi</h3>
+      <ul>
+        <li><strong>Successful parries</strong> — blue Brutal Move parries generate Sha-Chi essence</li>
+        <li><strong>Ghoststep</strong> — perfect dodging red Killer Moves also generates essence</li>
+        <li><strong>Normal attacks</strong> — landing hits builds the bar slowly</li>
+        <li><strong>Time</strong> — the bar passively regenerates, but slowly</li>
+        </ul>
+
+      <div class="tip-block">
+        <strong>Critical Rule:</strong> If your Sha-Chi hits zero, your Concentration Mode collapses, leaving you vulnerable to a "guard break" state where incoming damage is amplified. Keep your bar above 30% at all times. If you dip below, prioritize Ghoststep over blocking to regenerate essence safely.
+      </div>
+    </div>
+  </div>
+
+  <h2>Brutal Moves vs. Killer Moves</h2>
+  <div class="mech-card">
+    <div class="mech-card-head">
+      <h2>Color-Coded Attacks</h2>
+      <span class="mech-tag core">Core Mechanic</span>
+    </div>
+    <div class="mech-card-body">
+      <p>Every enemy attack in Phantom Blade Zero is color-coded. This is the most important mechanic to learn:</p>
+
+      <table>
+        <thead><tr><th>Attack Type</th><th>Color</th><th>Can Block?</th><th>Can Parry?</th><th>Correct Response</th><th>Reward</th></tr></thead>
+        <tbody>
+          <tr><td>Brutal Move</td><td>Blue flash</td><td>Yes (drains your Sha-Chi)</td><td>Yes</td><td>Parry right before impact</td><td>Drains enemy Sha-Chi, generates essence</td></tr>
+          <tr><td>Killer Move</td><td>Red flash</td><td>No</td><td>No</td><td>Ghoststep (perfect dodge)</td><td>Teleports behind enemy, generates essence</td></tr>
+          <tr><td>Normal Attack</td><td>No flash</td><td>Yes</td><td>Yes</td><td>Either (parry preferred)</td><td>Small Sha-Chi gain on parry</td></tr>
+        </tbody>
+      </table>
+
+      <div class="tip-block">
+        <strong>Why This Matters:</strong> Sekiro veterans will feel at home with parry timing, but must unlearn the instinct to parry everything. Red attacks CANNOT be parried — trying will result in eating the full damage. The game trains you to differentiate the two by the color of the flash, not the animation. When in doubt, Ghoststep is always safer than a mistimed parry.
+      </div>
+    </div>
+  </div>
+
+  <h2>Ghoststep</h2>
+  <div class="mech-card">
+    <div class="mech-card-head">
+      <h2>Ghoststep</h2>
+      <span class="mech-tag core">Core Mechanic</span>
+    </div>
+    <div class="mech-card-body">
+      <p>Ghoststep is the perfect dodge mechanic. When you dodge through a red Killer Move with precise timing, you enter a slow-motion state and teleport behind the enemy, creating a guaranteed counter-hit window. Think of it as Sekiro's Mikiri Counter combined with a dodge — it is both evasion and offense.</p>
+
+      <p>Key properties of Ghoststep:</p>
+      <ul>
+        <li>Only activates on red Killer Moves (does not work on normal attacks or blue Brutal Moves)</li>
+        <li>Generates 1 Sha-Chi essence on successful activation</li>
+        <li>Teleports you behind the enemy regardless of distance (even if the attack would have whiffed)</li>
+        <li>The slow-motion effect also applies to nearby enemies, giving you breathing room in group fights</li>
+        <li>Cannot be chained — there is a brief recovery period after each Ghoststep</li>
+      </ul>
+
+      <div class="tip-block">
+        <strong>Advanced Use:</strong> Ghoststep can cancel some of your own attack recovery animations if timed correctly. Use Ghoststep immediately after a heavy attack to cancel the end lag and continue your combo.
+      </div>
+    </div>
+  </div>
+
+  <h2>Power Surge</h2>
+  <div class="mech-card">
+    <div class="mech-card-head">
+      <h2>Power Surge</h2>
+      <span class="mech-tag core">Core Mechanic</span>
+    </div>
+    <div class="mech-card-body">
+      <p>Power Surge is your primary damage spender. When an enemy's Sha-Chi is fully depleted (they enter a staggered state), you can spend 1 Sha-Chi essence to execute a Power Surge — a guaranteed full combo that bypasses enemy defense entirely. Every hit in the Power Surge sequence lands for full damage, making it your highest-DPS moment in any fight.</p>
+
+      <table>
+        <thead><tr><th>Aspect</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr><td>Cost</td><td>1 Sha-Chi essence</td></tr>
+          <tr><td>Requirement</td><td>Enemy must be in stagger state (Sha-Chi depleted)</td></tr>
+          <tr><td>Effect</td><td>Bypasses all enemy defense, full combo guaranteed</td></tr>
+          <tr><td>Bonus</td><td>+3 Evolution weapons unlock enhanced Power Surge</td></tr>
+          <tr><td>Strategy</td><td>Never use outside stagger window — blocked Power Surge wastes the essence</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <h2>The Chi Loop</h2>
+  <div class="mech-card">
+    <div class="mech-card-head">
+      <h2>Chi Loop</h2>
+      <span class="mech-tag core">Core Mechanic</span>
+    </div>
+    <div class="mech-card-body">
+      <p>The Chi Loop is the fundamental combat rhythm that governs every encounter:</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin:16px 0;">
+        <div style="background:#14142a; border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
+          <div style="font-size:28px; margin-bottom:6px;">1</div>
+          <strong style="color:#ff6b35;">Pressure</strong>
+          <p style="color:#a0a0b0; font-size:12px; margin:4px 0 0;">Normal attacks chip enemy Sha-Chi. Build your own gauge.</p>
+        </div>
+        <div style="background:#14142a; border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
+          <div style="font-size:28px; margin-bottom:6px;">2</div>
+          <strong style="color:#ff6b35;">Parry Conversion</strong>
+          <p style="color:#a0a0b0; font-size:12px; margin:4px 0 0;">Parry blue attacks to gain essence and drain enemy.</p>
+        </div>
+        <div style="background:#14142a; border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
+          <div style="font-size:28px; margin-bottom:6px;">3</div>
+          <strong style="color:#ff6b35;">Stagger Burst</strong>
+          <p style="color:#a0a0b0; font-size:12px; margin:4px 0 0;">Power Surge when enemy Sha-Chi empties.</p>
+        </div>
+        <div style="background:#14142a; border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
+          <div style="font-size:28px; margin-bottom:6px;">4</div>
+          <strong style="color:#ff6b35;">Reset</strong>
+          <p style="color:#a0a0b0; font-size:12px; margin:4px 0 0;">Ghoststep red attacks to generate essence, repeat loop.</p>
+        </div>
+      </div>
+
+      <p>Mastering the Chi Loop is the key to beating the game's hardest bosses. In practice, it looks like this: engage with light attacks to chip enemy Sha-Chi &#8594; when the enemy flashes blue, parry to drain their bar and gain essence &#8594; when their bar hits zero, Power Surge for massive damage &#8594; when they flash red during recovery, Ghoststep to reset and start again.</p>
+    </div>
+  </div>
+
+  <h2>Advanced Techniques</h2>
+  <div class="mech-card">
+    <div class="mech-card-head">
+      <h2>Advanced Techniques</h2>
+      <span class="mech-tag advanced">Advanced</span>
+    </div>
+    <div class="mech-card-body">
+      <p>Once you have the fundamentals down, these advanced techniques will elevate your gameplay:</p>
+
+      <h3>Crimson Typhoon</h3>
+      <p>An AoE parry embedded within an offensive sequence. Requires sub-frame precision to activate. When successful, it parries all nearby enemy attacks simultaneously and creates a massive opening. Practicing the input (light-light-heavy-delay-heavy with parry timing) is worth the effort for group fights.</p>
+
+      <h3>Shadow Weave</h3>
+      <p>A micro-teleportation mechanic that bypasses collision detection during animation interpolation. More advanced than standard Ghoststep — it lets you phase through enemies during your own attack animations, enabling combos that would otherwise be blocked by enemy bodies.</p>
+
+      <h3>Weapon Swap Cancel</h3>
+      <p>Switching weapons mid-combo cancels the recovery frames of your current attack. The timing is tight, but mastering it lets you chain combos across two weapon sets seamlessly. This is the foundation of the most aggressive playstyles.</p>
+
+      <h3>Serpent's Coil Counter</h3>
+      <p>A contextual counter that can disarm enemies or reduce their attack speed. Activates when you parry a specific set of Brutal Moves with frame-perfect timing. Not all enemies can be disarmed, but against those who can, it removes their most dangerous attacks from the fight.</p>
+
+      <h3>Spirit Rend</h3>
+      <p>A dedicated guard-break mechanism with high posture damage. Essential against armored enemies with super-armor. Use a fully charged heavy attack followed immediately by a Phantom Edge activation to stack guard break effects.</p>
+
+      <div class="tip-block">
+        <strong>Training Ground:</strong> The early-game training area (accessible from the main hub) lets you practice all of these techniques against a non-hostile training dummy and a sparring partner. Spend 15 minutes there before tackling the first boss — it will save you hours of frustration.
+      </div>
+    </div>
+  </div>
+
+  <h2>Weapon Switching Strategy</h2>
+  <p>Your loadout is your most important strategic decision. You carry two primary weapons and two Phantom Edges. The game has a hidden "adaptation" system where enemies become harder to read if you use the same weapon too long. Switching weapons mid-fight resets this adaptation. Practical application: start a boss fight with your sword, build up Sha-Chi, then switch to your greatsword for a Power Surge burst. The boss will not have adapted to the greatsword's timing, so your heavy hits are more likely to land.</p>
+
+  <table>
+    <thead><tr><th>Situation</th><th>Weapon Pair</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Multi-phase boss</td><td>Sword + Greatsword</td><td>Sword for parry phases, greatsword for burst windows</td></tr>
+      <tr><td>Group fights</td><td>Spear + Dual Blades</td><td>Spear for control, dual blades for cleanup</td></tr>
+      <tr><td>Ranged pressure</td><td>Arm Cannon + Sword</td><td>Cannon to force approach, sword to punish</td></tr>
+      <tr><td>Exploration</td><td>Dual Blades + Spear</td><td>Versatile for unknown encounters</td></tr>
+    </tbody>
+  </table>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="weapons">Weapons</a>
+      <a href="builds">Builds</a>
+      <a href="bosses">Bosses</a>
+      <a href="guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="guides">Sha-Chi System</a>
+      <a href="builds">Build Guides</a>
+      <a href="bosses">Boss Strategies</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

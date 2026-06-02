@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+pagefind/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+data/reddit_crawler/

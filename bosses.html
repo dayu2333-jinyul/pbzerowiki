@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/bosses">
+  <meta name="description" content="Complete Phantom Blade Zero boss guide with attack patterns, Sha-Chi counter windows, recommended builds, and phase-by-phase strategies for Seven Judgments, Inverse Heaven, Ogre Hammer Lord, Snake Sovereign and more.">
+  <title>Phantom Blade Zero Boss Guide — All Bosses & Strategies</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"Phantom Blade Zero Boss Guide","url":"https://pbzerowiki.com/bosses","description":"Complete Phantom Blade Zero boss strategies: phase-by-phase guides, attack pattern analysis, Sha-Chi counter windows, and recommended builds for every boss.","isPartOf":{"@type":"WebSite","name":"PB Zero Wiki","url":"https://pbzerowiki.com"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Boss Guide — All Bosses & Strategies">
+  <meta property="og:description" content="Complete Phantom Blade Zero boss guide: attack patterns, Sha-Chi counters, recommended builds, phase-by-phase strategies for every boss fight.">
+    <meta property="og:url" content="https://pbzerowiki.com/bosses">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Boss Guide — All Bosses & Strategies">
+  <meta name="twitter:description" content="Complete Phantom Blade Zero boss guide: attack patterns, phase-by-phase strategies, Sha-Chi counter windows for every boss.">
+  <script defer src="js/analytics.js"></script>
+  <style>
+    .boss-card {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0 32px;
+      transition: border-color 0.2s;
+    }
+    .boss-card:hover { border-color: #ff6b35; }
+    .boss-card-header {
+      padding: 24px 24px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      cursor: pointer;
+      user-select: none;
+    }
+    .boss-card-header h2 { margin: 0; border-left: none; padding-left: 0; display: flex; align-items: center; gap: 10px; }
+    .boss-card-header .toggle-icon {
+      font-size: 14px;
+      color: #888;
+      transition: transform 0.2s;
+      margin-left: auto;
+    }
+    .boss-card-header .toggle-icon.open { transform: rotate(90deg); }
+    .boss-card-body {
+      padding: 0 24px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.3s;
+    }
+    .boss-card-body.open {
+      max-height: 4000px;
+      padding: 20px 24px;
+    }
+
+    .boss-meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+    .boss-meta-item {
+      font-size: 12px;
+      color: #888;
+      padding: 4px 12px;
+      border-radius: 12px;
+      border: 1px solid #2a2a3a;
+    }
+    .boss-meta-item strong { color: #e0e0e0; }
+
+    .phase-block {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 16px 18px;
+      margin: 12px 0;
+    }
+    .phase-block h4 { color: #ff6b35; margin: 0 0 8px; font-size: 15px; }
+
+    .attack-table { margin: 10px 0; }
+    .attack-table table { margin: 6px 0 0; font-size: 13px; }
+    .attack-table table th { font-size: 11px; }
+    .attack-brutal { display: inline-block; background: rgba(52,152,219,0.15); color: #3498db; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .attack-killer { display: inline-block; background: rgba(231,76,60,0.15); color: #e74c3c; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+
+    .rec-build-box {
+      background: rgba(255,107,53,0.06);
+      border: 1px solid rgba(255,107,53,0.15);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 12px 0;
+    }
+    .rec-build-box strong { color: #ff6b35; }
+
+    .key-tip {
+      background: rgba(46,204,113,0.06);
+      border-left: 3px solid #2ecc71;
+      padding: 10px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+    .key-tip strong { color: #2ecc71; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="weapons">Weapons</a>
+    <a href="builds">Builds</a>
+    <a href="bosses" class="active">Bosses</a>
+    <a href="guides">Guides</a>
+    <a href="faq">FAQ</a>
+    <a href="beginner-guide">Beginner Guide</a>
+    <a href="requirements">Requirements</a>
+    <a href="search">Search</a>
+    <a href="weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#128128; 10+ Bosses</div>
+  <h1>Boss Strategies</h1>
+  <p>Phase-by-phase breakdowns for every Phantom Blade Zero boss. Learn attack patterns, Sha-Chi counter windows, and the best builds for each encounter.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / Bosses</div>
+
+  <!-- Seven Judgments -->
+  <div class="boss-card">
+    <div class="boss-card-header" onclick="toggleBoss(this)">
+      <h2>Seven Judgments <span class="toggle-icon">&#9654;</span></h2>
+      <div class="boss-meta">
+        <span class="boss-meta-item"><strong>Phases:</strong> 3</span>
+        <span class="boss-meta-item"><strong>Difficulty:</strong> Very Hard</span>
+        <span class="boss-meta-item"><strong>Recommended Level:</strong> 40+</span>
+      </div>
+    </div>
+    <div class="boss-card-body">
+      <p>The Seven Judgments is a multi-phase boss fight where defeated allies can be revived if not dealt with quickly. Sha-Chi depletion is the key mechanic -- bosses regain resources the longer the fight drags on.</p>
+
+      <h3>Phase Breakdown</h3>
+      <div class="phase-block">
+        <h4>Phase 1 — First Judgment</h4>
+        <p>A single judgment entity with fast sword combos. Teaches you the parry timings for the rest of the fight. Focus on learning its attack patterns rather than dealing damage.</p>
+      </div>
+      <div class="phase-block">
+        <h4>Phase 2 — Two Judgments</h4>
+        <p>Two entities spawn. One fights you while the other may try to revive a downed ally. <strong>Priority: interrupt revives immediately</strong> using Dragon Fire or any ranged Phantom Edge.</p>
+      </div>
+      <div class="phase-block">
+        <h4>Phase 3 — Three Judgments</h4>
+        <p>All three entities active. This phase is a resource management test. Rotate between them, draining Sha-Chi with parries and using AoE Phantom Edges to keep them staggered.</p>
+      </div>
+
+      <h3>Attack Patterns</h3>
+      <div class="attack-table">
+        <table>
+          <thead>
+            <tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Swift Slash</td><td><span class="attack-brutal">Brutal</span></td><td>Quick horizontal slash</td><td>Parry (wide window)</td></tr>
+            <tr><td>Judgment Strike</td><td><span class="attack-brutal">Brutal</span></td><td>Overhead slam with AoE</td><td>Parry or dodge sideways</td></tr>
+            <tr><td>Vengeful Dash</td><td><span class="attack-killer">Killer</span></td><td>Teleport thrust attack</td><td>Ghoststep through</td></tr>
+            <tr><td>Revival Channel</td><td>Special</td><td>Channels to revive fallen ally</td><td>Interrupt with any attack</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rec-build-box">
+        <strong>Recommended Build:</strong> Defensive Parry Master with Venomous Softblade. Extended parry frames make the Judgment entities predictable. Bring Blood Sigil for sustain across 3 phases.
+      </div>
+
+      <div class="key-tip">
+        <strong>Key Tip:</strong> When a Judgment starts reviving an ally, it has a glowing blue aura. One Dragon Fire charged shot or any Phantom Edge hit will interrupt it. Do NOT let them complete the revival -- the fight becomes exponentially harder.
+      </div>
+    </div>
+  </div>
+
+  <!-- Inverse Heaven -->
+  <div class="boss-card">
+    <div class="boss-card-header" onclick="toggleBoss(this)">
+      <h2>Inverse Heaven <span class="toggle-icon">&#9654;</span></h2>
+      <div class="boss-meta">
+        <span class="boss-meta-item"><strong>Phases:</strong> 2</span>
+        <span class="boss-meta-item"><strong>Difficulty:</strong> Hard</span>
+        <span class="boss-meta-item"><strong>Recommended Level:</strong> 35+</span>
+      </div>
+    </div>
+    <div class="boss-card-body">
+      <p>Inverse Heaven is a hidden dual-boss encounter. Two bosses with linked health pools and complementary attack patterns. Ghoststep timing is essential to avoid being cornered.</p>
+
+      <h3>Phase Breakdown</h3>
+      <div class="phase-block">
+        <h4>Phase 1 — Paired Assault</h4>
+        <p>Both bosses active with staggered attack patterns. One attacks while the other positions. Focus on positioning to keep both in view -- getting flanked is the main danger.</p>
+      </div>
+      <div class="phase-block">
+        <h4>Phase 2 — Heaven's Wrath</h4>
+        <p>At 50% HP, both bosses gain new attack strings and reduced cooldowns. Attack speed increases significantly. This phase relies on perfect Ghoststep counters.</p>
+      </div>
+
+      <h3>Attack Patterns</h3>
+      <div class="attack-table">
+        <table>
+          <thead>
+            <tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Heaven's Slash</td><td><span class="attack-brutal">Brutal</span></td><td>Wide sweeping arc</td><td>Parry -- opens them to counter</td></tr>
+            <tr><td>Shadow Pin</td><td><span class="attack-killer">Killer</span></td><td>Ground stab with follow-up</td><td>Ghoststep behind, punish</td></tr>
+            <tr><td>Dual Strike</td><td><span class="attack-killer">Killer</span></td><td>Both bosses attack in sync</td><td>Ghoststep through one, creates opening</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rec-build-box">
+        <strong>Recommended Build:</strong> Defensive Parry Master or Hybrid Flex. Don't use Aggressive Chi Rush -- over-extending against two bosses is a death sentence. White Python &amp; Red Viper's wide arcs hit both bosses simultaneously.
+      </div>
+
+      <div class="key-tip">
+        <strong>Key Tip:</strong> When you see the Dual Strike wind-up (both bosses glow red), that's your Ghoststep window. Perfect timing teleports you behind them with a free counter-hit window on both. Practice this -- it's the fastest way to Phase 2.
+      </div>
+    </div>
+  </div>
+
+  <!-- Ogre Hammer Lord -->
+  <div class="boss-card">
+    <div class="boss-card-header" onclick="toggleBoss(this)">
+      <h2>Ogre Hammer Lord <span class="toggle-icon">&#9654;</span></h2>
+      <div class="boss-meta">
+        <span class="boss-meta-item"><strong>Phases:</strong> 2</span>
+        <span class="boss-meta-item"><strong>Difficulty:</strong> Medium</span>
+        <span class="boss-meta-item"><strong>Recommended Level:</strong> 25+</span>
+      </div>
+    </div>
+    <div class="boss-card-body">
+      <p>Ogre Hammer Lord is a heavy-hitting boss that uses dust clouds to obscure vision. Most of his attacks are slow but devastating. This fight tests your dodge discipline more than any other.</p>
+
+      <h3>Phase Breakdown</h3>
+      <div class="phase-block">
+        <h4>Phase 1 — Heavy Strikes</h4>
+        <p>Slow, telegraphed hammer swings. Kicks up dust that lingers and obscures the arena. Stay mobile and attack from angles the boss isn't facing.</p>
+      </div>
+      <div class="phase-block">
+        <h4>Phase 2 — Enraged</h4>
+        <p>At 40% HP, boss becomes faster. Dust clouds appear more frequently and last longer. Ground pounds create shockwaves. Requires precise dodge timing.</p>
+      </div>
+
+      <h3>Attack Patterns</h3>
+      <div class="attack-table">
+        <table>
+          <thead>
+            <tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Hammer Slam</td><td><span class="attack-brutal">Brutal</span></td><td>Overhead slam with dust blast</td><td>Side dodge, punish recovery</td></tr>
+            <tr><td>Dust Kick</td><td><span class="attack-brutal">Brutal</span></td><td>Kicks dust to blind you</td><td>Parry -- timing is tight but rewarding</td></tr>
+            <tr><td>Ground Pound</td><td><span class="attack-killer">Killer</span></td><td>AoE shockwave ring</td><td>Jump over the ring or Ghoststep through</td></tr>
+            <tr><td>Enraged Charge</td><td><span class="attack-killer">Killer</span></td><td>Rushes forward with hammer dragging</td><td>Side dodge, punish from behind</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rec-build-box">
+        <strong>Recommended Build:</strong> Hybrid Flex with Dragon Fire. The arm cannon lets you deal damage safely through dust clouds. Bow of Silent Wind is also effective for poking at max range.
+      </div>
+
+      <div class="key-tip">
+        <strong>Key Tip:</strong> When dust covers the arena, listen for audio cues. The Hammer Slam has a distinct woosh sound before impact -- dodge sideways on the audio cue, not visual. Dragon Fire charged shots can hit the boss through dust if you memorized his position before the cloud.
+      </div>
+    </div>
+  </div>
+
+  <!-- Snake Sovereign -->
+  <div class="boss-card">
+    <div class="boss-card-header" onclick="toggleBoss(this)">
+      <h2>Snake Sovereign <span class="toggle-icon">&#9654;</span></h2>
+      <div class="boss-meta">
+        <span class="boss-meta-item"><strong>Phases:</strong> 2</span>
+        <span class="boss-meta-item"><strong>Difficulty:</strong> Hard</span>
+        <span class="boss-meta-item"><strong>Recommended Level:</strong> 30+</span>
+      </div>
+    </div>
+    <div class="boss-card-body">
+      <p>The Snake Sovereign was featured in the Year of the Snake trailer. A serpentine boss with fast strike patterns and long-range whip attacks. Speed is its weapon -- this fight rewards aggression over patience.</p>
+
+      <h3>Phase Breakdown</h3>
+      <div class="phase-block">
+        <h4>Phase 1 — Serpent's Coil</h4>
+        <p>Fast whip strikes and tail sweeps. The boss circles you constantly, attacking from unpredictable angles. Focus on closing distance -- it's weaker up close.</p>
+      </div>
+      <div class="phase-block">
+        <h4>Phase 2 — Venom's Release</h4>
+        <p>At 50% HP, the boss gains poison AoE attacks and a devastating multi-hit combo. Attack strings are longer and harder to interrupt. Quick parries are essential.</p>
+      </div>
+
+      <h3>Attack Patterns</h3>
+      <div class="attack-table">
+        <table>
+          <thead>
+            <tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tail Whip</td><td><span class="attack-brutal">Brutal</span></td><td>Wide tail sweep, hits behind</td><td>Parry or jump over</td></tr>
+            <tr><td>Venom Spit</td><td><span class="attack-killer">Killer</span></td><td>Ranged poison projectile</td><td>Dodge sideways, closes distance after</td></tr>
+            <tr><td>Rapid Coil</td><td><span class="attack-killer">Killer</span></td><td>Multi-hit spinning attack</td><td>Ghoststep out, punish end lag</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="rec-build-box">
+        <strong>Recommended Build:</strong> Aggressive Chi Rush with Jagged Steel. The Snake Sovereign's speed means you can't out-defend it -- you have to out-pace it. Bleed stacks punish its long attack cooldowns.
+      </div>
+
+      <div class="key-tip">
+        <strong>Key Tip:</strong> After the Snake Sovereign finishes its Rapid Coil attack, it has a 2-second recovery window. This is your only safe window for Savage Axe charged attacks. Learn the timing of the coil -- count 5 hits, then dodge in for your punish.
+      </div>
+    </div>
+  </div>
+
+  <h2>General Boss Tips</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin:16px 0 32px;">
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <span style="font-size:24px; display:block; margin-bottom:6px;">&#128737;</span>
+      <strong style="color:#ff6b35;">Blue Flash = Parry</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Brutal Moves have a blue flash indicator. Parry these to drain enemy Sha-Chi and create openings. Every boss uses them at predictable HP thresholds.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <span style="font-size:24px; display:block; margin-bottom:6px;">&#9889;</span>
+      <strong style="color:#ff6b35;">Red Flash = Ghoststep</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Killer Moves have a red flash. Never parry these -- dodge to trigger Ghoststep, teleporting behind the boss for a free combo window.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <span style="font-size:24px; display:block; margin-bottom:6px;">&#9201;</span>
+      <strong style="color:#ff6b35;">Phase Transitions</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Most bosses are invulnerable during phase transitions. Use this time to heal, reposition, and swap Phantom Edges. Don't waste Sha-Chi trying to hit through immunity.</p>
+    </div>
+  </div>
+
+  <h2>Related Pages</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:16px 0;">
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="builds" style="color:#ff6b35; font-weight:700; text-decoration:none;">Build Guides</a>
+      <p style="color:#888; font-size:13px; margin:6px 0 0;">Recommended builds for each boss encounter.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="enemies" style="color:#ff6b35; font-weight:700; text-decoration:none;">Enemy Guide</a>
+      <p style="color:#888; font-size:13px; margin:6px 0 0;">Regular enemies and mini-bosses leading up to each boss.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="endings" style="color:#ff6b35; font-weight:700; text-decoration:none;">Endings Guide</a>
+      <p style="color:#888; font-size:13px; margin:6px 0 0;">How boss choices affect your ending path.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="weapons">Weapons</a>
+      <a href="builds">Builds</a>
+      <a href="bosses">Bosses</a>
+      <a href="guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="guides">Sha-Chi System</a>
+      <a href="builds">Build Guides</a>
+      <a href="bosses">Boss Strategies</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+  function toggleBoss(header) {
+    var card = header.parentElement;
+    var body = card.querySelector('.boss-card-body');
+    var icon = header.querySelector('.toggle-icon');
+    body.classList.toggle('open');
+    icon.classList.toggle('open');
+  }
+</script>
+</body>
+</html>

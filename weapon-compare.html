@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/weapon-compare">
+  <meta name="description" content="Compare any two Phantom Blade Zero weapons side by side. Damage, speed, Sha-Chi cost, and special effects for all 20 primary blades.">
+  <title>Phantom Blade Zero Weapon Comparison — Compare Any Two Weapons</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Phantom Blade Zero Weapon Comparison","url":"https://pbzerowiki.com/weapon-compare","description":"Compare any two Phantom Blade Zero weapons side by side. Damage, speed, Sha-Chi cost, and special effects.","isPartOf":{"@type":"WebSite","name":"PB Zero Wiki","url":"https://pbzerowiki.com"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Weapon Comparison — Compare Any Two Weapons">
+  <meta property="og:description" content="Compare any two Phantom Blade Zero weapons side by side. Damage, speed, Sha-Chi cost, and special effects for all 20 primary blades.">
+    <meta property="og:url" content="https://pbzerowiki.com/weapon-compare">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Weapon Comparison — Compare Any Two Weapons">
+  <meta name="twitter:description" content="Compare any two Phantom Blade Zero weapons side by side. Damage, speed, Sha-Chi cost, special effects.">
+  <script defer src="js/analytics.js"></script>
+  <style>
+    .compare-layout {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 20px;
+      align-items: start;
+      margin: 24px 0;
+    }
+    .compare-select-wrap { text-align: center; }
+    .compare-select-wrap label {
+      display: block;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .compare-select-wrap select {
+      width: 100%;
+      padding: 12px 16px;
+      border-radius: 10px;
+      border: 1px solid #2a2a3a;
+      background: #14142a;
+      color: #e0e0e0;
+      font-size: 15px;
+      font-family: inherit;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 36px;
+    }
+    .compare-select-wrap select:focus { border-color: #ff6b35; }
+    .compare-select-wrap select option { background: #1a1a2e; color: #e0e0e0; }
+
+    .compare-vs {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 32px;
+    }
+    .compare-vs span {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ff6b35;
+      opacity: 0.5;
+    }
+
+    .compare-btn-wrap { text-align: center; margin: 16px 0 32px; }
+    .compare-btn {
+      background: #ff6b35;
+      color: #fff;
+      border: none;
+      padding: 14px 40px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .compare-btn:hover { background: #e85d2a; transform: translateY(-1px); }
+    .compare-btn:active { transform: translateY(0); }
+
+    .compare-table-wrap { margin: 0 0 40px; }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .compare-table th {
+      background: #14142a;
+      padding: 10px 16px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #ff6b35;
+      text-align: left;
+      border-bottom: 2px solid #252540;
+    }
+    .compare-table th:first-child { width: 140px; }
+    .compare-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #1a1a30;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    .compare-table td.label-cell { color: #888; font-weight: 500; font-size: 13px; }
+    .compare-table td.weapon-a { background: rgba(52,152,219,0.04); }
+    .compare-table td.weapon-b { background: rgba(231,76,60,0.04); }
+
+    .compare-bar-track {
+      height: 8px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 4px;
+      overflow: hidden;
+      max-width: 200px;
+    }
+    .compare-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.5s;
+    }
+    .compare-bar-fill.dmg { background: linear-gradient(90deg, #ff6b35, #ff8c5a); }
+    .compare-bar-fill.spd { background: linear-gradient(90deg, #2ecc71, #27ae60); }
+    .compare-bar-fill.rng { background: linear-gradient(90deg, #3498db, #2980b9); }
+
+    .compare-badge {
+      display: inline-block;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .compare-badge.sword { background: rgba(255,107,53,0.15); color: #ff6b35; }
+    .compare-badge.greatsword { background: rgba(231,76,60,0.15); color: #e74c3c; }
+    .compare-badge.spear { background: rgba(52,152,219,0.15); color: #3498db; }
+    .compare-badge.dual { background: rgba(155,89,182,0.15); color: #9b59b6; }
+    .compare-badge.armcannon { background: rgba(241,196,15,0.15); color: #f1c40f; }
+    .compare-badge.edge { background: rgba(46,204,113,0.15); color: #2ecc71; }
+
+    .compare-empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: #555;
+    }
+    .compare-empty .ce-icon { font-size: 48px; display: block; margin-bottom: 12px; }
+    .compare-empty h3 { color: #888; font-size: 18px; margin: 0 0 6px; }
+    .compare-empty p { font-size: 14px; }
+
+    .winner-tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .winner-a { background: rgba(52,152,219,0.12); color: #3498db; }
+    .winner-b { background: rgba(231,76,60,0.12); color: #e74c3c; }
+    .winner-tie { background: rgba(255,107,53,0.12); color: #ff6b35; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="weapons">Weapons</a>
+    <a href="builds">Builds</a>
+    <a href="bosses">Bosses</a>
+    <a href="guides">Guides</a>
+    <a href="faq">FAQ</a>
+    <a href="beginner-guide">Beginner Guide</a>
+    <a href="requirements">Requirements</a>
+    <a href="search">Search</a>
+    <a href="weapon-compare" class="active">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#9876;&#65039; Weapon Tool</div>
+  <h1>Weapon Comparison</h1>
+  <p>Compare any two Phantom Blade Zero weapons side by side. See damage, speed, Sha-Chi cost, and special effects at a glance.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / Compare Weapons</div>
+
+  <div class="compare-layout">
+    <div class="compare-select-wrap">
+      <label for="weaponA">Weapon A</label>
+      <select id="weaponA">
+        <option value="">Select a weapon...</option>
+      </select>
+    </div>
+    <div class="compare-vs"><span>VS</span></div>
+    <div class="compare-select-wrap">
+      <label for="weaponB">Weapon B</label>
+      <select id="weaponB">
+        <option value="">Select a weapon...</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="compare-btn-wrap">
+    <button class="compare-btn" onclick="compareWeapons()">&#9876; Compare</button>
+  </div>
+
+  <div id="compareResults" class="compare-table-wrap"></div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="weapons">Weapons</a>
+      <a href="builds">Builds</a>
+      <a href="bosses">Bosses</a>
+      <a href="guides">Guides</a>
+      <a href="faq">FAQ</a>
+      <a href="beginner-guide">Beginner Guide</a>
+      <a href="requirements">Requirements</a>
+      <a href="search">Search</a>
+      <a href="weapon-compare">Compare Weapons</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="guides">Combat System</a>
+      <a href="builds">Build Guides</a>
+      <a href="bosses">Boss Strategies</a>
+      <a href="beginner-guide">Beginner Guide</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+  var weaponData = [
+    { id: "jagged-steel", name: "Jagged Steel", type: "sword", damage: 75, speed: 70, range: null, shaChi: "3 bars", special: "Bleed build-up on hit", desc: "A serrated blade that inflicts bleed buildup on each strike." },
+    { id: "venomous-softblade", name: "Venomous Softblade", type: "sword", damage: 55, speed: 85, range: null, shaChi: "2 bars", special: "Extended parry frames, Sha-Chi drain", desc: "A flexible blade with extended parry frames for counter-focused play." },
+    { id: "white-python-red-viper", name: "White Python & Red Viper", type: "dual", damage: 60, speed: 95, range: null, shaChi: "4 bars", special: "Rapid multi-hit combos", desc: "Twin blades wielded together for rapid multi-hit combos." },
+    { id: "savage-axe", name: "Savage Axe", type: "greatsword", damage: 95, speed: 30, range: null, shaChi: "3 bars", special: "Massive stagger, guard break", desc: "Massive two-handed axe with devastating charged attacks." },
+    { id: "dragon-fire", name: "Dragon Fire", type: "armcannon", damage: 80, speed: null, range: 75, shaChi: "5 bars", special: "Charged piercing shots", desc: "A shoulder-mounted energy cannon with medium range." },
+    { id: "twilight-spear", name: "Twilight Spear", type: "spear", damage: 65, speed: 60, range: null, shaChi: "3 bars", special: "Crowd control sweeps", desc: "Long-reaching polearm with sweep attacks for crowd control." },
+    { id: "crescent-moon", name: "Crescent Moon", type: "dual", damage: 55, speed: 90, range: null, shaChi: "3 bars", special: "Wide arc coverage", desc: "Paired curved blades with spinning slash attacks." },
+    { id: "ironbreaker", name: "Ironbreaker", type: "greatsword", damage: 85, speed: 35, range: null, shaChi: "4 bars", special: "Reduces enemy block efficiency", desc: "Forged from reforged armor plates, excels at breaking guard." },
+    { id: "shadow-stinger", name: "Shadow Stinger", type: "spear", damage: 60, speed: 75, range: null, shaChi: "2 bars", special: "Poison DoT, slow effect", desc: "A swift spear with a poison tip that applies toxin buildup." },
+    { id: "bow-of-silent-wind", name: "Bow of Silent Wind", type: "edge", damage: 50, speed: null, range: 90, shaChi: "1 bar", special: "Armor-piercing charged shot", desc: "A Phantom Edge bow that fires quick volleys from distance." },
+    { id: "flame-tongue", name: "Flame Tongue", type: "sword", damage: 70, speed: 65, range: null, shaChi: "4 bars", special: "Combusts bleed to fire explosion", desc: "A blade imbued with fire essence that combusts bleed stacks." },
+    { id: "thunder-edge", name: "Thunder Edge", type: "greatsword", damage: 90, speed: 25, range: null, shaChi: "4 bars", special: "Lightning AoE bursts", desc: "A massive blade crackling with lightning and AoE electric bursts." },
+    { id: "serpent-fang", name: "Serpent Fang", type: "sword", damage: 45, speed: 90, range: null, shaChi: "2 bars", special: "Toxin build-up, hit-and-run", desc: "A curved dagger-like sword coated with deadly venom." },
+    { id: "phoenix-wing", name: "Phoenix Wing", type: "dual", damage: 65, speed: 85, range: null, shaChi: "3 bars", special: "Every 3rd hit triggers fire explosion", desc: "Twin flame-imbued short blades with combo-triggered explosions." },
+    { id: "earthshaker", name: "Earthshaker", type: "greatsword", damage: 100, speed: 20, range: null, shaChi: "5 bars", special: "Max stun, shockwave AoE", desc: "A blunt great-hammer with massive stun potential." },
+    { id: "storm-piercer", name: "Storm Piercer", type: "spear", damage: 70, speed: 55, range: null, shaChi: "3 bars", special: "Piercing wind gusts", desc: "A wind-element spear built for precision thrusts." },
+    { id: "frostbite", name: "Frostbite", type: "sword", damage: 60, speed: 60, range: null, shaChi: "3 bars", special: "Frost slow, bonus damage when frozen", desc: "An ice-element blade that slows enemies on contact." },
+    { id: "demon-arm", name: "Demon Arm", type: "armcannon", damage: 70, speed: null, range: 60, shaChi: "4 bars", special: "Sha-Chi drain on hit", desc: "A corrupted prosthetic that fires dark energy blasts." },
+    { id: "blood-thorn", name: "Blood Thorn", type: "dual", damage: 40, speed: 98, range: null, shaChi: "1 bar", special: "Lifesteal on every hit", desc: "Paired daggers that steal life on every hit." },
+    { id: "celestial-lance", name: "Celestial Lance", type: "spear", damage: 80, speed: 50, range: null, shaChi: "5 bars", special: "Holy damage, power surge beam", desc: "A radiant spear blessed by the Order with holy damage." }
+  ];
+
+  var selectA = document.getElementById('weaponA');
+  var selectB = document.getElementById('weaponB');
+
+  weaponData.forEach(function(w) {
+    var optA = document.createElement('option');
+    optA.value = w.id;
+    optA.textContent = w.name + ' (' + w.type + ')';
+    selectA.appendChild(optA);
+
+    var optB = document.createElement('option');
+    optB.value = w.id;
+    optB.textContent = w.name + ' (' + w.type + ')';
+    selectB.appendChild(optB);
+  });
+
+  function getWeapon(id) {
+    return weaponData.find(function(w) { return w.id === id; });
+  }
+
+  function bar(val) {
+    return val + '%';
+  }
+
+  function typeBadge(type) {
+    var labels = { sword: 'Sword', greatsword: 'Greatsword', spear: 'Spear', dual: 'Dual', armcannon: 'Arm Cannon', edge: 'Phantom Edge' };
+    return '<span class="compare-badge ' + type + '">' + (labels[type] || type) + '</span>';
+  }
+
+  function barFill(stat, val) {
+    var cls = stat === 'damage' ? 'dmg' : stat === 'speed' ? 'spd' : 'rng';
+    return '<div class="compare-bar-track"><div class="compare-bar-fill ' + cls + '" style="width:' + val + '%"></div></div>';
+  }
+
+  function winnerTag(side) {
+    if (side === 'a') return '<span class="winner-tag winner-a">&#9650; Higher</span>';
+    if (side === 'b') return '<span class="winner-tag winner-b">&#9650; Higher</span>';
+    return '<span class="winner-tag winner-tie">= Tie</span>';
+  }
+
+  function compareWeapons() {
+    var idA = selectA.value;
+    var idB = selectB.value;
+    var el = document.getElementById('compareResults');
+
+    if (!idA || !idB) {
+      el.innerHTML = '<div class="compare-empty"><span class="ce-icon">&#9876;&#65039;</span><h3>Select two weapons</h3><p>Pick one weapon from each dropdown, then click Compare.</p></div>';
+      return;
+    }
+    if (idA === idB) {
+      el.innerHTML = '<div class="compare-empty"><span class="ce-icon">&#9888;&#65039;</span><h3>Same weapon selected</h3><p>Please select two different weapons to compare.</p></div>';
+      return;
+    }
+
+    var a = getWeapon(idA);
+    var b = getWeapon(idB);
+    if (!a || !b) return;
+
+    function cmp(va, vb, higherIsBetter) {
+      if (va === null && vb === null) return 'tie';
+      if (va === null) return 'b';
+      if (vb === null) return 'a';
+      if (higherIsBetter) {
+        if (va > vb) return 'a';
+        if (vb > va) return 'b';
+        return 'tie';
+      }
+      if (va < vb) return 'a';
+      if (vb < va) return 'b';
+      return 'tie';
+    }
+
+    var dmgWin = cmp(a.damage, b.damage, true);
+    var spdWin = cmp(a.speed, b.speed, true);
+    var rngWin = cmp(a.range, b.range, true);
+
+    el.innerHTML =
+    '<table class="compare-table">' +
+      '<thead><tr><th>Stat</th><th class="weapon-a">' + a.name + '</th><th class="weapon-b">' + b.name + '</th></tr></thead>' +
+      '<tbody>' +
+        '<tr><td class="label-cell">Type</td><td class="weapon-a">' + typeBadge(a.type) + '</td><td class="weapon-b">' + typeBadge(b.type) + '</td></tr>' +
+        '<tr><td class="label-cell">Damage ' + winnerTag(dmgWin) + '</td>' +
+          '<td class="weapon-a">' + (a.damage ? barFill('damage', a.damage) + ' ' + a.damage : 'N/A') + '</td>' +
+          '<td class="weapon-b">' + (b.damage ? barFill('damage', b.damage) + ' ' + b.damage : 'N/A') + '</td></tr>' +
+        '<tr><td class="label-cell">Speed ' + winnerTag(spdWin) + '</td>' +
+          '<td class="weapon-a">' + (a.speed ? barFill('speed', a.speed) + ' ' + a.speed : 'N/A') + '</td>' +
+          '<td class="weapon-b">' + (b.speed ? barFill('speed', b.speed) + ' ' + b.speed : 'N/A') + '</td></tr>' +
+        (a.range || b.range ? '<tr><td class="label-cell">Range ' + winnerTag(rngWin) + '</td>' +
+          '<td class="weapon-a">' + (a.range ? barFill('range', a.range) + ' ' + a.range : 'N/A') + '</td>' +
+          '<td class="weapon-b">' + (b.range ? barFill('range', b.range) + ' ' + b.range : 'N/A') + '</td></tr>' : '') +
+        '<tr><td class="label-cell">Sha-Chi Cost</td><td class="weapon-a"><strong style="color:#f1c40f">' + a.shaChi + '</strong></td><td class="weapon-b"><strong style="color:#f1c40f">' + b.shaChi + '</strong></td></tr>' +
+        '<tr><td class="label-cell">Special Effect</td><td class="weapon-a" style="color:#a0a0b0">' + a.special + '</td><td class="weapon-b" style="color:#a0a0b0">' + b.special + '</td></tr>' +
+        '<tr><td class="label-cell">Description</td><td class="weapon-a" style="color:#888;font-size:13px;">' + a.desc + '</td><td class="weapon-b" style="color:#888;font-size:13px;">' + b.desc + '</td></tr>' +
+      '</tbody>' +
+    '</table>';
+  }
+</script>
+</body>
+</html>

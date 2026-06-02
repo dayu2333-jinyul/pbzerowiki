@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/guides">
+  <meta name="description" content="Master the Phantom Blade Zero combat system. Complete guide to Sha-Chi mechanics, Brutal Moves vs Killer Moves, Ghoststep timing, Power Surge abilities, weapon evolution, and difficulty options explained.">
+  <title>Phantom Blade Zero Combat Guide — Sha-Chi System & Mechanics</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","name":"Phantom Blade Zero Combat System Guide","url":"https://pbzerowiki.com/guides","description":"Master Phantom Blade Zero's combat system: Sha-Chi mechanics, Brutal and Killer Moves, Ghoststep counters, Power Surge, weapon evolution, and difficulty options.","isPartOf":{"@type":"WebSite","name":"PB Zero Wiki","url":"https://pbzerowiki.com"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Combat Guide — Sha-Chi System & Mechanics">
+  <meta property="og:description" content="Master Phantom Blade Zero's combat: Sha-Chi mechanics, Brutal vs Killer Moves, Ghoststep counters, Power Surge, weapon evolution, and difficulty options.">
+    <meta property="og:url" content="https://pbzerowiki.com/guides">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Combat Guide — Sha-Chi System & Mechanics">
+  <meta name="twitter:description" content="Master Phantom Blade Zero's combat: Sha-Chi mechanics, Brutal vs Killer Moves, Ghoststep counters, Power Surge, weapon evolution, and difficulty options.">
+  <script defer src="js/analytics.js"></script>
+  <style>
+    .guide-section {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px 0 24px;
+      transition: border-color 0.2s;
+    }
+    .guide-section:hover { border-color: #ff6b35; }
+    .guide-section-header {
+      padding: 18px 22px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .guide-section-header .gs-icon { font-size: 28px; flex-shrink: 0; }
+    .guide-section-header h2 { margin: 0; border-left: none; padding-left: 0; font-size: 20px; }
+    .guide-section-body { padding: 18px 22px; }
+
+    .mech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin: 12px 0;
+    }
+    .mech-card {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+    }
+    .mech-card .mech-val {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ff6b35;
+    }
+    .mech-card .mech-label {
+      font-size: 12px;
+      color: #888;
+      margin-top: 4px;
+    }
+
+    .comparison-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin: 14px 0;
+    }
+    .comp-card {
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .comp-card.brutal {
+      background: rgba(52,152,219,0.06);
+      border: 1px solid rgba(52,152,219,0.2);
+    }
+    .comp-card.killer {
+      background: rgba(231,76,60,0.06);
+      border: 1px solid rgba(231,76,60,0.2);
+    }
+    .comp-card h4 { margin: 0 0 8px; font-size: 15px; }
+    .comp-card.brutal h4 { color: #3498db; }
+    .comp-card.killer h4 { color: #e74c3c; }
+    .comp-card p { color: #a0a0b0; font-size: 13px; margin: 4px 0; line-height: 1.5; }
+
+    .difficulty-table { margin: 12px 0; }
+
+    .evolution-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 14px 0;
+    }
+    .evo-step {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 16px;
+      position: relative;
+    }
+    .evo-step .evo-num {
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      font-size: 28px;
+      font-weight: 800;
+      color: rgba(255,107,53,0.12);
+    }
+    .evo-step h4 { color: #ff6b35; margin: 0 0 6px; font-size: 15px; }
+    .evo-step p { color: #a0a0b0; font-size: 13px; margin: 0; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="weapons">Weapons</a>
+    <a href="builds">Builds</a>
+    <a href="bosses">Bosses</a>
+    <a href="guides" class="active">Guides</a>
+    <a href="faq">FAQ</a>
+    <a href="beginner-guide">Beginner Guide</a>
+    <a href="requirements">Requirements</a>
+    <a href="search">Search</a>
+    <a href="weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#128214; Combat Reference</div>
+  <h1>Combat System Guide</h1>
+  <p>From Sha-Chi fundamentals to advanced Ghoststep counters -- everything you need to master Phantom Blade Zero's combat.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / Guides</div>
+
+  <!-- Sha-Chi System -->
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#9899;</span>
+      <h2>Sha-Chi System</h2>
+    </div>
+    <div class="guide-section-body">
+      <p>Sha-Chi is the dual-purpose resource in Phantom Blade Zero. It fuels your offense (heavy attacks, Phantom Edges, Power Surge) and enables your defense (Brutal Move parries). Managing it well is the difference between victory and defeat.</p>
+
+      <div class="mech-grid">
+        <div class="mech-card">
+          <div class="mech-val">6</div>
+          <div class="mech-label">Max Sha-Chi Bars</div>
+        </div>
+        <div class="mech-card">
+          <div class="mech-val">3-5</div>
+          <div class="mech-label">Hits to Fill One Bar</div>
+        </div>
+        <div class="mech-card">
+          <div class="mech-val">1-5</div>
+          <div class="mech-label">Bars per Attack</div>
+        </div>
+        <div class="mech-card">
+          <div class="mech-val">2s</div>
+          <div class="mech-label">Decay Delay</div>
+        </div>
+      </div>
+
+      <h3>How to Build Sha-Chi</h3>
+      <ul>
+        <li><strong>Land basic attacks</strong> -- every hit builds Sha-Chi. Fast weapons (Dual, Sword) build it faster than slow weapons (Greatsword, Arm Cannon).</li>
+        <li><strong>Perfect parries</strong> -- successfully parrying a Brutal Move grants bonus Sha-Chi (2 bars per parry) and temporarily increases generation rate.</li>
+        <li><strong>Ghoststep counters</strong> -- dodging through a Killer Move gives 1 bar plus a damage buff on your next attack.</li>
+      </ul>
+
+      <h3>How to Spend Sha-Chi</h3>
+      <ul>
+        <li><strong>Heavy / Charged attacks</strong> -- spend 2-4 bars for enhanced attacks with bonus effects.</li>
+        <li><strong>Phantom Edge abilities</strong> -- secondary weapons cost 1-2 bars per use with 8-15 second cooldowns.</li>
+        <li><strong>Power Surge</strong> -- ultimate ability, costs your full Sha-Chi Essence (see below).</li>
+      </ul>
+
+      <h3>Sha-Chi Decay</h3>
+      <p>If you don't spend or generate Sha-Chi for 2 seconds, your bars begin to decay at a rate of 1 bar per second. This punishes passive play and encourages rhythmic combat -- attack to build, spend before it decays, then attack again to rebuild. The best players maintain a constant cycle.</p>
+    </div>
+  </div>
+
+  <!-- Brutal Moves vs Killer Moves -->
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#9889;</span>
+      <h2>Brutal Moves vs Killer Moves</h2>
+    </div>
+    <div class="guide-section-body">
+      <p>Enemy attacks are color-coded with flash indicators before they land. The two types require different responses.</p>
+
+      <div class="comparison-cards">
+        <div class="comp-card brutal">
+          <h4>Brutal Moves (Blue Flash)</h4>
+          <p><strong>Indicator:</strong> Blue flash on the enemy's weapon</p>
+          <p><strong>Can block?</strong> Yes -- blockable, but doing so drains your own Sha-Chi</p>
+          <p><strong>Optimal counter:</strong> Parry (press block at the moment of impact)</p>
+          <p><strong>Parry reward:</strong> Drains 2 enemy Sha-Chi bars, gives you bonus Sha-Chi, stuns the enemy briefly</p>
+          <p style="margin-top:8px; font-size:12px; color:#888;">Example: Seven Judgments' Swift Slash, Ogre Hammer Lord's Hammer Slam</p>
+        </div>
+        <div class="comp-card killer">
+          <h4>Killer Moves (Red Flash)</h4>
+          <p><strong>Indicator:</strong> Red flash on the enemy's weapon</p>
+          <p><strong>Can block?</strong> No -- unblockable, will break your guard</p>
+          <p><strong>Optimal counter:</strong> Dodge at the right moment to trigger Ghoststep</p>
+          <p><strong>Dodge reward:</strong> Teleport behind the enemy, 1 free Sha-Chi bar, bonus damage on follow-up</p>
+          <p style="margin-top:8px; font-size:12px; color:#888;">Example: Inverse Heaven's Dual Strike, Snake Sovereign's Venom Spit</p>
+        </div>
+      </div>
+
+      <h3>Quick Reference</h3>
+      <table>
+        <thead>
+          <tr><th></th><th>Brutal Move (Blue)</th><th>Killer Move (Red)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Blockable?</td><td>Yes (but drains your Sha-Chi)</td><td>No</td></tr>
+          <tr><td>Best Response</td><td>Parry</td><td>Dodge (Ghoststep)</td></tr>
+          <tr><td>Punish Window</td><td>Short (2-3 hits)</td><td>Medium (3-5 hits)</td></tr>
+          <tr><td>Enemy Sha-Chi Effect</td><td>Drains 2 bars</td><td>No direct drain</td></tr>
+          <tr><td>Your Sha-Chi Effect</td><td>+2 bars, boost generation</td><td>+1 bar, damage buff</td></tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top:12px;"><strong>Tip:</strong> Early in the game, focus on identifying the flash color before reacting. With practice, your brain will automatically route blue to parry and red to dodge.</p>
+    </div>
+  </div>
+
+  <!-- Ghoststep -->
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#127919;</span>
+      <h2>Ghoststep</h2>
+    </div>
+    <div class="guide-section-body">
+      <p>Ghoststep is the signature defensive mechanic in Phantom Blade Zero. Triggered by dodging <strong>into</strong> a Killer Move (Red Flash) at the perfect timing, it teleports you behind the enemy and briefly slows time.</p>
+
+      <h3>Ghoststep Benefits</h3>
+      <ul>
+        <li><strong>Teleport reposition</strong> -- you appear directly behind the attacker, safe from the attack's follow-up</li>
+        <li><strong>1 free Sha-Chi bar</strong> -- instant resource gain on successful Ghoststep</li>
+        <li><strong>Damage buff</strong> -- your next attack within 1.5 seconds deals 50% bonus damage</li>
+        <li><strong>Combo window</strong> -- enemies are briefly staggered after you Ghoststep, giving you a free 3-5 hit opening</li>
+      </ul>
+
+      <div style="background: rgba(255,107,53,0.06); border-left: 3px solid #ff6b35; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0;">
+        <strong style="color:#ff6b35;">Ghoststep Practice Drill:</strong> Equip the Defensive Parry Master build and fight the first Seven Judgments encounter. Focus only on identifying Killer Moves and practicing the dodge timing. Don't attack -- just dodge. Once you can consistently Ghoststep, the combat system clicks.
+      </div>
+
+      <h3>Common Mistakes</h3>
+      <ul>
+        <li><strong>Dodging away</strong> -- Ghoststep requires dodging <em>toward</em> the attack, not away. Dodging backward from a Killer Move gives you no reward.</li>
+        <li><strong>Panic rolling</strong> -- spamming dodge has diminishing returns. Wait for the red flash, then dodge once at the right moment.</li>
+        <li><strong>Forgetting the follow-up</strong> -- Ghoststep's main value is the damage window after. If you Ghoststep and then back away, you've wasted the opportunity.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Power Surge -->
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#128293;</span>
+      <h2>Power Surge</h2>
+    </div>
+    <div class="guide-section-body">
+      <p>Power Surge is each weapon's ultimate ability, unlocked by filling the Sha-Chi Essence meter. Unlike regular Sha-Chi bars, the Essence meter persists across encounters and takes longer to fill.</p>
+
+      <div class="mech-grid">
+        <div class="mech-card">
+          <div class="mech-val">100</div>
+          <div class="mech-label">Essence Meter Max</div>
+        </div>
+        <div class="mech-card">
+          <div class="mech-val">~3-5</div>
+          <div class="mech-label">Encounters to Fill</div>
+        </div>
+        <div class="mech-card">
+          <div class="mech-val">Unique</div>
+          <div class="mech-label">Per Weapon</div>
+        </div>
+      </div>
+
+      <p>Once the Essence meter is full, press the Power Surge button to activate your weapon's ultimate ability. Each weapon type has a different Surge:</p>
+
+      <table>
+        <thead>
+          <tr><th>Weapon Type</th><th>Power Surge</th><th>Effect</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Sword</td><td>Blade Storm</td><td>Rapid multi-hit slash combo, ends with AoE burst</td></tr>
+          <tr><td>Greatsword</td><td>Earth Splitter</td><td>Massive overhead slam with shockwave</td></tr>
+          <tr><td>Dual</td><td>Dancing Blades</td><td>Extended auto-target combo, hits all nearby enemies</td></tr>
+          <tr><td>Spear</td><td>Dragon Sweep</td><td>Wide arc sweep with pushback</td></tr>
+          <tr><td>Arm Cannon</td><td>Annihilation Beam</td><td>Continuous beam attack, pierces all enemies</td></tr>
+        </tbody>
+      </table>
+
+      <p style="margin-top:12px;">Power Surge abilities cannot be interrupted and grant brief invulnerability during their animation. Use them as an emergency defensive tool or as a fight-ending finisher.</p>
+    </div>
+  </div>
+
+  <!-- Weapon Evolution -->
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#9876;</span>
+      <h2>Weapon Evolution</h2>
+    </div>
+    <div class="guide-section-body">
+      <p>Every primary blade in Phantom Blade Zero can be evolved up to +4 using materials found throughout the world. Evolution unlocks new abilities and stat bonuses that dramatically change how a weapon plays.</p>
+
+      <div class="evolution-steps">
+        <div class="evo-step">
+          <div class="evo-num">+1</div>
+          <h4>New Combo String</h4>
+          <p>Unlocks an additional basic attack sequence, giving you more options in neutral game.</p>
+        </div>
+        <div class="evo-step">
+          <div class="evo-num">+2</div>
+          <h4>Passive Stat Bonus</h4>
+          <p>Choose between +10% crit rate, +15% damage, or +20% attack speed.</p>
+        </div>
+        <div class="evo-step">
+          <div class="evo-num">+3</div>
+          <h4>Enhanced Power Surge</h4>
+          <p>Your Power Surge gains additional effects (extra hits, larger AoE, or status effects).</p>
+        </div>
+        <div class="evo-step">
+          <div class="evo-num">+4</div>
+          <h4>Mastery Skill</h4>
+          <p>Unique passive that changes how the weapon fundamentally works. Differs per weapon.</p>
+        </div>
+      </div>
+
+      <div style="background: rgba(46,204,113,0.06); border-left: 3px solid #2ecc71; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0;">
+        <strong style="color:#2ecc71;">Evolution Materials Tip:</strong> Upgrade materials are found in specific regions. Explore thoroughly -- each region has at least one material cache. Bosses also drop rare evolution materials on first kill. Prioritize upgrading your main weapon to +2 before branching out to others.
+      </div>
+
+      <p>Evolution choices are <strong>reversible</strong> for a material cost. If you choose a passive bonus at +2 and decide you want a different one later, you can respec. However, the +4 Mastery Skill is permanent per weapon slot -- choose wisely.</p>
+    </div>
+  </div>
+
+  <!-- Difficulty Options -->
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#127482;&#127480;</span>
+      <h2>Difficulty Options</h2>
+    </div>
+    <div class="guide-section-body">
+      <p>Phantom Blade Zero offers flexible difficulty settings that can be adjusted at any time. Higher difficulties change enemy behavior and reward structure.</p>
+
+      <div class="difficulty-table">
+        <table>
+          <thead>
+            <tr><th>Difficulty</th><th>Enemy Damage</th><th>Enemy Health</th><th>AI Changes</th><th>Reward Bonus</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Story Mode</td><td>0.6x</td><td>0.7x</td><td>Telegraphed attacks, slower combos</td><td>0.8x XP/Materials</td></tr>
+            <tr><td>Standard</td><td>1.0x</td><td>1.0x</td><td>Normal attack patterns</td><td>1.0x</td></tr>
+            <tr><td>Hard</td><td>1.5x</td><td>1.3x</td><td>Faster combos, new attack strings</td><td>1.5x</td></tr>
+            <tr><td>Sha-Chi Master</td><td>2.0x</td><td>1.5x</td><td>Full moveset, reduced parry windows</td><td>2.5x</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>What Changes on Higher Difficulties</h3>
+      <ul>
+        <li><strong>Attack patterns:</strong> Enemies gain additional attacks and longer combos on Hard+. The Seven Judgments boss, for example, gains a fourth phase on Sha-Chi Master difficulty.</li>
+        <li><strong>Parry windows:</strong> On Sha-Chi Master, Brutal Move parry timing is 30% tighter. You need frame-perfect execution for late-game bosses.</li>
+        <li><strong>Sha-Chi generation:</strong> Enemy Sha-Chi generation increases on higher difficulties. They use Brutal and Killer Moves more frequently.</li>
+        <li><strong>Reward scaling:</strong> Higher difficulties give more XP and rarer material drops. Sha-Chi Master is the fastest way to max out your weapons.</li>
+      </ul>
+
+      <div style="background: rgba(255,107,53,0.06); border-left: 3px solid #ff6b35; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0;">
+        <strong style="color:#ff6b35;">Recommendation:</strong> Play your first run on Standard. When you reach the final region, switch to Hard for the increased rewards. Only attempt Sha-Chi Master after you've fully upgraded at least one weapon and can consistently Ghoststep Killer Moves.
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Reference Summary -->
+  <h2>Quick Reference</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin:16px 0 32px;">
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:#3498db;">&#9670; Blue = Parry</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Brutal Moves are blockable. Parry them to drain enemy Sha-Chi and create openings. Practice on early-game enemies.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:#e74c3c;">&#9670; Red = Dodge</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Killer Moves are unblockable. Dodge toward them to trigger Ghoststep. Never parry red attacks.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:#f1c40f;">&#9670; Sha-Chi Rhythm</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Attack to build, spend before 2s decay, repeat. The most common mistake is holding max bars for too long.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:#9b59b6;">&#9670; Explore for Evolve</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Weapon evolution materials are hidden throughout the world. Explore thoroughly and revisit areas with new abilities.</p>
+    </div>
+  </div>
+
+  <h2>Related Pages</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:16px 0;">
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="skills" style="color:#ff6b35; font-weight:700; text-decoration:none;">Skills & Abilities</a>
+      <p style="color:#888; font-size:13px; margin:6px 0 0;">Detailed skill tree breakdown and unlock requirements.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="weapons" style="color:#ff6b35; font-weight:700; text-decoration:none;">Weapon Database</a>
+      <p style="color:#888; font-size:13px; margin:6px 0 0;">Check weapon stats and evolution paths referenced in this guide.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="beginner-guide" style="color:#ff6b35; font-weight:700; text-decoration:none;">Beginner Guide</a>
+      <p style="color:#888; font-size:13px; margin:6px 0 0;">New to PB Zero? Start with the beginner's guide.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="weapons">Weapons</a>
+      <a href="builds">Builds</a>
+      <a href="bosses">Bosses</a>
+      <a href="guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="guides">Sha-Chi System</a>
+      <a href="builds">Build Guides</a>
+      <a href="bosses">Boss Strategies</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

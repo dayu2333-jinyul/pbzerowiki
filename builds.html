@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/builds">
+  <meta name="description" content="Best Phantom Blade Zero builds: Aggressive Chi Rush, Defensive Parry Master, Hybrid Flex. Weapon combinations, Sha-Chi management, and boss-specific setups for every playstyle.">
+  <title>Phantom Blade Zero Builds — Best Weapon Combos & Playstyles</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CollectionPage","name":"Phantom Blade Zero Build Guides","url":"https://pbzerowiki.com/builds","description":"Complete Phantom Blade Zero build guides: Aggressive Chi Rush, Defensive Parry Master, and Hybrid Flex with weapon combos, Sha-Chi management, and boss matchups.","isPartOf":{"@type":"WebSite","name":"PB Zero Wiki","url":"https://pbzerowiki.com"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Builds — Best Weapon Combos & Playstyles">
+  <meta property="og:description" content="Best Phantom Blade Zero builds: Aggressive Chi Rush, Defensive Parry Master, and Hybrid Flex. Weapon combos, Sha-Chi management, boss matchups.">
+    <meta property="og:url" content="https://pbzerowiki.com/builds">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Builds — Best Weapon Combos & Playstyles">
+  <meta name="twitter:description" content="Best Phantom Blade Zero builds: Aggressive Chi Rush, Defensive Parry Master, and Hybrid Flex. Weapon combos, Sha-Chi management, boss matchups.">
+  <script defer src="js/analytics.js"></script>
+  <style>
+    .build-card {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0 32px;
+      transition: border-color 0.2s;
+    }
+    .build-card:hover { border-color: #ff6b35; }
+    .build-card-header {
+      padding: 24px 24px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .build-card-header h2 { margin: 0 0 6px; border-left: none; padding-left: 0; }
+    .build-card-body { padding: 20px 24px; }
+    .build-tag {
+      display: inline-block;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .build-tag.offensive { background: rgba(231,76,60,0.15); color: #e74c3c; }
+    .build-tag.defensive { background: rgba(52,152,219,0.15); color: #3498db; }
+    .build-tag.hybrid { background: rgba(155,89,182,0.15); color: #9b59b6; }
+    .build-tag.difficulty { background: rgba(241,196,15,0.15); color: #f1c40f; margin-left: 6px; }
+
+    .weapon-rec {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+    .weapon-rec-item {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .weapon-rec-item h4 { color: #ff6b35; font-size: 14px; margin: 0 0 4px; }
+    .weapon-rec-item p { color: #a0a0b0; font-size: 13px; margin: 0; line-height: 1.5; }
+
+    .tip-block {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+      font-size: 14px;
+      color: #d0d0d0;
+    }
+    .tip-block strong { color: #ff6b35; }
+
+    .matchup-table { margin: 16px 0 0; }
+    .matchup-table table { margin: 8px 0 0; }
+    .matchup-good { color: #4caf50; font-weight: 600; }
+    .matchup-bad { color: #e74c3c; font-weight: 600; }
+    .matchup-neutral { color: #f1c40f; font-weight: 600; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="weapons">Weapons</a>
+    <a href="builds" class="active">Builds</a>
+    <a href="bosses">Bosses</a>
+    <a href="guides">Guides</a>
+    <a href="faq">FAQ</a>
+    <a href="beginner-guide">Beginner Guide</a>
+    <a href="requirements">Requirements</a>
+    <a href="search">Search</a>
+    <a href="weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#128293; 3 Core Builds</div>
+  <h1>Build Guides</h1>
+  <p>Choose your playstyle: relentless aggression, precise counter-play, or adaptable hybrid. Every build includes weapon combos, Sha-Chi strategy, and boss matchups.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / Builds</div>
+
+  <!-- Aggressive Chi Rush -->
+  <div class="build-card">
+    <div class="build-card-header">
+      <span class="build-tag offensive">Offensive</span>
+      <span class="build-tag difficulty">Hard</span>
+      <h2>Aggressive Chi Rush</h2>
+      <p style="color:#a0a0b0; margin:0; font-size:14px;">Constant pressure through bleed stacking and high-damage combos. Burns through Sha-Chi fast but punishes mistakes heavily.</p>
+    </div>
+    <div class="build-card-body">
+
+      <h3>Playstyle Summary</h3>
+      <p>The Aggressive Chi Rush build is all about overwhelming your opponent with relentless offense. You spend Sha-Chi as fast as you generate it, using bleed stacks (Jagged Steel) to apply constant pressure while the Savage Axe punishes any opening with massive stagger damage. This build excels in quick, decisive fights but leaves little room for error.</p>
+
+      <h3>Recommended Weapons</h3>
+      <div class="weapon-rec">
+        <div class="weapon-rec-item">
+          <h4>Jagged Steel (Primary)</h4>
+          <p>Fast sword with bleed buildup. Build your Sha-Chi quickly while stacking damage-over-time on the boss.</p>
+        </div>
+        <div class="weapon-rec-item">
+          <h4>Savage Axe (Primary Swap)</h4>
+          <p>Massive two-handed damage. Switch to this when the boss is staggered for maximum punishes.</p>
+        </div>
+        <div class="weapon-rec-item">
+          <h4>Shadow Chakram (Phantom Edge)</h4>
+          <p>Boomerang projectile to hit enemies at range while closing distance. Great for maintaining pressure.</p>
+        </div>
+      </div>
+
+      <h3>Sha-Chi Management</h3>
+      <div class="tip-block">
+        <strong>Spend fast, generate faster.</strong> With Jagged Steel's rapid hits, you'll generate Sha-Chi quickly. Don't hoard it -- spend bars on Savage Axe heavy attacks and Phantom Edge abilities the moment they're available. The goal is to keep the boss constantly reacting.
+      </div>
+      <ul>
+        <li>Open with Jagged Steel light combos to build 3-4 Sha-Chi bars</li>
+        <li>Swap to Savage Axe for a charged heavy attack (spends 3 bars)</li>
+        <li>Use Shadow Chakram while at range to chip and build bar again</li>
+        <li><strong>Don't</strong> hold Sha-Chi longer than 5 seconds -- every bar not spent is damage lost</li>
+      </ul>
+
+      <h3>Best &amp; Worst Matchups</h3>
+      <div class="matchup-table">
+        <table>
+          <thead>
+            <tr><th>Boss</th><th>Matchup</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Seven Judgments</td><td class="matchup-good">Good</td><td>Aggressive pressure prevents ally revives</td></tr>
+            <tr><td>Snake Sovereign</td><td class="matchup-good">Good</td><td>Fast strikes match pace, bleed stacks drain fast</td></tr>
+            <tr><td>Inverse Heaven</td><td class="matchup-bad">Bad</td><td>Two bosses punish over-extension, need Ghoststep discipline</td></tr>
+            <tr><td>Ogre Hammer Lord</td><td class="matchup-neutral">Neutral</td><td>Dodge-heavy fight makes sustained pressure harder</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Defensive Parry Master -->
+  <div class="build-card">
+    <div class="build-card-header">
+      <span class="build-tag defensive">Defensive</span>
+      <span class="build-tag difficulty">Medium</span>
+      <h2>Defensive Parry Master</h2>
+      <p style="color:#a0a0b0; margin:0; font-size:14px;">Counter-focused gameplay built around extended parry frames. Drains enemy Sha-Chi while preserving your own for precise counter-attacks.</p>
+    </div>
+    <div class="build-card-body">
+
+      <h3>Playstyle Summary</h3>
+      <p>The Defensive Parry Master build rewards patience and timing. With the Venomous Softblade's extended parry windows, you can consistently deflect Brutal Moves (Blue Flash) and drain the enemy's Sha-Chi. This build excels in long, multi-phase boss fights where survival matters more than burst damage.</p>
+
+      <h3>Recommended Weapons</h3>
+      <div class="weapon-rec">
+        <div class="weapon-rec-item">
+          <h4>Venomous Softblade (Primary)</h4>
+          <p>Extended parry frames make this the best counter weapon. Successful parries drain enemy Sha-Chi.</p>
+        </div>
+        <div class="weapon-rec-item">
+          <h4>Bow of Silent Wind (Phantom Edge)</h4>
+          <p>Ranged poke to build Sha-Chi safely. Charged shots punish enemies during their recovery frames.</p>
+        </div>
+        <div class="weapon-rec-item">
+          <h4>Blood Sigil (Phantom Edge)</h4>
+          <p>Heals 15% HP on next hit. Critical sustain for long fights where you're trading blows.</p>
+        </div>
+      </div>
+
+      <h3>Sha-Chi Management</h3>
+      <div class="tip-block">
+        <strong>Let them come to you.</strong> Parrying enemy Brutal Moves generates bonus Sha-Chi for you while draining theirs. Your goal is a resource advantage -- when the enemy has no Sha-Chi, they enter a vulnerable state where you unload safely.
+      </div>
+      <ul>
+        <li>Hold defensive posture, wait for Blue Flash attacks</li>
+        <li>Parry to reflect damage and drain 1-2 enemy Sha-Chi bars per parry</li>
+        <li>Use Bow of Silent Wind to poke during neutral, building your bars</li>
+        <li>When enemy is Sha-Chi depleted, swap to offensive combo with your stored bars</li>
+      </ul>
+
+      <h3>Best &amp; Worst Matchups</h3>
+      <div class="matchup-table">
+        <table>
+          <thead>
+            <tr><th>Boss</th><th>Matchup</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Seven Judgments</td><td class="matchup-good">Good</td><td>Multi-phase boss gives many parry windows</td></tr>
+            <tr><td>Inverse Heaven</td><td class="matchup-good">Good</td><td>Defensive posture helps manage two bosses at once</td></tr>
+            <tr><td>Ogre Hammer Lord</td><td class="matchup-good">Good</td><td>Dust attacks are Brutal Moves, easy parries</td></tr>
+            <tr><td>Snake Sovereign</td><td class="matchup-bad">Bad</td><td>Fast Killer Moves are harder to distinguish, takes practice</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Hybrid Flex -->
+  <div class="build-card">
+    <div class="build-card-header">
+      <span class="build-tag hybrid">Hybrid</span>
+      <span class="build-tag difficulty">Medium</span>
+      <h2>Hybrid Flex</h2>
+      <p style="color:#a0a0b0; margin:0; font-size:14px;">Adaptable all-rounder build with mid-range crowd control and burst potential. Effective against any boss type with room for adjustment.</p>
+    </div>
+    <div class="build-card-body">
+
+      <h3>Playstyle Summary</h3>
+      <p>The Hybrid Flex build doesn't specialize -- it adapts. White Python &amp; Red Viper give you rapid multi-hit combos for building Sha-Chi, Dragon Fire provides mid-range burst, and you keep your options open to respond to any boss pattern. This is the recommended build for first playthroughs.</p>
+
+      <h3>Recommended Weapons</h3>
+      <div class="weapon-rec">
+        <div class="weapon-rec-item">
+          <h4>White Python &amp; Red Viper (Primary)</h4>
+          <p>Twin blades with the highest hit rate in the game. Generates Sha-Chi faster than any other weapon.</p>
+        </div>
+        <div class="weapon-rec-item">
+          <h4>Dragon Fire (Secondary)</h4>
+          <p>Arm cannon with charged piercing shots. Excellent for punishing boss recovery frames from a safe distance.</p>
+        </div>
+        <div class="weapon-rec-item">
+          <h4>Thunderbolt Shard (Phantom Edge)</h4>
+          <p>Lightning AoE burst for clearing adds or staggering bosses during their wind-up.</p>
+        </div>
+      </div>
+
+      <h3>Sha-Chi Management</h3>
+      <div class="tip-block">
+        <strong>Options are your resource.</strong> With three different Sha-Chi spenders (Dragon Fire charged shots, Thunderbolt Shard burst, and Twin Blade Power Surge), you have the right tool for every situation. Read the boss and pick the spender that fits.
+      </div>
+      <ul>
+        <li>Build 4-5 Sha-Chi bars with White Python &amp; Red Viper multi-hits</li>
+        <li>Use Dragon Fire charged shot for 3 bars of safe ranged damage</li>
+        <li>Save Thunderbolt Shard (2 bars) for emergency stagger when boss is about to attack</li>
+        <li>Swap between ranged and melee as the fight dictates -- never over-commit</li>
+      </ul>
+
+      <h3>Best &amp; Worst Matchups</h3>
+      <div class="matchup-table">
+        <table>
+          <thead>
+            <tr><th>Boss</th><th>Matchup</th><th>Notes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Ogre Hammer Lord</td><td class="matchup-good">Good</td><td>Dragon Fire keeps you safe during dust clouds</td></tr>
+            <tr><td>Snake Sovereign</td><td class="matchup-good">Good</td><td>Flexible pacing matches erratic attack patterns</td></tr>
+            <tr><td>Seven Judgments</td><td class="matchup-neutral">Neutral</td><td>Works but lacks the burst for fast phase transitions</td></tr>
+            <tr><td>Inverse Heaven</td><td class="matchup-neutral">Neutral</td><td>Manageable with smart positioning but no advantage</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <h2>How to Choose Your Build</h2>
+  <table>
+    <thead>
+      <tr><th>Playstyle</th><th>Best For</th><th>Difficulty</th><th>Recommended First?</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Aggressive Chi Rush</td><td>Speedruns, single-phase bosses</td><td>Hard</td><td>No -- learn game mechanics first</td></tr>
+      <tr><td>Defensive Parry Master</td><td>Multi-phase fights, survival</td><td>Medium</td><td>Yes -- teaches parry timing</td></tr>
+      <tr><td>Hybrid Flex</td><td>First playthrough, exploration</td><td>Medium</td><td>Yes -- most forgiving</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Advanced Build Tips</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin:16px 0 32px;">
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:#ff6b35;">Weapon Swap Mid-Combo</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">You can cancel recovery frames by swapping weapons. Practice the Jagged Steel 3-hit into Savage Axe charged attack for maximum burst.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:#ff6b35;">Phantom Edge Rotation</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Equip one offensive and one utility Phantom Edge. Rotate between them to keep both off cooldown and maximize uptime.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:#ff6b35;">Boss-Specific Gear</strong>
+      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Some bosses are weak to specific weapon types. Check our Boss Strategies page for detailed weaknesses before committing to a build.</p>
+    </div>
+  </div>
+
+  <h2>Related Pages</h2>
+  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:16px 0;">
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="weapons" style="color:#ff6b35; font-weight:700; text-decoration:none;">Weapon Database</a>
+      <p style="color:#888; font-size:13px; margin:6px 0 0;">Detailed stats for every primary blade and Phantom Edge.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="skills" style="color:#ff6b35; font-weight:700; text-decoration:none;">Skills Guide</a>
+      <p style="color:#888; font-size:13px; margin:6px 0 0;">Skill tree recommendations for each build type.</p>
+    </div>
+    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="bosses" style="color:#ff6b35; font-weight:700; text-decoration:none;">Boss Strategies</a>
+      <p style="color:#888; font-size:13px; margin:6px 0 0;">Build-specific boss matchup guides.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="weapons">Weapons</a>
+      <a href="builds">Builds</a>
+      <a href="bosses">Bosses</a>
+      <a href="guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="guides">Sha-Chi System</a>
+      <a href="builds">Build Guides</a>
+      <a href="bosses">Boss Strategies</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
