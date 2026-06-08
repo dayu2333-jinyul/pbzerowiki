@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/guides/sha-chi-system">
+  <meta name="description" content="Complete Phantom Blade Zero Sha-Chi system guide. Learn how to generate Sha-Chi, when to use Power Surge vs Phantom Edge, Brutal vs Killer moves explained, and advanced resource management strategies.">
+  <title>Phantom Blade Zero Sha-Chi System — Complete Guide to Resource Management</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preload" as="style" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Sha-Chi System — Complete Guide to Resource Management","description":"Complete Sha-Chi guide for Phantom Blade Zero. Generation rates, Power Surge vs Phantom Edge spending, Brutal vs Killer moves, and advanced resource management for every playstyle.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-03","dateModified":"2026-06-03","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/guides/sha-chi-system"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Sha-Chi System — Complete Guide to Resource Management">
+  <meta property="og:description" content="Complete Sha-Chi guide: generation rates, Power Surge vs Phantom Edge, Brutal vs Killer moves, and resource strategies for every playstyle.">
+  <meta property="og:url" content="https://pbzerowiki.com/guides/sha-chi-system">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Sha-Chi System — Complete Guide">
+  <meta name="twitter:description" content="Master the Sha-Chi system. Generation rates, spending options, and advanced resource management strategies.">
+  <script defer src="../js/analytics.js"></script>
+  <style>
+    .guide-section {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px 0 24px;
+      transition: border-color 0.2s;
+    }
+    .guide-section:hover { border-color: #ff6b35; }
+    .guide-section-header {
+      padding: 18px 22px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .guide-section-header .gs-icon { font-size: 28px; flex-shrink: 0; }
+    .guide-section-header h2 { margin: 0; border-left: none; padding-left: 0; font-size: 20px; }
+    .guide-section-body { padding: 18px 22px; }
+
+    .mech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin: 12px 0;
+    }
+    .mech-card {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .mech-card h4 { color: #ff6b35; font-size: 14px; margin: 0 0 6px; }
+    .mech-card p { color: #a0a0b0; font-size: 13px; margin: 0; line-height: 1.5; }
+
+    .tip-block {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+      font-size: 14px;
+      color: #d0d0d0;
+    }
+    .tip-block strong { color: #ff6b35; }
+
+    .ratio-bar {
+      background: #14142a;
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin: 10px 0;
+    }
+    .ratio-bar-label { color: #a0a0b0; font-size: 12px; margin-bottom: 6px; }
+    .ratio-track {
+      height: 8px;
+      background: #2a2a3a;
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+    }
+    .ratio-fill-offense { background: #e74c3c; height: 100%; }
+    .ratio-fill-defense { background: #3498db; height: 100%; }
+    .ratio-fill-utility { background: #9b59b6; height: 100%; }
+
+    .atk-brutal { display: inline-block; background: rgba(52,152,219,0.15); color: #3498db; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .atk-killer { display: inline-block; background: rgba(231,76,60,0.15); color: #e74c3c; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="../weapons">Weapons</a>
+    <a href="../builds">Builds</a>
+    <a href="../bosses">Bosses</a>
+    <a href="../guides">Guides</a>
+    <a href="../faq">FAQ</a>
+    <a href="../beginner-guide">Beginner Guide</a>
+    <a href="../requirements">Requirements</a>
+    <a href="../search">Search</a>
+    <a href="../weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#9884;&#65039; Resource System</div>
+  <h1>Sha-Chi System Guide</h1>
+  <p>Master Phantom Blade Zero's core resource mechanic — generation, spending, and advanced management strategies for every playstyle.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="../guides">Guides</a> / Sha-Chi System</div>
+
+  <p>Sha-Chi is Phantom Blade Zero's central combat resource, appearing as a blue bar beneath your health. Everything in combat revolves around it — your damage output, your survivability, and your ability to execute the game's most powerful moves. Understanding Sha-Chi management is the single biggest skill gap between a struggling player and someone who clears bosses on the first attempt.</p>
+
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#9889;</span>
+      <h2>What Is Sha-Chi?</h2>
+    </div>
+    <div class="guide-section-body">
+      <p>Sha-Chi translates roughly to "killing intent" — the combat energy you generate by fighting aggressively. The bar fills as you land attacks, parry enemy strikes, and perform successful Ghoststep evasions. When you take damage or block attacks, Sha-Chi decreases. The bar is divided into five segments, each representing roughly 20% of your total capacity.</p>
+
+      <div class="mech-grid">
+        <div class="mech-card">
+          <h4>Offensive Generation</h4>
+          <p>Light attacks generate 3-5% per hit. Heavy attacks generate 8-12%. Landing a full combo chain can fill 25-35% of your bar.</p>
+        </div>
+        <div class="mech-card">
+          <h4>Parry Generation</h4>
+          <p>Successful parries generate 10-15%. Perfect parries (frame-perfect timing) generate 20% plus drain 15% from the enemy's Sha-Chi.</p>
+        </div>
+        <div class="mech-card">
+          <h4>Ghoststep Generation</h4>
+          <p>Ghoststepping through a <span class="atk-killer">Killer Move</span> generates 15%. Perfect Ghoststep generates 25% and slows time briefly.</p>
+        </div>
+        <div class="mech-card">
+          <h4>Passive Decay</h4>
+          <p>Out of combat, Sha-Chi decays at 5% per second. In combat, staying on the offensive prevents decay entirely.</p>
+        </div>
+      </div>
+
+      <div class="tip-block">
+        <strong>Core Insight:</strong> Sha-Chi generation is tied to aggression, not time. Two players fighting the same boss for the same duration can have very different Sha-Chi totals — the aggressive player who consistently lands parries will have double the resources of the cautious one who dodges and waits.
+      </div>
+    </div>
+  </div>
+
+  <h2>Spending Sha-Chi — Power Surge vs Phantom Edge</h2>
+  <p>Sha-Chi can be spent in two fundamentally different ways, and choosing the right spend for the situation is the heart of the combat system.</p>
+
+  <h3>Power Surge</h3>
+  <p>Power Surge is your primary damage-spending option. Activated by holding the heavy attack button when Sha-Chi is above 30%, it consumes your entire bar and unleashes a weapon-specific super attack. The damage scales with the amount of Sha-Chi consumed — a full-bar Power Surge deals roughly 3x the damage of a 30% Surge.</p>
+
+  <p>Each weapon type has a unique Power Surge animation and damage profile:</p>
+
+  <table>
+    <thead><tr><th>Weapon Type</th><th>Power Surge Name</th><th>Effect</th><th>Best Use</th></tr></thead>
+    <tbody>
+      <tr><td>Sword</td><td>Blade Cascade</td><td>5-hit rapid slash combo</td><td>Single-target burst</td></tr>
+      <tr><td>Dual Blades</td><td>Whirlwind Dance</td><td>360-degree multi-hit spin</td><td>Crowd clear, group fights</td></tr>
+      <tr><td>Greatsword</td><td>Earth Splitter</td><td>Massive overhead slam with shockwave</td><td>Stagger lock, AoE</td></tr>
+      <tr><td>Spear</td><td>Dragon Strike</td><td>Long-range thrust with follow-up explosion</td><td>Poking from distance</td></tr>
+      <tr><td>Saber</td><td>Moon Slash</td><td>Wide horizontal arc, hits everything in front</td><td>Line cleave</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Phantom Edge</h3>
+  <p>Phantom Edges are secondary abilities mapped to shoulder buttons, each costing a fixed amount of Sha-Chi (usually 20-25%). Unlike Power Surge, Phantom Edge usage does not drain your entire bar — you can use one or two Edges and still have enough Sha-Chi left for a Surge. Phantom Edges provide utility: healing, crowd control, ranged damage, or defensive options.</p>
+
+  <table>
+    <thead><tr><th>Phantom Edge</th><th>Cost</th><th>Effect</th><th>Playstyle Synergy</th></tr></thead>
+    <tbody>
+      <tr><td>Blood Sigil</td><td>20%</td><td>Life steal on next 3 hits</td><td>All playstyles — universal sustain</td></tr>
+      <tr><td>Shadow Chakram</td><td>20%</td><td>Ranged blade that returns to you</td><td>Hybrid Flex — safe damage</td></tr>
+      <tr><td>Chain Hook</td><td>25%</td><td>Pulls enemies toward you</td><td>Aggressive Chi Rush — setup tool</td></tr>
+      <tr><td>Steel Thread</td><td>25%</td><td>Immobilizes enemy briefly</td><td>Defensive Parry Master — parry setup</td></tr>
+      <tr><td>Flame Vial</td><td>20%</td><td>Throws AoE fire bomb</td><td>Fire Burst — AoE stacking</td></tr>
+      <tr><td>Poison Mist</td><td>25%</td><td>Creates poison cloud DoT zone</td><td>Bleed Build — triple DoT</td></tr>
+      <tr><td>Thunderbolt Shard</td><td>20%</td><td>Lightning strike AoE</td><td>Fire Burst — elemental proc</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Brutal Moves vs Killer Moves</h2>
+  <p>Enemy attacks are color-coded, and your Sha-Chi response depends on which type you face:</p>
+
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#128737;&#65039;</span>
+      <h2>Attack Type Comparison</h2>
+    </div>
+    <div class="guide-section-body">
+      <div class="mech-grid">
+        <div class="mech-card">
+          <h4><span class="atk-brutal">Brutal Move</span></h4>
+          <p>Blue-tinted attacks. Counter with parry. Parrying a Brutal Move generates 10-15% Sha-Chi and staggers the enemy, creating a punish window. Brutal Moves are telegraphed with longer wind-ups.</p>
+        </div>
+        <div class="mech-card">
+          <h4><span class="atk-killer">Killer Move</span></h4>
+          <p>Red-tinted attacks marked by a distinct red flash. Cannot be parried — must use Ghoststep. Ghoststepping through a Killer Move generates 15% Sha-Chi and puts you behind the enemy.</p>
+        </div>
+        <div class="mech-card">
+          <h4>Unblockable</h4>
+          <p>Purple-tinted attacks that cannot be parried or Ghoststepped. Must be avoided through positioning. These attacks punish over-aggressive players.</p>
+        </div>
+      </div>
+
+      <div class="tip-block">
+        <strong>Memory Aid:</strong> Blue = Block (parry), Red = Run (Ghoststep), Purple = Position. Repeat this to yourself during every boss fight until it becomes automatic.
+      </div>
+    </div>
+  </div>
+
+  <h2>Sha-Chi Management by Playstyle</h2>
+  <p>Each build archetype handles Sha-Chi differently. Here are the three main management strategies and the ratio of offense to defense to utility spending:</p>
+
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#9878;&#65039;</span>
+      <h2>Build-Specific Strategies</h2>
+    </div>
+    <div class="guide-section-body">
+      <h3>Aggressive Chi Rush</h3>
+      <div class="ratio-bar">
+        <div class="ratio-bar-label">Sha-Chi Spend Ratio: 90% Offense / 5% Defense / 5% Utility</div>
+        <div class="ratio-track"><div class="ratio-fill-offense" style="width:90%"></div><div class="ratio-fill-defense" style="width:5%"></div><div class="ratio-fill-utility" style="width:5%"></div></div>
+      </div>
+      <p>Spend every point on Power Surge. Phantom Edges are only used to set up burst windows (Chain Hook to pull, then immediately Surge). This strategy produces the highest damage in the game but leaves no safety net. One mistake and you have no Sha-Chi for recovery. Only recommended for players who know boss patterns cold.</p>
+
+      <h3>Defensive Parry Master</h3>
+      <div class="ratio-bar">
+        <div class="ratio-bar-label">Sha-Chi Spend Ratio: 30% Offense / 50% Defense / 20% Utility</div>
+        <div class="ratio-track"><div class="ratio-fill-offense" style="width:30%"></div><div class="ratio-fill-defense" style="width:50%"></div><div class="ratio-fill-utility" style="width:20%"></div></div>
+      </div>
+      <p>Generate most of your Sha-Chi through enemy parries — let them spend their resources attacking you. Spend on Blood Sigil for sustain and Steel Thread to create parry windows. Only Power Surge when the enemy is staggered or recovering. This strategy excels in long multi-phase boss fights where attrition favors the patient.</p>
+
+      <h3>Hybrid Flex</h3>
+      <div class="ratio-bar">
+        <div class="ratio-bar-label">Sha-Chi Spend Ratio: 60% Offense / 25% Defense / 15% Utility</div>
+        <div class="ratio-track"><div class="ratio-fill-offense" style="width:60%"></div><div class="ratio-fill-defense" style="width:25%"></div><div class="ratio-fill-utility" style="width:15%"></div></div>
+      </div>
+      <p>The balanced approach. Keep your bar between 40-80% at all times. Never fully empty — you want emergency Parry or Ghoststep juice. Never fully cap — wasted generation. Phantom Edges are used reactively: Blood Sigil when hit, Shadow Chakram when the enemy backs off. This is the safest and most consistent strategy for first-time players.</p>
+
+      <div class="tip-block">
+        <strong>Golden Rule:</strong> Regardless of playstyle, never enter a boss phase transition below 50% Sha-Chi. Most bosses reset their aggression patterns between phases, giving you a 3-5 second window to land free hits — and you want a full bar to spend during that window.
+      </div>
+    </div>
+  </div>
+
+  <h2>Advanced Techniques</h2>
+
+  <h3>Sha-Chi Banking</h3>
+  <p>Some weapons and Phantom Edges allow you to "bank" Sha-Chi — storing it for later use beyond your normal cap. The Celestial Lance has a passive that banks 10% of parry-generated Sha-Chi. Venomous Softblade's extended parry frames also apply a small banking effect. This stored Sha-Chi is released automatically when you next perform a Power Surge, increasing its damage by up to 25%.</p>
+
+  <h3>Emergency Reserve</h3>
+  <p>When your health drops below 20%, the game grants a passive Sha-Chi regeneration buff of +50% for 10 seconds. This is the game's catch-up mechanic — it gives you the resources to either escape and heal or go for a desperation Power Surge. Smart players recognize this window and use it to turn the fight around. The buff has a 60-second cooldown, so you cannot chain it.</p>
+
+  <h3>Stagger Punish Optimization</h3>
+  <p>When an enemy is staggered (Sha-Chi bar fully depleted), all attacks generate 50% more Sha-Chi. This is the ideal time to build resources for the next phase. Chain your longest combo during stagger, then store the generated Sha-Chi for the next Power Surge window.</p>
+
+  <div class="tip-block">
+    <strong>Pro Tip:</strong> Practice the "Parry-Parry-Surge" loop on the training dummy at the starting area. Parry two attacks (30% Sha-Chi generated), then immediately Power Surge. Master this loop and you have the foundation for every boss fight in the game.
+  </div>
+
+  <h2>Common Mistakes</h2>
+  <ul>
+    <li><strong>Over-capping:</strong> Letting your bar sit at 100% wastes generation. Spend before you cap, even if it is a sub-optimal Surge.</li>
+    <li><strong>Panic spending:</strong> Using Phantom Edge or Power Surge while the enemy is attacking. Wait for a parry window or Ghoststep opportunity first.</li>
+    <li><strong>Ignoring Phantom Edges:</strong> Players who only Power Surge are leaving 40% of their toolkit unused. Even aggressive builds should carry at least one Phantom Edge for emergencies.</li>
+    <li><strong>Wrong spend for the situation:</strong> Using Power Surge against a boss entering its enrage phase is usually a mistake — that Sha-Chi is better spent on Blood Sigil (sustain) or defensive options.</li>
+  </ul>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="../weapons">Weapons</a>
+      <a href="../builds">Builds</a>
+      <a href="../bosses">Bosses</a>
+      <a href="../guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="../guides/sha-chi-system">Sha-Chi System</a>
+      <a href="../builds">Build Guides</a>
+      <a href="../bosses">Boss Strategies</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="../privacy">Privacy Policy</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
+</body>
+</html>

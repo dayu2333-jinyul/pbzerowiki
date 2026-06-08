@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/guides/weapon-evolution-paths">
+  <meta name="description" content="Complete Phantom Blade Zero weapon evolution guide. Every weapon's upgrade tree, material requirements, stat growth per level, and recommended evolution paths for each build archetype.">
+  <title>Phantom Blade Zero Weapon Evolution — Upgrade Trees & Materials Guide</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preload" as="style" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Weapon Evolution — Upgrade Trees & Materials Guide","description":"Complete weapon evolution guide for Phantom Blade Zero. Upgrade trees, material requirements, stat growth per level, and recommended paths for every build.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-03","dateModified":"2026-06-03","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/guides/weapon-evolution-paths"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Weapon Evolution — Upgrade Trees & Materials Guide">
+  <meta property="og:description" content="Complete weapon evolution guide: upgrade trees, materials, stat growth, and recommended evolution paths for every build.">
+  <meta property="og:url" content="https://pbzerowiki.com/guides/weapon-evolution-paths">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Weapon Evolution — Upgrade Trees & Materials Guide">
+  <meta name="twitter:description" content="Complete weapon evolution guide: upgrade trees, materials, and recommended evolution paths.">
+  <script defer src="../js/analytics.js"></script>
+  <style>
+    .guide-section {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px 0 24px;
+      transition: border-color 0.2s;
+    }
+    .guide-section:hover { border-color: #ff6b35; }
+    .guide-section-header {
+      padding: 18px 22px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .guide-section-header .gs-icon { font-size: 28px; flex-shrink: 0; }
+    .guide-section-header h2 { margin: 0; border-left: none; padding-left: 0; font-size: 20px; }
+    .guide-section-body { padding: 18px 22px; }
+
+    .weapon-card {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 12px 0;
+    }
+    .weapon-card h4 { color: #ff6b35; font-size: 15px; margin: 0 0 6px; }
+    .weapon-card p { color: #a0a0b0; font-size: 13px; margin: 0 0 8px; line-height: 1.5; }
+    .weapon-card .tier-label { font-size: 11px; color: #888; }
+
+    .tip-block {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+      font-size: 14px;
+      color: #d0d0d0;
+    }
+    .tip-block strong { color: #ff6b35; }
+
+    .mat-table td:first-child { font-weight: 600; color: #e0e0e0; }
+
+    .evol-tree {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 10px 0;
+    }
+    .evol-node {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 6px;
+      padding: 8px 14px;
+      font-size: 12px;
+      text-align: center;
+    }
+    .evol-node .evol-name { color: #e0e0e0; display: block; }
+    .evol-node .evol-tier { color: #888; font-size: 10px; }
+    .evol-arrow { color: #ff6b35; font-size: 18px; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="../weapons">Weapons</a>
+    <a href="../builds">Builds</a>
+    <a href="../bosses">Bosses</a>
+    <a href="../guides">Guides</a>
+    <a href="../faq">FAQ</a>
+    <a href="../beginner-guide">Beginner Guide</a>
+    <a href="../requirements">Requirements</a>
+    <a href="../search">Search</a>
+    <a href="../weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#9879;&#65039; Upgrade Guide</div>
+  <h1>Weapon Evolution Paths</h1>
+  <p>Every weapon can evolve through multiple tiers. This guide covers every upgrade tree, material requirements, and which path fits your build.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="../guides">Guides</a> / Weapon Evolution Paths</div>
+
+  <p>Phantom Blade Zero's weapon evolution system allows each weapon to upgrade through three tiers, with branching paths at the final tier. Unlike traditional upgrade systems where a +X weapon is strictly better, PBZ's branching evolutions let you customize your weapon's stat profile and passive effect. Choosing the right evolution path is as important as choosing the right weapon.</p>
+
+  <h2>Evolution Basics</h2>
+  <p>Every weapon starts at Tier 1 (base form). Upgrading requires materials, and each tier unlocks new stat bonuses and sometimes new passive abilities. The system works as follows:</p>
+
+  <table>
+    <thead><tr><th>Tier</th><th>Level Range</th><th>Materials Needed</th><th>Stat Bonus per Level</th><th>Special</th></tr></thead>
+    <tbody>
+      <tr><td>Tier 1 (Base)</td><td>1-15</td><td>Scrap Metal, Rusted Ore</td><td>+2 Attack, +1% Sha-Chi Gen</td><td>Weapon passive unlocked at Level 5</td></tr>
+      <tr><td>Tier 2 (Refined)</td><td>16-30</td><td>Refined Ore, Phantom Essence</td><td>+3 Attack, +2% Sha-Chi Gen</td><td>Phantom Edge slot unlocked at Level 20</td></tr>
+      <tr><td>Tier 3 (Evolved)</td><td>31-45</td><td>Primal Shard, Soul Fragment</td><td>+5 Attack, +3% Sha-Chi Gen</td><td>Branching passive choice at Level 35</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip-block">
+    <strong>Important:</strong> Evolution materials are shared across all weapons, but the cost increases with each weapon you upgrade. Your first weapon to Tier 3 costs 15 Primal Shards. Your second costs 30. Plan which weapons you evolve carefully — you cannot max every weapon in a single playthrough.
+  </div>
+
+  <h2>Materials and Where to Find Them</h2>
+
+  <table class="mat-table">
+    <thead><tr><th>Material</th><th>Use</th><th>Common Sources</th><th>Farming Route</th></tr></thead>
+    <tbody>
+      <tr><td>Scrap Metal</td><td>Tier 1 upgrades (Levels 1-10)</td><td>Regular enemies, breakable objects</td><td>Chapter 1 courtyard — respawns on rest</td></tr>
+      <tr><td>Rusted Ore</td><td>Tier 1 upgrades (Levels 11-15)</td><td>Elite enemies, mining nodes</td><td>Underground Cavern — 6 nodes per run</td></tr>
+      <tr><td>Refined Ore</td><td>Tier 2 upgrades (Levels 16-25)</td><td>Minibosses, ore veins in Chapter 2+</td><td>Forgotten Temple — 4 nodes, 2 minibosses</td></tr>
+      <tr><td>Phantom Essence</td><td>Tier 2 upgrades (Levels 26-30)</td><td>Boss drops, chests</td><td>Boss rush mode — guaranteed 2 per boss kill</td></tr>
+      <tr><td>Primal Shard</td><td>Tier 3 upgrades (Levels 31-40)</td><td>Story bosses, hidden bosses</td><td>Seven Judgments — guaranteed 5 on first kill</td></tr>
+      <tr><td>Soul Fragment</td><td>Tier 3 upgrades (Levels 41-45)</td><td>Post-game bosses, NG+</td><td>NG+ boss rush — 1 per boss, unlimited</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip-block">
+    <strong>Farming Priority:</strong> Refined Ore is the bottleneck in a normal playthrough. Before starting Chapter 3, farm the Forgotten Temple route (4 ore veins + 2 minibosses) until you have 40 Refined Ore stockpiled. This will cover two Tier 2 weapons comfortably.
+  </div>
+
+  <h2>Weapon Evolution Trees</h2>
+
+  <h3>Sword Evolution</h3>
+
+  <div class="weapon-card">
+    <h4>Jagged Steel</h4>
+    <p>Starting sword with balanced stats and bleed buildup. The most versatile weapon in the game with the most flexible evolution tree.</p>
+
+    <div class="evol-tree">
+      <div class="evol-node"><span class="evol-name">Jagged Steel</span><span class="evol-tier">Tier 1</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Tempered Steel</span><span class="evol-tier">Tier 2</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Serrated Fang</span><span class="evol-tier">Tier 3A</span><br><span class="tier-label">+Bleed stack to 7</span></div>
+      <span class="evol-arrow" style="color:#888;">|</span>
+      <div class="evol-node"><span class="evol-name">Iron Will</span><span class="evol-tier">Tier 3B</span><br><span class="tier-label">+Parry window +2 frames</span></div>
+    </div>
+
+    <p><strong>Tier 2 (Tempered Steel):</strong> +15% base damage, +10% Sha-Chi generation rate. Unlocks a new heavy attack chain with improved stagger.</p>
+    <p><strong>Tier 3A (Serrated Fang):</strong> Bleed stack cap increases from 5 to 7. Each bleed tick deals 10% more damage. Recommended for Bleed Build and Aggressive Chi Rush.</p>
+    <p><strong>Tier 3B (Iron Will):</strong> Parry window extends by 2 frames (from 8 to 10 frames). Perfect parry window extends by 1 frame. Recommended for Defensive Parry Master.</p>
+  </div>
+
+  <div class="weapon-card">
+    <h4>Venomous Softblade</h4>
+    <p>Poison-infused sword with extended parry frames. Best defensive sword in the game, especially for parry-focused players.</p>
+
+    <div class="evol-tree">
+      <div class="evol-node"><span class="evol-name">Venomous Softblade</span><span class="evol-tier">Tier 1</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Toxic Edge</span><span class="evol-tier">Tier 2</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Plaguebringer</span><span class="evol-tier">Tier 3A</span><br><span class="tier-label">+Poison spreads on parry</span></div>
+      <span class="evol-arrow" style="color:#888;">|</span>
+      <div class="evol-node"><span class="evol-name">Mirror Blade</span><span class="evol-tier">Tier 3B</span><br><span class="tier-label">+Parry reflects projectiles</span></div>
+    </div>
+
+    <p><strong>Tier 3A (Plaguebringer):</strong> Successful parries apply poison to nearby enemies. Excellent for crowd control in group fights. Turns Venomous Softblade into an AoE debuff weapon.</p>
+    <p><strong>Tier 3B (Mirror Blade):</strong> Parrying ranged attacks reflects them back at the attacker with 150% damage. Essential for certain boss fights with heavy ranged phases (Snake Sovereign's Venom Spit).</p>
+  </div>
+
+  <h3>Dual Blades Evolution</h3>
+
+  <div class="weapon-card">
+    <h4>White Python &amp; Red Viper</h4>
+    <p>Starter dual blades with wide arcs and fast attack speed. The best weapon for Sha-Chi generation in the early game.</p>
+
+    <div class="evol-tree">
+      <div class="evol-node"><span class="evol-name">White Python &amp; Red Viper</span><span class="evol-tier">Tier 1</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Twin Serpents</span><span class="evol-tier">Tier 2</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Venom Fangs</span><span class="evol-tier">Tier 3A</span><br><span class="tier-label">+Attacks apply poison</span></div>
+      <span class="evol-arrow" style="color:#888;">|</span>
+      <div class="evol-node"><span class="evol-name">Storm Blades</span><span class="evol-tier">Tier 3B</span><br><span class="tier-label">+Attack speed +15%</span></div>
+    </div>
+
+    <p><strong>Tier 3A (Venom Fangs):</strong> Every 5th hit applies poison DoT. Combines with Bleed Build for triple DoT stacking. Also increases Sha-Chi generation on poisoned enemies by 20%.</p>
+    <p><strong>Tier 3B (Storm Blades):</strong> Attack speed increases by 15%, combo length extends by 2 hits. The highest sustained Sha-Chi generation weapon in the game. Best for Hybrid Flex builds that rely on fast resource generation.</p>
+  </div>
+
+  <div class="weapon-card">
+    <h4>Phoenix Wing</h4>
+    <p>Fire-infused dual blades. Every 3rd hit triggers a fire explosion. The premier AoE weapon for group encounters.</p>
+
+    <div class="evol-tree">
+      <div class="evol-node"><span class="evol-name">Phoenix Wing</span><span class="evol-tier">Tier 1</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Blazing Feathers</span><span class="evol-tier">Tier 2</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Inferno Dance</span><span class="evol-tier">Tier 3A</span><br><span class="tier-label">+Fire explosions leave burn ground</span></div>
+      <span class="evol-arrow" style="color:#888;">|</span>
+      <div class="evol-node"><span class="evol-name">Phoenix Rebirth</span><span class="evol-tier">Tier 3B</span><br><span class="tier-label">+Heal 5% HP on fire proc</span></div>
+    </div>
+
+    <p><strong>Tier 3A (Inferno Dance):</strong> Fire explosions leave a burn zone on the ground for 5 seconds. Enemies in the zone take ticking fire damage. This turns Phoenix Wing into area denial weapon — excellent for controlling group fight arenas.</p>
+    <p><strong>Tier 3B (Phoenix Rebirth):</strong> Every fire explosion heals 5% of max HP. Provides excellent sustain for aggressive play. Combined with Blood Sigil, this can keep you at full HP through most group encounters.</p>
+  </div>
+
+  <h3>Greatsword Evolution</h3>
+
+  <div class="weapon-card">
+    <h4>Savage Axe</h4>
+    <p>Heavy-hitting greatsword with the highest single-hit damage in the game. Slow but devastating.</p>
+
+    <div class="evol-tree">
+      <div class="evol-node"><span class="evol-name">Savage Axe</span><span class="evol-tier">Tier 1</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Berserker's Axe</span><span class="evol-tier">Tier 2</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Bloodthirst</span><span class="evol-tier">Tier 3A</span><br><span class="tier-label">+Damage scales with missing HP</span></div>
+      <span class="evol-arrow" style="color:#888;">|</span>
+      <div class="evol-node"><span class="evol-name">Earthbreaker</span><span class="evol-tier">Tier 3B</span><br><span class="tier-label">+Heavy attacks create shockwave</span></div>
+    </div>
+
+    <p><strong>Tier 3A (Bloodthirst):</strong> Damage increases by up to 40% based on missing HP. At 50% HP, you deal 20% more damage. This rewards aggressive, low-health play — high risk, high reward. Best for skilled players using Aggressive Chi Rush.</p>
+    <p><strong>Tier 3B (Earthbreaker):</strong> Fully charged heavy attacks send out a shockwave that hits enemies in a line. Adds much-needed range to the greatsword's kit. Better for new players who need safe damage options.</p>
+  </div>
+
+  <h3>Spear Evolution</h3>
+
+  <div class="weapon-card">
+    <h4>Celestial Lance</h4>
+    <p>Long-range spear with the tightest parry window but the highest parry reward. The skill-ceiling weapon.</p>
+
+    <div class="evol-tree">
+      <div class="evol-node"><span class="evol-name">Celestial Lance</span><span class="evol-tier">Tier 1</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Star Piercer</span><span class="evol-tier">Tier 2</span></div>
+      <span class="evol-arrow">&#10132;</span>
+      <div class="evol-node"><span class="evol-name">Heaven's Reach</span><span class="evol-tier">Tier 3A</span><br><span class="tier-label">+Attack range +25%</span></div>
+      <span class="evol-arrow" style="color:#888;">|</span>
+      <div class="evol-node"><span class="evol-name">Retribution</span><span class="evol-tier">Tier 3B</span><br><span class="tier-label">+Perfect parry deals 200% damage</span></div>
+    </div>
+
+    <p><strong>Tier 3A (Heaven's Reach):</strong> Attack range increases by 25%, making it the longest melee reach in the game. Allows safe poking from distance. Best for hybrid or defensive players.</p>
+    <p><strong>Tier 3B (Retribution):</strong> Perfect parries with Celestial Lance deal 200% weapon damage as a counter-hit. The highest parry reward in the game, but requires the tightest timing (6-frame normal parry window). For advanced players only.</p>
+  </div>
+
+  <h2>Evolution Strategy by Build</h2>
+
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#9878;&#65039;</span>
+      <h2>Build-Specific Recommendations</h2>
+    </div>
+    <div class="guide-section-body">
+      <table>
+        <thead><tr><th>Build</th><th>Priority Weapon</th><th>Recommended Evolution</th><th>Second Weapon</th><th>Evolution</th></tr></thead>
+        <tbody>
+          <tr><td>Aggressive Chi Rush</td><td>Jagged Steel</td><td>Tier 3A — Serrated Fang (7 bleed stacks)</td><td>Savage Axe</td><td>Tier 3A — Bloodthirst</td></tr>
+          <tr><td>Defensive Parry Master</td><td>Venomous Softblade</td><td>Tier 3B — Mirror Blade (reflect projectiles)</td><td>Celestial Lance</td><td>Tier 3B — Retribution</td></tr>
+          <tr><td>Hybrid Flex</td><td>White Python &amp; Red Viper</td><td>Tier 3B — Storm Blades (+15% speed)</td><td>Jagged Steel</td><td>Tier 3B — Iron Will</td></tr>
+          <tr><td>Bleed Build</td><td>Jagged Steel</td><td>Tier 3A — Serrated Fang (7 bleed stacks)</td><td>White Python &amp; Red Viper</td><td>Tier 3A — Venom Fangs</td></tr>
+          <tr><td>Fire Burst</td><td>Phoenix Wing</td><td>Tier 3A — Inferno Dance (burn zones)</td><td>Savage Axe</td><td>Tier 3B — Earthbreaker</td></tr>
+        </tbody>
+      </table>
+
+      <div class="tip-block">
+        <strong>General Rule:</strong> Invest your first 15 Primal Shards into your primary weapon's Tier 3. A Tier 3 weapon outperforms two Tier 2 weapons in most situations. Only split materials across weapons once your primary is at Tier 3.
+      </div>
+    </div>
+  </div>
+
+  <h2>Common Mistakes</h2>
+  <ul>
+    <li><strong>Upgrading too many weapons:</strong> Materials scale in cost per weapon. Focus on 2-3 weapons max per playthrough.</li>
+    <li><strong>Ignoring Tier 2 Phantom Edge slots:</strong> Every Tier 2 weapon unlocks a second Phantom Edge slot at level 20. This doubles your utility options. Do not switch to a new weapon before reaching level 20.</li>
+    <li><strong>Wrong Tier 3 branch:</strong> Read the passive description carefully before choosing. The wrong branch cannot be reset — there is no respec option for weapon evolutions.</li>
+    <li><strong>Over-farming early game materials:</strong> Scrap Metal and Rusted Ore are abundant. Do not spend hours farming them — you will naturally accumulate enough through story progression.</li>
+  </ul>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="../weapons">Weapons</a>
+      <a href="../builds">Builds</a>
+      <a href="../bosses">Bosses</a>
+      <a href="../guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="../guides/sha-chi-system">Sha-Chi System</a>
+      <a href="../guides/parry-timing-guide">Parry Guide</a>
+      <a href="../guides/weapon-evolution-paths">Weapon Evolution</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="../privacy">Privacy Policy</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
+</body>
+</html>

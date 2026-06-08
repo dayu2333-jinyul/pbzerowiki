@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/builds/parry-master-build">
+  <meta name="description" content="Complete Phantom Blade Zero Defensive Parry Master build guide. Venomous Softblade and Celestial Lance loadout, perfect parry strategy, skill tree priorities, and boss matchup ratings for multi-phase fights.">
+  <title>Phantom Blade Zero Defensive Parry Master Build — Boss Killer Guide</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preload" as="style" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Defensive Parry Master Build — Boss Killer Guide","description":"Complete Defensive Parry Master build guide. Venomous Softblade + Celestial Lance loadout, parry-centric Sha-Chi strategy, skill tree, and boss matchups.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-03","dateModified":"2026-06-03","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/builds/parry-master-build"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Defensive Parry Master Build — Boss Killer Guide">
+  <meta property="og:description" content="Complete Defensive Parry Master build: weapons, parry strategy, skill tree, and boss matchups. The ultimate boss-killing loadout.">
+  <meta property="og:url" content="https://pbzerowiki.com/builds/parry-master-build">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Defensive Parry Master Build">
+  <meta name="twitter:description" content="Master the Defensive Parry Master build: the ultimate boss-killing loadout with parry-focused strategy.">
+  <script defer src="../js/analytics.js"></script>
+  <style>
+    .build-section {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0 32px;
+      transition: border-color 0.2s;
+    }
+    .build-section:hover { border-color: #ff6b35; }
+    .build-section-head {
+      padding: 20px 24px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .build-section-head h2 { margin: 0 0 4px; border-left: none; padding-left: 0; }
+    .build-section-body { padding: 18px 24px; }
+    .build-tag {
+      display: inline-block;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+    .build-tag.defensive { background: rgba(52,152,219,0.15); color: #3498db; }
+    .build-tag.difficulty { background: rgba(241,196,15,0.15); color: #f1c40f; }
+    .build-tag.rank1 { background: rgba(255,215,0,0.15); color: #ffd700; }
+
+    .slot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .slot-item {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .slot-item h4 { color: #ff6b35; font-size: 14px; margin: 0 0 4px; }
+    .slot-item p { color: #a0a0b0; font-size: 13px; margin: 0; line-height: 1.5; }
+
+    .tip-block {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .tip-block strong { color: #ff6b35; }
+
+    .parry-highlight {
+      background: rgba(52,152,219,0.08);
+      border: 1px solid rgba(52,152,219,0.2);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 12px 0;
+    }
+    .parry-highlight h4 { color: #3498db; margin: 0 0 4px; font-size: 14px; }
+    .parry-highlight p { color: #a0a0b0; font-size: 13px; margin: 0; }
+
+    .skill-priority {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 8px;
+      margin: 12px 0;
+    }
+    .skill-item {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 6px;
+      padding: 12px;
+      text-align: center;
+    }
+    .skill-item .rank { color: #ff6b35; font-size: 20px; font-weight: 700; }
+    .skill-item .name { color: #e0e0e0; font-size: 13px; margin: 4px 0; }
+    .skill-item .desc { color: #888; font-size: 11px; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="../weapons">Weapons</a>
+    <a href="../builds">Builds</a>
+    <a href="../bosses">Bosses</a>
+    <a href="../guides">Guides</a>
+    <a href="../faq">FAQ</a>
+    <a href="../beginner-guide">Beginner Guide</a>
+    <a href="../requirements">Requirements</a>
+    <a href="../search">Search</a>
+    <a href="../weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#128737;&#65039; Parry Build</div>
+  <h1>Defensive Parry Master Build</h1>
+  <p>The ultimate boss-killing build. Let the enemy spend their resources, then punish. S-tier against multi-phase and Brutal-heavy bosses.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="../builds">Builds</a> / Defensive Parry Master</div>
+
+  <p>Defensive Parry Master is Phantom Blade Zero's most methodical build. It does not chase damage — it waits for damage to come to it. The core loop is simple: parry enemy attacks to drain their Sha-Chi, punish when they are staggered, and sustain through long fights with Blood Sigil. This build excels in multi-phase boss fights where patience and resource management matter more than burst damage.</p>
+
+  <p>It is the strongest build in the game against bosses with heavy Brutal Move patterns (blue attacks that can be parried). Against bosses that rely on Killer Moves (red attacks that require Ghoststep), it performs slightly worse but still above average thanks to the Celestial Lance's punish damage.</p>
+
+  <h2>Loadout</h2>
+
+  <div class="build-section">
+    <div class="build-section-head">
+      <h2>Defensive Parry Master Loadout</h2>
+      <div>
+        <span class="build-tag defensive">Defensive</span>
+        <span class="build-tag difficulty">Medium</span>
+        <span class="build-tag rank1">Boss Killer</span>
+      </div>
+    </div>
+    <div class="build-section-body">
+      <div class="slot-grid">
+        <div class="slot-item">
+          <h4>Primary 1</h4>
+          <p>Venomous Softblade (Sword) — extended parry frames</p>
+        </div>
+        <div class="slot-item">
+          <h4>Primary 2</h4>
+          <p>Celestial Lance (Spear) — punish window damage</p>
+        </div>
+        <div class="slot-item">
+          <h4>Phantom Edge 1</h4>
+          <p>Blood Sigil — sustain for long fights</p>
+        </div>
+        <div class="slot-item">
+          <h4>Phantom Edge 2</h4>
+          <p>Steel Thread — immobilize for parry setup</p>
+        </div>
+      </div>
+
+      <p><strong>Venomous Softblade</strong> is the cornerstone of this build. Its extended parry frames (12 frames normal, 5 frames perfect) make it the most forgiving weapon for parry-focused gameplay. The poison passive adds additional DoT pressure, forcing enemies to respect your parries even when you are not directly attacking.</p>
+
+      <p><strong>Celestial Lance</strong> is your punish weapon. When the enemy is staggered (Sha-Chi drained), switch to the lance for maximum damage during the punish window. The Celestial Lance has the highest single-hit punish damage in the game — 2-3 heavy attacks with the lance during a stagger window deal more damage than a full combo with most other weapons.</p>
+
+      <p><strong>Blood Sigil</strong> provides the sustain needed for multi-phase boss fights. In a fight with 3+ phases that lasts 5-10 minutes, Blood Sigil can heal 30-40% of your HP over the course of the encounter. Use it reactively — activate when you take damage, not preemptively.</p>
+
+      <p><strong>Steel Thread</strong> creates artificial parry windows. If a boss is not being aggressive enough, use Steel Thread to immobilize them for 2 seconds, then walk into parry range. The Steel Thread itself counts as a hit, building Sha-Chi. This is especially useful in phase transitions where bosses often retreat and reset.</p>
+    </div>
+  </div>
+
+  <h2>Sha-Chi Management</h2>
+  <p>Defensive Parry Master uses a 30/50/20 split: 30% offensive (Power Surge), 50% defensive (Blood Sigil + parry setup), 20% utility (Steel Thread immobilize).</p>
+
+  <p>Unlike other builds that generate Sha-Chi through attacks, this build generates the majority of its Sha-Chi through enemy parries. Every successful parry gives 10-15% Sha-Chi (20% for Perfect Parry) and drains 10-15% from the enemy. Over the course of a boss fight, you will generate 60-70% of your total Sha-Chi from parries alone.</p>
+
+  <p><strong>Generation Priority:</strong></p>
+  <ol>
+    <li>Parry Brutal Moves (primary source — 10-15% per parry, plus enemy drain)</li>
+    <li>Steel Thread + punish (immobilize guarantees 1-2 free hits = 8-10%)</li>
+    <li>Ghoststep through Killer Moves (15% per Ghoststep, but less frequent than parry opportunities)</li>
+    <li>Light attacks during enemy recovery (lowest priority — only when safe)</li>
+  </ol>
+
+  <p><strong>Spending Priority:</strong></p>
+  <ol>
+    <li>Blood Sigil when HP drops below 60% (maintain high HP for long fights)</li>
+    <li>Steel Thread when boss is passive (create engagement)</li>
+    <li>Power Surge only when enemy is staggered (100% safe, maximum damage)</li>
+    <li>Never spend Sha-Chi on offense when the enemy is actively attacking</li>
+  </ol>
+
+  <div class="tip-block">
+    <strong>The Reactive Rule:</strong> If the enemy is attacking, you should be parrying or Ghoststepping — never attacking. This build's damage comes from counter-attacks, not from initiating. Memorize this rule: "Their turn first, then my turn."
+  </div>
+
+  <h2>Skill Tree Priorities</h2>
+
+  <div class="skill-priority">
+    <div class="skill-item">
+      <div class="rank">#1</div>
+      <div class="name">Parry Window Duration</div>
+      <div class="desc">Extends normal parry window by up to 4 frames. Combined with Venomous Softblade's 12-frame base, this can give you a 16-frame parry window — over a quarter second.</div>
+    </div>
+    <div class="skill-item">
+      <div class="rank">#2</div>
+      <div class="name">Sha-Chi Drain on Parry</div>
+      <div class="desc">Increases enemy Sha-Chi drained per parry by 5%. Depletes enemy resources faster, creating more punish windows.</div>
+    </div>
+    <div class="skill-item">
+      <div class="rank">#3</div>
+      <div class="name">Counter Damage</div>
+      <div class="desc">Increases damage dealt during punish windows by 15%. Directly scales with this build's primary damage opportunity.</div>
+    </div>
+    <div class="skill-item">
+      <div class="rank">#4</div>
+      <div class="name">Phantom Edge Duration</div>
+      <div class="desc">Extends Blood Sigil and Steel Thread duration by 20%. More uptime on both sustain and crowd control.</div>
+    </div>
+  </div>
+
+  <h2>Core Gameplay Loop</h2>
+
+  <p>The Defensive Parry Master gameplay loop is a rhythm of three phases:</p>
+
+  <div class="parry-highlight">
+    <h4>Phase 1 — Wait and Parry</h4>
+    <p>Equip Venomous Softblade. Stand in parry range (close but not hugging) and wait for the enemy to attack. Parry every Brutal Move. Ghoststep through Killer Moves. Do not attack during this phase — your only goal is to drain the enemy's Sha-Chi through perfect defenses. This phase lasts until the enemy is staggered (Sha-Chi bar empty).</p>
+  </div>
+
+  <div class="parry-highlight">
+    <h4>Phase 2 — Punish</h4>
+    <p>When the enemy is staggered, switch to Celestial Lance. Perform 2-3 heavy attacks. The spear's reach lets you hit from a safe distance. If you have enough Sha-Chi (60%+), end the punish with a Power Surge. This phase lasts 2-4 seconds (the stagger duration).</p>
+  </div>
+
+  <div class="parry-highlight">
+    <h4>Phase 3 — Reset</h4>
+    <p>When the stagger ends, switch back to Venomous Softblade. If HP is below 60%, activate Blood Sigil. If the enemy is backing off, use Steel Thread to pull them back. Return to Phase 1. Repeat until the boss is dead.</p>
+  </div>
+
+  <h2>Advanced Parry Techniques</h2>
+
+  <h3>The Double Parry</h3>
+  <p>Some bosses chain two fast Brutal Moves with a 200-300ms gap between them. The instinct is to parry once and attack, but the second attack will hit you during your recovery. Instead, parry twice in rapid succession. Venomous Softblade's extended parry frames make this consistent. Practice the rhythm: parry-pause-parry. The pause duration varies by boss — Ogre Hammer Lord's double swing has a 250ms gap, while Snake Sovereign's double whip is 300ms.</p>
+
+  <h3>Parry into Power Surge</h3>
+  <p>If you have 50%+ Sha-Chi when you land a parry, immediately cancel the parry recovery into Power Surge. The timing is tight (you must input the Surge within 100ms of the parry landing), but the reward is significant — the Surge lands during the enemy's stagger, dealing full damage with no risk of interruption. Practice this until it is muscle memory; it is this build's highest DPS option.</p>
+
+  <h3>Steel Thread + Parry Setup</h3>
+  <p>Against fast enemies that attack unpredictably, use Steel Thread to immobilize them, then walk into their face. When the Thread wears off, the enemy's first action is almost always an attack — and you are already in parry range. This setup lets you control the engagement timing rather than waiting for the enemy to decide when to attack.</p>
+
+  <div class="tip-block">
+    <strong>Celestial Lance Mirror Blade Transition:</strong> Once you evolve Venomous Softblade to Mirror Blade (Tier 3B — reflects projectiles on parry), the Defensive Parry Master build gains a powerful ranged counter. Against Snake Sovereign's Venom Spit or any boss with ranged phases, you can stand at mid-range, bait the projectile, parry it, and deal 150% damage back. This turns the build's biggest weakness (ranged enemies) into a strength.
+  </div>
+
+  <h2>Boss Matchup Guide</h2>
+
+  <table>
+    <thead><tr><th>Boss</th><th>Rating</th><th>Strategy</th></tr></thead>
+    <tbody>
+      <tr><td>Seven Judgments</td><td>S</td><td>This build shines here. The multi-entity nature of the fight means more attacks to parry. Focus on parrying the active Judgment while keeping the others in view. Blood Sigil sustain carries you through all 3 phases.</td></tr>
+      <tr><td>Inverse Heaven</td><td>S</td><td>Two bosses = double the parry opportunities. Use Steel Thread on one boss while parrying the other. The Celestial Lance's wide heavy attack hits both bosses during punish windows.</td></tr>
+      <tr><td>Ogre Hammer Lord</td><td>A</td><td>The slow, telegraphed attacks are parry bait. His Brutal-heavy moveset is ideal for this build. Challenge: Hammer Slam has deceptive timing — parry on the sound cue, not the visual.</td></tr>
+      <tr><td>Snake Sovereign</td><td>B+</td><td>Snake Sovereign's speed makes parry windows shorter. The Tail Whip (Brutal) is your safest parry opportunity. Use Steel Thread to slow her down and create openings.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Evolution Paths</h2>
+
+  <ol>
+    <li><strong>Venomous Softblade &#8594; Mirror Blade (Tier 3B):</strong> The projectile reflection is transformative for this build. It turns ranged boss phases from a weakness into a strength. Prioritize this evolution above all else.</li>
+    <li><strong>Celestial Lance &#8594; Retribution (Tier 3B):</strong> Perfect parries dealing 200% weapon damage turns this build's core mechanic into its biggest damage source. This is an endgame evolution — the 6-frame parry window on Celestial Lance means you need perfect timing to benefit.</li>
+  </ol>
+
+  <div class="tip-block">
+    <strong>Accessory Recommendation:</strong> Equip the Parry Master's Ring (+2 frame parry window, sold by the Chapter 3 merchant) and the Sha-Chi Battery (+3% Sha-Chi on parry, hidden chest in the Forgotten Temple). These two accessories improve the build's core loop by roughly 20%.
+  </div>
+
+  <h2>Weaknesses</h2>
+  <ul>
+    <li><strong>Aerial bosses:</strong> You cannot parry attacks from above. Against flying enemies, the build struggles. Consider switching to a ranged Phantom Edge (Thunderbolt Shard) for these encounters.</li>
+    <li><strong>Red-heavy bosses:</strong> Bosses that rely primarily on Killer Moves leave fewer parry opportunities. Ghoststep counters are still effective, but they generate less Sha-Chi than parries.</li>
+    <li><strong>Paced enemies:</strong> Some enemies deliberately slow their attack cadence to bait you into attacking first. Against these, the "wait and parry" loop can feel tedious. Steel Thread helps force engagement.</li>
+  </ul>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="../weapons">Weapons</a>
+      <a href="../builds">Builds</a>
+      <a href="../bosses">Bosses</a>
+      <a href="../guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="../guides/sha-chi-system">Sha-Chi System</a>
+      <a href="../guides/parry-timing-guide">Parry Guide</a>
+      <a href="../guides/weapon-evolution-paths">Weapon Evolution</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="../privacy">Privacy Policy</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
+</body>
+</html>

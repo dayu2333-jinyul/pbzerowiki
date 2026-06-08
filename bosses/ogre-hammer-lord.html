@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/bosses/ogre-hammer-lord">
+  <meta name="description" content="Complete Ogre Hammer Lord boss guide for Phantom Blade Zero. Phase-by-phase strategy, attack pattern analysis, Sha-Chi counter windows, dust cloud navigation tips, and recommended builds for this medium-difficulty fight.">
+  <title>Phantom Blade Zero Ogre Hammer Lord Guide — Strategies & Counters</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preload" as="style" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Ogre Hammer Lord Guide — Strategies & Counters","description":"Complete Ogre Hammer Lord boss guide. Phase-by-phase breakdown, attack pattern analysis, dust cloud navigation, Sha-Chi counter windows, and recommended builds.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-03","dateModified":"2026-06-03","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@webPage":"https://pbzerowiki.com/bosses/ogre-hammer-lord"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Ogre Hammer Lord Guide — Strategies & Counters">
+  <meta property="og:description" content="Complete Ogre Hammer Lord boss guide: phase-by-phase breakdown, attack patterns, dust cloud strategies, and recommended builds.">
+  <meta property="og:url" content="https://pbzerowiki.com/bosses/ogre-hammer-lord">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Ogre Hammer Lord Guide">
+  <meta name="twitter:description" content="Master the Ogre Hammer Lord fight. Phase strategies, attack counters, and build recommendations.">
+  <script defer src="../js/analytics.js"></script>
+  <style>
+    .boss-section {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0 32px;
+      transition: border-color 0.2s;
+    }
+    .boss-section:hover { border-color: #ff6b35; }
+    .boss-section-head {
+      padding: 20px 24px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .boss-section-head h2 { margin: 0 0 4px; border-left: none; padding-left: 0; }
+    .boss-section-body { padding: 18px 24px; }
+
+    .phase-box {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 10px 0;
+    }
+    .phase-box h4 { color: #ff6b35; margin: 0 0 6px; font-size: 15px; }
+
+    .tip-block {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .tip-block strong { color: #ff6b35; }
+
+    .atk-brutal { display: inline-block; background: rgba(52,152,219,0.15); color: #3498db; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .atk-killer { display: inline-block; background: rgba(231,76,60,0.15); color: #e74c3c; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+
+    .build-box {
+      background: rgba(255,107,53,0.06);
+      border: 1px solid rgba(255,107,53,0.15);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 12px 0;
+    }
+    .build-box strong { color: #ff6b35; }
+
+    .key-tip {
+      background: rgba(46,204,113,0.06);
+      border-left: 3px solid #2ecc71;
+      padding: 10px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+    .key-tip strong { color: #2ecc71; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="../weapons">Weapons</a>
+    <a href="../builds">Builds</a>
+    <a href="../bosses">Bosses</a>
+    <a href="../guides">Guides</a>
+    <a href="../faq">FAQ</a>
+    <a href="../beginner-guide">Beginner Guide</a>
+    <a href="../requirements">Requirements</a>
+    <a href="../search">Search</a>
+    <a href="../weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#128128; Boss Guide</div>
+  <h1>Ogre Hammer Lord</h1>
+  <p>A heavy-hitting bruiser fight that tests dodge discipline. This guide covers every attack, phase, and strategy to defeat the Ogre Hammer Lord.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="../bosses">Bosses</a> / Ogre Hammer Lord</div>
+
+  <p>The Ogre Hammer Lord is a mid-game boss encountered in Chapter 2. A massive brute wielding a stone hammer, he uses slow but devastating attacks and creates dust clouds that obscure vision. This is the first fight in Phantom Blade Zero that truly tests your ability to fight without visual information, relying instead on audio cues and pattern memory.</p>
+
+  <p>Unlike the fast-paced duels against Snake Sovereign or the chaotic multi-phase slog of Seven Judgments, the Ogre Hammer Lord fight is a slow, deliberate battle of attrition. Patience is rewarded; panic is punished.</p>
+
+  <h2>Boss Overview</h2>
+
+  <table>
+    <thead><tr><th>Stat</th><th>Details</th></tr></thead>
+    <tbody>
+      <tr><td>Location</td><td>Chapter 2 — Ruined Arena</td></tr>
+      <tr><td>Phases</td><td>2</td></tr>
+      <tr><td>Difficulty</td><td>Medium</td></tr>
+      <tr><td>Recommended Level</td><td>25+</td></tr>
+      <tr><td>Weakness</td><td>Slow recovery after heavy attacks, audio-cued attacks (usable even when blind)</td></tr>
+      <tr><td>Resistance</td><td>High stagger resistance (3+ heavy attacks to stagger), immune to poison</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Phase Breakdown</h2>
+
+  <div class="boss-section">
+    <div class="boss-section-head">
+      <h2>Phase 1 — Heavy Strikes</h2>
+      <p style="color:#888;margin:4px 0 0;font-size:13px;">HP: 100% - 40%</p>
+    </div>
+    <div class="boss-section-body">
+      <p>In Phase 1, the Ogre Hammer Lord relies on slow, telegraphed hammer swings. Each swing kicks up dust clouds that linger for 8-12 seconds and partially obscure the arena. The boss moves slowly and gives you plenty of time to read and react — but the dust accumulates over time, making the arena progressively harder to navigate.</p>
+
+      <div class="phase-box">
+        <h4>Phase 1 Strategy</h4>
+        <p>Stay mobile and attack from angles the boss is not facing. The Ogre Hammer Lord turns slowly — use this to your advantage by circling behind him after each attack. Do not commit to long combos (3+ hits) unless you are directly behind him.</p>
+        <p style="margin-top:8px;">Dust management: The dust clouds persist throughout the phase. Try to kite the boss away from existing dust clouds so fresh clouds do not stack on old ones. The arena has 4 quadrants — rotate clockwise every 30 seconds to keep at least one quadrant clear at all times.</p>
+      </div>
+
+      <h3>Phase 1 Attacks</h3>
+      <table>
+        <thead><tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr></thead>
+        <tbody>
+          <tr><td>Hammer Slam</td><td><span class="atk-brutal">Brutal</span></td><td>Overhead slam with dust blast in a small AoE</td><td>Side dodge or parry. Parry window is 8 frames but slightly delayed — wait for the hammer to reach its highest point, then parry.</td></tr>
+          <tr><td>Dust Kick</td><td><span class="atk-brutal">Brutal</span></td><td>Kicks dust toward you, briefly blinding you (1.5 second blind)</td><td>Parry. The timing is tight (6 frames) but rewarding — successful parry puts you behind the boss with a free punish window.</td></tr>
+          <tr><td>Sweeping Arc</td><td><span class="atk-brutal">Brutal</span></td><td>Horizontal hammer swing covering a 180-degree arc</td><td>Dodge toward the boss (under the swing) or parry. The swing has a 12-frame wind-up — easy to read.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="key-tip">
+        <strong>Audio Cue:</strong> When dust covers the arena, listen for the Hammer Slam audio cue — a distinct "whoosh" sound 300ms before impact. Dodge sideways on the audio, not the visual. This is the single most important skill for this fight.
+      </div>
+    </div>
+  </div>
+
+  <div class="boss-section">
+    <div class="boss-section-head">
+      <h2>Phase 2 — Enraged</h2>
+      <p style="color:#888;margin:4px 0 0;font-size:13px;">HP: 40% - 0%</p>
+    </div>
+    <div class="boss-section-body">
+      <p>Below 40% HP, the Ogre Hammer Lord enters an enraged state. His movement speed increases by 30%, attack speed increases by 20%, and he gains two new attacks. Dust clouds last longer (12-15 seconds) and appear more frequently (every 3 attacks instead of every 5). The arena can become completely obscured if you are not managing dust properly.</p>
+
+      <div class="phase-box">
+        <h4>Phase 2 Strategy</h4>
+        <p>This phase is about survival, not damage. The boss's increased speed means you cannot outrun him — you must out-position him. Focus on dodging his attacks and only punish during his recovery windows. If the arena is fully obscured, fall back to audio-only combat: listen for the whoosh (Hammer Slam), the rumble (Ground Pound), and the footsteps (Enraged Charge).</p>
+      </div>
+
+      <h3>New Phase 2 Attacks</h3>
+      <table>
+        <thead><tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr></thead>
+        <tbody>
+          <tr><td>Ground Pound</td><td><span class="atk-killer">Killer</span></td><td>Smashes hammer into ground, creating a shockwave ring that expands outward</td><td>Jump over the shockwave or Ghoststep through it. The shockwave travels at medium speed — you have roughly 600ms to react after the hammer hits the ground.</td></tr>
+          <tr><td>Enraged Charge</td><td><span class="atk-killer">Killer</span></td><td>Rushes forward dragging the hammer behind, covering half the arena</td><td>Side dodge. The charge has a 1-second wind-up (boss roars and lowers shoulder). Do not try to parry — it is a Killer Move. Dodge perpendicular to the charge direction.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="key-tip">
+        <strong>Phase 2 Survival Tip:</strong> When the arena is fully obscured and you cannot see anything, stay near the arena walls. The Ogre Hammer Lord's charge always stops 2 steps short of the wall, giving you a guaranteed safe zone. Hug the wall and wait for the charge — it creates a predictable opening.
+      </div>
+    </div>
+  </div>
+
+  <h2>Recommended Builds</h2>
+
+  <div class="build-box">
+    <strong>Hybrid Flex (Best for First-Time Fighters):</strong> White Python &amp; Red Viper + Jagged Steel. Shadow Chakram is essential for dealing damage through dust clouds — throw it at the boss's last known position. Blood Sigil for sustain. Use dual blades for mobility, Jagged Steel for punish windows. Evolution: Storm Blades (Tier 3B) for faster Sha-Chi generation.
+  </div>
+
+  <div class="build-box">
+    <strong>Defensive Parry Master (Best for Parry Practice):</strong> Venomous Softblade + Celestial Lance. The Ogre Hammer Lord's slow, Brutal-heavy moveset is ideal parry practice. Focus on parrying Dust Kick and Sweeping Arc — both have clear telegraphs. Celestial Lance punish damage during stagger windows. Evolution: Mirror Blade (Tier 3B) for projectile reflection (though the Ogre has no projectiles, the extended parry frames help).
+  </div>
+
+  <div class="build-box">
+    <strong>Fire Burst (Best for Arena Control):</strong> Phoenix Wing + Thunder Edge. Fire explosions help you locate the boss through dust clouds — the fire proc tells you exactly where he is. Flame Vial's AoE covers a wide area, guaranteeing hits even when you cannot see the boss. Evolution: Inferno Dance (Tier 3A) for burn zones that damage the boss through dust.
+  </div>
+
+  <h2>Full Attack Pattern Reference</h2>
+
+  <table>
+    <thead><tr><th>Attack</th><th>Type</th><th>Wind-up</th><th>Recovery</th><th>Audio Cue</th><th>Counter</th></tr></thead>
+    <tbody>
+      <tr><td>Hammer Slam</td><td><span class="atk-brutal">Brutal</span></td><td>800ms</td><td>600ms</td><td>"Whoosh" 300ms before impact</td><td>Side dodge or parry</td></tr>
+      <tr><td>Dust Kick</td><td><span class="atk-brutal">Brutal</span></td><td>500ms</td><td>400ms</td><td>Sharp exhale</td><td>Parry (6-frame window)</td></tr>
+      <tr><td>Sweeping Arc</td><td><span class="atk-brutal">Brutal</span></td><td>700ms</td><td>500ms</td><td>Grunt + hammer scrape</td><td>Dodge in or parry</td></tr>
+      <tr><td>Ground Pound</td><td><span class="atk-killer">Killer</span></td><td>900ms</td><td>800ms</td><td>Deep rumble</td><td>Jump or Ghoststep</td></tr>
+      <tr><td>Enraged Charge</td><td><span class="atk-killer">Killer</span></td><td>1000ms</td><td>700ms</td><td>Roar + heavy footsteps</td><td>Side dodge</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Common Mistakes</h2>
+  <ul>
+    <li><strong>Trying to fight blind:</strong> When dust covers the arena, do not keep attacking. Fall back, listen for audio cues, and counter based on sound. Attacking blindly gets you hit by the next Hammer Slam.</li>
+    <li><strong>Overcommitting to combos:</strong> This boss has high stagger resistance. One full combo (5-6 hits) is enough to trigger an attack. Do not try for extended combos — you will get interrupted mid-swing.</li>
+    <li><strong>Panic dodging:</strong> The Ogre's attacks are slow. If you dodge early, you will be caught in the recovery. Wait for the actual strike, not the wind-up.</li>
+    <li><strong>Ignoring the dust economy:</strong> Each quadrant of the arena can fit roughly 3 dust clouds before it becomes completely obscured. Rotate clockwise to keep one quadrant clear for emergency positioning.</li>
+  </ul>
+
+  <h2>Rewards</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Type</th><th>Guaranteed?</th></tr></thead>
+    <tbody>
+      <tr><td>Ogre's Hammer Core</td><td>Weapon Evolution Material</td><td>Yes (first kill)</td></tr>
+      <tr><td>Rusted Ore x5</td><td>Upgrade Material</td><td>Yes</td></tr>
+      <tr><td>Refined Ore x2</td><td>Upgrade Material</td><td>Yes</td></tr>
+      <tr><td>Ogre's Strength Amulet</td><td>Accessory (+5% heavy attack damage)</td><td>Rare drop (15% chance)</td></tr>
+    </tbody>
+  </table>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="../weapons">Weapons</a>
+      <a href="../builds">Builds</a>
+      <a href="../bosses">Bosses</a>
+      <a href="../guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="../guides/sha-chi-system">Sha-Chi System</a>
+      <a href="../guides/parry-timing-guide">Parry Guide</a>
+      <a href="../guides/weapon-evolution-paths">Weapon Evolution</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="../privacy">Privacy Policy</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
+</body>
+</html>

@@ -17,6 +17,8 @@
     <meta property="og:url" content="https://pbzerowiki.com/weapons">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Phantom Blade Zero Weapons — All Blades & Phantom Edges">
   <meta name="twitter:description" content="Complete Phantom Blade Zero weapon database: 30+ primary blades, 20+ Phantom Edges. Filter by type, compare damage and speed stats.">
@@ -850,5 +852,17 @@
     });
   });
 </script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
 </body>
 </html>

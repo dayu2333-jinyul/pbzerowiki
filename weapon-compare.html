@@ -17,6 +17,8 @@
     <meta property="og:url" content="https://pbzerowiki.com/weapon-compare">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Phantom Blade Zero Weapon Comparison — Compare Any Two Weapons">
   <meta name="twitter:description" content="Compare any two Phantom Blade Zero weapons side by side. Damage, speed, Sha-Chi cost, special effects.">
@@ -377,5 +379,17 @@
     '</table>';
   }
 </script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
 </body>
 </html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/builds/hybrid-flex-build">
+  <meta name="description" content="Complete Phantom Blade Zero Hybrid Flex build guide. Beginner-friendly loadout with White Python & Red Viper, Jagged Steel, Sha-Chi management strategy, skill tree priorities, and boss matchup ratings.">
+  <title>Phantom Blade Zero Hybrid Flex Build — Complete Loadout Guide</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preload" as="style" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Hybrid Flex Build — Complete Loadout Guide","description":"Complete Hybrid Flex build guide for Phantom Blade Zero. Beginner-friendly loadout, weapon combos, Sha-Chi strategy, skill tree, and boss matchup ratings.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-03","dateModified":"2026-06-03","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/builds/hybrid-flex-build"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Hybrid Flex Build — Complete Loadout Guide">
+  <meta property="og:description" content="Complete Hybrid Flex build guide: weapon combos, Sha-Chi strategy, skill tree priorities, and boss matchup ratings for the best beginner build.">
+  <meta property="og:url" content="https://pbzerowiki.com/builds/hybrid-flex-build">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Hybrid Flex Build — Complete Loadout Guide">
+  <meta name="twitter:description" content="Master the Hybrid Flex build: weapons, Sha-Chi strategy, skill tree, and boss matchups.">
+  <script defer src="../js/analytics.js"></script>
+  <style>
+    .build-section {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0 32px;
+      transition: border-color 0.2s;
+    }
+    .build-section:hover { border-color: #ff6b35; }
+    .build-section-head {
+      padding: 20px 24px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .build-section-head h2 { margin: 0 0 4px; border-left: none; padding-left: 0; }
+    .build-section-body { padding: 18px 24px; }
+    .build-tag {
+      display: inline-block;
+      padding: 3px 12px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 6px;
+    }
+    .build-tag.hybrid { background: rgba(155,89,182,0.15); color: #9b59b6; }
+    .build-tag.difficulty { background: rgba(241,196,15,0.15); color: #f1c40f; }
+    .build-tag.rank1 { background: rgba(255,215,0,0.15); color: #ffd700; }
+
+    .slot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .slot-item {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .slot-item h4 { color: #ff6b35; font-size: 14px; margin: 0 0 4px; }
+    .slot-item p { color: #a0a0b0; font-size: 13px; margin: 0; line-height: 1.5; }
+
+    .tip-block {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .tip-block strong { color: #ff6b35; }
+
+    .combo-box {
+      background: rgba(46,204,113,0.06);
+      border: 1px solid rgba(46,204,113,0.2);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 12px 0;
+    }
+    .combo-box h4 { color: #2ecc71; margin: 0 0 4px; font-size: 14px; }
+    .combo-box p { color: #a0a0b0; font-size: 13px; margin: 0; }
+
+    .skill-priority {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 8px;
+      margin: 12px 0;
+    }
+    .skill-item {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 6px;
+      padding: 12px;
+      text-align: center;
+    }
+    .skill-item .rank { color: #ff6b35; font-size: 20px; font-weight: 700; }
+    .skill-item .name { color: #e0e0e0; font-size: 13px; margin: 4px 0; }
+    .skill-item .desc { color: #888; font-size: 11px; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="../weapons">Weapons</a>
+    <a href="../builds">Builds</a>
+    <a href="../bosses">Bosses</a>
+    <a href="../guides">Guides</a>
+    <a href="../faq">FAQ</a>
+    <a href="../beginner-guide">Beginner Guide</a>
+    <a href="../requirements">Requirements</a>
+    <a href="../search">Search</a>
+    <a href="../weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#9878;&#65039; Hybrid Build</div>
+  <h1>Hybrid Flex Build Guide</h1>
+  <p>The most versatile and beginner-friendly build in Phantom Blade Zero. No hard counters, consistent performance in every situation.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="../builds">Builds</a> / Hybrid Flex Build</div>
+
+  <p>Hybrid Flex is Phantom Blade Zero's jack-of-all-trades build. It does not have the highest damage output (Aggressive Chi Rush wins there), nor the best boss-fight endurance (that is Defensive Parry Master's territory). But it has something neither of those builds can claim: consistent performance in every situation. No hard counters, no glaring weaknesses, no matchups where you feel helpless.</p>
+
+  <p>This makes Hybrid Flex the ideal build for your first playthrough. It teaches you all the game's mechanics without forcing you into a specialized playstyle. Once you learn the game, you can branch out into the specialized builds. This guide covers the exact loadout, Sha-Chi management strategy, skill tree priorities, and boss-specific adjustments.</p>
+
+  <h2>Loadout</h2>
+
+  <div class="build-section">
+    <div class="build-section-head">
+      <h2>Hybrid Flex Loadout</h2>
+      <div>
+        <span class="build-tag hybrid">Hybrid</span>
+        <span class="build-tag difficulty">Easy</span>
+        <span class="build-tag rank1">Best Starter</span>
+      </div>
+    </div>
+    <div class="build-section-body">
+      <div class="slot-grid">
+        <div class="slot-item">
+          <h4>Primary 1</h4>
+          <p>White Python &amp; Red Viper (Dual Blades)</p>
+        </div>
+        <div class="slot-item">
+          <h4>Primary 2</h4>
+          <p>Jagged Steel (Sword)</p>
+        </div>
+        <div class="slot-item">
+          <h4>Phantom Edge 1</h4>
+          <p>Shadow Chakram</p>
+        </div>
+        <div class="slot-item">
+          <h4>Phantom Edge 2</h4>
+          <p>Blood Sigil</p>
+        </div>
+      </div>
+
+      <p><strong>White Python &amp; Red Viper</strong> is your general-purpose weapon. Its wide arcs hit multiple enemies in group fights, its fast attack speed generates Sha-Chi efficiently, and its mobility keeps you safe. Use these for 70% of combat encounters.</p>
+
+      <p><strong>Jagged Steel</strong> is your single-target finisher. Switch to it when fighting bosses or elite enemies where you need higher per-hit damage and bleed buildup. The sword's heavier hits stagger enemies faster, creating more punish windows.</p>
+
+      <p><strong>Shadow Chakram</strong> is your safe damage Phantom Edge. Throw it at range when you cannot close distance safely. It returns to you like a boomerang, hitting enemies on both the outgoing and return path. Use it to chip away at boss health during their dangerous attack phases.</p>
+
+      <p><strong>Blood Sigil</strong> is your sustain Phantom Edge. Activate it when your HP drops below 50%, then land 3 hits to recover roughly 15% HP. This is your emergency button — keep it ready for boss phase transitions where healing opportunities are limited.</p>
+    </div>
+  </div>
+
+  <h2>Sha-Chi Management</h2>
+  <p>Hybrid Flex uses a 60/25/15 split: 60% offensive (Power Surge), 25% defensive (Blood Sigil sustain), 15% utility (Shadow Chakram for safe damage).</p>
+
+  <p>The golden rule for this build: keep your Sha-Chi bar between 40% and 80% at all times. Below 40%, you do not have enough for an emergency Blood Sigil. Above 80%, you are wasting generation potential — spend down with a Power Surge. The sweet spot is 60-70%, which gives you enough for a Surge plus an emergency Edge.</p>
+
+  <p><strong>Generation Priority:</strong></p>
+  <ol>
+    <li>Use dual blade light attacks as your primary generator (fastest build rate)</li>
+    <li>Parry Brutal Moves whenever possible (10-15% per parry)</li>
+    <li>Ghoststep through Killer Moves for positioning advantage (15% per Ghoststep)</li>
+    <li>Full combos on staggered enemies (50% bonus generation during stagger)</li>
+  </ol>
+
+  <p><strong>Spending Priority:</strong></p>
+  <ol>
+    <li>Blood Sigil when HP below 50% (survival first)</li>
+    <li>Power Surge when enemy is staggered or recovering (punish window)</li>
+    <li>Shadow Chakram when enemy is at range (safe chip damage)</li>
+    <li>Power Surge to prevent over-capping (if bar > 80% and no better option)</li>
+  </ol>
+
+  <div class="tip-block">
+    <strong>Key Habit:</strong> After every successful parry, check your Sha-Chi bar before attacking. If it is above 60%, spend on a quick Power Surge during the punish window. If below 40%, use the punish window to land a full combo and build resources. This check takes 0.5 seconds but dramatically improves your resource efficiency.
+  </div>
+
+  <h2>Skill Tree Priorities</h2>
+
+  <div class="skill-priority">
+    <div class="skill-item">
+      <div class="rank">#1</div>
+      <div class="name">Sha-Chi Regeneration Rate</div>
+      <div class="desc">Increases passive and active generation speed. Core to the build's identity — faster generation means more Surges and more Edges.</div>
+    </div>
+    <div class="skill-item">
+      <div class="rank">#2</div>
+      <div class="name">Combo Extension</div>
+      <div class="desc">Adds 2 extra hits to light attack combos. More hits = more Sha-Chi generation = more resources.</div>
+    </div>
+    <div class="skill-item">
+      <div class="rank">#3</div>
+      <div class="name">Parry Window Duration</div>
+      <div class="desc">Extends normal parry window by 2 frames. Makes parrying more forgiving — essential for learning boss patterns.</div>
+    </div>
+    <div class="skill-item">
+      <div class="rank">#4</div>
+      <div class="name">Phantom Edge Efficiency</div>
+      <div class="desc">Reduces Phantom Edge Sha-Chi cost by 5%. Small but impactful — turns a 20% Edge into 19%, letting you fit more Edges into your bar.</div>
+    </div>
+  </div>
+
+  <h2>Core Rotation</h2>
+
+  <div class="combo-box">
+    <h4>Standard Combat Rotation</h4>
+    <p>Dual blade light attacks x4 &#8594; Shadow Chakram (throw) &#8594; switch to Jagged Steel &#8594; heavy attack &#8594; Power Surge.</p>
+    <p style="margin-top:8px;color:#a0a0b0;">This rotation generates roughly 60% Sha-Chi (x4 lights = ~20%, Chakram hits on return = ~10%, heavy = ~10%, and you enter with whatever you had). The Power Surge at the end spends most of it cleanly.</p>
+  </div>
+
+  <div class="combo-box">
+    <h4>Emergency Recovery Rotation</h4>
+    <p>Blood Sigil (activate) &#8594; Ghoststep through next attack &#8594; light attacks x3 (heal procs) &#8594; disengage.</p>
+    <p style="margin-top:8px;color:#a0a0b0;">Use this when your HP drops below 40%. The Ghoststep + Blood Sigil combination heals 15-20% HP while keeping you safe. Do not try to extend — heal and reset.</p>
+  </div>
+
+  <div class="combo-box">
+    <h4>Boss Punish Rotation</h4>
+    <p>Parry (stagger) &#8594; switch to Jagged Steel &#8594; heavy attacks x2 (bleed buildup) &#8594; Power Surge.</p>
+    <p style="margin-top:8px;color:#a0a0b0;">Use this when you land a parry on a boss. The bleed stacks from Jagged Steel increase Power Surge damage. This rotation is the highest DPS option available to Hybrid Flex.</p>
+  </div>
+
+  <h2>Boss Matchup Guide</h2>
+
+  <table>
+    <thead><tr><th>Boss</th><th>Rating</th><th>Strategy</th><th>Phantom Edge Focus</th></tr></thead>
+    <tbody>
+      <tr><td>Seven Judgments</td><td>A</td><td>Stay in dual blades for phase 1-2. Switch to Jagged Steel in phase 3 for burst damage during the short punish windows between Judgment attacks.</td><td>Blood Sigil (sustain through all 3 phases)</td></tr>
+      <tr><td>Inverse Heaven</td><td>A</td><td>Dual blade wide arcs hit both bosses simultaneously. Focus on positioning over damage — keep both in view.</td><td>Shadow Chakram (safe damage while repositioning)</td></tr>
+      <tr><td>Ogre Hammer Lord</td><td>B+</td><td>Shadow Chakram is essential here — use it to deal damage through dust clouds. Do not commit to combos while vision is obstructed.</td><td>Shadow Chakram (poking through dust)</td></tr>
+      <tr><td>Snake Sovereign</td><td>A</td><td>Close the distance immediately. Dual blade aggression forces Snake Sovereign into shorter attack strings. Parry the Tail Whip for easy stagger.</td><td>Blood Sigil (poison DoT counter)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Evolution Paths</h2>
+
+  <p>For Hybrid Flex, prioritize weapon evolution in this order:</p>
+  <ol>
+    <li><strong>White Python &amp; Red Viper &#8594; Storm Blades (Tier 3B):</strong> The +15% attack speed directly translates to more Sha-Chi generation, which is the core of this build.</li>
+    <li><strong>Jagged Steel &#8594; Iron Will (Tier 3B):</strong> The +2 frame parry window extension makes boss fights significantly easier. It compensates for Hybrid Flex's lack of dedicated parry tools.</li>
+  </ol>
+
+  <div class="tip-block">
+    <strong>Equipment Tip:</strong> Equip the Shadow Step accessory (+10% Ghoststep distance) and Chi Crystal (+5% Sha-Chi generation). Both are available from the merchant in Chapter 2. These two accessories alone improve Hybrid Flex performance by roughly 15%.
+  </div>
+
+  <h2>When to Move On</h2>
+  <p>Hybrid Flex is a learning build. You should switch to a specialized build once you meet these criteria:</p>
+  <ul>
+    <li>You have completed one playthrough</li>
+    <li>You can consistently parry Brutal Moves (8/10 success rate)</li>
+    <li>You know the attack patterns of at least 3 bosses</li>
+    <li>You understand Sha-Chi management fundamentals (generation vs spending balance)</li>
+  </ul>
+  <p>At that point, choose Aggressive Chi Rush if you prefer high-risk, high-damage gameplay, or Defensive Parry Master if you prefer methodical boss fights. Hybrid Flex will have taught you the fundamentals you need for either path.</p>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="../weapons">Weapons</a>
+      <a href="../builds">Builds</a>
+      <a href="../bosses">Bosses</a>
+      <a href="../guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="../guides/sha-chi-system">Sha-Chi System</a>
+      <a href="../guides/parry-timing-guide">Parry Guide</a>
+      <a href="../guides/weapon-evolution-paths">Weapon Evolution</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="../privacy">Privacy Policy</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
+</body>
+</html>

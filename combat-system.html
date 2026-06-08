@@ -17,6 +17,8 @@
   <meta property="og:url" content="https://pbzerowiki.com/combat-system">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Phantom Blade Zero Combat System — Mechanics, Sha-Chi & Advanced Techniques">
   <meta name="twitter:description" content="Deep get into Phantom Blade Zero's combat system — Sha-Chi, Ghoststep, Power Surge, and advanced techniques.">
@@ -236,7 +238,7 @@
       <span class="mech-tag advanced">Advanced</span>
     </div>
     <div class="mech-card-body">
-      <p>Once you have the fundamentals down, these advanced techniques will elevate your gameplay:</p>
+      <p>Master these advanced techniques and you will cut through enemies that used to wipe the floor with you:</p>
 
       <h3>Crimson Typhoon</h3>
       <p>An AoE parry embedded within an offensive sequence. Requires sub-frame precision to activate. When successful, it parries all nearby enemy attacks simultaneously and creates a massive opening. Practicing the input (light-light-heavy-delay-heavy with parry timing) is worth the effort for group fights.</p>
@@ -304,5 +306,17 @@
 </footer>
 
 <script src="js/app.js"></script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
 </body>
 </html>

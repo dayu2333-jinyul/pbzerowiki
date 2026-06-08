@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/guides/parry-timing-guide">
+  <meta name="description" content="Master parrying in Phantom Blade Zero. Frame-by-frame parry timing guide, Brutal vs Killer move identification, perfect parry windows, Ghoststep timing, and training drills to improve your reflexes.">
+  <title>Phantom Blade Zero Parry Guide — Frame Data & Timing Mastery</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preload" as="style" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Parry Guide — Frame Data & Timing Mastery","description":"Master parrying in Phantom Blade Zero with frame-by-frame timing. Perfect parry windows, Brutal vs Killer identification, Ghoststep timing, and training drills.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-03","dateModified":"2026-06-03","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/guides/parry-timing-guide"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Parry Guide — Frame Data & Timing Mastery">
+  <meta property="og:description" content="Master parrying in Phantom Blade Zero. Frame-by-frame parry timing, perfect parry windows, Ghoststep counters, and training drills.">
+  <meta property="og:url" content="https://pbzerowiki.com/guides/parry-timing-guide">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Parry Guide — Frame Data & Timing Mastery">
+  <meta name="twitter:description" content="Master parrying in Phantom Blade Zero. Frame-by-frame parry timing guide and training drills.">
+  <script defer src="../js/analytics.js"></script>
+  <style>
+    .guide-section {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px 0 24px;
+      transition: border-color 0.2s;
+    }
+    .guide-section:hover { border-color: #ff6b35; }
+    .guide-section-header {
+      padding: 18px 22px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .guide-section-header .gs-icon { font-size: 28px; flex-shrink: 0; }
+    .guide-section-header h2 { margin: 0; border-left: none; padding-left: 0; font-size: 20px; }
+    .guide-section-body { padding: 18px 22px; }
+
+    .frame-box {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 12px 0;
+    }
+    .frame-box h4 { color: #ff6b35; font-size: 14px; margin: 0 0 6px; }
+    .frame-box p { color: #a0a0b0; font-size: 13px; margin: 0; line-height: 1.5; }
+
+    .tip-block {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+      font-size: 14px;
+      color: #d0d0d0;
+    }
+    .tip-block strong { color: #ff6b35; }
+
+    .drill-card {
+      background: rgba(46,204,113,0.06);
+      border: 1px solid rgba(46,204,113,0.2);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 12px 0;
+    }
+    .drill-card h4 { color: #2ecc71; margin: 0 0 4px; font-size: 15px; }
+    .drill-card p { color: #a0a0b0; font-size: 13px; margin: 0; }
+
+    .atk-brutal { display: inline-block; background: rgba(52,152,219,0.15); color: #3498db; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .atk-killer { display: inline-block; background: rgba(231,76,60,0.15); color: #e74c3c; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+
+    .timeline-viz {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      margin: 10px 0;
+      flex-wrap: wrap;
+    }
+    .tl-block {
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      text-align: center;
+    }
+    .tl-windup { background: rgba(241,196,15,0.15); color: #f1c40f; }
+    .tl-parry { background: rgba(52,152,219,0.2); color: #3498db; }
+    .tl-perfect { background: rgba(46,204,113,0.2); color: #2ecc71; }
+    .tl-recovery { background: rgba(149,165,166,0.15); color: #95a5a6; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="../weapons">Weapons</a>
+    <a href="../builds">Builds</a>
+    <a href="../bosses">Bosses</a>
+    <a href="../guides">Guides</a>
+    <a href="../faq">FAQ</a>
+    <a href="../beginner-guide">Beginner Guide</a>
+    <a href="../requirements">Requirements</a>
+    <a href="../search">Search</a>
+    <a href="../weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#128200; Timing Guide</div>
+  <h1>Parry Timing Guide</h1>
+  <p>Frame-by-frame breakdown of parry windows, perfect parry mechanics, and how to build the muscle memory for consistent counters.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="../guides">Guides</a> / Parry Timing Guide</div>
+
+  <p>Parrying is the highest-skill mechanic in Phantom Blade Zero. A successful parry staggers the enemy, generates Sha-Chi, and opens a damage window. A failed parry leaves you vulnerable. This guide breaks down the exact frame data, timing windows, and training methods you need to go from inconsistent to automatic.</p>
+
+  <h2>The Three Parry Tiers</h2>
+
+  <div class="guide-section">
+    <div class="guide-section-header">
+      <span class="gs-icon">&#128200;</span>
+      <h2>Parry Quality Tiers</h2>
+    </div>
+    <div class="guide-section-body">
+      <div class="frame-box">
+        <h4>Tier 1 — Block (Early Parry)</h4>
+        <p>Pressing parry too early results in a standard block. You take reduced damage and no Sha-Chi is lost, but the enemy is not staggered. No Sha-Chi is generated. In Phantom Blade Zero, blocking is safe but produces no offensive benefit — you trade damage reduction for resource generation.</p>
+      </div>
+
+      <div class="frame-box">
+        <h4>Tier 2 — Normal Parry</h4>
+        <p>Pressing parry within the active window (roughly 8 frames before the attack lands) triggers a normal parry. You take no damage, the enemy is staggered briefly, and you generate 10-15% Sha-Chi. This is the reliable parry — it creates a small punish window, enough for 2-3 light attacks or one heavy attack.</p>
+      </div>
+
+      <div class="frame-box">
+        <h4>Tier 3 — Perfect Parry</h4>
+        <p>Pressing parry within 3 frames of impact triggers a Perfect Parry. The screen flashes white, time slows for 1.5 seconds, the enemy is staggered for an extended duration, and you generate 20% Sha-Chi plus drain 15% from the enemy's bar. This is the parry you should aim for on every Brutal Move.</p>
+      </div>
+
+      <div class="tip-block">
+        <strong>Frame Data Summary:</strong> Normal Parry Window = 8 frames (133ms at 60fps). Perfect Parry Window = 3 frames (50ms). The difference is about the duration of a single eyeblink. Practice until the 3-frame window becomes muscle memory — it transforms boss fights.
+      </div>
+    </div>
+  </div>
+
+  <h2>Brutal vs Killer — Read the Glow</h2>
+  <p>Phantom Blade Zero color-codes every enemy attack. Identifying the attack type in the wind-up phase is the first step to a successful counter. Here is how to read each color:</p>
+
+  <table>
+    <thead><tr><th>Color</th><th>Attack Type</th><th>Counter</th><th>Window</th><th>Punish</th></tr></thead>
+    <tbody>
+      <tr><td><span class="atk-brutal">Blue Flash</span></td><td>Brutal Move</td><td>Parry</td><td>8 frames (normal) / 3 frames (perfect)</td><td>3-4 light attacks or 1 heavy</td></tr>
+      <tr><td><span class="atk-killer">Red Flash</span></td><td>Killer Move</td><td>Ghoststep</td><td>10 frames (normal) / 5 frames (perfect)</td><td>2-3 light attacks from behind</td></tr>
+      <tr><td>Purple Flash</td><td>Unblockable</td><td>Positioning dodge</td><td>Variable (15-20 frames to react)</td><td>None — avoid and reset</td></tr>
+    </tbody>
+  </table>
+
+  <p>The key to reading these at speed is not to look at the color directly — look at the enemy's weapon. Brutal Moves always have a blue glow on the weapon during wind-up. Killer Moves have a red glow. Once you train your eyes to check the weapon glow rather than the screen flash, your reaction time will improve by 100-200ms.</p>
+
+  <h2>Attack Timing Profiles</h2>
+  <p>Every boss attack follows a predictable timing arc. Understanding the arc helps you anticipate when to press parry:</p>
+
+  <h3>Fast Attacks (200-400ms wind-up)</h3>
+  <p>Found on dagger-wielders and swift bosses. The wind-up is so short that you must parry reactively — there is no time to read and decide. For fast attacks, train a reflex response: as soon as you see the weapon move, press parry. Even if it is a Killer Move (requires Ghoststep), the parry input will result in a block that mitigates damage.</p>
+
+  <div class="timeline-viz">
+    <span class="tl-block tl-windup">Wind-up 200ms</span>
+    <span class="tl-block tl-parry">Parry Window 133ms</span>
+    <span class="tl-block tl-perfect">Perfect 50ms</span>
+    <span class="tl-block tl-recovery">Recovery 300ms</span>
+  </div>
+
+  <h3>Medium Attacks (400-800ms wind-up)</h3>
+  <p>The most common attack type. You have enough time to identify the color and choose Parry or Ghoststep. Focus on reading the weapon glow during the first 200ms of the wind-up, then execute the appropriate counter.</p>
+
+  <div class="timeline-viz">
+    <span class="tl-block tl-windup">Wind-up 600ms</span>
+    <span class="tl-block tl-parry">Parry Window 133ms</span>
+    <span class="tl-block tl-perfect">Perfect 50ms</span>
+    <span class="tl-block tl-recovery">Recovery 400ms</span>
+  </div>
+
+  <h3>Slow Attacks (800ms+ wind-up)</h3>
+  <p>Telegraphed heavy attacks. These are the easiest to parry but the most punishing to miss. The key is not to parry too early — many players panic-button and parry at the 600ms mark instead of waiting for the actual strike. Count "one-one-thousand" in your head after the wind-up starts, then parry.</p>
+
+  <div class="timeline-viz">
+    <span class="tl-block tl-windup">Wind-up 1000ms</span>
+    <span class="tl-block tl-parry">Parry Window 133ms</span>
+    <span class="tl-block tl-perfect">Perfect 50ms</span>
+    <span class="tl-block tl-recovery">Recovery 600ms</span>
+  </div>
+
+  <div class="tip-block">
+    <strong>Slow Attack Rule:</strong> When a boss raises a weapon overhead and pauses, wait for the downward movement to begin. Do not parry during the pause. The actual strike comes 200-300ms after the pause ends — that is your parry window.
+  </div>
+
+  <h2>Ghoststep Timing</h2>
+  <p>Ghoststep is the counter to <span class="atk-killer">Killer Moves</span>. It functions like a dodge that phases through attacks. The Ghoststep window is slightly more forgiving than parry (10 frames normal, 5 frames perfect), but the positioning requirement is stricter — you must Ghoststep directly toward the attack, not sideways or away.</p>
+
+  <p>Perfect Ghoststep (5-frame window) slows time for 1 second and places you directly behind the enemy. This is the most powerful defensive option in the game — it fully negates damage, repositions you for a back-attack, and generates 25% Sha-Chi. Landing a Perfect Ghoststep against a boss's Killer Move is often the turning point of a fight.</p>
+
+  <div class="tip-block">
+    <strong>Ghoststep Drill:</strong> Go to the training arena and fight the basic soldier enemy. Only use Ghoststep — no parrying, no attacking. Practice Ghoststepping through every attack until you can do it without looking at your character. When you can consistently land Perfect Ghoststeps, you are ready for any boss.
+  </div>
+
+  <h2>Training Drills</h2>
+
+  <div class="drill-card">
+    <h4>Drill 1 — The Parry-Only Run</h4>
+    <p>Equip no weapons (fists only) and fight the first training enemy. You can only press parry. No attacks, no Ghoststep, no movement. Win by parrying every attack until the enemy tires out. This drill removes all complexity and forces pure parry timing. Recommended time: 5 minutes daily.</p>
+  </div>
+
+  <div class="drill-card">
+    <h4>Drill 2 — Color Callout</h4>
+    <p>Fight any boss and say the attack color out loud before you counter. "Blue — parry," "Red — Ghoststep," "Purple — dodge." Speaking forces your brain to process the visual information before acting. After 3-4 boss attempts with this drill, the identification becomes subconscious.</p>
+  </div>
+
+  <div class="drill-card">
+    <h4>Drill 3 — Perfect Parry Challenge</h4>
+    <p>Equip Venomous Softblade (extended parry frames) and fight an early boss like Ogre Hammer Lord. Your goal is to land 10 Perfect Parries before the fight ends. Count them out loud. If the fight ends without reaching 10, restart and try again. This builds the 3-frame timing.</p>
+  </div>
+
+  <div class="drill-card">
+    <h4>Drill 4 — Ghoststep Only</h4>
+    <p>Fight Snake Sovereign using only Ghoststep counters (no parrying, no blocking). Since Snake Sovereign has several <span class="atk-killer">Killer Moves</span>, this is the ideal training boss for Ghoststep. Focus on the red flash and practice the toward-the-attack direction.</p>
+  </div>
+
+  <h2>Weapon-Specific Parry Windows</h2>
+  <p>Different weapons have different parry frame windows. Understanding these differences helps you choose the right weapon for your parry skill level:</p>
+
+  <table>
+    <thead><tr><th>Weapon</th><th>Normal Parry Frames</th><th>Perfect Parry Frames</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Venomous Softblade</td><td>12 frames (200ms)</td><td>5 frames (83ms)</td><td>Best for learning parry timing</td></tr>
+      <tr><td>White Python &amp; Red Viper</td><td>8 frames (133ms)</td><td>3 frames (50ms)</td><td>Standard parry window</td></tr>
+      <tr><td>Jagged Steel</td><td>8 frames (133ms)</td><td>3 frames (50ms)</td><td>Standard window, bleed bonus</td></tr>
+      <tr><td>Celestial Lance</td><td>6 frames (100ms)</td><td>2 frames (33ms)</td><td>Tightest window, highest parry reward</td></tr>
+      <tr><td>Savage Axe</td><td>10 frames (167ms)</td><td>4 frames (67ms)</td><td>Forgiving window, slow recovery</td></tr>
+      <tr><td>Phoenix Wing</td><td>8 frames (133ms)</td><td>3 frames (50ms)</td><td>Standard window, fire on parry</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip-block">
+    <strong>Building up:</strong> Start with Venomous Softblade (12-frame window) to build confidence. Once you consistently land Perfect Parries with it, switch to a standard 8-frame weapon. Finally, challenge yourself with Celestial Lance's 6-frame window. Each step down tightens your timing.
+  </div>
+
+  <h2>Common Parry Mistakes</h2>
+  <ul>
+    <li><strong>Button mashing parry:</strong> Pressing parry multiple times in rapid succession. Each press resets the parry window. If you miss the first press, pressing again immediately does not help — it delays your next opportunity. One press per attack.</li>
+    <li><strong>Parrying too early:</strong> The most common mistake on slow attacks. Wait for the weapon to begin moving toward you, not the wind-up.</li>
+    <li><strong>Confusing Brutal and Killer:</strong> Parrying a Killer Move results in a full hit. Ghoststepping a Brutal Move wastes positioning. Train the color identification until it is automatic.</li>
+    <li><strong>Not respecting recovery:</strong> After a missed parry, you cannot act for 300-400ms. In that window, the enemy can land a full combo. If you miss, do not try to parry again immediately — dodge away and reset.</li>
+  </ul>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="../weapons">Weapons</a>
+      <a href="../builds">Builds</a>
+      <a href="../bosses">Bosses</a>
+      <a href="../guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="../guides/sha-chi-system">Sha-Chi System</a>
+      <a href="../guides/parry-timing-guide">Parry Guide</a>
+      <a href="../builds">Build Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="../privacy">Privacy Policy</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
+</body>
+</html>

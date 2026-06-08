@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/bosses/snake-sovereign">
+  <meta name="description" content="Complete Snake Sovereign boss guide for Phantom Blade Zero. Phase-by-phase breakdown, attack pattern analysis, poison DoT management, Sha-Chi counter windows, and recommended builds for this speed-focused fight.">
+  <title>Phantom Blade Zero Snake Sovereign Guide — Strategies & Counters</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <link rel="preload" as="style" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Snake Sovereign Guide — Strategies & Counters","description":"Complete Snake Sovereign boss guide. Phase-by-phase breakdown, attack pattern analysis, poison DoT management, Sha-Chi windows, and builds.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-03","dateModified":"2026-06-03","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/bosses/snake-sovereign"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Snake Sovereign Guide — Strategies & Counters">
+  <meta property="og:description" content="Complete Snake Sovereign boss guide: phase breakdown, attack patterns, poison DoT management, Sha-Chi windows, and builds.">
+  <meta property="og:url" content="https://pbzerowiki.com/bosses/snake-sovereign">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Snake Sovereign Guide">
+  <meta name="twitter:description" content="Master the Snake Sovereign fight. Phase strategies, attack counters, poison management, and builds.">
+  <script defer src="../js/analytics.js"></script>
+  <style>
+    .boss-section {
+      background: #1a1a2e;
+      border: 1px solid #2a2a3a;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 24px 0 32px;
+      transition: border-color 0.2s;
+    }
+    .boss-section:hover { border-color: #ff6b35; }
+    .boss-section-head {
+      padding: 20px 24px 12px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+    }
+    .boss-section-head h2 { margin: 0 0 4px; border-left: none; padding-left: 0; }
+    .boss-section-body { padding: 18px 24px; }
+
+    .phase-box {
+      background: #14142a;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 10px 0;
+    }
+    .phase-box h4 { color: #ff6b35; margin: 0 0 6px; font-size: 15px; }
+
+    .tip-block {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      margin: 14px 0;
+      border-radius: 0 6px 6px 0;
+    }
+    .tip-block strong { color: #ff6b35; }
+
+    .atk-brutal { display: inline-block; background: rgba(52,152,219,0.15); color: #3498db; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .atk-killer { display: inline-block; background: rgba(231,76,60,0.15); color: #e74c3c; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+
+    .build-box {
+      background: rgba(255,107,53,0.06);
+      border: 1px solid rgba(255,107,53,0.15);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 12px 0;
+    }
+    .build-box strong { color: #ff6b35; }
+
+    .key-tip {
+      background: rgba(46,204,113,0.06);
+      border-left: 3px solid #2ecc71;
+      padding: 10px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 12px 0;
+      font-size: 14px;
+    }
+    .key-tip strong { color: #2ecc71; }
+
+    .danger-box {
+      background: rgba(231,76,60,0.06);
+      border: 1px solid rgba(231,76,60,0.15);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin: 12px 0;
+    }
+    .danger-box strong { color: #e74c3c; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="../weapons">Weapons</a>
+    <a href="../builds">Builds</a>
+    <a href="../bosses">Bosses</a>
+    <a href="../guides">Guides</a>
+    <a href="../faq">FAQ</a>
+    <a href="../beginner-guide">Beginner Guide</a>
+    <a href="../requirements">Requirements</a>
+    <a href="../search">Search</a>
+    <a href="../weapon-compare">Compare Weapons</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#128128; Boss Guide</div>
+  <h1>Snake Sovereign</h1>
+  <p>A serpentine speed-demon boss that rewards aggression over patience. This guide covers every attack, phase, and strategy to defeat the Snake Sovereign.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="../bosses">Bosses</a> / Snake Sovereign</div>
+
+  <p>The Snake Sovereign is a mid-game boss fought near the end of Chapter 3. She is a serpentine humanoid with lightning-fast whip attacks, poison projectiles, and a devastating multi-hit combo in her second phase. Featured prominently in the Year of the Snake trailer, this boss is one of Phantom Blade Zero's most visually striking encounters.</p>
+
+  <p>Unlike the Ogre Hammer Lord's slow, deliberate pace, the Snake Sovereign is all about speed. She attacks in rapid flurries, punishes hesitation, and forces you to stay aggressive. The common advice for most bosses is "wait and parry" — for Snake Sovereign, the advice is "stay in her face and do not let her breathe." She is significantly weaker at close range where her whip attacks have less leverage.</p>
+
+  <h2>Boss Overview</h2>
+
+  <table>
+    <thead><tr><th>Stat</th><th>Details</th></tr></thead>
+    <tbody>
+      <tr><td>Location</td><td>Chapter 3 — Serpent's Nest</td></tr>
+      <tr><td>Phases</td><td>2</td></tr>
+      <tr><td>Difficulty</td><td>Hard</td></tr>
+      <tr><td>Recommended Level</td><td>30+</td></tr>
+      <tr><td>Weakness</td><td>Close range combat, bleed damage, predictable combo end-lag</td></tr>
+      <tr><td>Resistance</td><td>Poison immunity (absorbs poison DoT and heals from it), high mobility</td></tr>
+    </tbody>
+  </table>
+
+  <div class="danger-box">
+    <strong>Important:</strong> Snake Sovereign is immune to poison. If you are running a Bleed Build with Poison Mist, switch to a different Phantom Edge for this fight. The poison heals her for 50% of the damage it would normally deal — approximately 2% HP per tick.
+  </div>
+
+  <h2>Phase Breakdown</h2>
+
+  <div class="boss-section">
+    <div class="boss-section-head">
+      <h2>Phase 1 — Serpent's Coil</h2>
+      <p style="color:#888;margin:4px 0 0;font-size:13px;">HP: 100% - 50%</p>
+    </div>
+    <div class="boss-section-body">
+      <p>Phase 1 features fast whip strikes and tail sweeps from unpredictable angles. Snake Sovereign is highly mobile in this phase, frequently leaping backward to create distance. Your primary goal is to close that distance and stay in her face — her whip attacks have a minimum effective range, and she struggles to hit targets that are within melee distance.</p>
+
+      <div class="phase-box">
+        <h4>Phase 1 Strategy</h4>
+        <p>Close the distance immediately when the fight starts. Use a dash + light attack to close the gap. Once in melee range, stay aggressive — light attack chains force her to either attack (which you can parry) or retreat (which gives you space to chase).</p>
+        <p style="margin-top:8px;">When she leaps backward, do not let her reset. Chase with a dash and immediately resume pressure. The longer she stays at mid-range, the more dangerous her whip attacks become.</p>
+      </div>
+
+      <h3>Phase 1 Attacks</h3>
+      <table>
+        <thead><tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr></thead>
+        <tbody>
+          <tr><td>Tail Whip</td><td><span class="atk-brutal">Brutal</span></td><td>Wide tail sweep that hits behind her as well</td><td>Parry or jump over. Parry timing: parry when the tail is at its apex (roughly 500ms after wind-up starts). Jump if you are behind her.</td></tr>
+          <tr><td>Venom Spit</td><td><span class="atk-killer">Killer</span></td><td>Spits a poison projectile that travels in a straight line</td><td>Dodge sideways. The projectile is slow (600ms travel time) — easy to dodge, but the poison DoT applies on contact and stacks.</td></tr>
+          <tr><td>Whip Lash</td><td><span class="atk-brutal">Brutal</span></td><td>Fast horizontal whip strike with a 300ms wind-up</td><td>Parry — this is your safest parry opportunity. The window is generous (8 frames), but the attack comes out fast. React immediately when you see her arm move.</td></tr>
+          <tr><td>Serpent Dash</td><td>Movement</td><td>Leaps backward 2-3 character lengths to create distance</td><td>Dash forward to close the gap. Do not let her reset to mid-range.</td></tr>
+        </tbody>
+      </table>
+
+      <div class="key-tip">
+        <strong>Phase 1 Goal:</strong> Finish Phase 1 with at least 70% HP and 60% Sha-Chi. Phase 2 is significantly harder, and you want a full resource bar going into it. Use Blood Sigil if your HP drops below 70% during this phase.
+      </div>
+    </div>
+  </div>
+
+  <div class="boss-section">
+    <div class="boss-section-head">
+      <h2>Phase 2 — Venom's Release</h2>
+      <p style="color:#888;margin:4px 0 0;font-size:13px;">HP: 50% - 0%</p>
+    </div>
+    <div class="boss-section-body">
+      <p>Below 50% HP, Snake Sovereign gains poison AoE abilities and a devastating multi-hit combo. Her attack strings are longer (4-6 hits instead of 2-3), and she chains attacks together with minimal recovery between them. Quick parries are essential to interrupt her combos before they complete — a full Rapid Coil combo (5 hits) deals roughly 60% of your HP.</p>
+
+      <div class="phase-box">
+        <h4>Phase 2 Strategy</h4>
+        <p>This phase tests your ability to identify combo starters and interrupt them. The key difference between Phase 1 and Phase 2 is combo length — in Phase 1, you can wait for an attack, parry it, and punish. In Phase 2, you must parry multiple attacks in sequence or Ghoststep through the multi-hit moves.</p>
+        <p style="margin-top:8px;">The poison ground pools (Venom's Release) are your main positioning challenge. She spawns these under her current location, then moves. Create distance when you see the green glow beneath her, then re-engage after the pool forms.</p>
+      </div>
+
+      <h3>New Phase 2 Attacks</h3>
+      <table>
+        <thead><tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr></thead>
+        <tbody>
+          <tr><td>Rapid Coil</td><td><span class="atk-killer">Killer</span></td><td>5-hit spinning attack that covers a 360-degree area. Each hit deals moderate damage; the full combo deals 60%+ HP.</td><td>Ghoststep through the first hit to get behind her. The remaining 4 hits whiff on the direction you vacated. Alternatively, Ghoststep out of range and wait for the end-lag.</td></tr>
+          <tr><td>Venom's Release</td><td>Environmental</td><td>Creates a poison pool on the ground that lasts 10 seconds. Standing in the pool applies a stacking poison DoT (3 stacks max).</td><td>Move away when you see the green glow. The pool forms in 500ms — you have enough time to walk out if you react immediately.</td></tr>
+          <tr><td>Poison Chakram</td><td><span class="atk-killer">Killer</span></td><td>Throws a spinning poison blade in a wide arc that returns to her</td><td>Ghoststep through it or dodge perpendicular. The chakram hits twice (outgoing and return).</td></tr>
+        </tbody>
+      </table>
+
+      <div class="key-tip">
+        <strong>Rapid Coil Counter:</strong> Count the hits of Rapid Coil out loud. "One, two, three, four, five." After the 5th hit, Snake Sovereign has a 2-second recovery window where she is completely stationary. This is your only safe window for charged heavy attacks or Power Surge. Count the hits, then punish. Do not try to attack during the Rapid Coil animation — you will get hit.
+      </div>
+    </div>
+  </div>
+
+  <h2>Recommended Builds</h2>
+
+  <div class="build-box">
+    <strong>Aggressive Chi Rush (Best for Snake Sovereign):</strong> Jagged Steel + Savage Axe. Snake Sovereign's weakness is close-range aggression, and this build specializes in exactly that. Overwhelm her with constant pressure — every time she tries to retreat, Chain Hook her back. Bleed buildup punishes her long attack cooldowns. This build has an S-tier matchup against Snake Sovereign if you can maintain uptime.
+  </div>
+
+  <div class="build-box">
+    <strong>Hybrid Flex (Safer Option):</strong> White Python &amp; Red Viper + Jagged Steel. Shadow Chakram provides safe damage when you need to create distance from poison pools. Blood Sigil counters poison DoT (heal through the damage). Stay in dual blades for most of the fight — the mobility helps you dodge poison pools while maintaining aggression.
+  </div>
+
+  <div class="build-box">
+    <strong>Fire Burst (Arena Control):</strong> Phoenix Wing + Thunder Edge. Poison pools are less threatening when the entire arena is on fire. Flame Vial's AoE hits even when Snake Sovereign is moving at full speed. Fire explosions help track her during her rapid movement phases. Avoid poison Phantom Edges — she is immune.
+  </div>
+
+  <h2>Full Attack Pattern Reference</h2>
+
+  <table>
+    <thead><tr><th>Attack</th><th>Type</th><th>Wind-up</th><th>Recovery</th><th>Range</th><th>Counter</th></tr></thead>
+    <tbody>
+      <tr><td>Tail Whip</td><td><span class="atk-brutal">Brutal</span></td><td>500ms</td><td>400ms</td><td>Close-medium (2 character lengths)</td><td>Parry or jump</td></tr>
+      <tr><td>Venom Spit</td><td><span class="atk-killer">Killer</span></td><td>400ms</td><td>300ms</td><td>Long (full arena)</td><td>Side dodge</td></tr>
+      <tr><td>Whip Lash</td><td><span class="atk-brutal">Brutal</span></td><td>300ms</td><td>350ms</td><td>Medium (1.5 character lengths)</td><td>Parry (8-frame window)</td></tr>
+      <tr><td>Rapid Coil</td><td><span class="atk-killer">Killer</span></td><td>600ms</td><td>2000ms (end-lag)</td><td>Close (melee range)</td><td>Ghoststep through first hit, punish end-lag</td></tr>
+      <tr><td>Venom's Release</td><td>Env.</td><td>500ms</td><td>N/A</td><td>Medium (under boss)</td><td>Walk away from green glow</td></tr>
+      <tr><td>Poison Chakram</td><td><span class="atk-killer">Killer</span></td><td>500ms</td><td>400ms</td><td>Medium (returns to boss)</td><td>Ghoststep or perpendicular dodge</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Poison DoT Management</h2>
+  <p>Snake Sovereign applies poison through Venom Spit and standing in Venom's Release pools. Poison stacks up to 3 times, with each stack dealing 2% HP per tick (4 seconds per tick). Three stacks = 6% HP per tick, which can kill you in under 12 seconds if left unchecked.</p>
+
+  <p><strong>Poison Counterplay:</strong></p>
+  <ul>
+    <li><strong>Antidote consumable:</strong> Buy Antidote from the Chapter 3 merchant before the fight. Using one clears all poison stacks and grants 10 seconds of immunity. You can carry 3 max.</li>
+    <li><strong>Blood Sigil:</strong> Activate Blood Sigil when you have 2+ poison stacks. The lifesteal offsets the poison damage, buying you time to clear the stacks.</li>
+    <li><strong>Positioning:</strong> The safest positioning against Snake Sovereign is directly in melee range — close enough that her whip attacks have reduced effectiveness, and far enough from the center where poison pools accumulate. Fight her near the arena edges.</li>
+  </ul>
+
+  <h2>Strategy Summary</h2>
+  <ol>
+    <li><strong>Phase 1 — Close the distance and stay aggressive.</strong> Parry Whip Lash and Tail Whip. Chase every Serpent Dash. Finish the phase with high resources.</li>
+    <li><strong>Phase 2 Transition (50% HP):</strong> Snake Sovereign roars and creates a large poison pool at her location. Back away, let the pool form, then immediately re-engage. This is the most dangerous moment of the fight.</li>
+    <li><strong>Phase 2 — Interrupt combos early.</strong> Identify Rapid Coil (spinning animation) and Ghoststep through the first hit. Count the 5 hits and punish the 2-second end-lag. Avoid poison pools. Use consumables if stacks reach 3.</li>
+  </ol>
+
+  <div class="tip-block">
+    <strong>Speedrunner Trick:</strong> If you have the Steel Thread Phantom Edge, use it immediately at the start of Phase 2. The immobilization prevents her from casting Venom's Release, letting you skip the transition poison pool entirely. This saves 15-20 seconds and avoids the most dangerous positioning constraint of Phase 2.
+  </div>
+
+  <h2>Common Mistakes</h2>
+  <ul>
+    <li><strong>Letting her control distance:</strong> Snake Sovereign is most dangerous at mid-range. If you let her create space, you will eat whip attacks and poison projectiles. Chase her constantly.</li>
+    <li><strong>Trying to out-defend her:</strong> This is not a fight for Defensive Parry Master. She has too many Killer Moves and too much speed. Aggression beats patience here.</li>
+    <li><strong>Ignoring poison stacks:</strong> 3 poison stacks ticking while you fight is a death sentence. Use Antidote or Blood Sigil at 2 stacks. Do not wait for 3.</li>
+    <li><strong>Attacking during Rapid Coil:</strong> The spinning hitbox covers 360 degrees. Even if you are behind her, the tail hits you. Only punish the end-lag, not the active frames.</li>
+  </ul>
+
+  <h2>Rewards</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Type</th><th>Guaranteed?</th></tr></thead>
+    <tbody>
+      <tr><td>Snake Sovereign's Scale</td><td>Weapon Evolution Material</td><td>Yes (first kill)</td></tr>
+      <tr><td>Phantom Essence x3</td><td>Upgrade Material</td><td>Yes</td></tr>
+      <tr><td>Primal Shard x2</td><td>Upgrade Material</td><td>Yes</td></tr>
+      <tr><td>Venomous Fang</td><td>Accessory (+10% poison resistance, +5% attack speed)</td><td>Rare drop (20% chance)</td></tr>
+    </tbody>
+  </table>
+
+</div>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <h3>PB Zero Wiki</h3>
+      <p>PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME. All game assets and trademarks belong to their respective owners.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="/">Home</a>
+      <a href="../weapons">Weapons</a>
+      <a href="../builds">Builds</a>
+      <a href="../bosses">Bosses</a>
+      <a href="../guides">Guides</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="../guides/sha-chi-system">Sha-Chi System</a>
+      <a href="../guides/parry-timing-guide">Parry Guide</a>
+      <a href="../guides/weapon-evolution-paths">Weapon Evolution</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="../privacy">Privacy Policy</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bottom">PB Zero Wiki is a fan-made resource. Phantom Blade Zero is developed by S-GAME.</div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
+</body>
+</html>
