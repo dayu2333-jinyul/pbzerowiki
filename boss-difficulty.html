@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/boss-difficulty">
+  <meta name="description" content="Phantom Blade Zero boss difficulty ranking 2026 — all bosses ranked from easiest to hardest with difficulty scores, recommended level, phase count, and best weapon matchups.">
+  <title>Phantom Blade Zero Boss Difficulty Ranking 2026 — Hardest Bosses Ranked</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Boss Difficulty Ranking 2026","description":"Complete Phantom Blade Zero boss difficulty ranking: all bosses scored by attack complexity, damage output, phase mechanics, and parry difficulty. Find the easiest boss order.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-11","dateModified":"2026-06-11","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/boss-difficulty"}}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Boss Difficulty Ranking 2026">
+  <meta property="og:description" content="All bosses ranked from easiest to hardest — difficulty scores, recommended levels, phase counts, and best weapon counters.">
+  <meta property="og:url" content="https://pbzerowiki.com/boss-difficulty">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Boss Difficulty Ranking 2026">
+  <meta name="twitter:description" content="All Phantom Blade Zero bosses ranked by difficulty — find the easiest path.">
+  <script defer src="js/analytics.js"></script>
+  <style>
+    .diff-section { margin:32px 0; }
+    .diff-header { display:flex;align-items:center;gap:16px;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid rgba(255,255,255,0.06); }
+    .diff-badge { width:64px;height:64px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:800;color:#fff;flex-shrink:0; }
+    .diff-extreme .diff-badge { background:linear-gradient(135deg,#c0392b,#96281b); }
+    .diff-hard .diff-badge { background:linear-gradient(135deg,#e74c3c,#c0392b); }
+    .diff-moderate .diff-badge { background:linear-gradient(135deg,#f39c12,#e67e22); }
+    .diff-label { font-size:20px;font-weight:700;color:var(--color-text-heading); }
+    .diff-sub { font-size:13px;color:var(--color-text-muted); }
+    .boss-ranking-card { background:var(--color-surface);border:1px solid #2a2a3a;border-radius:12px;padding:24px;margin-bottom:20px;transition:border-color 0.2s; }
+    .boss-ranking-card:hover { border-color:var(--color-primary); }
+    .boss-rank-header { display:flex;align-items:center;gap:16px;margin-bottom:14px; }
+    .rank-num { font-size:32px;font-weight:800;color:var(--color-primary);min-width:48px; }
+    .boss-info h3 { margin:0 0 4px;font-size:18px;color:var(--color-text-heading); }
+    .boss-info .subtitle { font-size:13px;color:var(--color-text-muted); }
+    .diff-meter { display:flex;align-items:center;gap:10px;margin:12px 0; }
+    .diff-meter label { font-size:12px;color:var(--color-text-muted);width:80px;text-align:right;flex-shrink:0; }
+    .diff-bar { flex:1;height:8px;background:rgba(255,255,255,0.06);border-radius:4px;overflow:hidden; }
+    .diff-fill { height:100%;border-radius:4px; }
+    .diff-fill.grade-extreme { background:linear-gradient(90deg,#c0392b,#e74c3c); }
+    .diff-fill.grade-hard { background:linear-gradient(90deg,#e74c3c,#f39c12); }
+    .diff-fill.grade-moderate { background:linear-gradient(90deg,#f39c12,#2ecc71); }
+    .diff-score { font-size:14px;font-weight:700;color:var(--color-primary);min-width:36px;text-align:right; }
+    .stat-chips { display:flex;gap:10px;flex-wrap:wrap;margin:14px 0; }
+    .stat-chip { padding:6px 14px;border-radius:14px;font-size:12px;font-weight:600;border:1px solid #2a2a3a; }
+    .stat-chip.phase { background:rgba(155,89,182,0.1);color:var(--color-primary-hover); }
+    .stat-chip.level { background:rgba(52,152,219,0.1);color:#3498db; }
+    .stat-chip.weapon { background:rgba(46,204,113,0.1);color:var(--color-success); }
+    .rec-link { color:var(--color-primary);text-decoration:none;font-weight:600; }
+    .rec-link:hover { text-decoration:underline; }
+    .overview-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin:24px 0; }
+    .overview-card { background:var(--color-surface);border:1px solid #2a2a3a;border-radius:10px;padding:18px;text-align:center; }
+    .overview-card .o-icon { font-size:24px;margin-bottom:4px; }
+    .overview-card .o-val { font-size:22px;font-weight:700;color:var(--color-primary); }
+    .overview-card .o-lbl { font-size:12px;color:var(--color-text-muted);margin-top:4px; }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="weapons">Weapons</a>
+    <a href="weapon-tier-list">Tier List</a>
+    <a href="builds">Builds</a>
+    <a href="bosses">Bosses</a>
+    <a href="boss-difficulty" class="active">Boss Difficulty</a>
+    <a href="guides">Guides</a>
+    <a href="faq">FAQ</a>
+    <a href="beginner-guide">Beginner Guide</a>
+    <a href="search">Search</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">👹 Difficulty Ranked</div>
+  <h1>Boss Difficulty Ranking</h1>
+  <p>Every Phantom Blade Zero boss ranked by difficulty. Recommended levels, phase counts, and optimal weapon matchups for every fight.</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="bosses">Bosses</a> / Difficulty Ranking</div>
+
+  <div class="overview-grid">
+    <div class="overview-card"><div class="o-icon">🔥</div><div class="o-val">4</div><div class="o-lbl">Total Bosses</div></div>
+    <div class="overview-card"><div class="o-icon">💀</div><div class="o-val">7.6</div><div class="o-lbl">Avg Difficulty /10</div></div>
+    <div class="overview-card"><div class="o-icon">⚔️</div><div class="o-val">Lv 30</div><div class="o-lbl">Avg Rec. Level</div></div>
+    <div class="overview-card"><div class="o-icon">🕐</div><div class="o-val">3</div><div class="o-lbl">Avg Phases</div></div>
+  </div>
+
+  <p>Difficulty scored on <strong>attack complexity (30%) + damage output (25%) + phase mechanics (25%) + parry difficulty (20%)</strong>. Based on community consensus and playtester data.</p>
+
+  <!-- EXTREME -->
+  <div class="diff-section diff-extreme">
+    <div class="diff-header"><div class="diff-badge">💀</div><div><div class="diff-label">Extreme Difficulty</div><div class="diff-sub">Endgame challenges requiring maxed gear, perfect parry timing, and full Sha-Chi mastery.</div></div></div>
+    <div class="boss-ranking-card">
+      <div class="boss-rank-header"><div class="rank-num">#1</div><div class="boss-info"><h3>Inverse Heaven</h3><div class="subtitle">Final Boss · True Ending</div></div></div>
+      <div class="stat-chips"><span class="stat-chip phase">⚡ 4 Phases</span><span class="stat-chip level">📊 Rec. Level 45+</span><span class="stat-chip weapon">⚔️ <a href="weapons" class="rec-link">Flame Tongue</a> or <a href="weapons" class="rec-link">Phoenix Wing</a></span></div>
+      <div class="diff-meter"><label>Difficulty</label><div class="diff-bar"><div class="diff-fill grade-extreme" style="width:95%;"></div></div><span class="diff-score">9.5/10</span></div>
+      <p style="font-size:14px;color:var(--color-text-muted);line-height:1.6;">Four distinct phases: celestial bullet hell, shadow clone army, reality-warping hazards, and a final duel with no healing windows. Phase 3 demands <strong>perfect Ghoststep timing</strong> through 8 consecutive unblockable attacks. Bring maxed Flame Tongue for bleed burst in Phase 2, or Phoenix Wing for sustained DPS in Phase 4's damage race. <a href="bosses/inverse-heaven">→ Full guide</a></p>
+    </div>
+  </div>
+
+  <!-- HARD -->
+  <div class="diff-section diff-hard">
+    <div class="diff-header"><div class="diff-badge">⚔️</div><div><div class="diff-label">Hard Difficulty</div><div class="diff-sub">Major story bosses with complex mechanics. Requires solid parry fundamentals and build optimization.</div></div></div>
+    <div class="boss-ranking-card">
+      <div class="boss-rank-header"><div class="rank-num">#2</div><div class="boss-info"><h3>Seven Judgments</h3><div class="subtitle">Mid-Game Gatekeeper · Story Boss</div></div></div>
+      <div class="stat-chips"><span class="stat-chip phase">⚡ 3 Phases</span><span class="stat-chip level">📊 Rec. Level 30</span><span class="stat-chip weapon">⚔️ <a href="weapons" class="rec-link">Jagged Steel</a> or <a href="weapons" class="rec-link">Ironbreaker</a></span></div>
+      <div class="diff-meter"><label>Difficulty</label><div class="diff-bar"><div class="diff-fill grade-hard" style="width:80%;"></div></div><span class="diff-score">8.0/10</span></div>
+      <p style="font-size:14px;color:var(--color-text-muted);line-height:1.6;">The skill check. Seven attack strings with different parry timings. Phase 2 adds a <strong>Brutal Move grab combo</strong> that one-shots under-leveled players. Phase 3's arena floods with Sha-Chi mist that drains your bar — forces aggressive play. Jagged Steel's bleed buildup ideal for mist phase. <a href="bosses/seven-judgments">→ Full guide</a></p>
+    </div>
+    <div class="boss-ranking-card">
+      <div class="boss-rank-header"><div class="rank-num">#3</div><div class="boss-info"><h3>Snake Sovereign</h3><div class="subtitle">Poison Arena · Optional Boss</div></div></div>
+      <div class="stat-chips"><span class="stat-chip phase">⚡ 3 Phases</span><span class="stat-chip level">📊 Rec. Level 28</span><span class="stat-chip weapon">⚔️ <a href="weapons" class="rec-link">Serpent Fang</a> or <a href="weapons" class="rec-link">Twilight Spear</a></span></div>
+      <div class="diff-meter"><label>Difficulty</label><div class="diff-bar"><div class="diff-fill grade-hard" style="width:72%;"></div></div><span class="diff-score">7.2/10</span></div>
+      <p style="font-size:14px;color:var(--color-text-muted);line-height:1.6;">Poison swamp arena — constant HP drain forces a DPS race. Phase 2 tracking poison orbs while maintaining damage. Phase 3 boss <strong>goes underground</strong> for ambush attacks. Spear weapons safest; Serpent Fang's toxin resist passive trivializes the poison. <a href="bosses/snake-sovereign">→ Full guide</a></p>
+    </div>
+  </div>
+
+  <!-- MODERATE -->
+  <div class="diff-section diff-moderate">
+    <div class="diff-header"><div class="diff-badge">🗿</div><div><div class="diff-label">Moderate Difficulty</div><div class="diff-sub">Early to mid-game encounters. Challenging for new players but learnable.</div></div></div>
+    <div class="boss-ranking-card">
+      <div class="boss-rank-header"><div class="rank-num">#4</div><div class="boss-info"><h3>Ogre Hammer Lord</h3><div class="subtitle">Early-Game Wall · Required</div></div></div>
+      <div class="stat-chips"><span class="stat-chip phase">⚡ 2 Phases</span><span class="stat-chip level">📊 Rec. Level 15</span><span class="stat-chip weapon">⚔️ <a href="weapons" class="rec-link">Venomous Softblade</a> or <a href="weapons" class="rec-link">Crescent Moon</a></span></div>
+      <div class="diff-meter"><label>Difficulty</label><div class="diff-bar"><div class="diff-fill grade-moderate" style="width:55%;"></div></div><span class="diff-score">5.5/10</span></div>
+      <p style="font-size:14px;color:var(--color-text-muted);line-height:1.6;">The first real test. Telegraphed swings make parry timing easy to learn, but damage is punishing if you miss. Phase 2 <strong>enrage timer</strong> — if the fight drags, the boss gains +30% damage and speed. Venomous Softblade's extended parry frames make this much more forgiving. <a href="bosses/ogre-hammer-lord">→ Full guide</a></p>
+    </div>
+  </div>
+
+  <h2>Recommended Boss Order (Easiest Path)</h2>
+  <ol>
+    <li><strong>Ogre Hammer Lord</strong> (Lv 15) — Learn parry fundamentals</li>
+    <li><strong>Snake Sovereign</strong> (Lv 28) — Get toxin-resist gear first</li>
+    <li><strong>Seven Judgments</strong> (Lv 30) — The skill check, expect 10-20 attempts</li>
+    <li><strong>Inverse Heaven</strong> (Lv 45+) — Endgame, maxed gear and 20+ heals</li>
+  </ol>
+
+  <h2>How We Score Bosses</h2>
+  <ul>
+    <li><strong>Attack Pattern Complexity (30%)</strong> — Number of unique attacks, mixups, and tells</li>
+    <li><strong>Damage Output (25%)</strong> — How many hits to kill at recommended level</li>
+    <li><strong>Phase Mechanics (25%)</strong> — Gimmick difficulty, phase transition hazards</li>
+    <li><strong>Parry/Counter Difficulty (20%)</strong> — Tightness of parry windows, unblockable attack count</li>
+  </ul>
+
+  <p style="margin-top:24px;"><a href="bosses">← Back to all boss guides</a></p>
+</div>
+
+<footer>
+  <div class="content">
+    <p><a href="/">Home</a> · <a href="weapons">Weapons</a> · <a href="weapon-tier-list">Tier List</a> · <a href="boss-difficulty">Boss Difficulty</a> · <a href="about">About</a> · <a href="privacy">Privacy</a> · <a href="contact">Contact</a></p>
+    <p style="font-size:12px;color:var(--color-text-muted);">PB Zero Wiki is a fan-made resource. Phantom Blade Zero © S-GAME.</p>
+  </div>
+</footer>
+<script src="js/nav.js"></script>
+</body>
+</html>

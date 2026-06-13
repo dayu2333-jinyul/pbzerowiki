@@ -32,7 +32,7 @@
       margin: 20px 0 32px;
       transition: border-color 0.2s;
     }
-    .vs-card:hover { border-color: #ff6b35; }
+    .vs-card:hover { border-color: var(--color-primary); }
     .vs-card-head {
       padding: 20px 24px 12px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -46,7 +46,7 @@
       padding: 14px 18px;
       margin: 14px 0;
     }
-    .verdict-box strong { color: #ff6b35; }
+    .verdict-box strong { color: var(--color-primary); }
     .game-tag {
       display: inline-block;
       font-size: 11px;
@@ -54,9 +54,9 @@
       padding: 2px 10px;
       border-radius: 8px;
     }
-    .game-tag.pbz { background: rgba(255,107,53,0.15); color: #ff6b35; }
+    .game-tag.pbz { background: rgba(255,107,53,0.15); color: var(--color-primary); }
     .game-tag.wukong { background: rgba(0,150,255,0.15); color: #0096ff; }
-    .game-tag.sekiro { background: rgba(231,76,60,0.15); color: #e74c3c; }
+    .game-tag.sekiro { background: rgba(231,76,60,0.15); color: var(--color-danger); }
   </style>
 </head>
 <body>
@@ -182,30 +182,30 @@
   <h2>Which Game Should You Play?</h2>
 
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:20px; text-align:center;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:20px; text-align:center;">
       <div style="font-size:36px; margin-bottom:8px;">&#128170;</div>
-      <h3 style="color:#ff6b35; margin:0 0 8px; border:none;">Play Phantom Blade Zero if...</h3>
-      <ul style="text-align:left; color:#a0a0b0; font-size:13px;">
+      <h3 style="color:var(--color-primary); margin:0 0 8px; border:none;">Play Phantom Blade Zero if...</h3>
+      <ul style="text-align:left; color:var(--color-text-muted); font-size:13px;">
         <li>You want maximum build variety and replayability</li>
         <li>You appreciate Wuxia aesthetics with a dark fantasy twist</li>
         <li>You like having difficulty options to tailor the challenge</li>
         <li>You want fast, combo-driven action (Ninja Gaiden style)</li>
       </ul>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:20px; text-align:center;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:20px; text-align:center;">
       <div style="font-size:36px; margin-bottom:8px;">&#128585;</div>
       <h3 style="color:#0096ff; margin:0 0 8px; border:none;">Play Black Myth if...</h3>
-      <ul style="text-align:left; color:#a0a0b0; font-size:13px;">
+      <ul style="text-align:left; color:var(--color-text-muted); font-size:13px;">
         <li>You prefer dodge-focused combat over parry mechanics</li>
         <li>You enjoy spectacle boss fights cinematic design</li>
         <li>You want to explore a rich Journey to the West adaptation</li>
         <li>You want a finished, polished game available now</li>
       </ul>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:20px; text-align:center;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:20px; text-align:center;">
       <div style="font-size:36px; margin-bottom:8px;">&#128481;</div>
-      <h3 style="color:#e74c3c; margin:0 0 8px; border:none;">Play Sekiro if...</h3>
-      <ul style="text-align:left; color:#a0a0b0; font-size:13px;">
+      <h3 style="color:var(--color-danger); margin:0 0 8px; border:none;">Play Sekiro if...</h3>
+      <ul style="text-align:left; color:var(--color-text-muted); font-size:13px;">
         <li>You want the tightest, most rewarding parry system in gaming</li>
         <li>You enjoy FromSoftware's environmental storytelling</li>
         <li>You do not mind a fixed, uncompromising difficulty</li>

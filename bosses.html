@@ -32,7 +32,7 @@
       margin: 24px 0 32px;
       transition: border-color 0.2s;
     }
-    .boss-card:hover { border-color: #ff6b35; }
+    .boss-card:hover { border-color: var(--color-primary); }
     .boss-card-header {
       padding: 24px 24px 16px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -42,7 +42,7 @@
     .boss-card-header h2 { margin: 0; border-left: none; padding-left: 0; display: flex; align-items: center; gap: 10px; }
     .boss-card-header .toggle-icon {
       font-size: 14px;
-      color: #888;
+      color: var(--color-text-muted);
       transition: transform 0.2s;
       margin-left: auto;
     }
@@ -66,27 +66,27 @@
     }
     .boss-meta-item {
       font-size: 12px;
-      color: #888;
+      color: var(--color-text-muted);
       padding: 4px 12px;
       border-radius: 12px;
       border: 1px solid #2a2a3a;
     }
-    .boss-meta-item strong { color: #e0e0e0; }
+    .boss-meta-item strong { color: var(--color-text); }
 
     .phase-block {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px 18px;
       margin: 12px 0;
     }
-    .phase-block h4 { color: #ff6b35; margin: 0 0 8px; font-size: 15px; }
+    .phase-block h4 { color: var(--color-primary); margin: 0 0 8px; font-size: 15px; }
 
     .attack-table { margin: 10px 0; }
     .attack-table table { margin: 6px 0 0; font-size: 13px; }
     .attack-table table th { font-size: 11px; }
     .attack-brutal { display: inline-block; background: rgba(52,152,219,0.15); color: #3498db; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
-    .attack-killer { display: inline-block; background: rgba(231,76,60,0.15); color: #e74c3c; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .attack-killer { display: inline-block; background: rgba(231,76,60,0.15); color: var(--color-danger); padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
 
     .rec-build-box {
       background: rgba(255,107,53,0.06);
@@ -95,7 +95,7 @@
       padding: 14px 18px;
       margin: 12px 0;
     }
-    .rec-build-box strong { color: #ff6b35; }
+    .rec-build-box strong { color: var(--color-primary); }
 
     .key-tip {
       background: rgba(46,204,113,0.06);
@@ -105,7 +105,7 @@
       margin: 12px 0;
       font-size: 14px;
     }
-    .key-tip strong { color: #2ecc71; }
+    .key-tip strong { color: var(--color-success); }
   </style>
 </head>
 <body>
@@ -126,7 +126,8 @@
     <a href="beginner-guide">Beginner Guide</a>
     <a href="requirements">Requirements</a>
     <a href="search">Search</a>
-    <a href="weapon-compare">Compare Weapons</a>
+    <a href="boss-difficulty">Boss Difficulty</a>
+    <a href="about">About</a>
   </div>
 </nav>
 
@@ -335,36 +336,36 @@
 
   <h2>General Boss Tips</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
       <span style="font-size:24px; display:block; margin-bottom:6px;">&#128737;</span>
-      <strong style="color:#ff6b35;">Blue Flash = Parry</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Brutal Moves have a blue flash indicator. Parry these to drain enemy Sha-Chi and create openings. Every boss uses them at predictable HP thresholds.</p>
+      <strong style="color:var(--color-primary);">Blue Flash = Parry</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Brutal Moves have a blue flash indicator. Parry these to drain enemy Sha-Chi and create openings. Every boss uses them at predictable HP thresholds.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
       <span style="font-size:24px; display:block; margin-bottom:6px;">&#9889;</span>
-      <strong style="color:#ff6b35;">Red Flash = Ghoststep</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Killer Moves have a red flash. Never parry these -- dodge to trigger Ghoststep, teleporting behind the boss for a free combo window.</p>
+      <strong style="color:var(--color-primary);">Red Flash = Ghoststep</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Killer Moves have a red flash. Never parry these -- dodge to trigger Ghoststep, teleporting behind the boss for a free combo window.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
       <span style="font-size:24px; display:block; margin-bottom:6px;">&#9201;</span>
-      <strong style="color:#ff6b35;">Phase Transitions</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Most bosses are invulnerable during phase transitions. Use this time to heal, reposition, and swap Phantom Edges. Don't waste Sha-Chi trying to hit through immunity.</p>
+      <strong style="color:var(--color-primary);">Phase Transitions</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Most bosses are invulnerable during phase transitions. Use this time to heal, reposition, and swap Phantom Edges. Don't waste Sha-Chi trying to hit through immunity.</p>
     </div>
   </div>
 
   <h2>Related Pages</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:16px 0;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="builds" style="color:#ff6b35; font-weight:700; text-decoration:none;">Build Guides</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Recommended builds for each boss encounter.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="builds" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Build Guides</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Recommended builds for each boss encounter.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="enemies" style="color:#ff6b35; font-weight:700; text-decoration:none;">Enemy Guide</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Regular enemies and mini-bosses leading up to each boss.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="enemies" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Enemy Guide</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Regular enemies and mini-bosses leading up to each boss.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="endings" style="color:#ff6b35; font-weight:700; text-decoration:none;">Endings Guide</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">How boss choices affect your ending path.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="endings" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Endings Guide</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">How boss choices affect your ending path.</p>
     </div>
   </div>
 </div>

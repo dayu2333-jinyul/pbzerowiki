@@ -32,7 +32,7 @@
       margin: 24px 0 32px;
       transition: border-color 0.2s;
     }
-    .boss-section:hover { border-color: #ff6b35; }
+    .boss-section:hover { border-color: var(--color-primary); }
     .boss-section-head {
       padding: 20px 24px 12px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -41,13 +41,13 @@
     .boss-section-body { padding: 18px 24px; }
 
     .phase-box {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 14px 18px;
       margin: 10px 0;
     }
-    .phase-box h4 { color: #ff6b35; margin: 0 0 6px; font-size: 15px; }
+    .phase-box h4 { color: var(--color-primary); margin: 0 0 6px; font-size: 15px; }
 
     .tip-block {
       background: rgba(255,107,53,0.06);
@@ -56,10 +56,10 @@
       margin: 14px 0;
       border-radius: 0 6px 6px 0;
     }
-    .tip-block strong { color: #ff6b35; }
+    .tip-block strong { color: var(--color-primary); }
 
     .atk-brutal { display: inline-block; background: rgba(52,152,219,0.15); color: #3498db; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
-    .atk-killer { display: inline-block; background: rgba(231,76,60,0.15); color: #e74c3c; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .atk-killer { display: inline-block; background: rgba(231,76,60,0.15); color: var(--color-danger); padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
 
     .build-box {
       background: rgba(255,107,53,0.06);
@@ -68,7 +68,7 @@
       padding: 12px 16px;
       margin: 12px 0;
     }
-    .build-box strong { color: #ff6b35; }
+    .build-box strong { color: var(--color-primary); }
 
     .key-tip {
       background: rgba(46,204,113,0.06);
@@ -78,7 +78,7 @@
       margin: 12px 0;
       font-size: 14px;
     }
-    .key-tip strong { color: #2ecc71; }
+    .key-tip strong { color: var(--color-success); }
 
     .danger-box {
       background: rgba(231,76,60,0.06);
@@ -87,7 +87,7 @@
       padding: 12px 16px;
       margin: 12px 0;
     }
-    .danger-box strong { color: #e74c3c; }
+    .danger-box strong { color: var(--color-danger); }
   </style>
 </head>
 <body>
@@ -148,7 +148,7 @@
   <div class="boss-section">
     <div class="boss-section-head">
       <h2>Phase 1 — Serpent's Coil</h2>
-      <p style="color:#888;margin:4px 0 0;font-size:13px;">HP: 100% - 50%</p>
+      <p style="color:var(--color-text-muted);margin:4px 0 0;font-size:13px;">HP: 100% - 50%</p>
     </div>
     <div class="boss-section-body">
       <p>Phase 1 features fast whip strikes and tail sweeps from unpredictable angles. Snake Sovereign is highly mobile in this phase, frequently leaping backward to create distance. Your primary goal is to close that distance and stay in her face — her whip attacks have a minimum effective range, and she struggles to hit targets that are within melee distance.</p>
@@ -179,7 +179,7 @@
   <div class="boss-section">
     <div class="boss-section-head">
       <h2>Phase 2 — Venom's Release</h2>
-      <p style="color:#888;margin:4px 0 0;font-size:13px;">HP: 50% - 0%</p>
+      <p style="color:var(--color-text-muted);margin:4px 0 0;font-size:13px;">HP: 50% - 0%</p>
     </div>
     <div class="boss-section-body">
       <p>Below 50% HP, Snake Sovereign gains poison AoE abilities and a devastating multi-hit combo. Her attack strings are longer (4-6 hits instead of 2-3), and she chains attacks together with minimal recovery between them. Quick parries are essential to interrupt her combos before they complete — a full Rapid Coil combo (5 hits) deals roughly 60% of your HP.</p>

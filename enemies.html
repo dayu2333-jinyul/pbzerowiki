@@ -43,24 +43,24 @@
       gap: 14px;
     }
     .enemy-card {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px 18px;
     }
-    .enemy-card h4 { color: #e0e0e0; margin: 0 0 4px; font-size: 15px; }
+    .enemy-card h4 { color: var(--color-text); margin: 0 0 4px; font-size: 15px; }
     .enemy-card .enemy-type {
       font-size: 11px;
       font-weight: 600;
     }
-    .type-common { color: #888; }
-    .type-elite { color: #9b59b6; }
-    .type-miniboss { color: #e74c3c; }
-    .enemy-card p { color: #888; font-size: 13px; margin: 6px 0 0; line-height: 1.5; }
+    .type-common { color: var(--color-text-muted); }
+    .type-elite { color: var(--color-primary-hover); }
+    .type-miniboss { color: var(--color-danger); }
+    .enemy-card p { color: var(--color-text-muted); font-size: 13px; margin: 6px 0 0; line-height: 1.5; }
     .enemy-weakness {
       display: inline-block;
       background: rgba(46,204,113,0.1);
-      color: #2ecc71;
+      color: var(--color-success);
       padding: 2px 8px;
       border-radius: 6px;
       font-size: 11px;
@@ -217,17 +217,17 @@
 
   <h2>Farming Tips</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:#ff6b35;">Material Farming</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Best spot: Order's Bastion courtyard. 6 elite Order Sentinels respawn on rest. Each drops Iron Ore consistently.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:var(--color-primary);">Material Farming</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Best spot: Order's Bastion courtyard. 6 elite Order Sentinels respawn on rest. Each drops Iron Ore consistently.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:#ff6b35;">XP Farming</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Best spot: Serpent's Maw Swamp east path. Dense pack of 8 Serpent Soldiers + 2 Toxic Spitters in a corridor. Clear in 45 seconds.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:var(--color-primary);">XP Farming</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Best spot: Serpent's Maw Swamp east path. Dense pack of 8 Serpent Soldiers + 2 Toxic Spitters in a corridor. Clear in 45 seconds.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:#ff6b35;">Rare Drops</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Phantom Essence (legendary material) drops from elite enemies on Hard+ difficulty. Farm Order Commanders in Bastion's throne room.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:var(--color-primary);">Rare Drops</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Phantom Essence (legendary material) drops from elite enemies on Hard+ difficulty. Farm Order Commanders in Bastion's throne room.</p>
     </div>
   </div>
 

@@ -32,7 +32,7 @@
       margin: 24px 0 32px;
       transition: border-color 0.2s;
     }
-    .build-entry:hover { border-color: #ff6b35; }
+    .build-entry:hover { border-color: var(--color-primary); }
     .build-entry-head {
       padding: 20px 24px 12px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -47,11 +47,11 @@
       font-weight: 600;
       margin-right: 6px;
     }
-    .build-tag.offensive { background: rgba(231,76,60,0.15); color: #e74c3c; }
+    .build-tag.offensive { background: rgba(231,76,60,0.15); color: var(--color-danger); }
     .build-tag.defensive { background: rgba(52,152,219,0.15); color: #3498db; }
-    .build-tag.hybrid { background: rgba(155,89,182,0.15); color: #9b59b6; }
-    .build-tag.difficulty { background: rgba(241,196,15,0.15); color: #f1c40f; }
-    .build-tag.rank1 { background: rgba(255,215,0,0.15); color: #ffd700; }
+    .build-tag.hybrid { background: rgba(155,89,182,0.15); color: var(--color-primary-hover); }
+    .build-tag.difficulty { background: rgba(241,196,15,0.15); color: var(--color-warning); }
+    .build-tag.rank1 { background: rgba(255,215,0,0.15); color: var(--color-warning); }
     .slot-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -59,13 +59,13 @@
       margin: 14px 0;
     }
     .slot-item {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 12px 14px;
     }
-    .slot-item h4 { color: #ff6b35; font-size: 13px; margin: 0 0 4px; }
-    .slot-item p { color: #a0a0b0; font-size: 12px; margin: 0; }
+    .slot-item h4 { color: var(--color-primary); font-size: 13px; margin: 0 0 4px; }
+    .slot-item p { color: var(--color-text-muted); font-size: 12px; margin: 0; }
     .tip-block {
       background: rgba(255,107,53,0.06);
       border-left: 3px solid #ff6b35;
@@ -73,7 +73,7 @@
       margin: 14px 0;
       border-radius: 0 6px 6px 0;
     }
-    .tip-block strong { color: #ff6b35; }
+    .tip-block strong { color: var(--color-primary); }
   </style>
 </head>
 <body>
@@ -94,7 +94,9 @@
     <a href="beginner-guide">Beginner Guide</a>
     <a href="requirements">Requirements</a>
     <a href="search">Search</a>
-    <a href="weapon-compare">Compare Weapons</a>
+    <a href="weapon-tier-list">Tier List</a>
+    <a href="boss-difficulty">Boss Difficulty</a>
+    <a href="about">About</a>
   </div>
 </nav>
 
@@ -109,6 +111,19 @@
 
   <h2>Overview</h2>
   <p>Phantom Blade Zero's build system revolves around your choice of primary weapons, Phantom Edges, and Sha-Chi management strategy. With 30+ weapons and 20+ Phantom Edges, the combinations are nearly endless — but the community has settled on five archetypes that cover every playstyle. Each build entry below includes the exact loadout, skill tree priorities, boss matchup ratings, and the gameplay loop you should follow.</p>
+
+  <h2>Build Score Comparison</h2>
+  <p>Each build scored on <strong>DPS Output (30%) + Survivability (25%) + Ease of Use (20%) + Boss Coverage (25%)</strong>. Scores reflect performance at optimal gear level against all boss types.</p>
+  <table style="width:100%;border-collapse:collapse;background:var(--color-surface);border:1px solid #2a2a3a;border-radius:10px;overflow:hidden;margin:20px 0 32px;">
+    <thead><tr style="background:rgba(255,255,255,0.03);"><th style="padding:12px 16px;text-align:left;font-size:12px;color:var(--color-text-muted);text-transform:uppercase;">Rank</th><th style="padding:12px 16px;text-align:left;font-size:12px;color:var(--color-text-muted);text-transform:uppercase;">Build</th><th style="padding:12px 16px;text-align:center;font-size:12px;color:var(--color-text-muted);text-transform:uppercase;">DPS</th><th style="padding:12px 16px;text-align:center;font-size:12px;color:var(--color-text-muted);text-transform:uppercase;">Survivability</th><th style="padding:12px 16px;text-align:center;font-size:12px;color:var(--color-text-muted);text-transform:uppercase;">Ease of Use</th><th style="padding:12px 16px;text-align:center;font-size:12px;color:var(--color-text-muted);text-transform:uppercase;">Boss Coverage</th><th style="padding:12px 16px;text-align:center;font-size:12px;color:var(--color-text-muted);text-transform:uppercase;">Overall</th></tr></thead>
+    <tbody>
+      <tr style="border-top:1px solid rgba(255,255,255,0.04);"><td style="padding:12px 16px;font-weight:700;color:var(--color-warning);">#1</td><td style="padding:12px 16px;font-weight:600;color:var(--color-text);">Hybrid Flex</td><td style="padding:12px 16px;text-align:center;">82</td><td style="padding:12px 16px;text-align:center;">85</td><td style="padding:12px 16px;text-align:center;color:var(--color-success);font-weight:700;">90</td><td style="padding:12px 16px;text-align:center;">88</td><td style="padding:12px 16px;text-align:center;color:var(--color-primary);font-weight:700;">86</td></tr>
+      <tr style="border-top:1px solid rgba(255,255,255,0.04);"><td style="padding:12px 16px;font-weight:700;color:#c0c0c0;">#2</td><td style="padding:12px 16px;font-weight:600;color:var(--color-text);">Aggressive Chi Rush</td><td style="padding:12px 16px;text-align:center;color:var(--color-danger);font-weight:700;">95</td><td style="padding:12px 16px;text-align:center;">50</td><td style="padding:12px 16px;text-align:center;">55</td><td style="padding:12px 16px;text-align:center;">60</td><td style="padding:12px 16px;text-align:center;color:var(--color-primary);font-weight:700;">72</td></tr>
+      <tr style="border-top:1px solid rgba(255,255,255,0.04);"><td style="padding:12px 16px;font-weight:700;color:#cd7f32;">#3</td><td style="padding:12px 16px;font-weight:600;color:var(--color-text);">Defensive Parry Master</td><td style="padding:12px 16px;text-align:center;">65</td><td style="padding:12px 16px;text-align:center;color:var(--color-success);font-weight:700;">92</td><td style="padding:12px 16px;text-align:center;">70</td><td style="padding:12px 16px;text-align:center;">82</td><td style="padding:12px 16px;text-align:center;color:var(--color-primary);font-weight:700;">76</td></tr>
+      <tr style="border-top:1px solid rgba(255,255,255,0.04);"><td style="padding:12px 16px;font-weight:700;color:var(--color-text-muted);">#4</td><td style="padding:12px 16px;font-weight:600;color:var(--color-text);">Bleed Build</td><td style="padding:12px 16px;text-align:center;">78</td><td style="padding:12px 16px;text-align:center;">65</td><td style="padding:12px 16px;text-align:center;">75</td><td style="padding:12px 16px;text-align:center;">70</td><td style="padding:12px 16px;text-align:center;color:var(--color-primary);font-weight:700;">72</td></tr>
+      <tr style="border-top:1px solid rgba(255,255,255,0.04);"><td style="padding:12px 16px;font-weight:700;color:var(--color-text-muted);">#5</td><td style="padding:12px 16px;font-weight:600;color:var(--color-text);">Fire Burst</td><td style="padding:12px 16px;text-align:center;">88</td><td style="padding:12px 16px;text-align:center;">45</td><td style="padding:12px 16px;text-align:center;">60</td><td style="padding:12px 16px;text-align:center;">55</td><td style="padding:12px 16px;text-align:center;color:var(--color-primary);font-weight:700;">65</td></tr>
+    </tbody>
+  </table>
 
   <h2>#1 Hybrid Flex — Best for Beginners</h2>
   <div class="build-entry">

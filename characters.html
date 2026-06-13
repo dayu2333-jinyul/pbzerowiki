@@ -37,7 +37,7 @@
       overflow: hidden;
       transition: border-color 0.2s;
     }
-    .char-card:hover { border-color: #ff6b35; }
+    .char-card:hover { border-color: var(--color-primary); }
     .char-card-header {
       padding: 18px 20px 12px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -49,7 +49,7 @@
       width: 44px;
       height: 44px;
       border-radius: 50%;
-      background: #14142a;
+      background: var(--color-surface);
       border: 2px solid #2a2a3a;
       display: flex;
       align-items: center;
@@ -57,10 +57,10 @@
       font-size: 22px;
       flex-shrink: 0;
     }
-    .char-name { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 2px; }
-    .char-role { font-size: 12px; color: #888; }
+    .char-name { font-size: 17px; font-weight: 700; color: var(--color-text-heading); margin-bottom: 2px; }
+    .char-role { font-size: 12px; color: var(--color-text-muted); }
     .char-card-body { padding: 14px 20px 18px; }
-    .char-desc { font-size: 13px; color: #a0a0b0; line-height: 1.6; margin: 0; }
+    .char-desc { font-size: 13px; color: var(--color-text-muted); line-height: 1.6; margin: 0; }
     .char-tag {
       display: inline-block;
       padding: 2px 10px;
@@ -69,11 +69,11 @@
       font-weight: 600;
       margin-top: 8px;
     }
-    .tag-protagonist { background: rgba(46,204,113,0.15); color: #2ecc71; }
+    .tag-protagonist { background: rgba(46,204,113,0.15); color: var(--color-success); }
     .tag-ally { background: rgba(52,152,219,0.15); color: #3498db; }
-    .tag-antagonist { background: rgba(231,76,60,0.15); color: #e74c3c; }
-    .tag-mystery { background: rgba(155,89,182,0.15); color: #9b59b6; }
-    .tag-neutral { background: rgba(241,196,15,0.15); color: #f1c40f; }
+    .tag-antagonist { background: rgba(231,76,60,0.15); color: var(--color-danger); }
+    .tag-mystery { background: rgba(155,89,182,0.15); color: var(--color-primary-hover); }
+    .tag-neutral { background: rgba(241,196,15,0.15); color: var(--color-warning); }
   </style>
 </head>
 <body>
@@ -233,9 +233,9 @@
   <h2>Character Relationships</h2>
   <p>The relationships between characters in Phantom Blade Zero are shaped by player choices. Dialogue options, side quest completions, and the order in which you pursue story objectives all affect how characters perceive Soul. Some characters can become allies or enemies based on seemingly minor decisions.</p>
 
-  <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px; margin:16px 0 32px;">
-    <strong style="color:#ff6b35;">&#128161; Relationship Tip:</strong>
-    <p style="color:#a0a0b0; font-size:14px; margin:8px 0 0;">Talk to every NPC after major story events. Their dialogue changes based on recent events, and some side quests are only available during specific time windows. Missing these can lock you out of certain endings.</p>
+  <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px; margin:16px 0 32px;">
+    <strong style="color:var(--color-primary);">&#128161; Relationship Tip:</strong>
+    <p style="color:var(--color-text-muted); font-size:14px; margin:8px 0 0;">Talk to every NPC after major story events. Their dialogue changes based on recent events, and some side quests are only available during specific time windows. Missing these can lock you out of certain endings.</p>
   </div>
 
   <p>For more on how character choices affect the game's conclusion, visit our <a href="endings">Endings Guide</a>. For a deeper look at the story's factions, check the <a href="story">Story & Lore</a> page.</p>

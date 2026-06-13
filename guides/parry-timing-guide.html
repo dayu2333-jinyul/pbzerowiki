@@ -32,7 +32,7 @@
       margin: 20px 0 24px;
       transition: border-color 0.2s;
     }
-    .guide-section:hover { border-color: #ff6b35; }
+    .guide-section:hover { border-color: var(--color-primary); }
     .guide-section-header {
       padding: 18px 22px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -45,14 +45,14 @@
     .guide-section-body { padding: 18px 22px; }
 
     .frame-box {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px;
       margin: 12px 0;
     }
-    .frame-box h4 { color: #ff6b35; font-size: 14px; margin: 0 0 6px; }
-    .frame-box p { color: #a0a0b0; font-size: 13px; margin: 0; line-height: 1.5; }
+    .frame-box h4 { color: var(--color-primary); font-size: 14px; margin: 0 0 6px; }
+    .frame-box p { color: var(--color-text-muted); font-size: 13px; margin: 0; line-height: 1.5; }
 
     .tip-block {
       background: rgba(255,107,53,0.06);
@@ -61,9 +61,9 @@
       margin: 14px 0;
       border-radius: 0 6px 6px 0;
       font-size: 14px;
-      color: #d0d0d0;
+      color: var(--color-text);
     }
-    .tip-block strong { color: #ff6b35; }
+    .tip-block strong { color: var(--color-primary); }
 
     .drill-card {
       background: rgba(46,204,113,0.06);
@@ -72,11 +72,11 @@
       padding: 14px 18px;
       margin: 12px 0;
     }
-    .drill-card h4 { color: #2ecc71; margin: 0 0 4px; font-size: 15px; }
-    .drill-card p { color: #a0a0b0; font-size: 13px; margin: 0; }
+    .drill-card h4 { color: var(--color-success); margin: 0 0 4px; font-size: 15px; }
+    .drill-card p { color: var(--color-text-muted); font-size: 13px; margin: 0; }
 
     .atk-brutal { display: inline-block; background: rgba(52,152,219,0.15); color: #3498db; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
-    .atk-killer { display: inline-block; background: rgba(231,76,60,0.15); color: #e74c3c; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .atk-killer { display: inline-block; background: rgba(231,76,60,0.15); color: var(--color-danger); padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
 
     .timeline-viz {
       display: flex;
@@ -92,10 +92,10 @@
       font-weight: 600;
       text-align: center;
     }
-    .tl-windup { background: rgba(241,196,15,0.15); color: #f1c40f; }
+    .tl-windup { background: rgba(241,196,15,0.15); color: var(--color-warning); }
     .tl-parry { background: rgba(52,152,219,0.2); color: #3498db; }
-    .tl-perfect { background: rgba(46,204,113,0.2); color: #2ecc71; }
-    .tl-recovery { background: rgba(149,165,166,0.15); color: #95a5a6; }
+    .tl-perfect { background: rgba(46,204,113,0.2); color: var(--color-success); }
+    .tl-recovery { background: rgba(149,165,166,0.15); color: var(--color-text-muted); }
   </style>
 </head>
 <body>

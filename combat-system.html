@@ -32,7 +32,7 @@
       margin: 24px 0 32px;
       transition: border-color 0.2s;
     }
-    .mech-card:hover { border-color: #ff6b35; }
+    .mech-card:hover { border-color: var(--color-primary); }
     .mech-card-head {
       padding: 20px 24px 12px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -49,8 +49,8 @@
       text-transform: uppercase;
       letter-spacing: 0.3px;
     }
-    .mech-tag.core { background: rgba(255,107,53,0.15); color: #ff6b35; }
-    .mech-tag.advanced { background: rgba(155,89,182,0.15); color: #9b59b6; }
+    .mech-tag.core { background: rgba(255,107,53,0.15); color: var(--color-primary); }
+    .mech-tag.advanced { background: rgba(155,89,182,0.15); color: var(--color-primary-hover); }
     .tip-block {
       background: rgba(255,107,53,0.06);
       border-left: 3px solid #ff6b35;
@@ -58,7 +58,7 @@
       margin: 14px 0;
       border-radius: 0 6px 6px 0;
     }
-    .tip-block strong { color: #ff6b35; }
+    .tip-block strong { color: var(--color-primary); }
   </style>
 </head>
 <body>
@@ -205,25 +205,25 @@
       <p>The Chi Loop is the fundamental combat rhythm that governs every encounter:</p>
 
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:12px; margin:16px 0;">
-        <div style="background:#14142a; border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
+        <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
           <div style="font-size:28px; margin-bottom:6px;">1</div>
-          <strong style="color:#ff6b35;">Pressure</strong>
-          <p style="color:#a0a0b0; font-size:12px; margin:4px 0 0;">Normal attacks chip enemy Sha-Chi. Build your own gauge.</p>
+          <strong style="color:var(--color-primary);">Pressure</strong>
+          <p style="color:var(--color-text-muted); font-size:12px; margin:4px 0 0;">Normal attacks chip enemy Sha-Chi. Build your own gauge.</p>
         </div>
-        <div style="background:#14142a; border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
+        <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
           <div style="font-size:28px; margin-bottom:6px;">2</div>
-          <strong style="color:#ff6b35;">Parry Conversion</strong>
-          <p style="color:#a0a0b0; font-size:12px; margin:4px 0 0;">Parry blue attacks to gain essence and drain enemy.</p>
+          <strong style="color:var(--color-primary);">Parry Conversion</strong>
+          <p style="color:var(--color-text-muted); font-size:12px; margin:4px 0 0;">Parry blue attacks to gain essence and drain enemy.</p>
         </div>
-        <div style="background:#14142a; border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
+        <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
           <div style="font-size:28px; margin-bottom:6px;">3</div>
-          <strong style="color:#ff6b35;">Stagger Burst</strong>
-          <p style="color:#a0a0b0; font-size:12px; margin:4px 0 0;">Power Surge when enemy Sha-Chi empties.</p>
+          <strong style="color:var(--color-primary);">Stagger Burst</strong>
+          <p style="color:var(--color-text-muted); font-size:12px; margin:4px 0 0;">Power Surge when enemy Sha-Chi empties.</p>
         </div>
-        <div style="background:#14142a; border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
+        <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px; text-align:center;">
           <div style="font-size:28px; margin-bottom:6px;">4</div>
-          <strong style="color:#ff6b35;">Reset</strong>
-          <p style="color:#a0a0b0; font-size:12px; margin:4px 0 0;">Ghoststep red attacks to generate essence, repeat loop.</p>
+          <strong style="color:var(--color-primary);">Reset</strong>
+          <p style="color:var(--color-text-muted); font-size:12px; margin:4px 0 0;">Ghoststep red attacks to generate essence, repeat loop.</p>
         </div>
       </div>
 

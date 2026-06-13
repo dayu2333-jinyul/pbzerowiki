@@ -32,7 +32,7 @@
       margin: 24px 0 32px;
       transition: border-color 0.2s;
     }
-    .lore-card:hover { border-color: #ff6b35; }
+    .lore-card:hover { border-color: var(--color-primary); }
     .lore-card-head {
       padding: 20px 24px 12px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -46,11 +46,11 @@
       margin: 16px 0;
       border-radius: 0 8px 8px 0;
       font-style: italic;
-      color: #d0d0d0;
+      color: var(--color-text);
       font-size: 15px;
       line-height: 1.7;
     }
-    .quote-block cite { display: block; margin-top: 8px; font-style: normal; font-size: 13px; color: #888; }
+    .quote-block cite { display: block; margin-top: 8px; font-style: normal; font-size: 13px; color: var(--color-text-muted); }
     .fact-grid-small {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -58,13 +58,13 @@
       margin: 16px 0;
     }
     .fact-item {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 14px 16px;
     }
-    .fact-item h4 { color: #ff6b35; font-size: 13px; margin: 0 0 4px; }
-    .fact-item p { color: #a0a0b0; font-size: 13px; margin: 0; }
+    .fact-item h4 { color: var(--color-primary); font-size: 13px; margin: 0 0 4px; }
+    .fact-item p { color: var(--color-text-muted); font-size: 13px; margin: 0; }
   </style>
 </head>
 <body>
@@ -116,7 +116,7 @@
   <div class="lore-card">
     <div class="lore-card-head">
       <h2>The Phantom World</h2>
-      <span style="color:#888;font-size:13px;">Dark fantasy Ming Dynasty fused with steampunk and occult horror.</span>
+      <span style="color:var(--color-text-muted);font-size:13px;">Dark fantasy Ming Dynasty fused with steampunk and occult horror.</span>
     </div>
     <div class="lore-card-body">
       <p>The Phantom World is the game's central setting — a hand-crafted, semi-open world made of interconnected maps rather than a single seamless continent. It blends three distinct aesthetic layers:</p>
@@ -135,7 +135,7 @@
   <div class="lore-card">
     <div class="lore-card-head">
       <h2>Kungfupunk</h2>
-      <span style="color:#888;font-size:13px;">The term S-GAME coined to describe the game's aesthetic fusion.</span>
+      <span style="color:var(--color-text-muted);font-size:13px;">The term S-GAME coined to describe the game's aesthetic fusion.</span>
     </div>
     <div class="lore-card-body">
       <div class="quote-block">

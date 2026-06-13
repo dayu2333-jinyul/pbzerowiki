@@ -35,7 +35,7 @@
     .compare-select-wrap label {
       display: block;
       font-size: 13px;
-      color: #888;
+      color: var(--color-text-muted);
       margin-bottom: 8px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -45,8 +45,8 @@
       padding: 12px 16px;
       border-radius: 10px;
       border: 1px solid #2a2a3a;
-      background: #14142a;
-      color: #e0e0e0;
+      background: var(--color-surface);
+      color: var(--color-text);
       font-size: 15px;
       font-family: inherit;
       cursor: pointer;
@@ -59,8 +59,8 @@
       background-position: right 14px center;
       padding-right: 36px;
     }
-    .compare-select-wrap select:focus { border-color: #ff6b35; }
-    .compare-select-wrap select option { background: #1a1a2e; color: #e0e0e0; }
+    .compare-select-wrap select:focus { border-color: var(--color-primary); }
+    .compare-select-wrap select option { background: #1a1a2e; color: var(--color-text); }
 
     .compare-vs {
       display: flex;
@@ -71,14 +71,14 @@
     .compare-vs span {
       font-size: 28px;
       font-weight: 800;
-      color: #ff6b35;
+      color: var(--color-primary);
       opacity: 0.5;
     }
 
     .compare-btn-wrap { text-align: center; margin: 16px 0 32px; }
     .compare-btn {
-      background: #ff6b35;
-      color: #fff;
+      background: var(--color-primary);
+      color: var(--color-text-heading);
       border: none;
       padding: 14px 40px;
       border-radius: 10px;
@@ -97,12 +97,12 @@
       border-collapse: collapse;
     }
     .compare-table th {
-      background: #14142a;
+      background: var(--color-surface);
       padding: 10px 16px;
       font-size: 12px;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      color: #ff6b35;
+      color: var(--color-primary);
       text-align: left;
       border-bottom: 2px solid #252540;
     }
@@ -113,7 +113,7 @@
       font-size: 14px;
       vertical-align: middle;
     }
-    .compare-table td.label-cell { color: #888; font-weight: 500; font-size: 13px; }
+    .compare-table td.label-cell { color: var(--color-text-muted); font-weight: 500; font-size: 13px; }
     .compare-table td.weapon-a { background: rgba(52,152,219,0.04); }
     .compare-table td.weapon-b { background: rgba(231,76,60,0.04); }
 
@@ -140,20 +140,20 @@
       font-size: 12px;
       font-weight: 600;
     }
-    .compare-badge.sword { background: rgba(255,107,53,0.15); color: #ff6b35; }
-    .compare-badge.greatsword { background: rgba(231,76,60,0.15); color: #e74c3c; }
+    .compare-badge.sword { background: rgba(255,107,53,0.15); color: var(--color-primary); }
+    .compare-badge.greatsword { background: rgba(231,76,60,0.15); color: var(--color-danger); }
     .compare-badge.spear { background: rgba(52,152,219,0.15); color: #3498db; }
-    .compare-badge.dual { background: rgba(155,89,182,0.15); color: #9b59b6; }
-    .compare-badge.armcannon { background: rgba(241,196,15,0.15); color: #f1c40f; }
-    .compare-badge.edge { background: rgba(46,204,113,0.15); color: #2ecc71; }
+    .compare-badge.dual { background: rgba(155,89,182,0.15); color: var(--color-primary-hover); }
+    .compare-badge.armcannon { background: rgba(241,196,15,0.15); color: var(--color-warning); }
+    .compare-badge.edge { background: rgba(46,204,113,0.15); color: var(--color-success); }
 
     .compare-empty {
       text-align: center;
       padding: 60px 20px;
-      color: #555;
+      color: var(--color-text-dim);
     }
     .compare-empty .ce-icon { font-size: 48px; display: block; margin-bottom: 12px; }
-    .compare-empty h3 { color: #888; font-size: 18px; margin: 0 0 6px; }
+    .compare-empty h3 { color: var(--color-text-muted); font-size: 18px; margin: 0 0 6px; }
     .compare-empty p { font-size: 14px; }
 
     .winner-tag {
@@ -164,8 +164,8 @@
       font-weight: 600;
     }
     .winner-a { background: rgba(52,152,219,0.12); color: #3498db; }
-    .winner-b { background: rgba(231,76,60,0.12); color: #e74c3c; }
-    .winner-tie { background: rgba(255,107,53,0.12); color: #ff6b35; }
+    .winner-b { background: rgba(231,76,60,0.12); color: var(--color-danger); }
+    .winner-tie { background: rgba(255,107,53,0.12); color: var(--color-primary); }
   </style>
 </head>
 <body>
@@ -372,9 +372,9 @@
         (a.range || b.range ? '<tr><td class="label-cell">Range ' + winnerTag(rngWin) + '</td>' +
           '<td class="weapon-a">' + (a.range ? barFill('range', a.range) + ' ' + a.range : 'N/A') + '</td>' +
           '<td class="weapon-b">' + (b.range ? barFill('range', b.range) + ' ' + b.range : 'N/A') + '</td></tr>' : '') +
-        '<tr><td class="label-cell">Sha-Chi Cost</td><td class="weapon-a"><strong style="color:#f1c40f">' + a.shaChi + '</strong></td><td class="weapon-b"><strong style="color:#f1c40f">' + b.shaChi + '</strong></td></tr>' +
-        '<tr><td class="label-cell">Special Effect</td><td class="weapon-a" style="color:#a0a0b0">' + a.special + '</td><td class="weapon-b" style="color:#a0a0b0">' + b.special + '</td></tr>' +
-        '<tr><td class="label-cell">Description</td><td class="weapon-a" style="color:#888;font-size:13px;">' + a.desc + '</td><td class="weapon-b" style="color:#888;font-size:13px;">' + b.desc + '</td></tr>' +
+        '<tr><td class="label-cell">Sha-Chi Cost</td><td class="weapon-a"><strong style="color:var(--color-warning)">' + a.shaChi + '</strong></td><td class="weapon-b"><strong style="color:var(--color-warning)">' + b.shaChi + '</strong></td></tr>' +
+        '<tr><td class="label-cell">Special Effect</td><td class="weapon-a" style="color:var(--color-text-muted)">' + a.special + '</td><td class="weapon-b" style="color:var(--color-text-muted)">' + b.special + '</td></tr>' +
+        '<tr><td class="label-cell">Description</td><td class="weapon-a" style="color:var(--color-text-muted);font-size:13px;">' + a.desc + '</td><td class="weapon-b" style="color:var(--color-text-muted);font-size:13px;">' + b.desc + '</td></tr>' +
       '</tbody>' +
     '</table>';
   }

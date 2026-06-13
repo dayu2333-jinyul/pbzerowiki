@@ -35,14 +35,14 @@
       align-items: flex-start;
       transition: border-color 0.2s;
     }
-    .tip-card-big:hover { border-color: #ff6b35; }
+    .tip-card-big:hover { border-color: var(--color-primary); }
     .tip-num-big {
       flex-shrink: 0;
       width: 40px;
       height: 40px;
       border-radius: 50%;
       background: rgba(255,107,53,0.15);
-      color: #ff6b35;
+      color: var(--color-primary);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -50,7 +50,7 @@
       font-size: 18px;
     }
     .tip-card-big h3 { margin: 0 0 5px; font-size: 16px; }
-    .tip-card-big p { margin: 0; color: #a0a0b0; font-size: 14px; line-height: 1.7; }
+    .tip-card-big p { margin: 0; color: var(--color-text-muted); font-size: 14px; line-height: 1.7; }
     .tip-card-big .diff-tag {
       display: inline-block;
       font-size: 10px;
@@ -61,15 +61,15 @@
       letter-spacing: 0.3px;
       margin-bottom: 6px;
     }
-    .diff-tag.easy { background: rgba(46,204,113,0.15); color: #2ecc71; }
-    .diff-tag.medium { background: rgba(241,196,15,0.15); color: #f1c40f; }
-    .diff-tag.hard { background: rgba(231,76,60,0.15); color: #e74c3c; }
-    .diff-tag.extreme { background: rgba(155,89,182,0.15); color: #9b59b6; }
+    .diff-tag.easy { background: rgba(46,204,113,0.15); color: var(--color-success); }
+    .diff-tag.medium { background: rgba(241,196,15,0.15); color: var(--color-warning); }
+    .diff-tag.hard { background: rgba(231,76,60,0.15); color: var(--color-danger); }
+    .diff-tag.extreme { background: rgba(155,89,182,0.15); color: var(--color-primary-hover); }
     .section-label {
       display: inline-block;
       font-size: 11px;
       font-weight: 700;
-      color: #888;
+      color: var(--color-text-muted);
       text-transform: uppercase;
       letter-spacing: 1px;
       margin-top: 32px;

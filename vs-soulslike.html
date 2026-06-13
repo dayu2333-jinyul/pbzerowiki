@@ -35,7 +35,7 @@
       margin: 18px 0;
       transition: border-color 0.2s;
     }
-    .vs-card:hover { border-color: #ff6b35; }
+    .vs-card:hover { border-color: var(--color-primary); }
     .vs-card-header {
       padding: 18px 22px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -45,7 +45,7 @@
     }
     .vs-card-header h2 { margin: 0; border-left: none; padding-left: 0; font-size: 19px; }
     .vs-card-body { padding: 18px 22px; }
-    .vs-card-body p { color: #a0a0b0; line-height: 1.6; }
+    .vs-card-body p { color: var(--color-text-muted); line-height: 1.6; }
     .vs-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -53,13 +53,13 @@
       margin: 12px 0;
     }
     .vs-compare-item {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 14px 16px;
     }
-    .vs-compare-item h4 { color: #ff6b35; font-size: 14px; margin: 0 0 4px; }
-    .vs-compare-item p { color: #888; font-size: 13px; margin: 0; }
+    .vs-compare-item h4 { color: var(--color-primary); font-size: 14px; margin: 0 0 4px; }
+    .vs-compare-item p { color: var(--color-text-muted); font-size: 13px; margin: 0; }
     .vs-tag {
       display: inline-block;
       padding: 2px 10px;
@@ -67,7 +67,7 @@
       font-size: 11px;
       font-weight: 600;
     }
-    .vs-tag.pbz { background: rgba(255,107,53,0.15); color: #ff6b35; margin-right: 4px; }
+    .vs-tag.pbz { background: rgba(255,107,53,0.15); color: var(--color-primary); margin-right: 4px; }
     .vs-tag.other { background: rgba(52,152,219,0.15); color: #3498db; }
   </style>
 </head>
@@ -242,7 +242,7 @@
   </table>
 
   <div style="background: rgba(46,204,113,0.06); border-left: 3px solid #2ecc71; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 20px 0 32px;">
-    <strong style="color:#2ecc71;">Verdict:</strong> Phantom Blade Zero is not a pure Soulslike — it's a hybrid that borrows the best elements from Sekiro (parry focus), character action games (combo depth), and traditional RPGs (build variety). If you enjoyed Sekiro's combat but wished for more weapon variety and build options, PB Zero is likely a perfect fit.
+    <strong style="color:var(--color-success);">Verdict:</strong> Phantom Blade Zero is not a pure Soulslike — it's a hybrid that borrows the best elements from Sekiro (parry focus), character action games (combo depth), and traditional RPGs (build variety). If you enjoyed Sekiro's combat but wished for more weapon variety and build options, PB Zero is likely a perfect fit.
   </div>
 
 </div>

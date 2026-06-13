@@ -31,17 +31,17 @@
       padding: 20px 24px;
       margin: 20px 0;
     }
-    .chapter-block h3 { color: #ff6b35; margin: 0 0 8px; border-left: 3px solid #ff6b35; padding-left: 12px; }
-    .chapter-block p { color: #a0a0b0; line-height: 1.7; }
+    .chapter-block h3 { color: var(--color-primary); margin: 0 0 8px; border-left: 3px solid #ff6b35; padding-left: 12px; }
+    .chapter-block p { color: var(--color-text-muted); line-height: 1.7; }
     .lore-card {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px 20px;
       margin: 14px 0;
     }
-    .lore-card h4 { color: #e0e0e0; margin: 0 0 6px; }
-    .lore-card p { color: #888; font-size: 14px; margin: 0; line-height: 1.6; }
+    .lore-card h4 { color: var(--color-text); margin: 0 0 6px; }
+    .lore-card p { color: var(--color-text-muted); font-size: 14px; margin: 0; line-height: 1.6; }
     .timeline-item {
       display: flex;
       gap: 16px;
@@ -49,8 +49,8 @@
       border-bottom: 1px solid rgba(255,255,255,0.04);
     }
     .timeline-item:last-child { border-bottom: none; }
-    .timeline-date { width: 90px; flex-shrink: 0; color: #ff6b35; font-weight: 700; font-size: 14px; }
-    .timeline-desc { color: #a0a0b0; font-size: 14px; }
+    .timeline-date { width: 90px; flex-shrink: 0; color: var(--color-primary); font-weight: 700; font-size: 14px; }
+    .timeline-desc { color: var(--color-text-muted); font-size: 14px; }
   </style>
 </head>
 <body>
@@ -98,7 +98,7 @@
   <p>The game's setting blends Chinese martial arts aesthetics with dark fantasy elements, creating a world where ancient kung fu traditions collide with supernatural forces. S-GAME describes the narrative as "a personal revenge story set against the backdrop of a crumbling world."</p>
 
   <h2>Story Timeline</h2>
-  <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:10px; padding:16px 20px; margin:16px 0;">
+  <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:10px; padding:16px 20px; margin:16px 0;">
     <div class="timeline-item">
       <div class="timeline-date">Day 0</div>
       <div class="timeline-desc">Soul is betrayed during a mission, poisoned with a curse that leaves 66 days to live. Left for dead in a desolate battlefield.</div>
@@ -151,17 +151,17 @@
 
   <h2>Related Pages</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="characters" style="color:#ff6b35; font-weight:700; text-decoration:none;">Characters & NPCs</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Profiles of all major characters including allies, enemies, and mysterious figures.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="characters" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Characters & NPCs</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Profiles of all major characters including allies, enemies, and mysterious figures.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="endings" style="color:#ff6b35; font-weight:700; text-decoration:none;">All 8 Endings</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">How to unlock every ending, key choices, and requirements for each outcome.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="endings" style="color:var(--color-primary); font-weight:700; text-decoration:none;">All 8 Endings</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">How to unlock every ending, key choices, and requirements for each outcome.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="locations" style="color:#ff6b35; font-weight:700; text-decoration:none;">Locations</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Explore the game's semi-open world regions, each with unique lore and secrets.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="locations" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Locations</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Explore the game's semi-open world regions, each with unique lore and secrets.</p>
     </div>
   </div>
 

@@ -34,7 +34,7 @@
       color: inherit;
       display: block;
     }
-    .guide-card:hover { border-color: #ff6b35; transform: translateY(-3px); }
+    .guide-card:hover { border-color: var(--color-primary); transform: translateY(-3px); }
     .guide-card-header {
       padding: 24px 22px 14px;
       display: flex;
@@ -42,9 +42,9 @@
       gap: 14px;
     }
     .guide-card-header .g-icon { font-size: 32px; flex-shrink: 0; }
-    .guide-card-header h3 { margin: 0; font-size: 17px; color: #fff; }
+    .guide-card-header h3 { margin: 0; font-size: 17px; color: var(--color-text-heading); }
     .guide-card-body { padding: 0 22px 20px; }
-    .guide-card-body p { color: #a0a0b0; font-size: 13px; margin: 0; line-height: 1.5; }
+    .guide-card-body p { color: var(--color-text-muted); font-size: 13px; margin: 0; line-height: 1.5; }
     .guide-card-footer {
       padding: 12px 22px;
       border-top: 1px solid rgba(255,255,255,0.04);
@@ -59,9 +59,9 @@
       font-size: 11px;
       font-weight: 600;
     }
-    .guide-tag.live { background: rgba(46,204,113,0.15); color: #2ecc71; }
-    .guide-tag.coming { background: rgba(255,107,53,0.12); color: #ff6b35; }
-    .guide-arrow { color: #ff6b35; font-size: 18px; }
+    .guide-tag.live { background: rgba(46,204,113,0.15); color: var(--color-success); }
+    .guide-tag.coming { background: rgba(255,107,53,0.12); color: var(--color-primary); }
+    .guide-arrow { color: var(--color-primary); font-size: 18px; }
     .placeholder-hr {
       margin: 40px 0 16px;
       border: none;
@@ -175,25 +175,25 @@
 
   <div class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
 
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:10px; padding:24px; opacity:0.65;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:10px; padding:24px; opacity:0.65;">
       <div style="font-size:32px; margin-bottom:10px;">&#127916;</div>
-      <h3 style="color:#fff; font-size:16px; margin:0 0 6px;">Endings Guide</h3>
-      <p style="color:#a0a0b0; font-size:13px; margin:0; line-height:1.5;">How to unlock all 8 distinct endings. Includes decision trees, relationship requirements, and key choices that lock you into each path.</p>
-      <div style="margin-top:12px; font-size:11px; color:#888;">Coming soon</div>
+      <h3 style="color:var(--color-text-heading); font-size:16px; margin:0 0 6px;">Endings Guide</h3>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:0; line-height:1.5;">How to unlock all 8 distinct endings. Includes decision trees, relationship requirements, and key choices that lock you into each path.</p>
+      <div style="margin-top:12px; font-size:11px; color:var(--color-text-muted);">Coming soon</div>
     </div>
 
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:10px; padding:24px; opacity:0.65;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:10px; padding:24px; opacity:0.65;">
       <div style="font-size:32px; margin-bottom:10px;">&#9876;&#65039;</div>
-      <h3 style="color:#fff; font-size:16px; margin:0 0 6px;">Weapon Evolution Guide</h3>
-      <p style="color:#a0a0b0; font-size:13px; margin:0; line-height:1.5;">Complete upgrade trees for all 30+ weapons. Material locations, stat bonuses at each evolution level, and optimal upgrade paths for every build.</p>
-      <div style="margin-top:12px; font-size:11px; color:#888;">Coming soon</div>
+      <h3 style="color:var(--color-text-heading); font-size:16px; margin:0 0 6px;">Weapon Evolution Guide</h3>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:0; line-height:1.5;">Complete upgrade trees for all 30+ weapons. Material locations, stat bonuses at each evolution level, and optimal upgrade paths for every build.</p>
+      <div style="margin-top:12px; font-size:11px; color:var(--color-text-muted);">Coming soon</div>
     </div>
 
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:10px; padding:24px; opacity:0.65;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:10px; padding:24px; opacity:0.65;">
       <div style="font-size:32px; margin-bottom:10px;">&#127758;</div>
-      <h3 style="color:#fff; font-size:16px; margin:0 0 6px;">Exploration Guide</h3>
-      <p style="color:#a0a0b0; font-size:13px; margin:0; line-height:1.5;">Complete region breakdown of the semi-open world. All bell checkpoint locations, secret areas, material caches, and Phantom Edge discoveries.</p>
-      <div style="margin-top:12px; font-size:11px; color:#888;">Coming soon</div>
+      <h3 style="color:var(--color-text-heading); font-size:16px; margin:0 0 6px;">Exploration Guide</h3>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:0; line-height:1.5;">Complete region breakdown of the semi-open world. All bell checkpoint locations, secret areas, material caches, and Phantom Edge discoveries.</p>
+      <div style="margin-top:12px; font-size:11px; color:var(--color-text-muted);">Coming soon</div>
     </div>
 
   </div>

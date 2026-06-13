@@ -44,28 +44,28 @@
       margin: 12px 0;
     }
     .equip-card {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px 18px;
     }
-    .equip-card h4 { color: #e0e0e0; margin: 0 0 4px; font-size: 15px; }
+    .equip-card h4 { color: var(--color-text); margin: 0 0 4px; font-size: 15px; }
     .equip-card .equip-rarity {
       font-size: 11px;
       font-weight: 600;
     }
-    .rarity-common { color: #888; }
-    .rarity-uncommon { color: #2ecc71; }
+    .rarity-common { color: var(--color-text-muted); }
+    .rarity-uncommon { color: var(--color-success); }
     .rarity-rare { color: #3498db; }
-    .rarity-legendary { color: #ff6b35; }
-    .equip-card p { color: #888; font-size: 13px; margin: 6px 0 0; line-height: 1.5; }
+    .rarity-legendary { color: var(--color-primary); }
+    .equip-card p { color: var(--color-text-muted); font-size: 13px; margin: 6px 0 0; line-height: 1.5; }
     .equip-stat {
       display: inline-block;
       background: rgba(255,255,255,0.04);
       padding: 2px 8px;
       border-radius: 4px;
       font-size: 11px;
-      color: #a0a0b0;
+      color: var(--color-text-muted);
       margin-top: 6px;
     }
   </style>
@@ -202,31 +202,31 @@
   <h2>Consumables & Materials</h2>
   <p>Consumables provide temporary buffs or healing. Materials are used for weapon evolution and crafting. Both are found throughout the world or purchased from merchants.</p>
 
-  <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px 20px; margin:16px 0 32px;">
+  <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px 20px; margin:16px 0 32px;">
     <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:12px;">
       <div style="padding:8px 0;">
-        <strong style="color:#ff6b35; font-size:14px;">Healing Salve</strong>
-        <p style="color:#888; font-size:13px; margin:4px 0;">Restores 30% HP. 3-second use animation. Most common consumable.</p>
+        <strong style="color:var(--color-primary); font-size:14px;">Healing Salve</strong>
+        <p style="color:var(--color-text-muted); font-size:13px; margin:4px 0;">Restores 30% HP. 3-second use animation. Most common consumable.</p>
       </div>
       <div style="padding:8px 0;">
-        <strong style="color:#ff6b35; font-size:14px;">Sha-Chi Crystal</strong>
-        <p style="color:#888; font-size:13px; margin:4px 0;">Instantly grants 2 Sha-Chi bars. Rare drop, use strategically.</p>
+        <strong style="color:var(--color-primary); font-size:14px;">Sha-Chi Crystal</strong>
+        <p style="color:var(--color-text-muted); font-size:13px; margin:4px 0;">Instantly grants 2 Sha-Chi bars. Rare drop, use strategically.</p>
       </div>
       <div style="padding:8px 0;">
-        <strong style="color:#ff6b35; font-size:14px;">Sharpening Stone</strong>
-        <p style="color:#888; font-size:13px; margin:4px 0;">+20% weapon damage for 30 seconds. Common in weapon chests.</p>
+        <strong style="color:var(--color-primary); font-size:14px;">Sharpening Stone</strong>
+        <p style="color:var(--color-text-muted); font-size:13px; margin:4px 0;">+20% weapon damage for 30 seconds. Common in weapon chests.</p>
       </div>
       <div style="padding:8px 0;">
-        <strong style="color:#ff6b35; font-size:14px;">Iron Ore</strong>
-        <p style="color:#888; font-size:13px; margin:4px 0;">Basic evolution material. Found in all regions.</p>
+        <strong style="color:var(--color-primary); font-size:14px;">Iron Ore</strong>
+        <p style="color:var(--color-text-muted); font-size:13px; margin:4px 0;">Basic evolution material. Found in all regions.</p>
       </div>
       <div style="padding:8px 0;">
-        <strong style="color:#ff6b35; font-size:14px;">Phantom Essence</strong>
-        <p style="color:#888; font-size:13px; margin:4px 0;">Rare evolution material (+3 and +4 upgrades). Boss drops.</p>
+        <strong style="color:var(--color-primary); font-size:14px;">Phantom Essence</strong>
+        <p style="color:var(--color-text-muted); font-size:13px; margin:4px 0;">Rare evolution material (+3 and +4 upgrades). Boss drops.</p>
       </div>
       <div style="padding:8px 0;">
-        <strong style="color:#ff6b35; font-size:14px;">Respec Tear</strong>
-        <p style="color:#888; font-size:13px; margin:4px 0;">Refunds all skill points. Purchased from merchants after mid-game.</p>
+        <strong style="color:var(--color-primary); font-size:14px;">Respec Tear</strong>
+        <p style="color:var(--color-text-muted); font-size:13px; margin:4px 0;">Refunds all skill points. Purchased from merchants after mid-game.</p>
       </div>
     </div>
   </div>

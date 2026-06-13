@@ -44,28 +44,28 @@
       margin: 12px 0;
     }
     .skill-card {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px 18px;
       transition: border-color 0.2s;
     }
-    .skill-card:hover { border-color: #ff6b35; }
-    .skill-card h4 { color: #e0e0e0; margin: 0 0 4px; font-size: 15px; }
+    .skill-card:hover { border-color: var(--color-primary); }
+    .skill-card h4 { color: var(--color-text); margin: 0 0 4px; font-size: 15px; }
     .skill-card .skill-type {
       font-size: 11px;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.3px;
     }
-    .skill-type.passive { color: #2ecc71; }
+    .skill-type.passive { color: var(--color-success); }
     .skill-type.active { color: #3498db; }
-    .skill-type.ultimate { color: #9b59b6; }
-    .skill-card p { color: #888; font-size: 13px; margin: 6px 0 0; line-height: 1.5; }
+    .skill-type.ultimate { color: var(--color-primary-hover); }
+    .skill-card p { color: var(--color-text-muted); font-size: 13px; margin: 6px 0 0; line-height: 1.5; }
     .skill-req {
       display: inline-block;
       background: rgba(255,107,53,0.1);
-      color: #ff6b35;
+      color: var(--color-primary);
       padding: 2px 8px;
       border-radius: 6px;
       font-size: 11px;
@@ -120,7 +120,7 @@
       <h2>&#9876; Offense Branch</h2>
     </div>
     <div class="skill-tree-body">
-      <p style="color:#a0a0b0; font-size:14px;">Skills focused on raw damage output, combo extensions, and critical hit mechanics. Core tree for the Aggressive Chi Rush build.</p>
+      <p style="color:var(--color-text-muted); font-size:14px;">Skills focused on raw damage output, combo extensions, and critical hit mechanics. Core tree for the Aggressive Chi Rush build.</p>
       <div class="skill-grid">
         <div class="skill-card">
           <h4>Blade Rush</h4>
@@ -167,7 +167,7 @@
       <h2>&#128737; Defense Branch</h2>
     </div>
     <div class="skill-tree-body">
-      <p style="color:#a0a0b0; font-size:14px;">Skills improving parry windows, dodge recovery, damage reduction, and sustain. Core tree for the Defensive Parry Master build.</p>
+      <p style="color:var(--color-text-muted); font-size:14px;">Skills improving parry windows, dodge recovery, damage reduction, and sustain. Core tree for the Defensive Parry Master build.</p>
       <div class="skill-grid">
         <div class="skill-card">
           <h4>Extended Parry</h4>
@@ -214,7 +214,7 @@
       <h2>&#9899; Sha-Chi Mastery Branch</h2>
     </div>
     <div class="skill-tree-body">
-      <p style="color:#a0a0b0; font-size:14px;">Skills improving Sha-Chi generation, decay rate, and special Sha-Chi techniques. Essential for all playstyles.</p>
+      <p style="color:var(--color-text-muted); font-size:14px;">Skills improving Sha-Chi generation, decay rate, and special Sha-Chi techniques. Essential for all playstyles.</p>
       <div class="skill-grid">
         <div class="skill-card">
           <h4>Sha-Chi Flow</h4>
@@ -271,7 +271,7 @@
   </table>
 
   <div style="background: rgba(46,204,113,0.06); border-left: 3px solid #2ecc71; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 20px 0 32px;">
-    <strong style="color:#2ecc71;">Respec Available:</strong> Skill points can be respecced at any rest point for a small material cost. S-GAME has confirmed that respec is cheap, encouraging experimentation with different builds. Check our <a href="builds">Build Guides</a> for suggested skill loadouts for each playstyle.
+    <strong style="color:var(--color-success);">Respec Available:</strong> Skill points can be respecced at any rest point for a small material cost. S-GAME has confirmed that respec is cheap, encouraging experimentation with different builds. Check our <a href="builds">Build Guides</a> for suggested skill loadouts for each playstyle.
   </div>
 
 </div>

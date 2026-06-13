@@ -32,7 +32,7 @@
       margin: 24px 0 32px;
       transition: border-color 0.2s;
     }
-    .build-card:hover { border-color: #ff6b35; }
+    .build-card:hover { border-color: var(--color-primary); }
     .build-card-header {
       padding: 24px 24px 16px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -47,10 +47,10 @@
       font-weight: 600;
       margin-bottom: 10px;
     }
-    .build-tag.offensive { background: rgba(231,76,60,0.15); color: #e74c3c; }
+    .build-tag.offensive { background: rgba(231,76,60,0.15); color: var(--color-danger); }
     .build-tag.defensive { background: rgba(52,152,219,0.15); color: #3498db; }
-    .build-tag.hybrid { background: rgba(155,89,182,0.15); color: #9b59b6; }
-    .build-tag.difficulty { background: rgba(241,196,15,0.15); color: #f1c40f; margin-left: 6px; }
+    .build-tag.hybrid { background: rgba(155,89,182,0.15); color: var(--color-primary-hover); }
+    .build-tag.difficulty { background: rgba(241,196,15,0.15); color: var(--color-warning); margin-left: 6px; }
 
     .weapon-rec {
       display: grid;
@@ -59,13 +59,13 @@
       margin: 16px 0;
     }
     .weapon-rec-item {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 14px 16px;
     }
-    .weapon-rec-item h4 { color: #ff6b35; font-size: 14px; margin: 0 0 4px; }
-    .weapon-rec-item p { color: #a0a0b0; font-size: 13px; margin: 0; line-height: 1.5; }
+    .weapon-rec-item h4 { color: var(--color-primary); font-size: 14px; margin: 0 0 4px; }
+    .weapon-rec-item p { color: var(--color-text-muted); font-size: 13px; margin: 0; line-height: 1.5; }
 
     .tip-block {
       background: rgba(255,107,53,0.06);
@@ -74,15 +74,15 @@
       margin: 14px 0;
       border-radius: 0 6px 6px 0;
       font-size: 14px;
-      color: #d0d0d0;
+      color: var(--color-text);
     }
-    .tip-block strong { color: #ff6b35; }
+    .tip-block strong { color: var(--color-primary); }
 
     .matchup-table { margin: 16px 0 0; }
     .matchup-table table { margin: 8px 0 0; }
-    .matchup-good { color: #4caf50; font-weight: 600; }
-    .matchup-bad { color: #e74c3c; font-weight: 600; }
-    .matchup-neutral { color: #f1c40f; font-weight: 600; }
+    .matchup-good { color: var(--color-success); font-weight: 600; }
+    .matchup-bad { color: var(--color-danger); font-weight: 600; }
+    .matchup-neutral { color: var(--color-warning); font-weight: 600; }
   </style>
 </head>
 <body>
@@ -103,7 +103,9 @@
     <a href="beginner-guide">Beginner Guide</a>
     <a href="requirements">Requirements</a>
     <a href="search">Search</a>
-    <a href="weapon-compare">Compare Weapons</a>
+    <a href="weapon-tier-list">Tier List</a>
+    <a href="boss-difficulty">Boss Difficulty</a>
+    <a href="about">About</a>
   </div>
 </nav>
 
@@ -122,7 +124,7 @@
       <span class="build-tag offensive">Offensive</span>
       <span class="build-tag difficulty">Hard</span>
       <h2>Aggressive Chi Rush</h2>
-      <p style="color:#a0a0b0; margin:0; font-size:14px;">Constant pressure through bleed stacking and high-damage combos. Burns through Sha-Chi fast but punishes mistakes heavily.</p>
+      <p style="color:var(--color-text-muted); margin:0; font-size:14px;">Constant pressure through bleed stacking and high-damage combos. Burns through Sha-Chi fast but punishes mistakes heavily.</p>
     </div>
     <div class="build-card-body">
 
@@ -180,7 +182,7 @@
       <span class="build-tag defensive">Defensive</span>
       <span class="build-tag difficulty">Medium</span>
       <h2>Defensive Parry Master</h2>
-      <p style="color:#a0a0b0; margin:0; font-size:14px;">Counter-focused gameplay built around extended parry frames. Drains enemy Sha-Chi while preserving your own for precise counter-attacks.</p>
+      <p style="color:var(--color-text-muted); margin:0; font-size:14px;">Counter-focused gameplay built around extended parry frames. Drains enemy Sha-Chi while preserving your own for precise counter-attacks.</p>
     </div>
     <div class="build-card-body">
 
@@ -238,7 +240,7 @@
       <span class="build-tag hybrid">Hybrid</span>
       <span class="build-tag difficulty">Medium</span>
       <h2>Hybrid Flex</h2>
-      <p style="color:#a0a0b0; margin:0; font-size:14px;">Adaptable all-rounder build with mid-range crowd control and burst potential. Effective against any boss type with room for adjustment.</p>
+      <p style="color:var(--color-text-muted); margin:0; font-size:14px;">Adaptable all-rounder build with mid-range crowd control and burst potential. Effective against any boss type with room for adjustment.</p>
     </div>
     <div class="build-card-body">
 
@@ -304,33 +306,33 @@
 
   <h2>Advanced Build Tips</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:#ff6b35;">Weapon Swap Mid-Combo</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">You can cancel recovery frames by swapping weapons. Practice the Jagged Steel 3-hit into Savage Axe charged attack for maximum burst.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:var(--color-primary);">Weapon Swap Mid-Combo</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">You can cancel recovery frames by swapping weapons. Practice the Jagged Steel 3-hit into Savage Axe charged attack for maximum burst.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:#ff6b35;">Phantom Edge Rotation</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Equip one offensive and one utility Phantom Edge. Rotate between them to keep both off cooldown and maximize uptime.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:var(--color-primary);">Phantom Edge Rotation</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Equip one offensive and one utility Phantom Edge. Rotate between them to keep both off cooldown and maximize uptime.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:#ff6b35;">Boss-Specific Gear</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Some bosses are weak to specific weapon types. Check our Boss Strategies page for detailed weaknesses before committing to a build.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:var(--color-primary);">Boss-Specific Gear</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Some bosses are weak to specific weapon types. Check our Boss Strategies page for detailed weaknesses before committing to a build.</p>
     </div>
   </div>
 
   <h2>Related Pages</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:16px 0;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="weapons" style="color:#ff6b35; font-weight:700; text-decoration:none;">Weapon Database</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Detailed stats for every primary blade and Phantom Edge.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="weapons" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Weapon Database</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Detailed stats for every primary blade and Phantom Edge.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="skills" style="color:#ff6b35; font-weight:700; text-decoration:none;">Skills Guide</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Skill tree recommendations for each build type.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="skills" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Skills Guide</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Skill tree recommendations for each build type.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="bosses" style="color:#ff6b35; font-weight:700; text-decoration:none;">Boss Strategies</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Build-specific boss matchup guides.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="bosses" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Boss Strategies</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Build-specific boss matchup guides.</p>
     </div>
   </div>
 </div>

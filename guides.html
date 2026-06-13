@@ -32,7 +32,7 @@
       margin: 20px 0 24px;
       transition: border-color 0.2s;
     }
-    .guide-section:hover { border-color: #ff6b35; }
+    .guide-section:hover { border-color: var(--color-primary); }
     .guide-section-header {
       padding: 18px 22px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
@@ -51,7 +51,7 @@
       margin: 12px 0;
     }
     .mech-card {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px;
@@ -60,11 +60,11 @@
     .mech-card .mech-val {
       font-size: 28px;
       font-weight: 700;
-      color: #ff6b35;
+      color: var(--color-primary);
     }
     .mech-card .mech-label {
       font-size: 12px;
-      color: #888;
+      color: var(--color-text-muted);
       margin-top: 4px;
     }
 
@@ -88,8 +88,8 @@
     }
     .comp-card h4 { margin: 0 0 8px; font-size: 15px; }
     .comp-card.brutal h4 { color: #3498db; }
-    .comp-card.killer h4 { color: #e74c3c; }
-    .comp-card p { color: #a0a0b0; font-size: 13px; margin: 4px 0; line-height: 1.5; }
+    .comp-card.killer h4 { color: var(--color-danger); }
+    .comp-card p { color: var(--color-text-muted); font-size: 13px; margin: 4px 0; line-height: 1.5; }
 
     .difficulty-table { margin: 12px 0; }
 
@@ -100,7 +100,7 @@
       margin: 14px 0;
     }
     .evo-step {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px;
@@ -114,8 +114,8 @@
       font-weight: 800;
       color: rgba(255,107,53,0.12);
     }
-    .evo-step h4 { color: #ff6b35; margin: 0 0 6px; font-size: 15px; }
-    .evo-step p { color: #a0a0b0; font-size: 13px; margin: 0; }
+    .evo-step h4 { color: var(--color-primary); margin: 0 0 6px; font-size: 15px; }
+    .evo-step p { color: var(--color-text-muted); font-size: 13px; margin: 0; }
   </style>
 </head>
 <body>
@@ -136,7 +136,9 @@
     <a href="beginner-guide">Beginner Guide</a>
     <a href="requirements">Requirements</a>
     <a href="search">Search</a>
-    <a href="weapon-compare">Compare Weapons</a>
+    <a href="weapon-tier-list">Tier List</a>
+    <a href="boss-difficulty">Boss Difficulty</a>
+    <a href="about">About</a>
   </div>
 </nav>
 
@@ -212,7 +214,7 @@
           <p><strong>Can block?</strong> Yes -- blockable, but doing so drains your own Sha-Chi</p>
           <p><strong>Optimal counter:</strong> Parry (press block at the moment of impact)</p>
           <p><strong>Parry reward:</strong> Drains 2 enemy Sha-Chi bars, gives you bonus Sha-Chi, stuns the enemy briefly</p>
-          <p style="margin-top:8px; font-size:12px; color:#888;">Example: Seven Judgments' Swift Slash, Ogre Hammer Lord's Hammer Slam</p>
+          <p style="margin-top:8px; font-size:12px; color:var(--color-text-muted);">Example: Seven Judgments' Swift Slash, Ogre Hammer Lord's Hammer Slam</p>
         </div>
         <div class="comp-card killer">
           <h4>Killer Moves (Red Flash)</h4>
@@ -220,7 +222,7 @@
           <p><strong>Can block?</strong> No -- unblockable, will break your guard</p>
           <p><strong>Optimal counter:</strong> Dodge at the right moment to trigger Ghoststep</p>
           <p><strong>Dodge reward:</strong> Teleport behind the enemy, 1 free Sha-Chi bar, bonus damage on follow-up</p>
-          <p style="margin-top:8px; font-size:12px; color:#888;">Example: Inverse Heaven's Dual Strike, Snake Sovereign's Venom Spit</p>
+          <p style="margin-top:8px; font-size:12px; color:var(--color-text-muted);">Example: Inverse Heaven's Dual Strike, Snake Sovereign's Venom Spit</p>
         </div>
       </div>
 
@@ -260,7 +262,7 @@
       </ul>
 
       <div style="background: rgba(255,107,53,0.06); border-left: 3px solid #ff6b35; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0;">
-        <strong style="color:#ff6b35;">Ghoststep Practice Drill:</strong> Equip the Defensive Parry Master build and fight the first Seven Judgments encounter. Focus only on identifying Killer Moves and practicing the dodge timing. Don't attack -- just dodge. Once you can consistently Ghoststep, the combat system clicks.
+        <strong style="color:var(--color-primary);">Ghoststep Practice Drill:</strong> Equip the Defensive Parry Master build and fight the first Seven Judgments encounter. Focus only on identifying Killer Moves and practicing the dodge timing. Don't attack -- just dodge. Once you can consistently Ghoststep, the combat system clicks.
       </div>
 
       <h3>Common Mistakes</h3>
@@ -348,7 +350,7 @@
       </div>
 
       <div style="background: rgba(46,204,113,0.06); border-left: 3px solid #2ecc71; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0;">
-        <strong style="color:#2ecc71;">Evolution Materials Tip:</strong> Upgrade materials are found in specific regions. Explore thoroughly -- each region has at least one material cache. Bosses also drop rare evolution materials on first kill. Prioritize upgrading your main weapon to +2 before branching out to others.
+        <strong style="color:var(--color-success);">Evolution Materials Tip:</strong> Upgrade materials are found in specific regions. Explore thoroughly -- each region has at least one material cache. Bosses also drop rare evolution materials on first kill. Prioritize upgrading your main weapon to +2 before branching out to others.
       </div>
 
       <p>Evolution choices are <strong>reversible</strong> for a material cost. If you choose a passive bonus at +2 and decide you want a different one later, you can respec. However, the +4 Mastery Skill is permanent per weapon slot -- choose wisely.</p>
@@ -387,7 +389,7 @@
       </ul>
 
       <div style="background: rgba(255,107,53,0.06); border-left: 3px solid #ff6b35; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0;">
-        <strong style="color:#ff6b35;">Recommendation:</strong> Play your first run on Standard. When you reach the final region, switch to Hard for the increased rewards. Only attempt Sha-Chi Master after you've fully upgraded at least one weapon and can consistently Ghoststep Killer Moves.
+        <strong style="color:var(--color-primary);">Recommendation:</strong> Play your first run on Standard. When you reach the final region, switch to Hard for the increased rewards. Only attempt Sha-Chi Master after you've fully upgraded at least one weapon and can consistently Ghoststep Killer Moves.
       </div>
     </div>
   </div>
@@ -395,37 +397,37 @@
   <!-- Quick Reference Summary -->
   <h2>Quick Reference</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
       <strong style="color:#3498db;">&#9670; Blue = Parry</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Brutal Moves are blockable. Parry them to drain enemy Sha-Chi and create openings. Practice on early-game enemies.</p>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Brutal Moves are blockable. Parry them to drain enemy Sha-Chi and create openings. Practice on early-game enemies.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:#e74c3c;">&#9670; Red = Dodge</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Killer Moves are unblockable. Dodge toward them to trigger Ghoststep. Never parry red attacks.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:var(--color-danger);">&#9670; Red = Dodge</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Killer Moves are unblockable. Dodge toward them to trigger Ghoststep. Never parry red attacks.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:#f1c40f;">&#9670; Sha-Chi Rhythm</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Attack to build, spend before 2s decay, repeat. The most common mistake is holding max bars for too long.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <strong style="color:var(--color-warning);">&#9670; Sha-Chi Rhythm</strong>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Attack to build, spend before 2s decay, repeat. The most common mistake is holding max bars for too long.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
       <strong style="color:#9b59b6;">&#9670; Explore for Evolve</strong>
-      <p style="color:#a0a0b0; font-size:13px; margin:6px 0 0;">Weapon evolution materials are hidden throughout the world. Explore thoroughly and revisit areas with new abilities.</p>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Weapon evolution materials are hidden throughout the world. Explore thoroughly and revisit areas with new abilities.</p>
     </div>
   </div>
 
   <h2>Related Pages</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:16px 0;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="skills" style="color:#ff6b35; font-weight:700; text-decoration:none;">Skills & Abilities</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Detailed skill tree breakdown and unlock requirements.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="skills" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Skills & Abilities</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Detailed skill tree breakdown and unlock requirements.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="weapons" style="color:#ff6b35; font-weight:700; text-decoration:none;">Weapon Database</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Check weapon stats and evolution paths referenced in this guide.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="weapons" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Weapon Database</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Check weapon stats and evolution paths referenced in this guide.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="beginner-guide" style="color:#ff6b35; font-weight:700; text-decoration:none;">Beginner Guide</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">New to PB Zero? Start with the beginner's guide.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="beginner-guide" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Beginner Guide</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">New to PB Zero? Start with the beginner's guide.</p>
     </div>
   </div>
 </div>

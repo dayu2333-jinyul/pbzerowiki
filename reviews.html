@@ -31,25 +31,25 @@
       padding: 20px 24px;
       margin: 16px 0;
     }
-    .review-source { font-size: 12px; color: #888; margin-bottom: 4px; }
-    .review-card h3 { color: #fff; margin: 0 0 8px; font-size: 17px; border-left: 3px solid #ff6b35; padding-left: 12px; }
-    .review-card p { color: #a0a0b0; font-size: 14px; line-height: 1.6; margin: 0; }
+    .review-source { font-size: 12px; color: var(--color-text-muted); margin-bottom: 4px; }
+    .review-card h3 { color: var(--color-text-heading); margin: 0 0 8px; font-size: 17px; border-left: 3px solid #ff6b35; padding-left: 12px; }
+    .review-card p { color: var(--color-text-muted); font-size: 14px; line-height: 1.6; margin: 0; }
     .review-score {
       display: inline-block;
       font-size: 24px;
       font-weight: 800;
-      color: #ff6b35;
+      color: var(--color-primary);
       margin-top: 10px;
     }
     .score-prediction {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px 20px;
       margin: 12px 0;
     }
-    .score-prediction h4 { color: #ffd700; margin: 0 0 6px; }
-    .score-prediction p { color: #888; font-size: 13px; margin: 0; }
+    .score-prediction h4 { color: var(--color-warning); margin: 0 0 6px; }
+    .score-prediction p { color: var(--color-text-muted); font-size: 13px; margin: 0; }
     .pros-cons {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -58,10 +58,10 @@
     .pros, .cons { padding: 12px 16px; border-radius: 8px; }
     .pros { background: rgba(46,204,113,0.06); border: 1px solid rgba(46,204,113,0.15); }
     .cons { background: rgba(231,76,60,0.06); border: 1px solid rgba(231,76,60,0.15); }
-    .pros h4 { color: #2ecc71; margin: 0 0 6px; }
-    .cons h4 { color: #e74c3c; margin: 0 0 6px; }
+    .pros h4 { color: var(--color-success); margin: 0 0 6px; }
+    .cons h4 { color: var(--color-danger); margin: 0 0 6px; }
     .pros ul, .cons ul { margin: 0; padding-left: 16px; }
-    .pros li, .cons li { color: #888; font-size: 13px; margin: 4px 0; }
+    .pros li, .cons li { color: var(--color-text-muted); font-size: 13px; margin: 4px 0; }
   </style>
 </head>
 <body>
@@ -109,7 +109,7 @@
   <div class="review-card">
     <div class="review-source">&#8212; Global media consensus from ChinaJoy 2025 demo impressions</div>
     <h3>What Testers Liked</h3>
-    <ul style="color:#a0a0b0; line-height:1.8; padding-left:18px;">
+    <ul style="color:var(--color-text-muted); line-height:1.8; padding-left:18px;">
       <li><strong>Responsive combat</strong> — The parry/dodge system was praised for its satisfying feedback. Successful parries and Ghoststep counters feel impactful and rewarding.</li>
       <li><strong>Visual quality</strong> — UE5-powered graphics impressed across the board. The dark fantasy aesthetic with Chinese martial arts influences was described as "distinctive" and "visually striking."</li>
       <li><strong>Weapon feel</strong> — Each weapon type had clearly distinct weight and speed. Testers particularly enjoyed the Savage Axe's impact and the dual blades' speed.</li>
@@ -119,7 +119,7 @@
     <div class="review-card" style="margin:14px 0 0;">
       <div class="review-source">&#8212; Areas mentioned as needing polish</div>
       <h3>Constructive Feedback</h3>
-      <ul style="color:#a0a0b0; line-height:1.8; padding-left:18px;">
+      <ul style="color:var(--color-text-muted); line-height:1.8; padding-left:18px;">
         <li><strong>Camera</strong> — In tight spaces, the camera could clip through geometry. The demo's corridor sections highlighted this issue.</li>
         <li><strong>Lock-on</strong> — Some testers found the lock-on system switching targets unpredictably in groups.</li>
         <li><strong>Performance</strong> — The demo ran at a target 60fps but experienced drops during heavy particle effects on base PS5 hardware.</li>
@@ -133,22 +133,22 @@
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:14px; margin:16px 0;">
     <div class="score-prediction" style="text-align:center;">
       <h4>Metacritic</h4>
-      <div style="font-size:36px; font-weight:800; color:#2ecc71;">82-86</div>
+      <div style="font-size:36px; font-weight:800; color:var(--color-success);">82-86</div>
       <p>PC & PS5 predicted range</p>
     </div>
     <div class="score-prediction" style="text-align:center;">
       <h4>OpenCritic</h4>
-      <div style="font-size:36px; font-weight:800; color:#2ecc71;">83%</div>
+      <div style="font-size:36px; font-weight:800; color:var(--color-success);">83%</div>
       <p>Critic recommendation rate</p>
     </div>
     <div class="score-prediction" style="text-align:center;">
       <h4>User Score</h4>
-      <div style="font-size:36px; font-weight:800; color:#f1c40f;">7.5-8.5</div>
+      <div style="font-size:36px; font-weight:800; color:var(--color-warning);">7.5-8.5</div>
       <p>Expected community rating</p>
     </div>
     <div class="score-prediction" style="text-align:center;">
       <h4>Steam Rating</h4>
-      <div style="font-size:36px; font-weight:800; color:#2ecc71;">80-85%</div>
+      <div style="font-size:36px; font-weight:800; color:var(--color-success);">80-85%</div>
       <p>Very Positive predicted</p>
     </div>
   </div>
@@ -178,7 +178,7 @@
   </div>
 
   <div style="background: rgba(255,107,53,0.06); border-left: 3px solid #ff6b35; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 20px 0 32px;">
-    <strong style="color:#ff6b35;">Note:</strong> These predictions are based on demo impressions and preview events. Final review scores and user reception will only be determined after the September 9, 2026 launch. This page will be updated with official review scores post-release.
+    <strong style="color:var(--color-primary);">Note:</strong> These predictions are based on demo impressions and preview events. Final review scores and user reception will only be determined after the September 9, 2026 launch. This page will be updated with official review scores post-release.
   </div>
 
 </div>

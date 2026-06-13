@@ -34,7 +34,7 @@
     .filter-btn {
       background: #1a1a2e;
       border: 1px solid #2a2a3a;
-      color: #a0a0b0;
+      color: var(--color-text-muted);
       padding: 8px 18px;
       border-radius: 20px;
       cursor: pointer;
@@ -42,8 +42,8 @@
       font-family: inherit;
       transition: all 0.2s;
     }
-    .filter-btn:hover { border-color: #ff6b35; color: #e0e0e0; }
-    .filter-btn.active { background: #ff6b35; color: #fff; border-color: #ff6b35; }
+    .filter-btn:hover { border-color: var(--color-primary); color: var(--color-text); }
+    .filter-btn.active { background: var(--color-primary); color: var(--color-text-heading); border-color: var(--color-primary); }
 
     .weapon-grid {
       display: grid;
@@ -58,14 +58,14 @@
       overflow: hidden;
       transition: border-color 0.2s, transform 0.15s;
     }
-    .weapon-card:hover { border-color: #ff6b35; transform: translateY(-2px); }
+    .weapon-card:hover { border-color: var(--color-primary); transform: translateY(-2px); }
     .weapon-card-header {
       padding: 18px 20px 12px;
       border-bottom: 1px solid rgba(255,255,255,0.04);
     }
-    .weapon-card-header .weapon-name { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .weapon-card-header .weapon-name { font-size: 18px; font-weight: 700; color: var(--color-text-heading); margin-bottom: 6px; }
     .weapon-card-body { padding: 14px 20px 18px; }
-    .weapon-desc { font-size: 13px; color: #a0a0b0; line-height: 1.5; margin-bottom: 12px; }
+    .weapon-desc { font-size: 13px; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 12px; }
 
     .type-badge {
       display: inline-block;
@@ -76,12 +76,12 @@
       text-transform: uppercase;
       letter-spacing: 0.3px;
     }
-    .type-sword { background: rgba(255,107,53,0.15); color: #ff6b35; }
-    .type-greatsword { background: rgba(231,76,60,0.15); color: #e74c3c; }
+    .type-sword { background: rgba(255,107,53,0.15); color: var(--color-primary); }
+    .type-greatsword { background: rgba(231,76,60,0.15); color: var(--color-danger); }
     .type-spear { background: rgba(52,152,219,0.15); color: #3498db; }
-    .type-dual { background: rgba(155,89,182,0.15); color: #9b59b6; }
-    .type-edge { background: rgba(46,204,113,0.15); color: #2ecc71; }
-    .type-armcannon { background: rgba(241,196,15,0.15); color: #f1c40f; }
+    .type-dual { background: rgba(155,89,182,0.15); color: var(--color-primary-hover); }
+    .type-edge { background: rgba(46,204,113,0.15); color: var(--color-success); }
+    .type-armcannon { background: rgba(241,196,15,0.15); color: var(--color-warning); }
     .type-bow { background: rgba(26,188,156,0.15); color: #1abc9c; }
 
     .stat-row {
@@ -93,7 +93,7 @@
     .stat-label {
       width: 60px;
       font-size: 12px;
-      color: #888;
+      color: var(--color-text-muted);
       text-transform: uppercase;
       letter-spacing: 0.3px;
       flex-shrink: 0;
@@ -113,7 +113,7 @@
     .stat-bar-fill.damage { background: linear-gradient(90deg, #ff6b35, #ff8c5a); }
     .stat-bar-fill.speed { background: linear-gradient(90deg, #2ecc71, #27ae60); }
     .stat-bar-fill.range { background: linear-gradient(90deg, #3498db, #2980b9); }
-    .stat-val { width: 28px; font-size: 12px; font-weight: 700; color: #e0e0e0; flex-shrink: 0; text-align: right; }
+    .stat-val { width: 28px; font-size: 12px; font-weight: 700; color: var(--color-text); flex-shrink: 0; text-align: right; }
 
     .weapon-footer {
       display: flex;
@@ -125,22 +125,22 @@
     }
     .sha-chi-cost {
       font-size: 13px;
-      color: #888;
+      color: var(--color-text-muted);
     }
-    .sha-chi-cost strong { color: #f1c40f; }
+    .sha-chi-cost strong { color: var(--color-warning); }
 
     .hidden { display: none !important; }
 
     .phantom-edge-note {
-      background: #14142a;
+      background: var(--color-surface);
       border: 1px solid #2a2a3a;
       border-radius: 8px;
       padding: 16px 20px;
       margin: 20px 0;
       font-size: 14px;
-      color: #a0a0b0;
+      color: var(--color-text-muted);
     }
-    .phantom-edge-note strong { color: #ff6b35; }
+    .phantom-edge-note strong { color: var(--color-primary); }
   </style>
 </head>
 <body>
@@ -161,7 +161,9 @@
     <a href="beginner-guide">Beginner Guide</a>
     <a href="requirements">Requirements</a>
     <a href="search">Search</a>
-    <a href="weapon-compare">Compare Weapons</a>
+    <a href="weapon-tier-list">Tier List</a>
+    <a href="boss-difficulty">Boss Difficulty</a>
+    <a href="about">About</a>
   </div>
 </nav>
 
@@ -209,7 +211,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>3 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Bleed build</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Bleed build</span>
         </div>
       </div>
     </div>
@@ -234,7 +236,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>2 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Parry focus</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Parry focus</span>
         </div>
       </div>
     </div>
@@ -259,7 +261,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>4 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Rapid multi-hit</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Rapid multi-hit</span>
         </div>
       </div>
     </div>
@@ -284,7 +286,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>3 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Guard break</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Guard break</span>
         </div>
       </div>
     </div>
@@ -309,7 +311,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>5 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Ranged pierce</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Ranged pierce</span>
         </div>
       </div>
     </div>
@@ -334,7 +336,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>3 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Crowd control</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Crowd control</span>
         </div>
       </div>
     </div>
@@ -359,7 +361,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>3 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Wide arc</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Wide arc</span>
         </div>
       </div>
     </div>
@@ -384,7 +386,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>4 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Guard break</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Guard break</span>
         </div>
       </div>
     </div>
@@ -409,7 +411,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>2 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Poison DoT</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Poison DoT</span>
         </div>
       </div>
     </div>
@@ -434,7 +436,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>1 bar</strong></span>
-          <span style="font-size:12px;color:#888;">Ranged volley</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Ranged volley</span>
         </div>
       </div>
     </div>
@@ -459,7 +461,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>4 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Fire explosion</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Fire explosion</span>
         </div>
       </div>
     </div>
@@ -484,7 +486,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>4 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Lightning AoE</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Lightning AoE</span>
         </div>
       </div>
     </div>
@@ -509,7 +511,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>2 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Toxin build</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Toxin build</span>
         </div>
       </div>
     </div>
@@ -534,7 +536,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>3 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Fire combo proc</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Fire combo proc</span>
         </div>
       </div>
     </div>
@@ -559,7 +561,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>5 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Max stun</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Max stun</span>
         </div>
       </div>
     </div>
@@ -584,7 +586,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>3 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Piercing line</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Piercing line</span>
         </div>
       </div>
     </div>
@@ -609,7 +611,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>3 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Frost slow</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Frost slow</span>
         </div>
       </div>
     </div>
@@ -634,7 +636,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>4 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Sha-Chi drain</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Sha-Chi drain</span>
         </div>
       </div>
     </div>
@@ -659,7 +661,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>1 bar</strong></span>
-          <span style="font-size:12px;color:#888;">Lifesteal</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Lifesteal</span>
         </div>
       </div>
     </div>
@@ -684,7 +686,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>5 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Holy damage</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Holy damage</span>
         </div>
       </div>
     </div>
@@ -709,7 +711,7 @@
         </div>
         <div class="weapon-footer">
           <span class="sha-chi-cost">Sha-Chi Cost: <strong>4 bars</strong></span>
-          <span style="font-size:12px;color:#888;">Guard pierce</span>
+          <span style="font-size:12px;color:var(--color-text-muted);">Guard pierce</span>
         </div>
       </div>
     </div>
@@ -725,53 +727,53 @@
   </div>
 
   <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(240px, 1fr)); gap:14px; margin: 20px 0 40px;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Shadow Chakram</div>
-      <div style="color:#888; font-size:12px;">Boomerang projectile, returns on hit. 2 bars.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Shadow Chakram</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Boomerang projectile, returns on hit. 2 bars.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Chain Hook</div>
-      <div style="color:#888; font-size:12px;">Pulls enemies toward you. 1 bar.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Chain Hook</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Pulls enemies toward you. 1 bar.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Thunderbolt Shard</div>
-      <div style="color:#888; font-size:12px;">Lightning AoE around player. 2 bars.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Thunderbolt Shard</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Lightning AoE around player. 2 bars.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Mist Step</div>
-      <div style="color:#888; font-size:12px;">Short teleport, no i-frames. 1 bar.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Mist Step</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Short teleport, no i-frames. 1 bar.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Gale Fan</div>
-      <div style="color:#888; font-size:12px;">Knocks back surrounding enemies. 2 bars.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Gale Fan</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Knocks back surrounding enemies. 2 bars.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Blood Sigil</div>
-      <div style="color:#888; font-size:12px;">Heals 15% HP on next hit. 2 bars.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Blood Sigil</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Heals 15% HP on next hit. 2 bars.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Ice Dart</div>
-      <div style="color:#888; font-size:12px;">Fires freezing projectile that slows one enemy. 1 bar.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Ice Dart</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Fires freezing projectile that slows one enemy. 1 bar.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Flame Vial</div>
-      <div style="color:#888; font-size:12px;">Throws a fire bomb dealing AoE damage over time. 2 bars.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Flame Vial</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Throws a fire bomb dealing AoE damage over time. 2 bars.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Spirit Wolf</div>
-      <div style="color:#888; font-size:12px;">Summons a spectral wolf that attacks twice then fades. 2 bars.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Spirit Wolf</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Summons a spectral wolf that attacks twice then fades. 2 bars.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Void Rift</div>
-      <div style="color:#888; font-size:12px;">Creates a black hole that pulls enemies together. 2 bars.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Void Rift</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Creates a black hole that pulls enemies together. 2 bars.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Steel Thread</div>
-      <div style="color:#888; font-size:12px;">Immobilizes an enemy for 3 seconds. 1 bar.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Steel Thread</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Immobilizes an enemy for 3 seconds. 1 bar.</div>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
-      <div style="color:#ff6b35; font-weight:700; margin-bottom:4px;">Poison Mist</div>
-      <div style="color:#888; font-size:12px;">Creates a toxic cloud that applies poison to all inside. 2 bars.</div>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:16px;">
+      <div style="color:var(--color-primary); font-weight:700; margin-bottom:4px;">Poison Mist</div>
+      <div style="color:var(--color-text-muted); font-size:12px;">Creates a toxic cloud that applies poison to all inside. 2 bars.</div>
     </div>
   </div>
 
@@ -786,17 +788,17 @@
 
   <h2>Related Pages</h2>
   <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:16px 0;">
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="builds" style="color:#ff6b35; font-weight:700; text-decoration:none;">Build Guides</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Find the best weapon combos for each playstyle.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="builds" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Build Guides</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Find the best weapon combos for each playstyle.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="equipment" style="color:#ff6b35; font-weight:700; text-decoration:none;">Equipment Guide</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Armor sets, accessories, and items to complement your weapon.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="equipment" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Equipment Guide</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Armor sets, accessories, and items to complement your weapon.</p>
     </div>
-    <div style="background:#1a1a2e; border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="skills" style="color:#ff6b35; font-weight:700; text-decoration:none;">Skills & Abilities</a>
-      <p style="color:#888; font-size:13px; margin:6px 0 0;">Skill trees and abilities that enhance your weapon performance.</p>
+    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+      <a href="skills" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Skills & Abilities</a>
+      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Skill trees and abilities that enhance your weapon performance.</p>
     </div>
   </div>
 </div>
