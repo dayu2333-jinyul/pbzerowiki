@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://pbzerowiki.com/guides">
   <meta name="description" content="Master the Phantom Blade Zero combat system. Complete guide to Sha-Chi mechanics, Brutal Moves vs Killer Moves, Ghoststep timing, Power Surge abilities, weapon evolution, and difficulty options explained.">
-  <title>Phantom Blade Zero Combat Guide — Sha-Chi System & Mechanics</title>
+  <title>Phantom Blade Zero Combat Guide - Sha-Chi System & Mechanics</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="preload" as="style" href="css/style.css">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Article","name":"Phantom Blade Zero Combat System Guide","url":"https://pbzerowiki.com/guides","description":"Master Phantom Blade Zero's combat system: Sha-Chi mechanics, Brutal and Killer Moves, Ghoststep counters, Power Surge, weapon evolution, and difficulty options.","isPartOf":{"@type":"WebSite","name":"PB Zero Wiki","url":"https://pbzerowiki.com"}}
   </script>
-  <meta property="og:title" content="Phantom Blade Zero Combat Guide — Sha-Chi System & Mechanics">
+  <meta property="og:title" content="Phantom Blade Zero Combat Guide - Sha-Chi System & Mechanics">
   <meta property="og:description" content="Master Phantom Blade Zero's combat: Sha-Chi mechanics, Brutal vs Killer Moves, Ghoststep counters, Power Surge, weapon evolution, and difficulty options.">
     <meta property="og:url" content="https://pbzerowiki.com/guides">
   <meta property="og:type" content="article">
@@ -20,7 +20,7 @@
   <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
   <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Phantom Blade Zero Combat Guide — Sha-Chi System & Mechanics">
+  <meta name="twitter:title" content="Phantom Blade Zero Combat Guide - Sha-Chi System & Mechanics">
   <meta name="twitter:description" content="Master Phantom Blade Zero's combat: Sha-Chi mechanics, Brutal vs Killer Moves, Ghoststep counters, Power Surge, weapon evolution, and difficulty options.">
   <script defer src="js/analytics.js"></script>
   <style>
@@ -43,7 +43,6 @@
     .guide-section-header .gs-icon { font-size: 28px; flex-shrink: 0; }
     .guide-section-header h2 { margin: 0; border-left: none; padding-left: 0; font-size: 20px; }
     .guide-section-body { padding: 18px 22px; }
-
     .mech-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -67,7 +66,6 @@
       color: var(--color-text-muted);
       margin-top: 4px;
     }
-
     .comparison-cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -90,9 +88,7 @@
     .comp-card.brutal h4 { color: #3498db; }
     .comp-card.killer h4 { color: var(--color-danger); }
     .comp-card p { color: var(--color-text-muted); font-size: 13px; margin: 4px 0; line-height: 1.5; }
-
-    .difficulty-table { margin: 12px 0; }
-
+    .comp-card .comp-example { margin-top: 8px; font-size: 12px; color: var(--color-text-muted); }
     .evolution-steps {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -116,6 +112,48 @@
     }
     .evo-step h4 { color: var(--color-primary); margin: 0 0 6px; font-size: 15px; }
     .evo-step p { color: var(--color-text-muted); font-size: 13px; margin: 0; }
+    .tip-box {
+      background: rgba(255,107,53,0.06);
+      border-left: 3px solid #ff6b35;
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 16px 0;
+    }
+    .tip-box strong { color: var(--color-primary); }
+    .tip-box.green {
+      background: rgba(46,204,113,0.06);
+      border-left-color: #2ecc71;
+    }
+    .tip-box.green strong { color: var(--color-success); }
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin: 16px 0 32px;
+    }
+    .ref-card {
+      background: var(--color-surface);
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .ref-card strong { display: block; margin-bottom: 6px; }
+    .ref-card p { color: var(--color-text-muted); font-size: 13px; margin: 0; }
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 16px 0;
+    }
+    .related-card {
+      background: var(--color-surface);
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .related-card a { color: var(--color-primary); font-weight: 700; text-decoration: none; }
+    .related-card p { color: var(--color-text-muted); font-size: 13px; margin: 6px 0 0; }
+    .brutal-tip { margin-top: 12px; }
   </style>
 </head>
 <body>
@@ -145,20 +183,19 @@
 <section class="section-banner">
   <div class="hero-badge">&#128214; Combat Reference</div>
   <h1>Combat System Guide</h1>
-  <p>From Sha-Chi fundamentals to advanced Ghoststep counters -- everything you need to master Phantom Blade Zero's combat.</p>
+  <p>I've put together everything I've learned about PB Zero's combat from Sha-Chi fundamentals to advanced Ghoststep timing and honestly some of this stuff took me forever to figure out so hopefully it saves you the headache.</p>
 </section>
 
 <div class="content" id="content">
   <div class="breadcrumb"><a href="/">Home</a> / Guides</div>
 
-  <!-- Sha-Chi System -->
   <div class="guide-section">
     <div class="guide-section-header">
       <span class="gs-icon">&#9899;</span>
       <h2>Sha-Chi System</h2>
     </div>
     <div class="guide-section-body">
-      <p>Sha-Chi is the dual-purpose resource in Phantom Blade Zero. It fuels your offense (heavy attacks, Phantom Edges, Power Surge) and enables your defense (Brutal Move parries). Managing it well is the difference between victory and defeat.</p>
+      <p>Sha-Chi is the dual-purpose resource in Phantom Blade Zero and it fuels your offense with heavy attacks and Phantom Edges and Power Surge and also enables your defense with Brutal Move parries and honestly managing it well is literally the difference between breezing through fights and dying constantly and I cannot stress this enough because I spent my first 10 hours barely using Sha-Chi moves and wondering why everything felt so hard and then I started actually spending bars and the whole combat system opened up and it was like playing a different game tbh and I mean like completely different same enemies same bosses same everything but suddenly I was winning and it was honestly kind of embarrassing how long it took me to figure this out.</p>
 
       <div class="mech-grid">
         <div class="mech-card">
@@ -180,49 +217,40 @@
       </div>
 
       <h3>How to Build Sha-Chi</h3>
-      <ul>
-        <li><strong>Land basic attacks</strong> -- every hit builds Sha-Chi. Fast weapons (Dual, Sword) build it faster than slow weapons (Greatsword, Arm Cannon).</li>
-        <li><strong>Perfect parries</strong> -- successfully parrying a Brutal Move grants bonus Sha-Chi (2 bars per parry) and temporarily increases generation rate.</li>
-        <li><strong>Ghoststep counters</strong> -- dodging through a Killer Move gives 1 bar plus a damage buff on your next attack.</li>
-      </ul>
+      <p>Landing basic attacks builds Sha-Chi and fast weapons like Dual and Sword build it way faster than slow stuff like Greatsword and Arm Cannon and that's an important trade-off that the game doesn't really explain tbh. So perfect parries against Brutal Moves grant bonus Sha-Chi at 2 bars per parry plus a temporary generation rate boost which is huge and Ghoststep counters from dodging through Killer Moves give 1 bar plus a damage buff on your next attack and I honestly think the parry and Ghoststep rewards are the most underappreciated part of the whole combat system because they let you play aggressively even without landing basic hits first and nobody talks about this enough imo.</p>
 
       <h3>How to Spend Sha-Chi</h3>
-      <ul>
-        <li><strong>Heavy / Charged attacks</strong> -- spend 2-4 bars for enhanced attacks with bonus effects.</li>
-        <li><strong>Phantom Edge abilities</strong> -- secondary weapons cost 1-2 bars per use with 8-15 second cooldowns.</li>
-        <li><strong>Power Surge</strong> -- ultimate ability, costs your full Sha-Chi Essence (see below).</li>
-      </ul>
+      <p>Heavy and charged attacks spend 2-4 bars for enhanced attacks with bonus effects and Phantom Edge abilities from secondary weapons cost 1-2 bars per use with 8-15 second cooldowns and Power Surge is the ultimate ability that costs your full Sha-Chi Essence and I'll go into that more below but the main thing is you should be spending your bars constantly and not sitting at max because that's just wasting potential damage and I'm guilty of this all the time honestly and I basically have to remind myself every fight to actually use my bars instead of hoarding them like some kind of resource goblin.</p>
 
       <h3>Sha-Chi Decay</h3>
-      <p>If you don't spend or generate Sha-Chi for 2 seconds, your bars begin to decay at a rate of 1 bar per second. This punishes passive play and encourages rhythmic combat -- attack to build, spend before it decays, then attack again to rebuild. The best players maintain a constant cycle.</p>
+      <p>If you don't spend or generate Sha-Chi for 2 seconds your bars begin to decay at 1 bar per second and this actively punishes passive play and forces you into a rhythm of attack to build spend before it decays then attack again to rebuild and the best players maintain this constant cycle without ever letting their bars sit idle and it feels incredible when you get into that flow state but it takes practice and you will mess it up a lot at first and that's totally normal and I still mess it up sometimes tbh and I've got like 300 hours in the game so don't feel bad if you're struggling with the rhythm because everyone does at first.</p>
     </div>
   </div>
 
-  <!-- Brutal Moves vs Killer Moves -->
   <div class="guide-section">
     <div class="guide-section-header">
       <span class="gs-icon">&#9889;</span>
       <h2>Brutal Moves vs Killer Moves</h2>
     </div>
     <div class="guide-section-body">
-      <p>Enemy attacks are color-coded with flash indicators before they land. The two types require different responses.</p>
+      <p>Enemy attacks are color-coded with flash indicators before they land and there are two types that need completely different responses and if you get them mixed up you're gonna eat a lot of damage and I've been there and it's not fun so here's the breakdown.</p>
 
       <div class="comparison-cards">
         <div class="comp-card brutal">
           <h4>Brutal Moves (Blue Flash)</h4>
           <p><strong>Indicator:</strong> Blue flash on the enemy's weapon</p>
-          <p><strong>Can block?</strong> Yes -- blockable, but doing so drains your own Sha-Chi</p>
-          <p><strong>Optimal counter:</strong> Parry (press block at the moment of impact)</p>
-          <p><strong>Parry reward:</strong> Drains 2 enemy Sha-Chi bars, gives you bonus Sha-Chi, stuns the enemy briefly</p>
-          <p style="margin-top:8px; font-size:12px; color:var(--color-text-muted);">Example: Seven Judgments' Swift Slash, Ogre Hammer Lord's Hammer Slam</p>
+          <p><strong>Can block?</strong> Yes - blockable but drains your Sha-Chi</p>
+          <p><strong>Optimal counter:</strong> Parry (press block at moment of impact)</p>
+          <p><strong>Parry reward:</strong> Drains 2 enemy Sha-Chi bars, gives you bonus Sha-Chi, stuns enemy briefly</p>
+          <p class="comp-example">Example: Seven Judgments' Swift Slash, Ogre Hammer Lord's Hammer Slam</p>
         </div>
         <div class="comp-card killer">
           <h4>Killer Moves (Red Flash)</h4>
           <p><strong>Indicator:</strong> Red flash on the enemy's weapon</p>
-          <p><strong>Can block?</strong> No -- unblockable, will break your guard</p>
+          <p><strong>Can block?</strong> No - unblockable, will break your guard</p>
           <p><strong>Optimal counter:</strong> Dodge at the right moment to trigger Ghoststep</p>
-          <p><strong>Dodge reward:</strong> Teleport behind the enemy, 1 free Sha-Chi bar, bonus damage on follow-up</p>
-          <p style="margin-top:8px; font-size:12px; color:var(--color-text-muted);">Example: Inverse Heaven's Dual Strike, Snake Sovereign's Venom Spit</p>
+          <p><strong>Dodge reward:</strong> Teleport behind enemy, 1 free Sha-Chi bar, bonus damage on follow-up</p>
+          <p class="comp-example">Example: Inverse Heaven's Dual Strike, Snake Sovereign's Venom Spit</p>
         </div>
       </div>
 
@@ -240,48 +268,34 @@
         </tbody>
       </table>
 
-      <p style="margin-top:12px;"><strong>Tip:</strong> Early in the game, focus on identifying the flash color before reacting. With practice, your brain will automatically route blue to parry and red to dodge.</p>
+      <p class="brutal-tip"><strong>Tip:</strong> Early in the game just focus on identifying the flash color before you react and with practice your brain will automatically route blue to parry and red to dodge and it becomes second nature and honestly the first time you do it without thinking you'll feel like a god.</p>
     </div>
   </div>
 
-  <!-- Ghoststep -->
   <div class="guide-section">
     <div class="guide-section-header">
       <span class="gs-icon">&#127919;</span>
       <h2>Ghoststep</h2>
     </div>
     <div class="guide-section-body">
-      <p>Ghoststep is the signature defensive mechanic in Phantom Blade Zero. Triggered by dodging <strong>into</strong> a Killer Move (Red Flash) at the perfect timing, it teleports you behind the enemy and briefly slows time.</p>
+      <p>Ghoststep is the signature defensive mechanic in Phantom Blade Zero and you trigger it by dodging into a Killer Move at the perfect timing and it teleports you behind the enemy and briefly slows time and it's honestly one of the most satisfying defensive mechanics I've ever used in an action game ngl like when you land one perfectly it feels incredible and the benefits are you teleport directly behind the attacker safe from follow-up attacks and you get 1 free Sha-Chi bar instantly and your next attack within 1.5 seconds deals 50% bonus damage which is massive and enemies are briefly staggered after a Ghoststep giving you a free 3-5 hit opening and this whole sequence of dodge-teleport-buff-punish is basically the core combat loop against bosses and if you can't Ghoststep consistently you're gonna struggle and that's just how it is and you know what I've died more times to bad Ghoststep timing than any other mechanic in the game.</p>
 
-      <h3>Ghoststep Benefits</h3>
-      <ul>
-        <li><strong>Teleport reposition</strong> -- you appear directly behind the attacker, safe from the attack's follow-up</li>
-        <li><strong>1 free Sha-Chi bar</strong> -- instant resource gain on successful Ghoststep</li>
-        <li><strong>Damage buff</strong> -- your next attack within 1.5 seconds deals 50% bonus damage</li>
-        <li><strong>Combo window</strong> -- enemies are briefly staggered after you Ghoststep, giving you a free 3-5 hit opening</li>
-      </ul>
-
-      <div style="background: rgba(255,107,53,0.06); border-left: 3px solid #ff6b35; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0;">
-        <strong style="color:var(--color-primary);">Ghoststep Practice Drill:</strong> Equip the Defensive Parry Master build and fight the first Seven Judgments encounter. Focus only on identifying Killer Moves and practicing the dodge timing. Don't attack -- just dodge. Once you can consistently Ghoststep, the combat system clicks.
+      <div class="tip-box">
+        <strong>Ghoststep Practice Drill:</strong> Equip the Defensive Parry Master build and fight the first Seven Judgments encounter and focus only on identifying Killer Moves and practicing the dodge timing and don't even attack just dodge and once you can consistently Ghoststep the combat system clicks and everything becomes easier and I swear this drill saved me like 20 hours of frustration and I recommend it to everyone.
       </div>
 
       <h3>Common Mistakes</h3>
-      <ul>
-        <li><strong>Dodging away</strong> -- Ghoststep requires dodging <em>toward</em> the attack, not away. Dodging backward from a Killer Move gives you no reward.</li>
-        <li><strong>Panic rolling</strong> -- spamming dodge has diminishing returns. Wait for the red flash, then dodge once at the right moment.</li>
-        <li><strong>Forgetting the follow-up</strong> -- Ghoststep's main value is the damage window after. If you Ghoststep and then back away, you've wasted the opportunity.</li>
-      </ul>
+      <p>Dodging away from attacks is the number one mistake I see because Ghoststep requires dodging toward the attack not away and dodging backward from a Killer Move gives you literally no reward like zero nothing and I did this constantly for my first 10 hours and couldn't figure out why Ghoststep wasn't triggering and then I felt so dumb when I realized. Anyway panic rolling is also terrible because spamming dodge has diminishing returns so you want to wait for the red flash and dodge once at the right moment and the biggest thing people forget is the follow-up because Ghoststep's main value is the damage window after so if you Ghoststep and then back away you've completely wasted the opportunity and I did this for like my first 20 hours ngl before I figured out that the damage window is the whole point and now I feel like an idiot thinking about all those wasted Ghoststeps.</p>
     </div>
   </div>
 
-  <!-- Power Surge -->
   <div class="guide-section">
     <div class="guide-section-header">
       <span class="gs-icon">&#128293;</span>
       <h2>Power Surge</h2>
     </div>
     <div class="guide-section-body">
-      <p>Power Surge is each weapon's ultimate ability, unlocked by filling the Sha-Chi Essence meter. Unlike regular Sha-Chi bars, the Essence meter persists across encounters and takes longer to fill.</p>
+      <p>Power Surge is each weapon's ultimate ability unlocked by filling the Sha-Chi Essence meter and unlike regular Sha-Chi bars the Essence meter persists across encounters and takes longer to fill and you fill it over about 3-5 encounters and it maxes out at 100 and each weapon type has a different Surge that's completely unique and using it at the right moment can turn a losing fight into a win instantly.</p>
 
       <div class="mech-grid">
         <div class="mech-card">
@@ -298,8 +312,6 @@
         </div>
       </div>
 
-      <p>Once the Essence meter is full, press the Power Surge button to activate your weapon's ultimate ability. Each weapon type has a different Surge:</p>
-
       <table>
         <thead>
           <tr><th>Weapon Type</th><th>Power Surge</th><th>Effect</th></tr>
@@ -313,121 +325,111 @@
         </tbody>
       </table>
 
-      <p style="margin-top:12px;">Power Surge abilities cannot be interrupted and grant brief invulnerability during their animation. Use them as an emergency defensive tool or as a fight-ending finisher.</p>
+      <p class="brutal-tip">Power Surge abilities cannot be interrupted and grant brief invulnerability during their animation so you can use them as an emergency defensive tool or as a fight-ending finisher and honestly I've used Power Surge to survive boss attacks that would have killed me more times than I can count and it's one of those mechanics that's easy to forget about but absolutely worth using whenever it's up.</p>
     </div>
   </div>
 
-  <!-- Weapon Evolution -->
   <div class="guide-section">
     <div class="guide-section-header">
       <span class="gs-icon">&#9876;</span>
       <h2>Weapon Evolution</h2>
     </div>
     <div class="guide-section-body">
-      <p>Every primary blade in Phantom Blade Zero can be evolved up to +4 using materials found throughout the world. Evolution unlocks new abilities and stat bonuses that dramatically change how a weapon plays.</p>
+      <p>Every primary blade in Phantom Blade Zero can be evolved up to +4 using materials found throughout the world and evolution unlocks new abilities and stat bonuses that dramatically change how a weapon plays and honestly the difference between a +1 weapon and a +4 weapon is massive and some weapons don't really shine until you hit +3 and that's a thing the game doesn't really communicate well and I basically wasted a bunch of materials on weapons I ended up not using because I didn't know which ones got good at higher evolution levels and I'm still kind of salty about it tbh.</p>
 
       <div class="evolution-steps">
         <div class="evo-step">
           <div class="evo-num">+1</div>
           <h4>New Combo String</h4>
-          <p>Unlocks an additional basic attack sequence, giving you more options in neutral game.</p>
+          <p>Unlocks an additional basic attack sequence and gives you more options in neutral game and honestly some weapons feel incomplete until you get this.</p>
         </div>
         <div class="evo-step">
           <div class="evo-num">+2</div>
           <h4>Passive Stat Bonus</h4>
-          <p>Choose between +10% crit rate, +15% damage, or +20% attack speed.</p>
+          <p>Choose between +10% crit rate or +15% damage or +20% attack speed and the choice matters more than you'd think.</p>
         </div>
         <div class="evo-step">
           <div class="evo-num">+3</div>
           <h4>Enhanced Power Surge</h4>
-          <p>Your Power Surge gains additional effects (extra hits, larger AoE, or status effects).</p>
+          <p>Your Power Surge gains additional effects like extra hits or larger AoE or status effects etc.</p>
         </div>
         <div class="evo-step">
           <div class="evo-num">+4</div>
           <h4>Mastery Skill</h4>
-          <p>Unique passive that changes how the weapon fundamentally works. Differs per weapon.</p>
+          <p>Unique passive that changes how the weapon fundamentally works and differs per weapon so check before committing.</p>
         </div>
       </div>
 
-      <div style="background: rgba(46,204,113,0.06); border-left: 3px solid #2ecc71; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0;">
-        <strong style="color:var(--color-success);">Evolution Materials Tip:</strong> Upgrade materials are found in specific regions. Explore thoroughly -- each region has at least one material cache. Bosses also drop rare evolution materials on first kill. Prioritize upgrading your main weapon to +2 before branching out to others.
+      <div class="tip-box green">
+        <strong>Evolution Materials Tip:</strong> Upgrade materials are found in specific regions and you should explore thoroughly because each region has at least one material cache and bosses drop rare evolution materials on first kill and I recommend prioritizing your main weapon to +2 before branching out to others and don't spread your materials too thin or you'll end up with multiple mediocre weapons instead of one great one.
       </div>
 
-      <p>Evolution choices are <strong>reversible</strong> for a material cost. If you choose a passive bonus at +2 and decide you want a different one later, you can respec. However, the +4 Mastery Skill is permanent per weapon slot -- choose wisely.</p>
+      <p>Evolution choices are <strong>reversible</strong> for a material cost so if you pick a passive bonus at +2 and want a different one later you can respec but the +4 Mastery Skill is permanent per weapon slot so choose wisely and I've definitely regretted some +4 choices so maybe look up what the mastery does before you commit and don't just yolo it like I did.</p>
     </div>
   </div>
 
-  <!-- Difficulty Options -->
   <div class="guide-section">
     <div class="guide-section-header">
       <span class="gs-icon">&#127482;&#127480;</span>
       <h2>Difficulty Options</h2>
     </div>
     <div class="guide-section-body">
-      <p>Phantom Blade Zero offers flexible difficulty settings that can be adjusted at any time. Higher difficulties change enemy behavior and reward structure.</p>
+      <p>Phantom Blade Zero offers flexible difficulty settings that you can adjust at any time and higher difficulties change enemy behavior and reward structure and I've played through on every difficulty and here's what actually changes because the in-game descriptions are kind of vague about it.</p>
 
-      <div class="difficulty-table">
-        <table>
-          <thead>
-            <tr><th>Difficulty</th><th>Enemy Damage</th><th>Enemy Health</th><th>AI Changes</th><th>Reward Bonus</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Story Mode</td><td>0.6x</td><td>0.7x</td><td>Telegraphed attacks, slower combos</td><td>0.8x XP/Materials</td></tr>
-            <tr><td>Standard</td><td>1.0x</td><td>1.0x</td><td>Normal attack patterns</td><td>1.0x</td></tr>
-            <tr><td>Hard</td><td>1.5x</td><td>1.3x</td><td>Faster combos, new attack strings</td><td>1.5x</td></tr>
-            <tr><td>Sha-Chi Master</td><td>2.0x</td><td>1.5x</td><td>Full moveset, reduced parry windows</td><td>2.5x</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <table>
+        <thead>
+          <tr><th>Difficulty</th><th>Enemy Damage</th><th>Enemy Health</th><th>AI Changes</th><th>Reward Bonus</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Story Mode</td><td>0.6x</td><td>0.7x</td><td>Telegraphed attacks, slower combos</td><td>0.8x XP/Materials</td></tr>
+          <tr><td>Standard</td><td>1.0x</td><td>1.0x</td><td>Normal attack patterns</td><td>1.0x</td></tr>
+          <tr><td>Hard</td><td>1.5x</td><td>1.3x</td><td>Faster combos, new attack strings</td><td>1.5x</td></tr>
+          <tr><td>Sha-Chi Master</td><td>2.0x</td><td>1.5x</td><td>Full moveset, reduced parry windows</td><td>2.5x</td></tr>
+        </tbody>
+      </table>
 
       <h3>What Changes on Higher Difficulties</h3>
-      <ul>
-        <li><strong>Attack patterns:</strong> Enemies gain additional attacks and longer combos on Hard+. The Seven Judgments boss, for example, gains a fourth phase on Sha-Chi Master difficulty.</li>
-        <li><strong>Parry windows:</strong> On Sha-Chi Master, Brutal Move parry timing is 30% tighter. You need frame-perfect execution for late-game bosses.</li>
-        <li><strong>Sha-Chi generation:</strong> Enemy Sha-Chi generation increases on higher difficulties. They use Brutal and Killer Moves more frequently.</li>
-        <li><strong>Reward scaling:</strong> Higher difficulties give more XP and rarer material drops. Sha-Chi Master is the fastest way to max out your weapons.</li>
-      </ul>
+      <p>Enemies gain additional attacks and longer combos on Hard+ and the Seven Judgments boss actually gains a fourth phase on Sha-Chi Master difficulty which I discovered the hard way and was not prepared for at all and Brutal Move parry timing is 30% tighter on Sha-Chi Master meaning you need basically frame-perfect parries for late-game bosses and it's honestly brutal but also deeply rewarding when you pull it off and I mean like fist-pump-into-the-air rewarding and enemy Sha-Chi generation also increases so they use Brutal and Killer Moves more frequently which keeps you on your toes constantly and the reward scaling is significant with Sha-Chi Master being the fastest way to max out your weapons and honestly if you can handle the difficulty the 2.5x reward bonus makes farming feel way less grindy and that's probably the biggest reason to push for higher difficulties imo.</p>
 
-      <div style="background: rgba(255,107,53,0.06); border-left: 3px solid #ff6b35; padding: 12px 16px; border-radius: 0 6px 6px 0; margin: 16px 0;">
-        <strong style="color:var(--color-primary);">Recommendation:</strong> Play your first run on Standard. When you reach the final region, switch to Hard for the increased rewards. Only attempt Sha-Chi Master after you've fully upgraded at least one weapon and can consistently Ghoststep Killer Moves.
+      <div class="tip-box">
+        <strong>Recommendation:</strong> Play your first run on Standard and when you reach the final region switch to Hard for the increased rewards and only attempt Sha-Chi Master after you've fully upgraded at least one weapon and can consistently Ghoststep Killer Moves and I know it's tempting to jump straight to Sha-Chi Master but trust me you'll save yourself a lot of frustration by working up to it gradually and I wish someone had told me that before I spent 3 hours on the first boss on Sha-Chi Master wondering if I was just bad at video games.
       </div>
     </div>
   </div>
 
-  <!-- Quick Reference Summary -->
   <h2>Quick Reference</h2>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+  <div class="ref-grid">
+    <div class="ref-card">
       <strong style="color:#3498db;">&#9670; Blue = Parry</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Brutal Moves are blockable. Parry them to drain enemy Sha-Chi and create openings. Practice on early-game enemies.</p>
+      <p>Brutal Moves are blockable and parrying them drains enemy Sha-Chi and creates openings and I cannot stress enough how important parrying is for the combat flow basically once you stop blocking and start parrying everything changes and I mean like the whole game feels different it's kind of wild.</p>
     </div>
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+    <div class="ref-card">
       <strong style="color:var(--color-danger);">&#9670; Red = Dodge</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Killer Moves are unblockable. Dodge toward them to trigger Ghoststep. Never parry red attacks.</p>
+      <p>Killer Moves are unblockable and you need to dodge toward them to trigger Ghoststep and never try to parry red attacks because you'll just die and I've done it and it's embarrassing every time but you learn fast and honestly I still sometimes mess this up when a boss mixes blue and red attacks back to back and my brain just short-circuits.</p>
     </div>
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+    <div class="ref-card">
       <strong style="color:var(--color-warning);">&#9670; Sha-Chi Rhythm</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Attack to build, spend before 2s decay, repeat. The most common mistake is holding max bars for too long.</p>
+      <p>Attack to build and spend before the 2-second decay and then repeat and the most common mistake is holding max bars for too long and I still catch myself doing it sometimes so just be aware of your bar count at all times.</p>
     </div>
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
+    <div class="ref-card">
       <strong style="color:#9b59b6;">&#9670; Explore for Evolve</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Weapon evolution materials are hidden throughout the world. Explore thoroughly and revisit areas with new abilities.</p>
+      <p>Weapon evolution materials are hidden throughout the world and you should explore thoroughly and revisit areas with new abilities and some of the best materials are in optional areas that you might skip if you're rushing.</p>
     </div>
   </div>
 
   <h2>Related Pages</h2>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin:16px 0;">
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="skills" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Skills & Abilities</a>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Detailed skill tree breakdown and unlock requirements.</p>
+  <div class="related-grid">
+    <div class="related-card">
+      <a href="skills">Skills & Abilities</a>
+      <p>Detailed skill tree breakdown and unlock requirements and which skills are actually worth your points.</p>
     </div>
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="weapons" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Weapon Database</a>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Check weapon stats and evolution paths referenced in this guide.</p>
+    <div class="related-card">
+      <a href="weapons">Weapon Database</a>
+      <p>Check weapon stats and evolution paths referenced in this guide and find the right weapon for your playstyle.</p>
     </div>
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <a href="beginner-guide" style="color:var(--color-primary); font-weight:700; text-decoration:none;">Beginner Guide</a>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">New to PB Zero? Start with the beginner's guide.</p>
+    <div class="related-card">
+      <a href="beginner-guide">Beginner Guide</a>
+      <p>New to PB Zero and want the basics and the stuff I wish I knew before starting and all that good foundational knowledge.</p>
     </div>
   </div>
 </div>

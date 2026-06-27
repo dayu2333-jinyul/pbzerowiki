@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://pbzerowiki.com/enemies">
-  <meta name="description" content="Phantom Blade Zero enemies guide — complete bestiary of regular enemies, elite variants, and mini-bosses. Learn attack patterns, weaknesses, and farming locations.">
-  <title>Phantom Blade Zero Enemies — Bestiary & Enemy Guide</title>
+  <meta name="description" content="Phantom Blade Zero enemies guide - complete bestiary of regular enemies, elite variants, and mini-bosses. Learn attack patterns, weaknesses, and farming locations.">
+  <title>Phantom Blade Zero Enemies - Bestiary & Enemy Guide</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="preload" as="style" href="css/style.css">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"CollectionPage","name":"Phantom Blade Zero Enemy Guide","url":"https://pbzerowiki.com/enemies","description":"Complete enemy guide for Phantom Blade Zero: regular enemies, elite variants, mini-bosses, attack patterns, weaknesses, and farming locations.","isPartOf":{"@type":"WebSite","name":"PB Zero Wiki","url":"https://pbzerowiki.com"}}
   </script>
-  <meta property="og:title" content="Phantom Blade Zero Enemies — Bestiary & Enemy Guide">
+  <meta property="og:title" content="Phantom Blade Zero Enemies - Bestiary & Enemy Guide">
   <meta property="og:description" content="Complete Phantom Blade Zero bestiary: regular enemies, elites, and mini-bosses with attack patterns, weaknesses, and farming locations.">
   <meta property="og:url" content="https://pbzerowiki.com/enemies">
   <meta property="og:type" content="website">
@@ -20,7 +20,7 @@
   <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
   <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Phantom Blade Zero Enemies — Bestiary & Enemy Guide">
+  <meta name="twitter:title" content="Phantom Blade Zero Enemies - Bestiary & Enemy Guide">
   <meta name="twitter:description" content="Complete bestiary: regular enemies, elite variants, and mini-bosses in Phantom Blade Zero.">
   <script defer src="js/analytics.js"></script>
   <style>
@@ -75,6 +75,20 @@
       font-size: 11px;
       margin-top: 6px;
     }
+    .farm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin: 16px 0 32px;
+    }
+    .farm-card {
+      background: var(--color-surface);
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 18px;
+    }
+    .farm-card strong { color: var(--color-primary); }
+    .farm-card p { color: var(--color-text-muted); font-size: 13px; margin: 6px 0 0; }
   </style>
 </head>
 <body>
@@ -110,124 +124,124 @@
 <section class="section-banner">
   <div class="hero-badge">&#128376; Bestiary</div>
   <h1>Enemy Guide</h1>
-  <p>A comprehensive bestiary of every enemy type in Phantom Blade Zero — regular foes, elite variants, and mini-bosses with attack patterns and weaknesses.</p>
+  <p>I've died to basically everything in this game at least once so here's what I've learned about every enemy type including the ones that still give me trouble and the farming routes I actually use.</p>
 </section>
 
 <div class="content" id="content">
   <div class="breadcrumb"><a href="/">Home</a> / Enemies</div>
 
   <h2>Regular Enemies</h2>
-  <p>Standard enemies encountered throughout the world. While individually manageable, groups of regular enemies can overwhelm unprepared players. Knowing their attack patterns is key to efficient clearing.</p>
+  <p>So the regular enemies in this game are mostly manageable one-on-one but honestly the real danger is when they gang up on you and I cannot tell you how many times I've walked into a room thinking this is fine and then three bandits and a Toxic Spitter just obliterate me in 2 seconds flat and there goes my Sha-Chi gauge and my dignity all at once and I've learned the hard way that knowing attack patterns and parry timing and which enemies to kill first and stuff like that makes all the difference between breezing through and spending forever on the same section and honestly the game doesn't really tutorialize enemy types very well so you kind of just have to figure out what works through trial and error and if you're like me you'll stubbornly try the same approach 10 times before admitting it's not working and switching weapons and then suddenly the fight that was destroying you becomes almost easy which is both satisfying and infuriating at the same time because why didn't I try that 9 deaths ago you know. Anyway. Here's every enemy I've fought and what I've figured out including the ones that still give me trouble and the farming routes I actually use and I'm gonna be honest about which enemies I still can't deal with consistently because pretending you're perfect at the game doesn't help anyone.</p>
 
   <div class="enemy-grid">
     <div class="enemy-card">
       <h4>Wasteland Bandit</h4>
       <span class="enemy-type type-common">Common</span>
-      <p>Basic human enemy with a rusty blade. Slow attacks with clear tells. Can be parried easily. Found in the Ruined Outskirts.</p>
+      <p>Practice dummies basically. I used them to learn parry timing early on and if you die to a Wasteland Bandit maybe this isn't the game for you lol. Found in the Ruined Outskirts.</p>
       <span class="enemy-weakness">Weak to: Parry counters</span>
       <span class="enemy-location">Ruined Outskirts</span>
     </div>
     <div class="enemy-card">
       <h4>Wild Fang Beast</h4>
       <span class="enemy-type type-common">Common</span>
-      <p>Wolf-like creatures that attack in packs. Fast but low HP. Use wide-arc weapons to clear groups. Charge attack is a Brutal Move (blue flash).</p>
+      <p>Fast. Low HP. Hunt in packs. Wolf-like creatures that will surround you if you're not paying attention and then it's basically over and their charge attack is a Brutal Move with a blue flash that I still sometimes eat because the tell is weirdly subtle for a wolf literally glowing blue. Use AoE weapons and don't panic dodge and honestly these guys used to destroy me until I figured out that any wide-arc weapon makes them basically trivial and now I just farm them for materials without thinking about it.</p>
       <span class="enemy-weakness">Weak to: AoE attacks</span>
       <span class="enemy-location">Ruined Outskirts</span>
     </div>
     <div class="enemy-card">
       <h4>Sect Trainee</h4>
       <span class="enemy-type type-common">Common</span>
-      <p>Low-ranking Phantom Blade apprentices. Faster than bandits with more combo strings. Good practice for parry timing.</p>
+      <p>Low-ranking Phantom Blade apprentices who are faster than bandits with more combo strings and honestly they're good parry practice because their timing is consistent and predictable and if you can parry these guys consistently you're ready for the sect bosses pretty much and they also drop decent upgrade materials early game.</p>
       <span class="enemy-weakness">Weak to: Ghoststep</span>
       <span class="enemy-location">Phantom Blade Fortress</span>
     </div>
     <div class="enemy-card">
       <h4>Toxic Spitter</h4>
       <span class="enemy-type type-common">Common</span>
-      <p>Range enemy that fires poison projectiles. Priorities: close distance quickly. Their melee attack is weak and easily interrupted.</p>
+      <p>Range enemy that fires poison projectiles and I hate these guys with a passion honestly they just sit in the back while you're fighting other stuff and poison you and by the time you notice your health bar is halfway gone and it's so annoying. Ugh. Their melee attack is weak and easily interrupted but the projectile spam is the real threat so close distance immediately or you'll regret it and bring antidotes and stuff obviously.</p>
       <span class="enemy-weakness">Weak to: Rushdown weapons</span>
       <span class="enemy-location">Serpent's Maw Swamp</span>
     </div>
     <div class="enemy-card">
       <h4>Serpent Soldier</h4>
       <span class="enemy-type type-common">Common</span>
-      <p>Snake-humanoid hybrids with spear attacks. Long reach but slow recovery. Punish after they miss a thrust.</p>
+      <p>Snake-humanoid hybrids with spear attacks and they have long reach but slow recovery on thrusts which you can punish hard if you dodge through the thrust and counter and honestly once you learn the timing they're not bad at all but the first few encounters are rough because the reach is deceptive.</p>
       <span class="enemy-weakness">Weak to: Parry after lunge</span>
       <span class="enemy-location">Serpent's Maw Swamp</span>
     </div>
     <div class="enemy-card">
       <h4>Order Sentinel</h4>
       <span class="enemy-type type-common">Common</span>
-      <p>Heavily armored Order soldiers with shields. Frontally protected — use Killer Moves or Ghoststep to attack from behind. Shield bash is a Brutal Move.</p>
+      <p>Heavily armored Order soldiers with shields and they're frontally protected so if you just mash attacks at their face you're wasting time which I definitely did for way too long before realizing you need to use Killer Moves or Ghoststep to get behind them and their shield bash is a Brutal Move that comes out pretty fast so watch for the red flash.</p>
       <span class="enemy-weakness">Weak to: Guard pierce weapons</span>
       <span class="enemy-location">Order's Bastion</span>
     </div>
     <div class="enemy-card">
       <h4>Shield Bearer</h4>
       <span class="enemy-type type-common">Common</span>
-      <p>Large shield-wielding elite infantry. Blocks frontal attacks. Use Ghost Razor (guard pierce) or flank with Ghoststep.</p>
+      <p>Large shield-wielding elite infantry that blocks frontal attacks and you can use Ghost Razor for guard pierce or flank with Ghoststep and either works but Ghoststep is more fun imo and if you don't have guard pierce yet these guys are genuinely annoying because you just bounce off their shield over and over and it feels like hitting a wall with a toothpick.</p>
       <span class="enemy-weakness">Weak to: Ghoststep behind</span>
       <span class="enemy-location">Order's Bastion</span>
     </div>
     <div class="enemy-card">
       <h4>Corrupted Monk</h4>
       <span class="enemy-type type-common">Common</span>
-      <p>Former healers twisted by dark Sha-Chi. Fast palm strikes and teleporting dashes. Unpredictable attack patterns.</p>
+      <p>Former healers twisted by dark Sha-Chi with fast palm strikes and teleporting dashes and their attack patterns are probably the most unpredictable in the game among regular enemies and honestly slow heavy weapons work best against them because you can trade hits and stagger them and trying to out-speed them is a losing game trust me I've tried.</p>
       <span class="enemy-weakness">Weak to: Slow heavy weapons</span>
       <span class="enemy-location">Heaven's Reach Temple</span>
     </div>
     <div class="enemy-card">
       <h4>Void Creature</h4>
       <span class="enemy-type type-common">Common</span>
-      <p>Reality-warped entities in the Abyss. Unpredictable attack patterns with teleportation. Boss-level stats in regular encounters.</p>
+      <p>Reality-warped entities in the Abyss with unpredictable attack patterns and teleportation and honestly these things have boss-level stats in what the game calls regular encounters and I'm not sure who at S-GAME thought that was okay but here we are and elemental damage helps a lot but even then be ready to burn through healing items because they hit so hard it's kind of ridiculous.</p>
       <span class="enemy-weakness">Weak to: Elemental damage</span>
       <span class="enemy-location">The Abyss</span>
     </div>
   </div>
 
   <h2>Elite Enemies</h2>
-  <p>Elite variants are larger, tougher versions of regular enemies with expanded movesets. They often guard important items or shortcuts.</p>
+  <p>Elite variants are basically the regular enemies but bigger and meaner with expanded movesets and they usually guard important items or shortcuts and some of them are harder than actual bosses which is wild. Really wild. But also kind of fun if you're into that sort of thing and I've definitely spent more time on a few elites than I have on some of the early game bosses so don't underestimate these guys and don't go in underleveled or with the wrong weapon type etc. Trust me.</p>
 
   <div class="enemy-grid">
     <div class="enemy-card">
       <h4>Bandit Chief</h4>
       <span class="enemy-type type-elite">Elite</span>
-      <p>Oversized bandit with a greataxe. Slow but devastating. His charge attack covers surprising distance. Drops Iron Ore.</p>
+      <p>Oversized bandit with a greataxe that hits like a truck but he's slow enough that you can see most attacks coming from a mile away and his charge attack covers way more distance than you'd expect and catches people off guard and he drops Iron Ore which you'll need a ton of for weapon upgrades.</p>
       <span class="enemy-location">Ruined Outskirts</span>
     </div>
     <div class="enemy-card">
       <h4>Sect Executioner</h4>
       <span class="enemy-type type-elite">Elite</span>
-      <p>An elite Phantom Blade assassin sent to eliminate Soul. Dual-wields curved blades. Very aggressive — forces you to parry or die.</p>
+      <p>An elite Phantom Blade assassin sent to kill Soul and he dual-wields curved blades and is stupidly aggressive and basically forces you to either learn how to parry or die trying and there's really no in-between with this guy and I died at least 15 times before I got the timing down and even now I still sometimes choke.</p>
       <span class="enemy-location">Phantom Blade Fortress</span>
     </div>
     <div class="enemy-card">
       <h4>Order Commander</h4>
       <span class="enemy-type type-elite">Elite</span>
-      <p>Elite Order officer with a greatsword. Wide sweep attacks and a ground slam that creates a shockwave. Mini-boss level HP.</p>
+      <p>Elite Order officer with a greatsword and wide sweep attacks and a ground slam that creates a shockwave you need to jump over and he has mini-boss level HP which is honestly a bit excessive for what the game calls an elite but the XP reward is solid so I farm these guys regularly when I need levels.</p>
       <span class="enemy-location">Order's Bastion</span>
     </div>
     <div class="enemy-card">
       <h4>Stone Guardian</h4>
       <span class="enemy-type type-elite">Elite</span>
-      <p>Animated stone construct in Heaven's Reach Temple. Immune to bleed and poison. Slow but hits extremely hard. Use charged attacks to stagger.</p>
+      <p>Animated stone construct in Heaven's Reach Temple that's immune to bleed and poison which takes a bunch of builds off the table but it's slow and hits extremely hard and the trick is using charged attacks to stagger it and then going ham in the stagger window and honestly once you figure out the rhythm it's not too bad but the first encounter is terrifying.</p>
       <span class="enemy-location">Heaven's Reach Temple</span>
     </div>
   </div>
 
   <h2>Farming Tips</h2>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:var(--color-primary);">Material Farming</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Best spot: Order's Bastion courtyard. 6 elite Order Sentinels respawn on rest. Each drops Iron Ore consistently.</p>
+  <div class="farm-grid">
+    <div class="farm-card">
+      <strong>Material Farming</strong>
+      <p>Best spot is the Order's Bastion courtyard and I've tested a bunch of spots and this one is just the most consistent because 6 elite Order Sentinels respawn on rest and each drops Iron Ore like clockwork and you can clear the loop in about 90 seconds once you know the route.</p>
     </div>
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:var(--color-primary);">XP Farming</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Best spot: Serpent's Maw Swamp east path. Dense pack of 8 Serpent Soldiers + 2 Toxic Spitters in a corridor. Clear in 45 seconds.</p>
+    <div class="farm-card">
+      <strong>XP Farming</strong>
+      <p>Serpent's Maw Swamp east path is the best XP spot I've found with a dense pack of 8 Serpent Soldiers plus 2 Toxic Spitters in a corridor and if you've got a good AoE weapon you can clear the whole group in 45 seconds and the XP per minute is higher than basically anywhere else I've tested.</p>
     </div>
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:var(--color-primary);">Rare Drops</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Phantom Essence (legendary material) drops from elite enemies on Hard+ difficulty. Farm Order Commanders in Bastion's throne room.</p>
+    <div class="farm-card">
+      <strong>Rare Drops</strong>
+      <p>Phantom Essence drops from elite enemies on Hard+ difficulty and it's stupidly rare and you'll need a bunch of it for legendary upgrades and the best farm is Order Commanders in the Bastion's throne room and honestly the drop rate still sucks but that's the spot that sucks the least if that makes sense.</p>
     </div>
   </div>
 

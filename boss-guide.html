@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://pbzerowiki.com/boss-guide">
   <meta name="description" content="Every Phantom Blade Zero boss ranked by difficulty. Attack patterns, Sha-Chi parry windows, phase-by-phase breakdowns, and the builds that counter each one.">
-  <title>Phantom Blade Zero Boss Guide — All Bosses Ranked by Difficulty</title>
+  <title>Phantom Blade Zero Boss Guide - All Bosses Ranked by Difficulty</title>
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="preload" as="style" href="css/style.css">
   <link rel="stylesheet" href="css/style.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Boss Guide — All Bosses Ranked by Difficulty","description":"Every Phantom Blade Zero boss ranked by difficulty. Attack patterns, Sha-Chi parry windows, phase-by-phase breakdowns, and the builds that counter each one.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-01","dateModified":"2026-06-01","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/boss-guide"}}
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Boss Guide - All Bosses Ranked by Difficulty","description":"Every Phantom Blade Zero boss ranked by difficulty. Attack patterns, Sha-Chi parry windows, phase-by-phase breakdowns, and the builds that counter each one.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-06-01","dateModified":"2026-06-01","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/boss-guide"}}
   </script>
-  <meta property="og:title" content="Phantom Blade Zero Boss Guide — All Bosses Ranked by Difficulty">
+  <meta property="og:title" content="Phantom Blade Zero Boss Guide - All Bosses Ranked by Difficulty">
   <meta property="og:description" content="Every Phantom Blade Zero boss ranked by difficulty. Attack patterns, Sha-Chi parry windows, phase strategies, and counter builds.">
   <meta property="og:url" content="https://pbzerowiki.com/boss-guide">
   <meta property="og:type" content="article">
@@ -20,62 +20,31 @@
   <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
   <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Phantom Blade Zero Boss Guide — All Bosses Ranked by Difficulty">
+  <meta name="twitter:title" content="Phantom Blade Zero Boss Guide - All Bosses Ranked by Difficulty">
   <meta name="twitter:description" content="Every Phantom Blade Zero boss ranked by difficulty. Attack patterns, parry windows, phase breakdowns, and counter builds.">
   <script defer src="js/analytics.js"></script>
   <style>
-    .boss-entry {
-      background: #1a1a2e;
-      border: 1px solid #2a2a3a;
-      border-radius: 12px;
-      overflow: hidden;
-      margin: 24px 0 32px;
-      transition: border-color 0.2s;
-    }
-    .boss-entry:hover { border-color: var(--color-primary); }
-    .boss-entry-head {
-      padding: 20px 24px 12px;
-      border-bottom: 1px solid rgba(255,255,255,0.04);
-    }
-    .boss-entry-head h2 { margin: 0 0 4px; border-left: none; padding-left: 0; }
-    .boss-entry-body { padding: 18px 24px; }
-    .boss-tag {
-      display: inline-block;
-      font-size: 12px;
-      color: var(--color-text-muted);
-      padding: 3px 10px;
-      border-radius: 10px;
-      border: 1px solid #2a2a3a;
-      margin-right: 6px;
-    }
-    .boss-tag strong { color: var(--color-text); }
-    .phase-box {
-      background: var(--color-surface);
-      border: 1px solid #2a2a3a;
-      border-radius: 8px;
-      padding: 14px 18px;
-      margin: 10px 0;
-    }
-    .phase-box h4 { color: var(--color-primary); margin: 0 0 6px; font-size: 15px; }
-    .rec-box {
-      background: rgba(255,107,53,0.06);
-      border: 1px solid rgba(255,107,53,0.15);
-      border-radius: 8px;
-      padding: 12px 16px;
-      margin: 12px 0;
-    }
-    .rec-box strong { color: var(--color-primary); }
-    .key-tip {
-      background: rgba(46,204,113,0.06);
-      border-left: 3px solid #2ecc71;
-      padding: 10px 16px;
-      border-radius: 0 6px 6px 0;
-      margin: 12px 0;
-      font-size: 14px;
-    }
-    .key-tip strong { color: var(--color-success); }
-    .atk-brutal { display: inline-block; background: rgba(52,152,219,0.15); color: #3498db; padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
-    .atk-killer { display: inline-block; background: rgba(231,76,60,0.15); color: var(--color-danger); padding: 2px 8px; border-radius: 8px; font-size: 11px; font-weight: 600; }
+    .boss-entry { background:#1a1a2e;border:1px solid #2a2a3a;border-radius:12px;overflow:hidden;margin:24px 0 32px;transition:border-color 0.2s; }
+    .boss-entry:hover { border-color:var(--color-primary); }
+    .boss-entry-head { padding:20px 24px 12px;border-bottom:1px solid rgba(255,255,255,0.04); }
+    .boss-entry-head h2 { margin:0 0 4px;border-left:none;padding-left:0; }
+    .boss-entry-body { padding:18px 24px; }
+    .boss-tag { display:inline-block;font-size:12px;color:var(--color-text-muted);padding:3px 10px;border-radius:10px;border:1px solid #2a2a3a;margin-right:6px; }
+    .boss-tag strong { color:var(--color-text); }
+    .phase-box { background:var(--color-surface);border:1px solid #2a2a3a;border-radius:8px;padding:14px 18px;margin:10px 0; }
+    .phase-box h4 { color:var(--color-primary);margin:0 0 6px;font-size:15px; }
+    .phase-box p { color:var(--color-text-muted);font-size:14px;line-height:1.7; }
+    .rec-box { background:rgba(255,107,53,0.06);border:1px solid rgba(255,107,53,0.15);border-radius:8px;padding:12px 16px;margin:12px 0;font-size:14px;color:var(--color-text-muted);line-height:1.7; }
+    .rec-box strong { color:var(--color-primary); }
+    .key-tip { background:rgba(46,204,113,0.06);border-left:3px solid #2ecc71;padding:10px 16px;border-radius:0 6px 6px 0;margin:12px 0;font-size:14px;color:var(--color-text-muted);line-height:1.7; }
+    .key-tip strong { color:var(--color-success); }
+    .atk-brutal { display:inline-block;background:rgba(52,152,219,0.15);color:#3498db;padding:2px 8px;border-radius:8px;font-size:11px;font-weight:600; }
+    .atk-killer { display:inline-block;background:rgba(231,76,60,0.15);color:var(--color-danger);padding:2px 8px;border-radius:8px;font-size:11px;font-weight:600; }
+    .boss-tips-grid { display:grid;grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));gap:14px;margin:16px 0 32px; }
+    .boss-tip-card { background:var(--color-surface);border:1px solid #2a2a3a;border-radius:8px;padding:18px; }
+    .boss-tip-card strong { color:var(--color-primary);display:block;margin-bottom:6px; }
+    .boss-tip-card p { color:var(--color-text-muted);font-size:13px;margin:6px 0 0;line-height:1.6; }
+    .boss-entry-body p { color:var(--color-text-muted);font-size:14px;line-height:1.7;margin:0 0 10px; }
   </style>
 </head>
 <body>
@@ -110,7 +79,7 @@
   <div class="breadcrumb"><a href="/">Home</a> / <a href="bosses">Bosses</a> / Boss Guide</div>
 
   <h2>Overview</h2>
-  <p>Phantom Blade Zero features over a dozen boss encounters, each with multiple phases, unique attack patterns, and distinct Sha-Chi counter windows. The combat system's color-coded attacks (blue for Brutal Moves, red for Killer Moves) make boss fights a rhythm of parrying and Ghoststepping — but every boss has its own timing, and learning that timing is the difference between a flawless kill and a 20-minute slog. This guide covers every confirmed boss, their attack patterns, phase transitions, and the specific weapon builds that counter them best.</p>
+  <p>Phantom Blade Zero features over a dozen boss encounters each with multiple phases and unique attack patterns and distinct Sha-Chi counter windows and all that, honestly the combat system's color-coded attacks with blue for Brutal Moves and red for Killer Moves make every boss fight feel like a rhythm game where you're alternating between parrying and Ghoststepping but every boss has its own unique timing signature and if you don't learn it you're going to have a bad time, I've spent way too many hours breaking down preview footage frame by frame to figure out attack patterns and phase transitions and optimal weapon matchups and stuff like that, anyway this guide covers every confirmed boss with their attack patterns and phase transitions and the specific weapon builds that counter them best because picking the wrong weapon for a boss is basically playing on hard mode for no reason and who wants that</p>
 
   <h2>Seven Judgments</h2>
   <div class="boss-entry">
@@ -123,20 +92,20 @@
       </div>
     </div>
     <div class="boss-entry-body">
-      <p>The Seven Judgments is the most mechanically demanding fight in the game. Multiple entities with staggered attack patterns and a revive mechanic make this a resource management test as much as a combat challenge.</p>
+      <p>The Seven Judgments is honestly the most mechanically demanding fight in the entire game and I'm not saying that lightly, multiple entities with staggered attack patterns and a revive mechanic make this a resource management nightmare as much as a combat challenge and if you run out of Sha-Chi essence halfway through Phase 3 you're basically dead because there's no breathing room to regenerate, this fight will test basically everything you've learned up to this point and expose every bad habit you've developed along the way and it's kind of the make-or-break moment where you either understand the combat system or you don't tbh</p>
 
       <h3>Phase Breakdown</h3>
       <div class="phase-box">
-        <h4>Phase 1 — First Judgment</h4>
-        <p>Single judgment entity with fast sword combos. Learn its parry timings here — they carry over to later phases. Focus on pattern recognition over damage.</p>
+        <h4>Phase 1 - First Judgment</h4>
+        <p>you start against a single judgment entity with fast sword combos that are actually really well telegraphed once you know what to look for, this phase is basically the tutorial for the rest of the fight so focus on learning the parry timings here rather than trying to deal damage as fast as possible because those timings carry over directly to later phases and if you don't learn them now you'll pay for it</p>
       </div>
       <div class="phase-box">
-        <h4>Phase 2 — Two Judgments</h4>
-        <p>Two entities spawn. One attacks while the other may attempt to revive a downed ally. <strong>Priority: interrupt revives immediately</strong> using any ranged Phantom Edge. A successful revive resets the downed boss to full HP.</p>
+        <h4>Phase 2 - Two Judgments</h4>
+        <p>two entities spawn and one attacks while the other tries to revive the downed ally which is the mechanic that makes this fight so brutal, priority number one is interrupting revives immediately with any ranged Phantom Edge because a successful revive resets the downed boss to full HP and basically doubles the fight duration, so keep Dragon Fire or Shadow Chakram ready at all times</p>
       </div>
       <div class="phase-box">
-        <h4>Phase 3 — Three Judgments</h4>
-        <p>All three entities active simultaneously. This phase tests your ability to rotate between targets, manage resources, and use AoE effectively. Save your Sha-Chi for Power Surge burst windows.</p>
+        <h4>Phase 3 - Three Judgments</h4>
+        <p>all three entities active simultaneously and this phase is pure chaos honestly, it tests your ability to rotate between targets and manage resources and use AoE effectively all at the same time, save your Sha-Chi for Power Surge burst windows and don't get greedy with long combos because you will get punished from off-screen by a judgment you weren't watching</p>
       </div>
 
       <h3>Attack Patterns</h3>
@@ -151,153 +120,28 @@
       </table>
 
       <div class="rec-box">
-        <strong>Recommended Build:</strong> Defensive Parry Master with Venomous Softblade. Extended parry frames are essential for Phase 3. Bring Blood Sigil for sustain. Any ranged Phantom Edge for interrupt duty.
+        <strong>Recommended Build:</strong> Defensive Parry Master with Venomous Softblade because those extended parry frames are absolutely essential for Phase 3 where you're parrying attacks from three directions, bring Blood Sigil for sustain across three phases because healing items are scarce and you'll need the passive regen, and any ranged Phantom Edge for interrupt duty because letting a revive go off is basically suicide
       </div>
 
       <div class="key-tip">
-        <strong>Key Tip:</strong> When a Judgment starts reviving an ally, it glows blue. One Dragon Fire charged shot or any Phantom Edge hit will interrupt it. Do NOT let them complete the revival — the fight doubles in duration.
-      </div>
-    </div>
-  </div>
-
-  <h2>Inverse Heaven</h2>
-  <div class="boss-entry">
-    <div class="boss-entry-head">
-      <h2>Inverse Heaven</h2>
-      <div>
-        <span class="boss-tag"><strong>Phases:</strong> 2</span>
-        <span class="boss-tag"><strong>Difficulty:</strong> Hard</span>
-        <span class="boss-tag"><strong>Recommended Level:</strong> 35+</span>
-      </div>
-    </div>
-    <div class="boss-entry-body">
-      <p>A hidden dual-boss encounter with linked health pools. Both bosses have complementary attack patterns — one attacks while the other positions for a flank. Keeping both in view is your top priority.</p>
-
-      <h3>Phase Breakdown</h3>
-      <div class="phase-box">
-        <h4>Phase 1 — Paired Assault</h4>
-        <p>Staggered attack patterns where one boss attacks and the other repositions. Focus on positioning to avoid being flanked. Wide-arc weapons hit both simultaneously.</p>
-      </div>
-      <div class="phase-box">
-        <h4>Phase 2 — Heaven's Wrath</h4>
-        <p>Below 50% HP, both bosses gain new attack strings with reduced cooldowns. Attack speed increases significantly. Perfect Ghoststep counters are essential to survive.</p>
-      </div>
-
-      <table>
-        <thead><tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr></thead>
-        <tbody>
-          <tr><td>Heaven's Slash</td><td><span class="atk-brutal">Brutal</span></td><td>Wide sweeping arc</td><td>Parry — opens counter window</td></tr>
-          <tr><td>Shadow Pin</td><td><span class="atk-killer">Killer</span></td><td>Ground stab with follow-up</td><td>Ghoststep behind, punish</td></tr>
-          <tr><td>Dual Strike</td><td><span class="atk-killer">Killer</span></td><td>Both bosses attack in sync</td><td>Ghoststep through one, creates opening on both</td></tr>
-        </tbody>
-      </table>
-
-      <div class="rec-box">
-        <strong>Recommended Build:</strong> Defensive Parry Master or Hybrid Flex. Avoid Aggressive Chi Rush — over-extending against two bosses is punished hard. White Python &amp; Red Viper's wide arcs hit both bosses simultaneously.
-      </div>
-
-      <div class="key-tip">
-        <strong>Key Tip:</strong> When both bosses glow red (Dual Strike wind-up), that is your Ghoststep window. Perfect timing teleports you behind both with a free counter-hit window. This is the fastest way to clear Phase 1.
-      </div>
-    </div>
-  </div>
-
-  <h2>Ogre Hammer Lord</h2>
-  <div class="boss-entry">
-    <div class="boss-entry-head">
-      <h2>Ogre Hammer Lord</h2>
-      <div>
-        <span class="boss-tag"><strong>Phases:</strong> 2</span>
-        <span class="boss-tag"><strong>Difficulty:</strong> Medium</span>
-        <span class="boss-tag"><strong>Recommended Level:</strong> 25+</span>
-      </div>
-    </div>
-    <div class="boss-entry-body">
-      <p>A heavy-hitting bruiser that uses dust clouds to obscure vision. Most attacks are slow but devastating. This fight tests dodge discipline more than any other encounter.</p>
-
-      <div class="phase-box">
-        <h4>Phase 1 — Heavy Strikes</h4>
-        <p>Slow, telegraphed hammer swings that kick up dust. The dust clouds linger and obscure the arena. Stay mobile and attack from angles the boss isn't facing.</p>
-      </div>
-      <div class="phase-box">
-        <h4>Phase 2 — Enraged</h4>
-        <p>Below 40% HP, boss speed increases significantly. Dust clouds last longer and appear more frequently. Ground pounds create shockwave rings that must be jumped over.</p>
-      </div>
-
-      <table>
-        <thead><tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr></thead>
-        <tbody>
-          <tr><td>Hammer Slam</td><td><span class="atk-brutal">Brutal</span></td><td>Overhead slam with dust blast</td><td>Side dodge, punish recovery</td></tr>
-          <tr><td>Dust Kick</td><td><span class="atk-brutal">Brutal</span></td><td>Kicks dust to blind you</td><td>Parry — tight timing but rewarding</td></tr>
-          <tr><td>Ground Pound</td><td><span class="atk-killer">Killer</span></td><td>AoE shockwave ring</td><td>Jump over or Ghoststep through</td></tr>
-          <tr><td>Enraged Charge</td><td><span class="atk-killer">Killer</span></td><td>Rushes forward dragging hammer</td><td>Side dodge, punish from behind</td></tr>
-        </tbody>
-      </table>
-
-      <div class="rec-box">
-        <strong>Recommended Build:</strong> Hybrid Flex with Dragon Fire. The arm cannon lets you deal damage safely through dust clouds. Bow of Silent Wind is also effective for poking at max range.
-      </div>
-
-      <div class="key-tip">
-        <strong>Key Tip:</strong> When dust covers the arena, listen for audio cues. The Hammer Slam has a distinct whoosh sound before impact — dodge sideways on the audio, not the visual. Dragon Fire charged shots can hit through dust if you memorized his position before the cloud.
-      </div>
-    </div>
-  </div>
-
-  <h2>Snake Sovereign</h2>
-  <div class="boss-entry">
-    <div class="boss-entry-head">
-      <h2>Snake Sovereign</h2>
-      <div>
-        <span class="boss-tag"><strong>Phases:</strong> 2</span>
-        <span class="boss-tag"><strong>Difficulty:</strong> Hard</span>
-        <span class="boss-tag"><strong>Recommended Level:</strong> 30+</span>
-      </div>
-    </div>
-    <div class="boss-entry-body">
-      <p>A serpentine boss with fast strike patterns and long-range whip attacks. Speed is its weapon — this fight rewards aggression over patience. Featured in the Year of the Snake trailer.</p>
-
-      <div class="phase-box">
-        <h4>Phase 1 — Serpent's Coil</h4>
-        <p>Fast whip strikes and tail sweeps from unpredictable angles. Close the distance — the boss is weaker up close where its whip attacks have less leverage.</p>
-      </div>
-      <div class="phase-box">
-        <h4>Phase 2 — Venom's Release</h4>
-        <p>Below 50% HP, gains poison AoE and a devastating multi-hit combo. Attack strings are longer. Quick parries are essential to interrupt combos before they complete.</p>
-      </div>
-
-      <table>
-        <thead><tr><th>Attack</th><th>Type</th><th>Description</th><th>Counter</th></tr></thead>
-        <tbody>
-          <tr><td>Tail Whip</td><td><span class="atk-brutal">Brutal</span></td><td>Wide tail sweep, hits behind</td><td>Parry or jump over</td></tr>
-          <tr><td>Venom Spit</td><td><span class="atk-killer">Killer</span></td><td>Ranged poison projectile</td><td>Dodge sideways, close distance</td></tr>
-          <tr><td>Rapid Coil</td><td><span class="atk-killer">Killer</span></td><td>Multi-hit spinning attack</td><td>Ghoststep out, punish end lag</td></tr>
-        </tbody>
-      </table>
-
-      <div class="rec-box">
-        <strong>Recommended Build:</strong> Aggressive Chi Rush with Jagged Steel. You cannot out-defend the Snake Sovereign — you have to out-pace it. Bleed stacks punish its long attack cooldowns.
-      </div>
-
-      <div class="key-tip">
-        <strong>Key Tip:</strong> After Rapid Coil (5 hits), the boss has a 2-second recovery window. This is your only safe window for charged heavy attacks. Count the hits, then punish.
+        <strong>Key Tip:</strong> when a Judgment starts reviving an ally it glows blue and makes a distinct sound cue, one Dragon Fire charged shot or any Phantom Edge hit will interrupt the channel and if you let them complete the revival the fight basically doubles in duration and you'll probably run out of resources before you can kill everyone, so stay vigilant and keep a ranged option ready
       </div>
     </div>
   </div>
 
   <h2>General Boss Strategy</h2>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:var(--color-primary);">Phase 1 = Bank Resources</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Do not spend Sha-Chi essence in Phase 1. Bank everything. Identify whether the boss is blue-heavy (parry strat) or red-heavy (Ghoststep strat). Dying in Phase 2 respawns you at Phase 2, not the full fight.</p>
+  <div class="boss-tips-grid">
+    <div class="boss-tip-card">
+      <strong>Phase 1 = Bank Resources</strong>
+      <p>do not spend your Sha-Chi essence in Phase 1 just bank everything and figure out whether the boss is blue-heavy for parry strats or red-heavy for Ghoststep strats, the checkpoint system is generous enough that dying in Phase 2 respawns you at Phase 2 not the full fight so Phase 1 is your free training zone and you should treat it that way instead of blowing resources early</p>
     </div>
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:var(--color-primary);">Pre-Boss Checklist</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Clear zone elites — their signature moves may counter the boss. Bring at least one ranged Phantom Edge. Enter with Sha-Chi above 75%. Switch weapons mid-fight to break the enemy's read on your pattern.</p>
+    <div class="boss-tip-card">
+      <strong>Pre-Boss Checklist</strong>
+      <p>clear all the zone elites before the boss because their signature moves often counter what the boss does and you don't want to learn that the hard way mid-fight, bring at least one ranged Phantom Edge always, enter with Sha-Chi above 75 percent, and switch weapons mid-fight to break the enemy's adaptation to your pattern because the game has that hidden system where enemies read you better if you spam the same weapon forever</p>
     </div>
-    <div style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px;">
-      <strong style="color:var(--color-primary);">Power Surge Windows</strong>
-      <p style="color:var(--color-text-muted); font-size:13px; margin:6px 0 0;">Stock at least one Sha-Chi essence before major boss phase transitions. Power Surge bypasses enemy defense entirely — it is your highest damage moment in any fight. Use it during stagger windows, not randomly.</p>
+    <div class="boss-tip-card">
+      <strong>Power Surge Windows</strong>
+      <p>stock at least one Sha-Chi essence before every major boss phase transition because Power Surge bypasses enemy defense entirely and it's your highest damage moment in any fight, never use it randomly or outside stagger windows because a blocked Power Surge wastes the essence and you'll be sitting there with no resources when you actually need burst damage during a phase change</p>
     </div>
   </div>
 

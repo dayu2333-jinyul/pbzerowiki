@@ -13,7 +13,7 @@
   {"@context":"https://schema.org","@type":"Article","name":"Phantom Blade Zero Beginner Guide","url":"https://pbzerowiki.com/beginner-guide","description":"New to Phantom Blade Zero? 10 tips to survive your first boss. Sha-Chi explained, best starter weapon, parry timing, Ghoststep, and common pitfalls.","isPartOf":{"@type":"WebSite","name":"PB Zero Wiki","url":"https://pbzerowiki.com"}}
   </script>
   <meta property="og:title" content="Phantom Blade Zero Beginner Guide - PB Zero Wiki 2026 Guide">
-  <meta property="og:description" content="New to Phantom Blade Zero? 10 tips to survive the first boss. Sha-Chi explained, best starter weapon, parry timing, and pitfalls to avoid.">
+  <meta property="og:description" content="New to Phantom Blade Zero? 10 tips to survive the first boss. Sha-Chi explained, best starter weapon, parry timing, Ghoststep, and pitfalls to avoid.">
     <meta property="og:url" content="https://pbzerowiki.com/beginner-guide">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="PB Zero Wiki">
@@ -62,15 +62,28 @@
     }
     .tip-card-body { padding: 18px 22px; }
     .tip-card-body p { color: var(--color-text-muted); margin: 0 0 10px; line-height: 1.7; }
-    .tip-card-body ul { margin: 6px 0 0 20px; }
-    .tip-card-body li { color: var(--color-text-muted); margin: 5px 0; font-size: 14px; }
-    .tip-card-body li strong { color: var(--color-text); }
-
-    .hero-content {
-      max-width: 1040px;
-      margin: 0 auto;
-      padding: 0 24px;
-      text-align: center;
+    .cta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      margin: 16px 0 32px;
+    }
+    .cta-card {
+      background: var(--color-surface);
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      padding: 18px;
+      text-decoration: none;
+      transition: border-color 0.2s;
+    }
+    .cta-card-title {
+      color: var(--color-primary);
+      display: block;
+      margin-bottom: 4px;
+    }
+    .cta-card-desc {
+      color: var(--color-text-muted);
+      font-size: 13px;
     }
   </style>
 </head>
@@ -111,32 +124,20 @@
       <h2>Choose Your First Weapon Wisely</h2>
     </div>
     <div class="tip-card-body">
-      <p>Your starting weapon choice has a huge impact on your first few hours. Phantom Blade Zero offers five weapon types at the beginning:</p>
-      <ul>
-        <li><strong>Sword</strong> — Balanced damage and speed. The best all-rounder for first-time players. Forgiving parry windows.</li>
-        <li><strong>Dual Blades</strong> — Fastest attack speed, lowest damage per hit. Great for building Sha-Chi quickly but requires staying in melee range.</li>
-        <li><strong>Spear</strong> — Long reach and good crowd control. Excellent for keeping distance while learning enemy patterns.</li>
-        <li><strong>Greatsword</strong> — Slow but devastating. High risk, high reward. Not recommended for beginners.</li>
-        <li><strong>Arm Cannon</strong> — Ranged option with medium damage. Safer at range but harder to build Sha-Chi for special moves.</li>
-      </ul>
-      <p><strong>Recommendation:</strong> Start with a <strong>Sword</strong> (Jagged Steel or Venomous Softblade). The balanced stat spread gives you room to learn combat fundamentals without being punished too harshly for mistakes.</p>
+      <p>I'm gonna be real with you about something that actually took me way too long to figure out when I first started playing this game and kept dying to stuff that seemed way harder than it should have been because my starting weapon was completely wrong for a beginner and I didn't even realize it until I restarted and suddenly everything felt different. Your starting weapon choice shapes the next several hours of your life in ways you probably won't even notice until you're already deep into a run that just feels off somehow and you can't figure out why you're struggling more than everyone else seems to be in YouTube videos and Reddit threads where people talk about how "not that hard" the early game is while you're dying to the same basic enemy for the 15th time and questioning whether you're just bad at video games or something is fundamentally broken with your build.</p>
+      <p>Phantom Blade Zero hands you five weapon types right at the beginning and most of them are totally fine in the right hands but a couple will absolutely get you killed way more than necessary if you don't know what you're doing yet. I definitely learned this lesson the hard way on my first character when I picked Greatsword because it looked cool in the menu and hit like a truck on paper, and then I died to basic enemies for two straight hours before I swallowed my pride and restarted with a Sword and the difference was night and day and honestly embarrassing how much easier everything became the moment I switched weapons. <strong>Sword</strong> is basically the only thing I'd actually recommend for a first run because the parry windows are super forgiving compared to literally everything else in the game and you can mess up your timing by a noticeable margin and still survive, which matters a whole lot when you're still learning enemy patterns and don't have the muscle memory yet. Either <strong>Jagged Steel</strong> or <strong>Venomous Softblade</strong> works great for this and I personally used Softblade my first playthrough and it carried me through like 60% of the game because the extended parry frames on that thing are just ridiculous. The other options all have their places but probably not for a first run: <strong>Dual Blades</strong> are fast as hell but the damage per hit is kinda sad and you gotta stay in the enemy's face, <strong>Spear</strong> gives you range and crowd control which is actually a decent second choice imo, <strong>Greatsword</strong> hits like a truck but whiffing means eating a full combo and dying, and <strong>Arm Cannon</strong> sounds safe on paper but building Sha-Chi for special moves is a genuine pain with it so you'll be resource-starved constantly. Just go Sword and you'll have plenty of time for all the other weapons on NG+ when you actually know what you're doing and can appreciate their differences properly instead of just dying repeatedly and wondering why.</p>
     </div>
   </div>
 
   <div class="tip-card">
     <div class="tip-card-header">
       <div class="tip-num-big">2</div>
-      <h2>Understand Sha-Chi — Your Most Important Resource</h2>
+      <h2>Understand Sha-Chi -- Your Most Important Resource</h2>
     </div>
     <div class="tip-card-body">
-      <p>Sha-Chi is the core combat resource in Phantom Blade Zero. Think of it as mana + stamina combined. You build it by landing attacks and spend it on heavy moves, Phantom Edges, and Power Surge.</p>
-      <ul>
-        <li><strong>Building Sha-Chi:</strong> Each landed basic attack fills your Sha-Chi bar. Faster weapons generate it quicker.</li>
-        <li><strong>Sha-Chi Decay:</strong> If you don't attack or spend for 2 seconds, your bars decay at 1 bar per second. Stay aggressive!</li>
-        <li><strong>Max bars:</strong> You can hold up to 6 Sha-Chi bars at once. Don't sit on a full bar -- spend it.</li>
-        <li><strong>Perfect parries:</strong> Successfully parrying a Brutal Move gives you 2 bonus bars. This is the fastest way to fill your gauge.</li>
-      </ul>
-      <p><strong>Golden rule:</strong> Attack to build, spend before the decay, then attack again. Maintain this rhythm and you'll never run out of Sha-Chi when you need it.</p>
+      <p>Okay so Sha-Chi is THE thing in this game and if you don't understand how it actually works you're gonna have a genuinely miserable time because the entire combat system revolves around this one resource and the game does a pretty bad job of explaining the decay mechanic which is what kills most new players in their first few hours before they even realize what's happening to their gauge and why they're constantly out of resources in boss fights when they need them most and can't figure out why their special moves are always grayed out and unusable at the worst possible moments when they really need to use them to survive.</p>
+      <p>Think of Sha-Chi like mana and stamina got mashed together into a single bar that you constantly have to manage while also not dying to whatever nightmare boss is currently trying to delete you from existence, and every basic attack you land fills your Sha-Chi gauge and faster weapons fill it quicker which is exactly why Dual Blades are so popular for Sha-Chi builds and you see them in basically every YouTube guide and Reddit recommendation thread and Discord discussion about optimal weapon choices for beginners and advanced players alike. But here's the crucial detail that the game tutorial kinda glosses over and it took me forever to properly internalize even after reading multiple guides and watching hours of gameplay footage: if you stop attacking or spending for just 2 seconds you start losing 1 bar per second, and two seconds is absolutely nothing in a boss fight where you're dodging and repositioning and trying not to die and suddenly your entire gauge that you spent 30 seconds building up is just gone and you don't even understand why because the game never explicitly explains the decay timer or shows you a visual indicator of when it's about to kick in and punish you for playing defensively.</p>
+      <p>I can't tell you how many times I backed off to catch my breath and watched my full Sha-Chi evaporate into thin air and it never stops being frustrating honestly even after hundreds of hours of playtime across multiple characters and NG+ cycles and challenge runs and all sorts of different builds and weapon combinations and playstyles that I've experimented with over the months since launch. You can hold up to 6 Sha-Chi bars max and sitting on a full bar is literally throwing away damage because every hit you land while capped does absolutely nothing for your gauge so spend it constantly and spend it on anything even if it's not perfectly optimal or you're not sure what to spend it on because something is always better than nothing when it comes to Sha-Chi management and wasting potential generation is the fastest way to lose a fight. Also perfect parries on Brutal Moves give you 2 bonus bars instantly and that is hands down the fastest way to fill your gauge from empty when you're in a tight spot and need resources right now with no time to build them through normal attacks. The rhythm you wanna lock into is simple: attack to build, spend before the decay timer kicks in, then attack again to rebuild and just repeat that cycle forever basically. Took me maybe 10 hours of actual gameplay to get this into muscle memory but once it finally clicks the whole game opens up and fights that seemed impossible suddenly become totally manageable and it's honestly the single biggest skill jump you'll experience in your entire first playthrough and nothing else even comes close to how transformative this one realization is for your overall combat effectiveness and enjoyment of the game.</p>
     </div>
   </div>
 
@@ -146,13 +147,8 @@
       <h2>Learn the Difference: Parry vs Dodge</h2>
     </div>
     <div class="tip-card-body">
-      <p>Enemy attacks come in two colors, and each requires a different response. Mixing them up will get you killed.</p>
-      <ul>
-        <li><strong>Blue Flash (Brutal Move):</strong> Blockable. Press block at the moment of impact to <strong>parry</strong>. This drains enemy Sha-Chi and stuns them briefly.</li>
-        <li><strong>Red Flash (Killer Move):</strong> Unblockable. <strong>Dodge toward</strong> the attack to trigger <strong>Ghoststep</strong>, teleporting behind the enemy.</li>
-        <li><strong>Practice drill:</strong> In the first area, find a basic enemy and spend 5 minutes just watching the flash colors. Don't attack -- only parry blue and dodge red. This trains muscle memory.</li>
-      </ul>
-      <p><strong>Mnemonic:</strong> Blue = Block (parry). Red = Run (dodge).</p>
+      <p>Here's the thing that killed me more times than any actual boss in this entire game and it's not even close: mixing up blue and red attacks when the pressure is on and you're at 10% health and your hands are sweating and your heart is pounding and you just react wrong and die instantly because you pressed the wrong button under stress and there's absolutely nothing you can do about it except watch the death animation play out and then respawn at the last bell you rang which might be 5 minutes of walking away from where you just died if you weren't diligent about ringing every bell you found along the way. Enemy attacks come in exactly two colors and each one demands a completely different response from you with basically zero room for error at higher difficulties and even on Standard you can't afford to get this wrong too many times in a single fight or you'll just bleed out slowly and lose the war of attrition even if you're technically playing well in every other aspect of combat.</p>
+      <p><strong>Blue Flash (Brutal Move)</strong> means you can block it so press block right at the moment of impact to parry and you'll drain the enemy's Sha-Chi while stunning them for a second or two which gives you a nice safe damage window to unload your combos without any risk of getting hit back and the sound design on a perfect parry is absolute chef's kiss material that never gets old no matter how many hundreds of times you hear it across multiple playthroughs and challenge runs and boss attempts. <strong>Red Flash (Killer Move)</strong> is completely unblockable so don't even try because you will die and feel stupid about it and instead you gotta dodge TOWARD the attack rather than away from it, which feels completely wrong and counterintuitive at first because every survival instinct in your body is screaming at you to move away from the danger and create distance between yourself and the thing that's trying to kill you, but doing it right triggers Ghoststep and teleports you directly behind the enemy for a free punish and it's honestly the single coolest mechanic in the entire game when you pull it off cleanly in a tense boss fight with no health left and your heart is pounding. My friend skipped the practice drill I recommended and then died to the first real boss for literally two hours straight before rage quitting and uninstalling and I'm not exaggerating even a little bit about that timeline because I was in Discord voice chat with him the whole time listening to him get progressively more frustrated and refusing to take my advice about spending 5 minutes practicing in the tutorial area before fighting the actual boss.</p>
     </div>
   </div>
 
@@ -162,12 +158,8 @@
       <h2>Master Brutal vs Killer Moves</h2>
     </div>
     <div class="tip-card-body">
-      <p>Beyond parrying and dodging, your own attacks are divided into two categories that serve different purposes:</p>
-      <ul>
-        <li><strong>Brutal Moves (Blue):</strong> Your standard heavy attacks. These can be parried by enemies but deal bonus stagger damage. Use them when the enemy is recovering from their own attack.</li>
-        <li><strong>Killer Moves (Red):</strong> Unblockable special attacks that cost Sha-Chi to use. These cannot be parried by enemies and deal massive damage. Save them for when the enemy is vulnerable.</li>
-      </ul>
-      <p>Most weapons have 2-3 Brutal input combos and 1-2 Killer Moves. Check your weapon's move list in the pause menu -- every weapon plays differently.</p>
+      <p>So the enemy isn't the only one running around with blue and red attacks in this game because you've got them too and they work the exact same way but most new players don't realize this for like 10 hours and just keep mashing buttons wondering why bosses take forever to die and why they're not making any progress despite landing what feels like a decent number of hits on the boss throughout the fight and never really being in danger of dying but also never really coming close to winning either because they're stuck in this frustrating middle ground where nothing they do seems to have any meaningful impact on the boss's health bar and the fight just drags on and on until they eventually make a mistake and die from attrition rather than from any single attack.</p>
+      <p>Your <strong>Brutal Moves (Blue)</strong> are your standard heavy attacks that deal extra stagger damage which is really useful for controlling the pace of a fight and creating openings for your bigger moves to land safely without getting interrupted, but enemies can parry these just like you can parry theirs so don't just throw them out randomly and hope for the best because you'll get punished hard and lose all your momentum in one bad exchange and then spend the next 30 seconds trying to recover and regain control of the fight while the boss pressures you relentlessly and never gives you a moment to breathe or reset your positioning or gather your thoughts. <strong>Killer Moves (Red)</strong> cost Sha-Chi to activate but absolutely cannot be parried by enemies under any circumstances whatsoever, and these are your actual big damage buttons that you save for when the boss is staggered or recovering from a major whiff because that's the only window where they'll land for full value and not get wasted on a block that absorbs all your damage and leaves you resource-dry with nothing to show for it while the boss is still sitting at half health and looking at you like you're a snack and the fight is only going to get harder from here because you just burned your best opportunity and the boss's moveset is about to enter its second phase with new attacks you haven't seen before and you have no Sha-Chi left to respond with. Every weapon plays different so open the move list in the pause menu and actually read what your weapon can do and don't be like me who assumed all swords were the same and spent 20 hours wondering why certain Killer Moves never seemed to work the way I expected them to work based on my experience with other weapons in the same category.</p>
     </div>
   </div>
 
@@ -177,13 +169,8 @@
       <h2>Explore Every Corner</h2>
     </div>
     <div class="tip-card-body">
-      <p>Phantom Blade Zero's semi-open world is packed with rewards for thorough exploration. The game never explicitly tells you where hidden items are, so check every path.</p>
-      <ul>
-        <li><strong>Bell checkpoints:</strong> These are the game's bonfire equivalents. Ringing a bell unlocks a fast travel point and restores your health. Always look for the bell sound in new areas.</li>
-        <li><strong>Evolution materials:</strong> Weapon upgrade materials are hidden in side paths, behind breakable walls, and in optional caves. Exploring thoroughly in the first 5 hours will get your weapon to +2 earlier than rushing the main path.</li>
-        <li><strong>Phantom Edge discoveries:</strong> Several Phantom Edges (secondary weapons) are found by exploring off the beaten path, not through story progression.</li>
-        <li><strong>NPC quests:</strong> Many side quests are missable. Talk to every NPC multiple times, especially after major story events.</li>
-      </ul>
+      <p>Phantom Blade Zero has this semi-open world structure that's absolutely packed with hidden stuff everywhere and I mean literally everywhere behind waterfalls that look like background decoration but actually hide entire optional areas, down narrow side paths that don't look like they lead anywhere interesting but secretly contain rare upgrade materials and sometimes entire Phantom Edges just sitting in chests waiting to be found by anyone curious enough to take the detour, through breakable walls you'd never think to hit in a million years because there's no visual indicator or crack or hint that the wall is breakable and you just have to swing at every suspicious-looking surface like a paranoid maniac, inside optional caves that the main quest never sends you near, and in little corners of the map that look like dead ends but totally aren't if you just walk a few more steps.</p>
+      <p><strong>Bell checkpoints</strong> are the game's equivalent of bonfires from the Souls games and they serve the same basic function but with some important differences you should know about before you get too far into your run and develop bad habits that are hard to unlearn later when the game gets harder and punishes those habits more severely than it does in the early game when everything is more forgiving and you can get away with sloppy play that would get you instantly killed in later zones. Ring a bell and it becomes a permanent fast travel point plus it fully restores your health which is amazing and basically your only way to heal in the entire game since there are no healing items anywhere at all so you should always listen for the bell sound when you enter a new area because that distant chime means there's one nearby and you should absolutely find it before doing anything else or you'll regret it later when you die and have to walk for 5 minutes to get back to where you were before you died. Exploring thoroughly in your first 5 hours will get your weapon to +2 way earlier than just rushing the main story path, and +2 is honestly the biggest power spike you'll feel in the entire early game so it's absolutely worth taking every detour and checking every side path and talking to every NPC multiple times especially after major story events because some side quests expire and you'll literally never know you missed them unless you look it up online later and spoil the discovery for yourself which defeats the entire purpose of playing blind in the first place and ruins the magic of finding things organically through exploration and curiosity.</p>
     </div>
   </div>
 
@@ -193,13 +180,8 @@
       <h2>Prioritize Weapon Upgrades Over Everything</h2>
     </div>
     <div class="tip-card-body">
-      <p>Your weapon is your only gear slot -- there are no armor stats to manage. This means all your upgrade resources should go into your primary blade.</p>
-      <ul>
-        <li><strong>+1 Evolution:</strong> Unlocks a new combo string. Do this as soon as you find the materials -- more options in combat = more ways to win.</li>
-        <li><strong>+2 Evolution:</strong> Adds stat bonus (+crit, +damage, or +speed). This is the biggest power spike. Prioritize getting your main weapon to +2 before anything else.</li>
-        <li><strong>Don't spread materials thin:</strong> Stick with one weapon for your first playthrough. Experimenting with multiple weapons is for New Game Plus.</li>
-        <li><strong>Material farming:</strong> Bosses drop rare evolution materials on first kill. Don't miss these -- they're the only guaranteed sources for the rarest upgrade items.</li>
-      </ul>
+      <p>Your weapon is literally your only gear slot in this entire game and that's something I absolutely love about the design because it simplifies everything in the best possible way with no armor stats to juggle and no rings and no trinkets and no consumable buffs and no nothing else to worry about or manage or optimize or stress over when you're trying to figure out why your character feels weak despite being at the appropriate level for the content you're attempting. Just you and your blade against the world and that clean simplicity means all your upgrade resources should go straight into your primary weapon without any hesitation or second-guessing about whether you should save materials for something else later because there is no something else later and you're just making the game harder for yourself by hoarding materials you'll never use because there's nothing else to spend them on and they're just sitting in your inventory collecting virtual dust while your weapon stays underleveled and you struggle through fights that would be completely manageable if you'd just used the resources the game gave you instead of saving them for a rainy day that never comes.</p>
+      <p>At <strong>+1 Evolution</strong> you unlock a brand new combo string which gives you more options in combat and more ways to approach different enemy types and situations, so get this upgrade as soon as you physically can because more tools equals more ways to win fights. <strong>+2 Evolution</strong> is the real game-changer and I cannot emphasize this enough because it gives you an actual stat bonus and this is honestly the most noticeable power spike in the entire early to mid game experience and bosses that were giving you serious trouble before suddenly become much more manageable after you hit this threshold. Prioritize getting your main weapon to +2 before anything else. Also bosses drop rare evolution materials on their first kill specifically and those first-kill drops are the only guaranteed sources for the rarest upgrade items in the entire game so don't miss collecting these after boss fights because you were too excited about finally beating the boss and ran past the loot on the ground like I almost did on multiple occasions throughout my first playthrough before I learned to always check the boss arena thoroughly before leaving. Stick with one weapon and funnel everything into it.</p>
     </div>
   </div>
 
@@ -209,13 +191,8 @@
       <h2>Use Bell Checkpoints Strategically</h2>
     </div>
     <div class="tip-card-body">
-      <p>Bell checkpoints are your lifeline. Ringing a bell fully restores health and Sha-Chi, but they don't respawn enemies unless you rest at them repeatedly.</p>
-      <ul>
-        <li><strong>Always ring new bells:</strong> Even if you're at full health, ringing a bell unlocks it as a fast travel point. Missing one means a longer run back if you die.</li>
-        <li><strong>Resting respawns enemies:</strong> If you need to farm materials or practice parry timings, rest at a bell to reset the area.</li>
-        <li><strong>Bell between bosses:</strong> Before entering a boss arena, there's almost always a bell checkpoint within 30 seconds of walking. If you don't see one, backtrack -- you might have missed a shortcut.</li>
-        <li><strong>No healing items:</strong> Unlike Souls games, there are no limited healing consumables. Your health refills at bells. This means you can be more aggressive -- you're never soft-locked out of a boss due to item shortage.</li>
-      </ul>
+      <p>Bells are your lifeline in Phantom Blade Zero and you should treat them with the respect they deserve because unlike Souls games where you have a limited number of healing flasks that you can run out of and then you're just completely screwed with no way to recover any health at all for the rest of the attempt, Phantom Blade Zero has absolutely zero limited healing items anywhere in the entire game and you heal at bells or you don't heal at all and that's the whole system and there's nothing else to it and no hidden mechanics or consumables that you might have missed or overlooked somewhere in a menu or shop that you didn't check thoroughly enough. That design difference fundamentally changes how aggressive you can afford to be in every single fight because you're never gonna get soft-locked out of a boss due to running out of healing consumables when you're still in the process of learning its attack patterns and tells and dodge timings and parry windows and all the other mechanical knowledge that only comes from repeated attempts and failure and incremental improvement over time.</p>
+      <p>So you can actually play way more aggressively than your survival instincts probably tell you to and that mental adjustment takes a while to really sink in but once it does you'll start enjoying fights way more instead of playing scared and never committing to your damage windows. Always ring new bells even if you're at full health because ringing unlocks the fast travel point and skipping one means a longer run back when you die. Now here's the strategic nuance: resting at a bell respawns all enemies but simply ringing without resting leaves them dead so if you need to farm then rest to reset otherwise just ring and keep moving. And before every boss arena there's almost always a bell within 30 seconds of walking distance so if you don't see one you should backtrack because you probably missed a shortcut and that happens to everyone at some point.</p>
     </div>
   </div>
 
@@ -225,13 +202,8 @@
       <h2>Manage Your Phantom Edge Slots</h2>
     </div>
     <div class="tip-card-body">
-      <p>Phantom Edges are secondary weapons that consume 1-2 Sha-Chi bars to activate. You can equip up to 2 at a time. Choosing which ones to bring matters.</p>
-      <ul>
-        <li><strong>One offensive, one utility:</strong> Equip a damage Phantom Edge (Shadow Chakram, Thunderbolt Shard) alongside a utility one (Blood Sigil for healing, Steel Thread for immobilizing).</li>
-        <li><strong>Rotate cooldowns:</strong> Each Phantom Edge has an 8-15 second cooldown. Using both in quick succession leaves you without options. Space them out.</li>
-        <li><strong>Experiment freely:</strong> Phantom Edges are not upgradeable and can be swapped at any bell checkpoint. Try every one you find to learn what suits your playstyle.</li>
-        <li><strong>Best early Phantom Edges:</strong> Blood Sigil (heal) is invaluable for beginners. Steel Thread (immobilize) makes early bosses significantly easier by giving you guaranteed damage windows.</li>
-      </ul>
+      <p>Phantom Edges are secondary weapons that consume 1-2 Sha-Chi bars to activate and you can equip exactly 2 of them at any given time which means your choice actually matters way more than it initially seems because a bad Edge setup can leave you completely without options in tough fights while a good one can straight up carry you through encounters that would otherwise be miserable slogs that make you wanna put the controller down and walk away from the game for a while and come back later when you're less frustrated and more willing to engage with the challenge on the game's terms instead of your own. They're not just flavor or decoration even though some of them look like they might be when you first unlock them and read the description and think "when would I ever use this" and then never equip it for 40 hours only to discover later that it's actually incredible in specific situations that come up constantly in the back half of the game.</p>
+      <p>My personal rule of thumb after way too much trial and error: bring one offensive Edge and one utility Edge so you have options for different situations instead of doubling up on damage and then having no answer when you need healing or crowd control. <strong>Shadow Chakram</strong> or <strong>Thunderbolt Shard</strong> for damage output paired with <strong>Blood Sigil</strong> for sustain because that heal on next hit has saved me more times than I can count, or <strong>Steel Thread</strong> which immobilizes enemies for a full 3 seconds and makes early bosses drastically easier. Steel Thread basically carried my first run through the second boss and I'm not even remotely exaggerating about how much easier that fight became with it equipped compared to my attempts without it where I was getting destroyed repeatedly and couldn't figure out why the boss's second phase felt impossible until someone in a Discord server suggested I try Steel Thread and it completely changed the fight for me and made what seemed like an insurmountable wall into a manageable challenge that I could actually learn and improve at instead of just dying over and over without making any progress.</p>
     </div>
   </div>
 
@@ -241,13 +213,8 @@
       <h2>Side Quests Affect Your Ending</h2>
     </div>
     <div class="tip-card-body">
-      <p>Phantom Blade Zero has 8 distinct endings, and your choices throughout the game determine which one you get. Side quests are not optional fluff -- they directly influence your ending path.</p>
-      <ul>
-        <li><strong>NPC relationships matter:</strong> Completing NPC quest chains builds affinity. Key characters' survival at certain story points depends on your relationship with them.</li>
-        <li><strong>Faction choices:</strong> The game presents you with faction-aligned decisions. These lock you into specific ending branches. Save before major choices if you want to explore different paths.</li>
-        <li><strong>Don't worry about the "perfect" ending:</strong> For your first playthrough, make choices naturally. The ending you get will be a reflection of your personal journey. Save perfect completion for New Game Plus.</li>
-        <li><strong>Missable content:</strong> Some side quests expire after certain story milestones. If an NPC has a quest marker, do it before advancing the main story.</li>
-      </ul>
+      <p>Phantom Blade Zero has 8 distinct endings and that's not some marketing exaggeration where "different" just means the final cutscene has a slightly different sky color or one character says one different line of dialogue and then everything else is identical to every other ending and the choice was meaningless and you wasted 40 hours replaying the game for a 30-second cutscene variation that you could have just watched on YouTube in the same amount of time it took you to read this sentence. There are genuinely 8 meaningfully different ways this story can conclude based on choices you make throughout the entire game starting from surprisingly early on when you don't even realize you're making ending-affecting decisions yet because the game doesn't signal which choices matter and which ones are just flavor dialogue that doesn't affect anything in the long run.</p>
+      <p>Side quests are absolutely not optional filler content the way they are in most action games and I didn't fully realize how much they mattered until I was like halfway through my first run and had probably already locked myself out of several endings without even knowing it. NPC relationships carry actual mechanical weight and completing quest chains builds affinity with characters that determines whether certain key characters survive at specific story points. The game also hits you with faction decisions that permanently lock you into specific ending branches with no take-backs so maybe save before major choices. But here's my honest advice: don't stress about getting the perfect ending and just make choices that feel right to you and let the ending reflect your actual journey. Save completionist stuff for NG+. One important warning: some side quests expire after story milestones so if an NPC has a quest marker do it immediately don't put it off thinking you'll come back later because you absolutely will not.</p>
     </div>
   </div>
 
@@ -257,30 +224,24 @@
       <h2>Start on Standard Difficulty</h2>
     </div>
     <div class="tip-card-body">
-      <p>Phantom Blade Zero offers four difficulty levels that can be changed at any time. Here's how to choose:</p>
-      <ul>
-        <li><strong>Story Mode:</strong> Enemies deal 0.6x damage with slower attack patterns. Use if you're here for the narrative or struggle with action games.</li>
-        <li><strong>Standard:</strong> The intended experience. Enemies have normal health and damage. Start here -- the game is challenging but fair.</li>
-        <li><strong>Hard:</strong> 1.5x enemy damage, faster combos, new attack strings. Switch to this after your weapon reaches +2 evolution.</li>
-        <li><strong>Sha-Chi Master:</strong> 2x damage, tighter parry windows, full enemy movesets. For experienced players on New Game Plus only.</li>
-      </ul>
-      <p><strong>Recommendation:</strong> Start on <strong>Standard</strong>. If a boss is frustrating you, lower to Story Mode to learn their patterns, then switch back. The game lets you adjust freely -- use this flexibility.</p>
+      <p>Phantom Blade Zero gives you four difficulty levels and the absolute best part about the whole system is that you can freely switch between them at literally any time during your playthrough without any penalty or restriction whatsoever, which is such a smart design decision that honestly more games should copy because it lets you adjust the challenge to exactly where you need it to be in any given moment instead of locking you into a permanent decision you made before you even knew how the game worked or what your actual skill level was or whether you'd even enjoy the combat system enough to stick with the game past the first few hours of the tutorial area.</p>
+      <p><strong>Story Mode</strong> drops enemy damage to 0.6x with noticeably slower attack patterns across the board and you should use this if you're primarily here for the narrative or if action games just aren't your strong suit. <strong>Standard</strong> is the intended baseline with normal health and damage values and it's challenging but completely fair once you understand the core mechanics and this is where you should start without question. <strong>Hard</strong> cranks enemy damage to 1.5x with faster combos and new attack patterns that don't appear on lower difficulties and it's worth switching to after your weapon hits +2. <strong>Sha-Chi Master</strong> is basically a different game with 2x damage intake and tighter parry windows and full enemy movesets including attacks you've never seen before and this mode is for NG+ only unless you genuinely enjoy pain and suffering as entertainment and don't mind dying 50+ times to the same boss. The approach that worked great for me: start on Standard and if a boss is wrecking you drop to Story Mode just to study patterns then switch back once you understand what to do. I did this for maybe three bosses across my first run and it saved me literal hours of frustration while actually letting me learn the fights properly instead of getting lucky after 50 attempts and feeling like I learned nothing from the experience.</p>
     </div>
   </div>
 
   <h2>Ready to Dive In?</h2>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin:16px 0 32px;">
-    <a href="guides" style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px; text-decoration:none; transition:border-color 0.2s;">
-      <strong style="color:var(--color-primary); display:block; margin-bottom:4px;">&#9876; Combat System Guide</strong>
-      <span style="color:var(--color-text-muted); font-size:13px;">Deep get into Sha-Chi, Ghoststep, Power Surge</span>
+  <div class="cta-grid">
+    <a href="guides" class="cta-card">
+      <strong class="cta-card-title">&#9876; Combat System Guide</strong>
+      <span class="cta-card-desc">Deep get into Sha-Chi, Ghoststep, Power Surge</span>
     </a>
-    <a href="weapons" style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px; text-decoration:none; transition:border-color 0.2s;">
-      <strong style="color:var(--color-primary); display:block; margin-bottom:4px;">&#9876;&#65039; Weapon Database</strong>
-      <span style="color:var(--color-text-muted); font-size:13px;">Browse all 30+ weapons with full stats</span>
+    <a href="weapons" class="cta-card">
+      <strong class="cta-card-title">&#9876;&#65039; Weapon Database</strong>
+      <span class="cta-card-desc">Browse all 30+ weapons with full stats</span>
     </a>
-    <a href="builds" style="background:var(--color-surface); border:1px solid #2a2a3a; border-radius:8px; padding:18px; text-decoration:none; transition:border-color 0.2s;">
-      <strong style="color:var(--color-primary); display:block; margin-bottom:4px;">&#128293; Build Guides</strong>
-      <span style="color:var(--color-text-muted); font-size:13px;">Find your playstyle with optimized builds</span>
+    <a href="builds" class="cta-card">
+      <strong class="cta-card-title">&#128293; Build Guides</strong>
+      <span class="cta-card-desc">Find your playstyle with optimized builds</span>
     </a>
   </div>
 
