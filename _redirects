@@ -7,3 +7,44 @@ https://www.pbzerowiki.com/* https://pbzerowiki.com/:splat 301
 
 # 301 redirect .html URLs to clean URLs (Google indexing fix)
 /*.html /:splat 301
+
+# 尾部斜杠 200 改写 — 阻止 CF Pages 自动 308 重定向
+# 顶层目录页（有子页面）
+/bosses/ /bosses 200
+/builds/ /builds 200
+/characters/ /characters 200
+/guides/ /guides 200
+/weapons/ /weapons 200
+# 二级子页面
+/bosses/*/ /bosses/:splat 200
+/builds/*/ /builds/:splat 200
+/guides/*/ /guides/:splat 200
+# 顶层简单页（无子页面）
+/about/ /about 200
+/achievements/ /achievements 200
+/beginner-guide/ /beginner-guide 200
+/beginner-tips/ /beginner-tips 200
+/boss-difficulty/ /boss-difficulty 200
+/boss-guide/ /boss-guide 200
+/combat-system/ /combat-system 200
+/comparison/ /comparison 200
+/contact/ /contact 200
+/endings/ /endings 200
+/enemies/ /enemies 200
+/equipment/ /equipment 200
+/faq/ /faq 200
+/locations/ /locations 200
+/news/ /news 200
+/privacy/ /privacy 200
+/requirements/ /requirements 200
+/reviews/ /reviews 200
+/search/ /search 200
+/skills/ /skills 200
+/story/ /story 200
+/story-lore/ /story-lore 200
+/tips-tricks/ /tips-tricks 200
+/top-builds/ /top-builds 200
+/vs-soulslike/ /vs-soulslike 200
+/weapon-compare/ /weapon-compare 200
+/weapon-tier-list/ /weapon-tier-list 200
+/weapons-guide/ /weapons-guide 200
