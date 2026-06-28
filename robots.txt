@@ -1,3 +1,33 @@
 User-agent: *
 Allow: /
+
+# AI Crawlers — Allowed for AI search visibility (ChatGPT, Claude, Perplexity, Google AI Overviews)
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# Low-value crawlers — blocked
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
 Sitemap: https://pbzerowiki.com/sitemap.xml

@@ -1,0 +1,28 @@
+# Phantom Blade Zero Wiki — Complete Weapons & Builds Guide
+
+> Complete Phantom Blade Zero wiki: weapons database, top builds, boss guides, skill system breakdown, Sha-Chi combat mechanics, story and lore with all 8 endings. Free and regularly updated.
+
+## Core Pages
+
+- [PB Zero Wiki Home](https://pbzerowiki.com/): Entry point with all guides, weapons, and builds
+- [Weapons Database](https://pbzerowiki.com/weapons.html): All 6 weapon types — stats, movesets, best picks
+- [Weapon Tier List](https://pbzerowiki.com/weapon-tier-list.html): All weapons ranked S/A/B/C tier
+- [Weapon Comparison Tool](https://pbzerowiki.com/weapon-compare.html): Side-by-side weapon stats
+- [Best Builds](https://pbzerowiki.com/top-builds.html): Top 5 meta loadouts for 2026
+- [All Bosses Guide](https://pbzerowiki.com/bosses.html): Every boss with mechanics and strategies
+- [Combat System](https://pbzerowiki.com/combat-system.html): Sha-Chi mechanics, Ghoststep, parry timing
+- [Beginner Guide](https://pbzerowiki.com/beginner-guide.html): Best starter weapons, early tips
+
+## Key Guides
+
+- [Story & Lore](https://pbzerowiki.com/story-lore.html): Complete narrative breakdown
+- [All 8 Endings](https://pbzerowiki.com/endings.html): Requirements and walkthroughs
+- [Farming Guide](https://pbzerowiki.com/farming-guide.html): XP, gold, and material farming routes
+- [New Game Plus](https://pbzerowiki.com/ng-plus-guide.html): What carries over and changes
+- [vs Black Myth Wukong](https://pbzerowiki.com/comparison.html): Phantom Blade Zero vs Wukong vs Sekiro
+
+## Optional
+
+- [About](https://pbzerowiki.com/about.html)
+- [Contact](https://pbzerowiki.com/contact.html)
+- [FAQ](https://pbzerowiki.com/faq.html)
