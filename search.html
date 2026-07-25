@@ -154,7 +154,10 @@
 
   <div class="search-hero">
     <h1>Search PB Zero Wiki</h1>
-    <p>look just type whatever you're looking for and honestly pretty much everything we've got on the site weapons and builds and boss strategies and guides and all that jazz. Honestly. And if you can't find it yet it's probably coming soon cause we're still adding content like crazy and I've been writing pages every single day and sometimes I forget to sleep but that's fine and the wiki has grown from like 5 pages to over 20 in just a few weeks and I'm honestly kind of shocked at how much content there is now and how much more there is planned. Tbh the search is pretty basic. It works. But it's not gonna win any awards or anything and I'm probably gonna replace it with something fancier eventually when I have time. But I've got like 20 more pages planned so check back in a week or two. Because there'll probably be a bunch of new stuff and maybe I'll even make the search better at some point if I figure out how to code properly which is honestly a big if and I'm not a programmer I'm just a fan who loves this game way too much and wanted to make something useful for other people who are also obsessed with it</p>
+    <p>look just type whatever you're looking for and honestly pretty much everything we've got on the site weapons and builds and boss strategies and guides and all that jazz. Honestly.</p>
+<p>And if you can't find it yet it's probably coming soon cause we're still adding content like crazy and I've been writing pages every single day and sometimes I forget to sleep but that's fine and the wiki has grown from like 5 pages to over 20 in just a few weeks and I'm honestly kind of shocked at how much content there is now and how much more there is planned. Tbh the search is pretty basic. It works.</p>
+<p>But it's not gonna win any awards or anything and I'm probably gonna replace it with something fancier eventually when I have time. But I've got like 20 more pages planned so check back in a week or two.</p>
+<p>Because there'll probably be a bunch of new stuff and maybe I'll even make the search better at some point if I figure out how to code properly which is honestly a big if and I'm not a programmer I'm just a fan who loves this game way too much and wanted to make something useful for other people who are also obsessed with it</p>
     <div class="search-box-wrap">
       <span class="search-icon">&#128269;</span>
       <input type="text" class="search-input" id="searchInput" placeholder="Search weapons, bosses, builds..." autofocus>
@@ -172,7 +175,19 @@
   <div id="searchResults"></div>
 </div>
 
-<footer class="site-footer">
+  <section class="related-articles" style="margin-top:48px;padding-top:32px;border-top:1px solid #333;max-width:780px;margin:48px auto 0;padding:32px 20px 0;">
+    <h2 style="font-size:20px;margin-bottom:16px;">Related Guides</h2>
+    <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px;">
+      <li><a href="/beginner-guide">PB Zero Beginner Guide</a></li>
+      <li><a href="/bosses">All Bosses Guide</a></li>
+      <li><a href="/weapons">All Weapons Database</a></li>
+      <li><a href="/builds">Best Builds</a></li>
+      <li><a href="/combat">Combat Mechanics</a></li>
+      <li><a href="/endings">All Endings Guide</a></li>
+      <li><a href="/faq">PB Zero FAQ</a></li>
+    </ul>
+  </section>$'
+'<footer class="site-footer">
   <div class="footer-grid">
     <div class="footer-brand">
       <h3>PB Zero Wiki</h3>
@@ -258,7 +273,7 @@
   });
 
   function highlightMatch(text, query) {
-    var re = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    var re = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\]/g, '\$&') + ')', 'gi');
     return text.replace(re, '<em>$1</em>');
   }
 
