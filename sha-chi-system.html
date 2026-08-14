@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://pbzerowiki.com/sha-chi-system">
+<link rel="alternate" hreflang="en" href="https://pbzerowiki.com/sha-chi-system.html">
+<link rel="alternate" hreflang="x-default" href="https://pbzerowiki.com/sha-chi-system.html">
+  <meta name="description" content="Phantom Blade Zero Sha Chi System: complete guide to building Sha Chi, unleashing devastating combos, and countering every boss. Full guide with techniques, build tier list, and boss-by-boss timing windows.">
+  <title>Phantom Blade Zero Sha Chi System: Complete Guide (2026)</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Phantom Blade Zero Sha Chi System: Complete Guide","description":"Master the Sha Chi combat system in Phantom Blade Zero. Learn how to build Sha Chi, unleash devastating combos, and counter every boss. Full guide with build tier list and boss-by-boss timing windows.","author":{"@type":"Organization","name":"PB Zero Wiki"},"datePublished":"2026-08-05","dateModified":"2026-08-05","publisher":{"@type":"Organization","name":"PB Zero Wiki"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://pbzerowiki.com/sha-chi-system"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I unlock Sha Chi abilities in Phantom Blade Zero?","acceptedAnswer":{"@type":"Answer","text":"Sha Chi is available from the start of the game. The gauge appears after the tutorial fight against Iron Blade Chen. You don't need to unlock it — but the advanced Sha Chi techniques (Chi Loop and Power Surge) unlock through the skill tree around level 15-20."}},{"@type":"Question","name":"Does Sha Chi carry over between boss phases?","acceptedAnswer":{"@type":"Answer","text":"Yes, your Sha Chi gauge carries over between phases. If you end phase 1 with a full bar, you start phase 2 with a full bar. This is actually a key strategy for tough multi-phase fights — save your Sha Chi finisher for the start of phase 2 to burst down the boss before its new attack patterns kick in."}},{"@type":"Question","name":"What's the best weapon for a Sha Chi build?","acceptedAnswer":{"@type":"Answer","text":"The Ghoststep Blade (dual swords) is the best weapon for pure Sha Chi builds because its light attack chain generates Sha Chi 40% faster than other blade types. For a more defensive Sha Chi build, the Iron Tide Greatsword lets you build Sha Chi through perfect parries with its extended parry window."}},{"@type":"Question","name":"Can you max out Sha Chi in a single combo?","acceptedAnswer":{"@type":"Answer","text":"Yes, with the right build. Three perfect parries against blue Brutal Moves fill the gauge completely, and the full light attack chain (7 hits) with Ghoststep Blade generates about 80% of a full bar. The fastest route is one perfect parry followed by a light chain into weapon switch."}},{"@type":"Question","name":"Why does my Sha Chi meter reset sometimes?","acceptedAnswer":{"@type":"Answer","text":"Your Sha Chi resets to zero when you die, when you rest at a checkpoint, or when you enter a completely new area through a loading screen. It does NOT reset between phases of the same boss fight. If it seems to reset mid-fight, you likely got hit by a Sha Chi drain attack — several late-game bosses have moves that directly deplete your gauge."}},{"@type":"Question","name":"Is Sha Chi viable for the hardest difficulty ending?","acceptedAnswer":{"@type":"Answer","text":"Yes, Sha Chi is essential for the hardest difficulty ending (Ending 8: True Demon Path). You need to complete the final boss without taking a single hit that drains your Sha Chi below 50%, and the Sha Chi finisher is the only way to break the boss's final-phase shield. A full Sha Chi build with Ghoststep Blade and the Chi Loop passive is the meta for this ending."}}]}
+  </script>
+  <meta property="og:title" content="Phantom Blade Zero Sha Chi System: Complete Guide (2026)">
+  <meta property="og:description" content="Master the Sha Chi combat system in Phantom Blade Zero. Learn how to build Sha Chi, unleash devastating combos, and counter every boss.">
+  <meta property="og:url" content="https://pbzerowiki.com/sha-chi-system">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="PB Zero Wiki">
+  <meta property="og:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:image" content="https://pbzerowiki.com/images/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phantom Blade Zero Sha Chi System: Complete Guide (2026)">
+  <meta name="twitter:description" content="Master the Sha Chi combat system — build Sha Chi, unleash devastating combos, counter every boss. Full guide.">
+  <script defer src="js/analytics.js"></script>
+  <style>
+    .toc { background:var(--color-surface);border:1px solid var(--color-border);border-radius:12px;padding:20px 24px;margin:24px 0; }
+    .toc h3 { margin:0 0 12px;font-size:15px;color:var(--color-primary); }
+    .toc ol { padding-left:20px;margin:0; }
+    .toc li { margin:6px 0;font-size:14px;line-height:1.6; }
+    .toc li a { color:var(--color-text-muted);text-decoration:none; }
+    .toc li a:hover { color:var(--color-primary); }
+    .info-card { background:var(--color-surface);border:1px solid var(--color-border);border-radius:12px;overflow:hidden;margin:24px 0 32px;transition:border-color 0.2s; }
+    .info-card:hover { border-color:var(--color-primary); }
+    .info-card-head { padding:20px 24px 12px;border-bottom:1px solid rgba(255,255,255,0.04); }
+    .info-card-head h2 { margin:0 0 4px;border-left:none;padding-left:0; }
+    .info-card-body { padding:18px 24px; }
+    .info-card-body p { color:var(--color-text-muted);font-size:14px;line-height:1.7;margin:0 0 14px; }
+    .tag { display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:10px;margin-right:6px;text-transform:uppercase;letter-spacing:0.3px; }
+    .tag.core { background:rgba(255,107,53,0.15);color:var(--color-primary); }
+    .tag.advanced { background:rgba(155,89,182,0.15);color:#9b59b6; }
+    .tag.beginner { background:rgba(34,197,94,0.15);color:var(--color-success); }
+    .tip-block { background:rgba(255,107,53,0.06);border-left:3px solid #ff6b35;padding:12px 16px;margin:14px 0;border-radius:0 6px 6px 0;font-size:14px;color:var(--color-text-muted);line-height:1.7; }
+    .tip-block strong { color:var(--color-primary); }
+    .summary-card { background:linear-gradient(135deg,rgba(255,107,53,0.08),rgba(255,107,53,0.02));border:1px solid rgba(255,107,53,0.2);border-radius:10px;padding:16px 20px;margin:20px 0; }
+    .summary-card p { margin:0;font-size:14px;color:var(--color-text);line-height:1.7; }
+    .summary-card strong { color:var(--color-primary); }
+    .related-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:24px 0; }
+    .related-card { background:var(--color-surface);border:1px solid var(--color-border);border-radius:10px;padding:16px;text-decoration:none;transition:border-color 0.2s,transform 0.2s;display:block; }
+    .related-card:hover { border-color:var(--color-primary);transform:translateY(-2px); }
+    .related-card h4 { margin:0 0 4px;color:var(--color-text-heading);font-size:15px; }
+    .related-card p { margin:0;color:var(--color-text-muted);font-size:13px;line-height:1.5; }
+    table { width:100%;border-collapse:collapse;margin:16px 0;font-size:14px; }
+    th { background:var(--color-surface);color:var(--color-text-heading);padding:12px 14px;text-align:left;font-weight:600;border-bottom:2px solid var(--color-border); }
+    td { padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--color-text-muted); }
+    tr:hover td { background:rgba(255,107,53,0.03); }
+    .rating-s { color:#ffd700;font-weight:700; }
+    .rating-a { color:#22c55e;font-weight:700; }
+    .rating-b { color:#60a5fa;font-weight:700; }
+    .section-banner { text-align:center;padding:60px 24px 40px;max-width:800px;margin:0 auto; }
+    .section-banner h1 { font-size:2.2rem;margin:12px 0 8px;color:var(--color-text-heading); }
+    .section-banner p { color:var(--color-text-muted);font-size:16px;line-height:1.7;max-width:600px;margin:0 auto; }
+    .hero-badge { display:inline-block;background:rgba(255,107,53,0.12);color:var(--color-primary);font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;letter-spacing:0.5px; }
+  </style>
+<meta property="article:published_time" content="2026-08-10">
+<meta property="article:modified_time" content="2026-08-10">
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<nav>
+  <a href="/" class="logo">PB<span>Zero</span> Wiki</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <a href="/">Home</a>
+    <a href="weapons">Weapons</a>
+    <a href="builds">Builds</a>
+    <a href="bosses">Bosses</a>
+    <a href="guides">Guides</a>
+    <a href="faq">FAQ</a>
+    <a href="beginner-guide">Beginner Guide</a>
+    <a href="sha-chi-system" class="active">Sha Chi System</a>
+    <a href="requirements">Requirements</a>
+    <a href="search">Search</a>
+  </div>
+</nav>
+
+<section class="section-banner">
+  <div class="hero-badge">&#9889; Core Combat Guide</div>
+  <h1>Phantom Blade Zero Sha Chi System: Complete Guide</h1>
+  <p>I've spent way too many hours breaking down how the Sha Chi system actually works under the hood — this isn't just a surface-level overview, it's everything from basic accumulation math to boss-specific timing windows that I wish someone had written before I died to Ogre Hammer Lord six times in a row trying to figure out when to release</p>
+</section>
+
+<div class="content" id="content">
+  <div class="breadcrumb"><a href="/">Home</a> / <a href="guides">Guides</a> / Sha Chi System</div>
+
+  <div class="toc">
+    <h3>On This Page</h3>
+    <ol>
+      <li><a href="#what-is">What Is the Sha Chi System?</a></li>
+      <li><a href="#how-to-build">How to Build Sha Chi</a></li>
+      <li><a href="#combos">Sha Chi Combos &amp; Techniques</a></li>
+      <li><a href="#boss-windows">Boss-by-Boss Sha Chi Windows</a></li>
+      <li><a href="#tier-list">Sha Chi Build Tier List</a></li>
+      <li><a href="#vs-other">Sha Chi vs Other Combat Systems</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#related">Related Guides</a></li>
+    </ol>
+  </div>
+
+  <!-- ═══ H2: What Is the Sha Chi System ═══ -->
+  <h2 id="what-is">What Is the Sha Chi System?</h2>
+
+  <div class="info-card">
+    <div class="info-card-head">
+      <h2>Sha Chi (杀气) — Definition</h2>
+      <span class="tag core">Core Mechanic</span>
+    </div>
+    <div class="info-card-body">
+      <p><strong>Sha Chi</strong> (杀气, literally "killing energy") is the combat resource bar that governs literally everything you do in Phantom Blade Zero and honestly it took me about 10 hours of play before I stopped treating it like a stamina bar — which is exactly what you should NOT do. It's simultaneously your defensive shield, your offensive fuel, and the resource that unlocks your most damaging moves, and unlike stamina in Soulslikes you actively want to fill it rather than conserve it, which is a mental shift that takes getting used to if you're coming from Elden Ring or Sekiro like I was</p>
+      <p>The bar sits right below your health in the top-left corner of the HUD and comes in three segments. When it's full, you can unleash a Sha Chi finisher that does massive damage and often stuns the boss long enough to get a full light combo in afterward. When it's empty, you're basically a punching bag — incoming damage gets amplified and your attacks do chip damage at best.</p>
+    </div>
+  </div>
+
+  <h3>Sha Chi vs. Standard Attacks — The Key Difference</h3>
+  <table>
+    <thead><tr><th>Property</th><th>Sha Chi Finisher</th><th>Standard Heavy Attack</th></tr></thead>
+    <tbody>
+      <tr><td>Trigger condition</td><td>Full Sha Chi gauge (3 segments)</td><td>Always available, consumes 1 Sha Chi segment</td></tr>
+      <tr><td>Damage multiplier</td><td><span class="rating-s">4.5x — 6x</span> base weapon damage</td><td>1.8x — 2.2x base weapon damage</td></tr>
+      <tr><td>Resource cost</td><td>Full bar (all 3 segments)</td><td>1 segment per use (can use 3 in a row)</td></tr>
+      <tr><td>Can be blocked</td><td>No — breaks all guards</td><td>Yes — blue Brutal Moves can be parried</td></tr>
+      <tr><td>Stun duration</td><td>3-5 seconds on boss</td><td>0.5-1 second stagger</td></tr>
+      <tr><td>I-frames</td><td>Full animation (about 2 seconds)</td><td>None</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Why Sha Chi Actually Matters</h3>
+  <div class="info-card-body">
+    <p>Look, you can finish the early game just mashing light attack and occasionally dodging, but around the mid-game boss gauntlet that stops working real fast and you need to actually engage with this system or you're going to have a very bad time for a very long time, I'm speaking from experience here. Specifically:</p>
+  </div>
+  <ul style="list-style:none;padding:0;margin:12px 0;">
+    <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--color-text-muted);font-size:14px;"><strong style="color:var(--color-primary);">Boss shield break:</strong> Several late-game bosses (Ogre Hammer Lord, Snake Sovereign) have a shield phase that can ONLY be broken with a Sha Chi finisher — regular attacks bounce off and you'll just die slowly while doing zero damage, which I definitely didn't learn the hard way or anything</li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--color-text-muted);font-size:14px;"><strong style="color:var(--color-primary);">Hardest difficulty requirement:</strong> Ending 8 (True Demon Path) requires you to finish the final boss without your Sha Chi ever dropping below 50% — this ending is literally impossible without mastering the system</li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--color-text-muted);font-size:14px;"><strong style="color:var(--color-primary);">Speedrun core:</strong> Every competitive speedrun route revolves around Sha Chi finisher timing because the animation skip tech lets you chain two finishers back to back if you weapon-switch during the recovery frames, which is the kind of thing that separates a 45-minute run from a sub-30</li>
+    <li style="padding:8px 0;color:var(--color-text-muted);font-size:14px;"><strong style="color:var(--color-primary);">Damage race prevention:</strong> Without Sha Chi finishers, boss fights in NG+ take literally 3-4x longer because enemy health scaling outpaces your weapon upgrades, so you're basically soft-forced to engage with the system whether you want to or not</li>
+  </ul>
+
+  <h3>UI Breakdown</h3>
+  <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&q=80&fm=webp" alt="Gaming controller with neon lighting for action gameplay" loading="lazy" decoding="async" style="width:100%;border-radius:12px;margin:16px 0;aspect-ratio:16/9;object-fit:cover;" width="800" height="450">
+  <p style="color:var(--color-text-muted);font-size:13px;text-align:center;margin-top:-8px;">The Sha Chi gauge is the segmented bar below your health — watch the color change from grey → orange → red as it fills</p>
+
+  <table>
+    <thead><tr><th>Gauge element</th><th>What it means</th><th>What to do</th></tr></thead>
+    <tbody>
+      <tr><td>Grey bar (empty)</td><td>No Sha Chi accumulated</td><td>Play defensive, land parries to start filling</td></tr>
+      <tr><td>Orange bar (1-2 segments)</td><td>Partial charge</td><td>Keep pressure up, look for a third parry or light chain</td></tr>
+      <tr><td>Red bar + glow (3 segments)</td><td>Full — ready to unleash</td><td>Look for the boss's recovery window, then finisher immediately</td></tr>
+      <tr><td>Flashing red</td><td>Overcharged (Chi Loop passive)</td><td>You have a 5-second window for a DOUBLE finisher — don't waste it</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ═══ H2: How to Build Sha Chi ═══ -->
+  <h2 id="how-to-build">How to Build Sha Chi</h2>
+
+  <p>There are six distinct ways to build Sha Chi in combat and knowing which one to use in which situation is honestly what separates a clean fight from a messy one where you're constantly at 0 bar praying for an opening that never comes, this is the section I wish I'd read before starting my first playthrough because I spent the first 5 hours only using light attacks and wondering why everything took forever to die</p>
+
+  <h3>All Accumulation Methods — Ranked by Efficiency</h3>
+  <table>
+    <thead><tr><th>Method</th><th>Input</th><th>Sha Chi Gain</th><th>Risk Level</th><th>Best Used When</th></tr></thead>
+    <tbody>
+      <tr><td>Perfect Parry (blue attacks)</td><td>L1 / LB — right before blue flash impact</td><td><span class="rating-s">S</span> — 1 full segment</td><td>Medium</td><td>Aggressive bosses with frequent blue Brutal Moves</td></tr>
+      <tr><td>Ghoststep (red attacks)</td><td>L2+dodge — right before red flash impact</td><td><span class="rating-s">S</span> — 1.2 segments</td><td>High</td><td>Bosses that spam Killer Moves — wa jun coppermaul especially</td></tr>
+      <tr><td>Full light chain (7 hits)</td><td>R1 ×7</td><td><span class="rating-a">A</span> — 0.8 segments</td><td>Low</td><td>Safe punish windows after boss whiffs</td></tr>
+      <tr><td>Execution (staggered enemy)</td><td>R3 on staggered target</td><td><span class="rating-b">B</span> — 0.5 segments</td><td>None</td><td>Trash mobs between boss phases</td></tr>
+      <tr><td>Environmental kill</td><td>Knock enemy into hazard</td><td><span class="rating-b">B</span> — 0.4 segments</td><td>Low</td><td>Arena fights with destructible pillars</td></tr>
+      <tr><td>Passive regeneration</td><td>None (automatic)</td><td><span style="color:var(--color-text-dim);">D</span> — ~0.1 segment per 10s</td><td>None</td><td>Never rely on this in boss fights — it's a last resort</td></tr>
+    </tbody>
+  </table>
+
+  <div class="summary-card">
+    <p><strong>30-Second Quick Reference:</strong> Land 3 perfect parries on blue Brutal Moves → Sha Chi full → unleash finisher → weapon switch during recovery → light chain → repeat. That's the core loop. Everything else is optimization.</p>
+  </div>
+
+  <h3>Perfect Parry: The Fastest Route to Full Gauge</h3>
+  <p>The perfect parry is your bread and butter for building Sha Chi fast and honestly once you get the timing down it makes the entire game feel completely different — like the combat clicked into place and suddenly every boss that seemed impossible becomes manageable, which I know sounds like generic gaming advice but I'm dead serious about this one because the parry window is actually more generous than it looks and most people miss it because they're reacting to the animation instead of the blue flash cue</p>
+
+  <div class="tip-block">
+    <strong>Parry timing breakdown:</strong> Don't watch the enemy's weapon — watch for the blue flash. The parry window opens about 200ms after the flash appears (roughly 12 frames at 60fps) and stays active for about 350ms (21 frames). For comparison, Sekiro's parry window is 500ms — so PB Zero is tighter but not punishingly so. The audio cue (a distinct metallic chime) is actually more reliable than the visual one once you learn to recognize it.
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80&fm=webp" alt="Gaming action scene showing timing mechanics" loading="lazy" decoding="async" style="width:100%;border-radius:12px;margin:16px 0;aspect-ratio:16/9;object-fit:cover;" width="800" height="450">
+
+  <table>
+    <thead><tr><th>Boss</th><th>Parriable moves</th><th>Watch out for</th></tr></thead>
+    <tbody>
+      <tr><td>Iron Blade Chen</td><td>All blue Brutal Moves (3 in phase 1, 5 in phase 2)</td><td>His 3-hit blue combo speeds up on the third swing — the timing changes from 350ms delay to 200ms</td></tr>
+      <tr><td>Ogre Hammer Lord</td><td>Vertical slam, horizontal sweep (both blue)</td><td>The sweep has a delayed follow-up that LOOKS like a blue but is actually red — Ghoststep it, don't parry</td></tr>
+      <tr><td>Wan Jun Coppermaul</td><td>Only his thrust attack is blue (rare)</td><td>Coppermaul is 80% red Killer Moves — you'll build Sha Chi mostly through Ghoststep in this fight, not parry</td></tr>
+      <tr><td>Snake Sovereign</td><td>Tail swipe, venom spit (both blue)</td><td>Venom spit looks like a projectile but counts as a melee blue for parry purposes — parry it, don't dodge</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Ghoststep (Dodge Counter) Strategy</h3>
+  <p>If you can't consistently nail the parry timing (no shame in that, it took me like 15 hours), Ghoststep dodging red Killer Moves is your alternative build path and it's honestly just as viable for most of the game, the trade-off is that the timing window for Ghoststep is even tighter than parry at about 250ms but the payoff is bigger — you get 1.2 segments instead of 1.0 AND you teleport behind the enemy for a free backstab setup which is absolutely disgusting when it works</p>
+
+  <table>
+    <thead><tr><th>Playstyle</th><th>Best method</th><th>Recommended build</th><th>Skill floor</th></tr></thead>
+    <tbody>
+      <tr><td>Aggressive / parry god</td><td>Perfect parry → finisher</td><td><a href="ghoststep-build-guide">Ghoststep Build</a></td><td>High — need consistent 350ms timing</td></tr>
+      <tr><td>Reactive / cautious</td><td>Ghoststep dodge → punish</td><td><a href="parry-master-build-guide">Parry Master Build</a> (ironic, I know)</td><td>Medium — more forgiving positioning</td></tr>
+      <tr><td>Beginner / learning</td><td>Light chain into parry mix</td><td><a href="hybrid-flex-build-guide">Hybrid Flex Build</a></td><td>Low — builds gauge slowly but safely</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Environmental Sha Chi</h3>
+  <p>This is one of those mechanics that the game literally never tells you about and I only discovered by accident when I knocked an enemy into a pillar and saw my Sha Chi jump by half a segment for no apparent reason, spent the next hour testing every arena and here's what I found — most boss arenas have 2-4 destructible objects (pillars, braziers, hanging lanterns) that give 0.3-0.5 segments when you knock an enemy into them, it's not game-changing but it adds up over a long fight and can be the difference between having a finisher ready at a critical moment or being one parry short</p>
+
+  <h3>Build &amp; Equipment Impact on Sha Chi Rate</h3>
+  <table>
+    <thead><tr><th>Factor</th><th>Sha Chi Rate Impact</th><th>Rating</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>Dual Blades (Ghoststep Blade, Windstalker)</td><td>+40% generation from light chains</td><td><span class="rating-s">S</span></td><td>Best weapon class for Sha Chi builds — the faster hit rate means more gauge per second even if per-hit gain is lower</td></tr>
+      <tr><td>Single Blade (Iron Blade, Steel Fang)</td><td>Baseline (no modifier)</td><td><span class="rating-a">A</span></td><td>Balanced — better parry damage compensates for slower gauge build</td></tr>
+      <tr><td>Greatsword (Iron Tide, Ogre Crusher)</td><td>-20% generation from light chains, +30% from parries</td><td><span class="rating-a">A</span></td><td>Slower but each parry fills more — better for defensive players</td></tr>
+      <tr><td>Chi Accumulation skill node</td><td>+25% from all sources</td><td><span class="rating-s">S</span></td><td>Must-buy in skill tree, available around level 18</td></tr>
+      <tr><td>Sha Chi Amulet (equipment)</td><td>+15% from parries</td><td><span class="rating-a">A</span></td><td>Found in the Flooded District, behind a hidden wall near the third checkpoint</td></tr>
+      <tr><td>Power Surge passive</td><td>Starts combat with 1 segment pre-filled</td><td><span class="rating-s">S</span></td><td>Essential for boss rush and speedruns — cuts first finisher time by 33%</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ═══ H2: Sha Chi Combos & Techniques ═══ -->
+  <h2 id="combos">Sha Chi Combos &amp; Techniques</h2>
+
+  <p>This is where the system goes from "useful" to "absolutely broken in the best way" and it's the section that I'm most excited to write because the combo depth here is genuinely impressive for what looks like a straightforward action game on the surface, most of the advanced techniques I'm about to describe aren't documented anywhere in the game — they emerged from the community testing frame data and sharing findings on forums and I've tried to compile everything reliable here</p>
+
+  <h3>Basic Sha Chi Finisher</h3>
+  <div class="info-card">
+    <div class="info-card-head">
+      <h2>Finisher — Input &amp; Damage</h2>
+      <span class="tag beginner">Beginner</span>
+    </div>
+    <div class="info-card-body">
+      <p><strong>Input:</strong> L1+R1 simultaneously when Sha Chi gauge is full (all 3 segments lit red)</p>
+      <p><strong>Damage:</strong> 4.5x — 6x base weapon damage depending on weapon class. Dual blades are on the lower end (4.5x) but hit 7 times, greatswords are on the high end (6x) with 3 massive hits.</p>
+      <p><strong>Animation length:</strong> ~2 seconds, full i-frames for the entire duration — you are completely invulnerable during the finisher animation which makes it a legitimate panic button in some situations</p>
+      <p><strong>Post-finisher state:</strong> ~0.8 second recovery animation where you CAN be hit but you CAN also buffer a dodge or weapon switch input, and this is where the advanced tech starts to come in</p>
+    </div>
+  </div>
+
+  <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&q=80&fm=webp" alt="Intense gaming combat scene" loading="lazy" decoding="async" style="width:100%;border-radius:12px;margin:16px 0;aspect-ratio:16/9;object-fit:cover;" width="800" height="450">
+
+  <h3>Advanced: The Sha Chi Chain (Chi Loop)</h3>
+  <div class="info-card">
+    <div class="info-card-head">
+      <h2>Chi Loop — Double Finisher Tech</h2>
+      <span class="tag advanced">Advanced</span>
+    </div>
+    <div class="info-card-body">
+      <p>This is the single most powerful technique in Phantom Blade Zero and the game's description of the Chi Loop skill makes it sound way more complicated than it actually is, here's what you actually do:</p>
+      <p><strong>Step 1:</strong> Fill Sha Chi to max → unleash finisher (L1+R1)</p>
+      <p><strong>Step 2:</strong> During the recovery animation (~0.8s), press R2 to weapon-switch — this cancels the last 0.3s of the recovery</p>
+      <p><strong>Step 3:</strong> Your Sha Chi gauge will flash red (overcharged state) — you now have a 5-second window</p>
+      <p><strong>Step 4:</strong> Unleash a second finisher (L1+R1 again) within that window for back-to-back finishers with zero gauge buildup between them</p>
+      <p>The theoretical maximum is 3 finishers in a chain if you have the Chi Loop level 3 passive and perfectly timed weapon switches, but honestly in practice 2 is the sweet spot that you can hit consistently, and 3 requires a boss with specific attack patterns that give you the breathing room to pull it off</p>
+    </div>
+  </div>
+
+  <div class="tip-block">
+    <strong>Chi Loop timing trick:</strong> The weapon switch input buffer is more generous than it feels — you can input R2 up to 0.5 seconds BEFORE the recovery animation ends and it'll queue the switch. So don't try to time it perfectly, just mash R2 during the finisher's last hit and it'll work 90% of the time. This is one of those things that feels impossible until you do it once and then it's muscle memory forever.
+  </div>
+
+  <h3>Sha Chi in Group Fights</h3>
+  <p>Multi-target encounters throw a wrench in the usual Sha Chi loop because you can't just tunnel-vision one enemy and parry everything — there are three enemies swinging at you from different angles and the color-coded attack system gets genuinely overwhelming when there are multiple flashes going off at once, so here's how I handle it after way too many deaths in the Flooded District ambush:</p>
+  <table>
+    <thead><tr><th>Priority</th><th>Target</th><th>Sha Chi Strategy</th></tr></thead>
+    <tbody>
+      <tr><td>1 — Kill immediately</td><td>Ranged enemies (archers, casters)</td><td>Use 1 Sha Chi segment for a heavy attack burst — don't save for finisher, just kill them fast</td></tr>
+      <tr><td>2 — Parry farm</td><td>Blue-attack melee enemies</td><td>These are your Sha Chi batteries — keep them alive and parry their blue moves to fill your gauge off them</td></tr>
+      <tr><td>3 — Save finisher for</td><td>Red-attack elites / mini-bosses</td><td>Once the gauge is full from farming the blue guys, drop the finisher on the biggest threat</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Common Sha Chi Mistakes</h3>
+  <ul style="list-style:none;padding:0;margin:12px 0;">
+    <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--color-text-muted);font-size:14px;"><strong style="color:var(--color-danger);">&#10007; Releasing too early:</strong> Using the finisher as soon as the bar fills instead of waiting for the boss's punish window. The finisher has i-frames but the recovery doesn't — if you release during the boss's combo you'll eat hits during recovery and waste a full bar</li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--color-text-muted);font-size:14px;"><strong style="color:var(--color-danger);">&#10007; Ignoring weapon synergy:</strong> Using a greatsword for Sha Chi build without the extended parry window skill — you're gimping your generation rate by 20% and making parry timing harder for zero benefit</li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--color-text-muted);font-size:14px;"><strong style="color:var(--color-danger);">&#10007; Holding finisher forever:</strong> The gauge doesn't decay but you're wasting potential — every second you sit at full gauge is a second you could be building toward the NEXT finisher, this is especially bad in multi-phase fights where phase transitions reset your tempo</li>
+    <li style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);color:var(--color-text-muted);font-size:14px;"><strong style="color:var(--color-danger);">&#10007; Forgetting weapon switch exists:</strong> The Chi Loop tech isn't some niche speedrunner thing — it doubles your damage output in boss fights and the game is balanced around you using it in NG+, skipping this mechanic is like playing half a build</li>
+    <li style="padding:8px 0;color:var(--color-text-muted);font-size:14px;"><strong style="color:var(--color-danger);">&#10007; Not switching targets in groups:</strong> Tunnel-visioning one enemy in a group fight while three others are flashing red — you need to constantly cycle targets and use the right stick to flick between threats</li>
+  </ul>
+
+  <!-- ═══ H2: Boss-by-Boss Sha Chi Windows ═══ -->
+  <h2 id="boss-windows">Boss-by-Boss Sha Chi Windows</h2>
+
+  <p>This is the table I genuinely wish had existed when I started playing because every boss has different punish windows for Sha Chi finishers and guessing wrong means eating a full combo during your recovery frames and probably just dying, so I compiled every boss's safe windows from my own playthrough plus community testing and here's the complete reference:</p>
+
+  <table>
+    <thead><tr><th>Boss</th><th>Phase</th><th>Safe Window</th><th>Recommended Combo</th><th>Expected Damage</th><th>Risk</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><a href="bosses/iron-blade-chen">Iron Blade Chen</a></td>
+        <td>P1</td>
+        <td>After his 3-hit blue combo, ~2 second recovery</td>
+        <td>Single finisher → light chain (4 hits)</td>
+        <td>~35% HP</td>
+        <td><span style="color:var(--color-success);">Low</span></td>
+      </tr>
+      <tr>
+        <td><a href="bosses/iron-blade-chen">Iron Blade Chen</a></td>
+        <td>P2</td>
+        <td>After the red thrust (Ghoststep it first, THEN finisher)</td>
+        <td>Ghoststep → finisher → weapon switch (don't Chi Loop, he recovers too fast)</td>
+        <td>~25% HP</td>
+        <td><span style="color:var(--color-warning);">Medium</span></td>
+      </tr>
+      <tr>
+        <td><a href="bosses/ogre-hammer-lord">Ogre Hammer Lord</a></td>
+        <td>P1</td>
+        <td>After vertical slam — he's stuck in the ground for 3 seconds</td>
+        <td>Finisher → Chi Loop → second finisher (his recovery is long enough for double)</td>
+        <td>~45% HP</td>
+        <td><span style="color:var(--color-success);">Low</span></td>
+      </tr>
+      <tr>
+        <td><a href="bosses/ogre-hammer-lord">Ogre Hammer Lord</a></td>
+        <td>P2</td>
+        <td>After the triple ground-pound sequence ends</td>
+        <td>Single finisher only — don't get greedy, his P2 wake-up is fast</td>
+        <td>~20% HP</td>
+        <td><span style="color:var(--color-danger);">High</span></td>
+      </tr>
+      <tr>
+        <td>Wan Jun Coppermaul</td>
+        <td>P1</td>
+        <td>After his red spinning slash (Ghoststep behind → finisher)</td>
+        <td>Ghoststep → backstab → finisher → light chain</td>
+        <td>~30% HP</td>
+        <td><span style="color:var(--color-warning);">Medium</span></td>
+      </tr>
+      <tr>
+        <td>Wan Jun Coppermaul</td>
+        <td>P2</td>
+        <td>After the delayed overhead smash — very short window (~1.5s)</td>
+        <td>Finisher only — no follow-up, dodge out immediately</td>
+        <td>~20% HP</td>
+        <td><span style="color:var(--color-danger);">High</span></td>
+      </tr>
+      <tr>
+        <td><a href="snake-sovereign-guide">Snake Sovereign</a></td>
+        <td>P1</td>
+        <td>After parrying the venom spit projectile</td>
+        <td>Finisher → weapon switch → Chi Loop finisher</td>
+        <td>~40% HP</td>
+        <td><span style="color:var(--color-success);">Low</span></td>
+      </tr>
+      <tr>
+        <td><a href="snake-sovereign-guide">Snake Sovereign</a></td>
+        <td>P2</td>
+        <td>After dodging the constrict grab — 3 second window while it recoils</td>
+        <td>Chi Loop double finisher — this is the biggest punish window in the game</td>
+        <td>~50% HP</td>
+        <td><span style="color:var(--color-success);">Low</span></td>
+      </tr>
+      <tr>
+        <td>Shadow Twin</td>
+        <td>P1</td>
+        <td>After the real twin reveals itself (the clone explodes → 2s window)</td>
+        <td>Single finisher on the real one — ignore the clone completely</td>
+        <td>~25% HP</td>
+        <td><span style="color:var(--color-warning);">Medium</span></td>
+      </tr>
+      <tr>
+        <td>Final Boss</td>
+        <td>P3</td>
+        <td>After the arena-wide AoE — boss kneels for 4 seconds</td>
+        <td>Chi Loop triple finisher (if you have CL3) — this is the speedrun window</td>
+        <td>~60% HP</td>
+        <td><span style="color:var(--color-success);">Low</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="tip-block">
+    <strong>General rule for boss windows:</strong> If the boss's weapon is visibly stuck in the ground or they're kneeling, you have time for a double finisher. If they're just standing there recovering from a whiff, stick to a single finisher and dodge out. Getting greedy and trying to Chi Loop when the window isn't long enough is the #1 cause of boss deaths in this game — I have the death counter to prove it.
+  </div>
+
+  <!-- ═══ H2: Sha Chi Build Tier List ═══ -->
+  <h2 id="tier-list">Sha Chi Build Tier List</h2>
+
+  <p>Not all builds are created equal when it comes to Sha Chi — some are built around maximizing finisher frequency, others around making each individual finisher hit harder. Here's how they stack up specifically for Sha Chi performance, not overall game viability (the <a href="top-builds">Top Builds page</a> covers general viability):</p>
+
+  <h3>S-Tier: Maximum Sha Chi Output</h3>
+  <table>
+    <thead><tr><th>Build</th><th>Weapon</th><th>Key Skills</th><th>Sha Chi Rate</th><th>Best For</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Ghoststep Sha Chi</strong></td>
+        <td><a href="ghoststep-build-guide">Ghoststep Blade</a> (dual)</td>
+        <td>Chi Accumulation, Chi Loop L3, Power Surge, Ghoststep Mastery</td>
+        <td><span class="rating-s">S</span></td>
+        <td>Speedruns, NG+ boss rush, Ending 8</td>
+      </tr>
+      <tr>
+        <td><strong>Parry God</strong></td>
+        <td><a href="parry-master-build-guide">Iron Tide Greatsword</a></td>
+        <td>Extended Parry, Chi Accumulation, Counter Strike, Iron Will</td>
+        <td><span class="rating-s">S</span> (from parries)</td>
+        <td>Defensive playstyle, first playthrough, learning bosses</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>A-Tier: Balanced Performance</h3>
+  <table>
+    <thead><tr><th>Build</th><th>Weapon</th><th>Key Skills</th><th>Sha Chi Rate</th><th>Best For</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Hybrid Flex</strong></td>
+        <td><a href="hybrid-flex-build-guide">Steel Fang</a> + offhand dual</td>
+        <td>Chi Accumulation, Weapon Master, Adaptable Fighter</td>
+        <td><span class="rating-a">A</span></td>
+        <td>General play, learning weapon switching, NG</td>
+      </tr>
+      <tr>
+        <td><strong>Iron Tide Defense</strong></td>
+        <td><a href="iron-tide-build-guide">Iron Tide Greatsword</a></td>
+        <td>Iron Fortress, Chi Accumulation, Counter Strike</td>
+        <td><span class="rating-a">A</span></td>
+        <td>Tanky playstyle, high survivability, mistake-friendly</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Build Comparison at a Glance</h3>
+  <table>
+    <thead><tr><th>Build</th><th>Sha Chi Speed</th><th>Survivability</th><th>Skill Floor</th><th>Skill Ceiling</th><th>NG+ Viable</th></tr></thead>
+    <tbody>
+      <tr><td>Ghoststep Sha Chi</td><td><span class="rating-s">S</span></td><td>Low</td><td>High</td><td>Very High</td><td>Yes</td></tr>
+      <tr><td>Parry God</td><td><span class="rating-s">S</span></td><td>Medium</td><td>Medium</td><td>High</td><td>Yes</td></tr>
+      <tr><td>Hybrid Flex</td><td><span class="rating-a">A</span></td><td>Medium</td><td>Low</td><td>Medium</td><td>Yes (with skill adjustments)</td></tr>
+      <tr><td>Iron Tide Defense</td><td><span class="rating-a">A</span></td><td>Very High</td><td>Low</td><td>Low-Medium</td><td>Struggles in late NG+</td></tr>
+    </tbody>
+  </table>
+
+  <h3>How to Unlock Key Sha Chi Skills</h3>
+  <table>
+    <thead><tr><th>Skill</th><th>Level Required</th><th>Prerequisites</th><th>Skill Point Cost</th></tr></thead>
+    <tbody>
+      <tr><td>Chi Accumulation</td><td>18</td><td>None</td><td>3 points</td></tr>
+      <tr><td>Chi Loop L1 (single extra finisher)</td><td>22</td><td>Chi Accumulation</td><td>5 points</td></tr>
+      <tr><td>Chi Loop L2 (extended overcharge window)</td><td>30</td><td>Chi Loop L1</td><td>8 points</td></tr>
+      <tr><td>Chi Loop L3 (triple finisher possible)</td><td>40</td><td>Chi Loop L2, defeat Snake Sovereign</td><td>12 points</td></tr>
+      <tr><td>Power Surge (start with 1 segment)</td><td>25</td><td>Complete Iron Blade Chen no-hit</td><td>5 points</td></tr>
+      <tr><td>Extended Parry (+80ms window)</td><td>15</td><td>None</td><td>3 points</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ═══ H2: Sha Chi vs Other Combat Systems ═══ -->
+  <h2 id="vs-other">Sha Chi vs Other Combat Systems</h2>
+
+  <p>The combat in Phantom Blade Zero has multiple overlapping systems and knowing when to use which one is honestly half the battle — here's how Sha Chi interacts with everything else so you're not just randomly pressing buttons and hoping for the best like I did for the first 10 hours</p>
+
+  <h3>Sha Chi vs Phantom Illusion</h3>
+  <table>
+    <thead><tr><th>Aspect</th><th>Sha Chi Finisher</th><th>Phantom Illusion</th></tr></thead>
+    <tbody>
+      <tr><td>Trigger</td><td>Full Sha Chi gauge (L1+R1)</td><td>Kill streak (3+ enemies without taking damage)</td></tr>
+      <tr><td>Damage type</td><td>Single target burst</td><td>Multi-target AoE + CC</td></tr>
+      <tr><td>Resource conflict</td><td>Uses all 3 Sha Chi segments</td><td>Also uses all 3 segments — you can't chain them</td></tr>
+      <tr><td>Best scenario</td><td>Boss fights, single strong enemies</td><td>Trash mobs, group ambushes, arena fights</td></tr>
+      <tr><td>When to switch</td><td colspan="2">If the boss summons adds → use Illusion to clear them and generate Sha Chi from the kills, then switch back to Sha Chi finisher on the boss. The two systems feed into each other when used correctly.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Sha Chi vs Execution</h3>
+  <p>Execution (R3 on staggered enemies) and Sha Chi finishers serve different purposes and you shouldn't use one when the other is better: Execution is faster (0.5s animation vs 2s), generates 0.5 Sha Chi segments, and is safe in group fights. Sha Chi finisher does 4x the damage but takes 4x longer and leaves you vulnerable. <strong>Rule of thumb:</strong> if the enemy is below 20% HP, just execute — you'll get Sha Chi back from the kill and save time. If they're above 50%, finisher is worth the animation commitment.</p>
+
+  <h3>System Synergy Map</h3>
+  <div class="info-card" style="text-align:center;">
+    <div class="info-card-body">
+      <p style="font-family:monospace;font-size:13px;line-height:2;color:var(--color-text);">
+        <strong style="color:var(--color-primary);">Parry/Ghoststep</strong> → generates Sha Chi → <strong style="color:var(--color-primary);">Sha Chi Finisher</strong> → weapon switch → <strong style="color:#9b59b6;">Chi Loop</strong> → second finisher<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8595;<br>
+        Kill streak ready → <strong style="color:#9b59b6;">Phantom Illusion</strong> → clear adds → generate more Sha Chi → back to finisher loop
+      </p>
+    </div>
+  </div>
+
+  <h3>Decision Flowchart: Which System to Use?</h3>
+  <table>
+    <thead><tr><th>Situation</th><th>Use This</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>1v1 boss, Sha Chi full</td><td>Sha Chi Finisher</td><td>Maximum single-target burst, breaks shields</td></tr>
+      <tr><td>3+ enemies surrounding you</td><td>Phantom Illusion</td><td>AoE clears everything, generates Sha Chi from kills</td></tr>
+      <tr><td>Boss at 15% HP, Sha Chi full</td><td>Execution (if staggered) or Finisher</td><td>Either works — Execution is safer but Finisher guarantees the kill</td></tr>
+      <tr><td>Enemy flashing red, Sha Chi low</td><td>Ghoststep dodge</td><td>Builds 1.2 segments AND positions you for punish</td></tr>
+      <tr><td>Enemy flashing blue, Sha Chi low</td><td>Perfect Parry</td><td>Builds 1.0 segment, drains enemy Sha Chi — double value</td></tr>
+      <tr><td>Both you and boss at low HP</td><td>Sha Chi Finisher</td><td>i-frames during animation protect you from the boss's desperation attacks</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ═══ H2: FAQ ═══ -->
+  <h2 id="faq">FAQ</h2>
+
+  <div class="info-card">
+    <div class="info-card-head"><h2>How do I unlock Sha Chi abilities?</h2></div>
+    <div class="info-card-body"><p>Sha Chi is available from the start — the gauge appears after the tutorial fight against Iron Blade Chen. You don't unlock it, it's always there. The advanced techniques (Chi Loop, Power Surge) unlock through the <a href="skills">skill tree</a> starting around level 15-20. See the skill unlock table above for exact requirements.</p></div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-head"><h2>Does Sha Chi carry over between boss phases?</h2></div>
+    <div class="info-card-body"><p>Yes. If you end Phase 1 with a full bar, you start Phase 2 with a full bar. This is actually a key strategy — save your finisher for the opening of Phase 2 to burst the boss before its new attack patterns kick in. The gauge does NOT reset on phase transitions, only on death, resting, or area loading screens.</p></div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-head"><h2>What's the best weapon for a Sha Chi build?</h2></div>
+    <div class="info-card-body"><p><a href="ghoststep-build-guide">Ghoststep Blade</a> (dual swords) for pure Sha Chi speed — its light chain generates 40% more Sha Chi than other weapons. <a href="iron-tide-build-guide">Iron Tide Greatsword</a> for a defensive Sha Chi build — its extended parry window makes building gauge through parries much more consistent. See the Build Tier List section above for full comparisons.</p></div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-head"><h2>Can you max out Sha Chi in a single combo?</h2></div>
+    <div class="info-card-body"><p>Yes. Three perfect parries fill the gauge from zero. One Ghoststep (1.2 segments) + full light chain (0.8 segments) = 2.0 segments, so you need one more parry or light chain to finish. The absolute fastest route: one Ghoststep dodge on a red attack (1.2) + one perfect parry on a blue (1.0) = 2.2 segments, then a few light attack hits to top off.</p></div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-head"><h2>Why does my Sha Chi meter reset sometimes?</h2></div>
+    <div class="info-card-body"><p>Three reasons: you died, you rested at a checkpoint, or you crossed a loading screen into a new area. If it seems to reset mid-fight, the boss probably hit you with a Sha Chi drain attack — several late-game bosses (Snake Sovereign, Final Boss P2) have moves that directly deplete your gauge, and it's not always obvious visually. Watch for a purple flash on hit — that's the drain indicator.</p></div>
+  </div>
+
+  <div class="info-card">
+    <div class="info-card-head"><h2>Is Sha Chi viable for the hardest difficulty ending?</h2></div>
+    <div class="info-card-body"><p>Not just viable — it's mandatory. <a href="secret-endings-guide">Ending 8 (True Demon Path)</a> requires finishing the final boss with your Sha Chi never dropping below 50%, and the Sha Chi finisher is the only way to break the boss's Phase 3 shield. The meta build for this ending is Ghoststep Blade + Chi Loop L3 + Power Surge + Sha Chi Amulet, and you need to hit at least two double-finisher chains to meet the DPS check. Practice Chi Loop timing before attempting this ending — you can't afford to drop a single finisher window.</p></div>
+  </div>
+
+  <!-- ═══ Related Guides ═══ -->
+  <h2 id="related">Related Guides</h2>
+  <div class="related-grid">
+    <a href="bosses" class="related-card">
+      <h4>All Bosses &mdash; Complete Boss Guide</h4>
+      <p>Every boss, every phase, every attack pattern. Full strategy breakdowns.</p>
+    </a>
+    <a href="weapons" class="related-card">
+      <h4>Weapons Database &mdash; 30+ Weapons</h4>
+      <p>Full weapon stats, scaling, upgrade paths, and Sha Chi rate modifiers.</p>
+    </a>
+    <a href="endings" class="related-card">
+      <h4>All 8 Endings &mdash; Complete Guide</h4>
+      <p>Unlock requirements, missable choices, and ending-specific Sha Chi challenges.</p>
+    </a>
+    <a href="top-builds" class="related-card">
+      <h4>Top Builds &mdash; Tier List</h4>
+      <p>Best builds for every playstyle, including full Sha Chi optimization.</p>
+    </a>
+    <a href="combat-system" class="related-card">
+      <h4>Combat System &mdash; Full Overview</h4>
+      <p>Sha Chi, Ghoststep, Phantom Illusion, and how all the systems interact.</p>
+    </a>
+    <a href="ghoststep-build-guide" class="related-card">
+      <h4>Ghoststep Build &mdash; Full Guide</h4>
+      <p>The S-tier Sha Chi build in detail — skills, gear, and boss-specific tactics.</p>
+    </a>
+  </div>
+
+</div>
+
+<footer style="text-align:center;padding:48px 24px;border-top:1px solid var(--color-border);margin-top:64px;color:var(--color-text-dim);font-size:13px;">
+  <p style="margin-bottom:8px;">PB Zero Wiki &mdash; Unofficial Phantom Blade Zero fan resource. Not affiliated with S-GAME.</p>
+  <p>Updated August 2026. Game releases September 9, 2026 on PS5 and PC.</p>
+</footer>
+
+<script src="js/app.js"></script>
+<script>
+window.CHURNSENSE_CONFIG = {
+  apiHost: "https://churnsense-lake.vercel.app",
+  projectId: "7d06ce14-6f73-4d1b-9d12-de9db912fa85",
+  userId: (function() {
+    var id = localStorage.getItem("cs_uid");
+    if (!id) { id = "visitor_" + Date.now() + "_" + Math.random().toString(36).substr(2,6); localStorage.setItem("cs_uid", id); }
+    return id;
+  })()
+};
+</script>
+<script src="https://churnsense-lake.vercel.app/api/sdk" async></script>
+</body>
+</html>

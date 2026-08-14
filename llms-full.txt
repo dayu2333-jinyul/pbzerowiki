@@ -1,0 +1,98 @@
+# Phantom Blade Zero Wiki — Complete Weapons & Builds Guide
+
+> Complete Phantom Blade Zero wiki and guide database covering all weapons, combat styles, boss strategies, skill trees, lore, character builds, and collectible locations. Updated with the latest game patches and community discoveries.
+
+## Weapons Database
+
+Phantom Blade Zero features two primary weapon types with extensive mastery systems:
+
+### Primary Weapon: Twin Blades (Shuang Dao)
+- Default weapon available from game start
+- Fast attack speed with medium damage per hit
+- Balanced moveset suitable for all combat situations
+- Combo chains: Light Attack ×4 → Heavy finisher, or Light ×2 → Heavy launcher → air combo
+- Special technique: Blade Dance (consumes Sha-Chi, rapid multi-hit combo with i-frames)
+
+### Secondary Weapons (15+ unlockable)
+Each secondary weapon has unique movesets, Sha-Chi skills, and upgrade paths:
+
+1. **Longsword (Jian)**: Precision weapon with counter-focus. High single-target damage. Parry window increased by 15%.
+2. **Heavy Blade (Dao)**: Slow but devastating. Hyper armor during charged attacks. Guard break on fully charged heavy.
+3. **Dual Daggers**: Fastest attack speed, lowest per-hit damage. Bleed buildup mechanic. Backstab bonus damage.
+4. **Staff**: Best range, crowd control focus. Sweeping attacks hit multiple enemies. Spin-to-win Sha-Chi skill.
+5. **Rope Dart**: Mid-range weapon with pull mechanics. Can pull small enemies or close distance to large ones.
+6. **Bow**: Long-range option. Limited arrow supply, must craft or buy. Headshot multiplier 2.5×.
+7. **Fists/Gauntlets**: Fastest attack speed, shortest range. Builds Sha-Chi fastest. Grapple moves against humanoid enemies.
+8. **Chain Whip**: Wide area attacks, slow wind-up. Excellent for groups. Bleed damage over time.
+9. **Fan**: Unique magic-hybrid weapon. Ranged wind attacks. Elemental infusions (fire, ice, poison).
+10. **Hidden Needles**: Stealth/poison focus. Low direct damage but stacking poison DOT.
+
+## Combat System
+
+### Sha-Chi (沙气) Mechanic
+- Core combat resource, builds from: successful attacks (+small), perfect dodges (+medium), parries (+large)
+- Spent on: secondary weapon skills, power attacks, defensive burst (emergency i-frame dodge)
+- Maximum capacity increases through story progression and skill tree nodes
+- Management philosophy: aggressive play rewards more Sha-Chi, enabling more aggression
+
+### Defensive Options
+- **Dodge**: Standard dodge roll with i-frames at startup. Directional input matters.
+- **Perfect Dodge**: Timed just before hit connects. Grants bonus Sha-Chi and brief slow-motion window.
+- **Block**: Reduces damage but not eliminates. Some attacks are unblockable (red flash indicator).
+- **Parry**: Frame-perfect deflection that negates all damage and staggers enemy. Highest Sha-Chi reward. Risk/reward tradeoff.
+
+### Combos and Stance System
+- Light/Heavy attack strings vary by weapon
+- Stance switching mid-combo extends chains
+- Wall-run and air-combo integration
+- Environmental interactions: kick enemies off ledges, into walls, or into each other
+
+## Boss Strategies
+
+Key boss encounters with recommended approach, weakness, and dodge timing:
+
+### Tutorial Boss: Rust Tiger
+- First major skill check (approximately 1 hour in)
+- Key mechanic: 3-hit combo with delayed third strike (wait for the roar)
+- Weakness: After third strike, 3-second recovery window for charged heavy
+- Recommended weapon: Twin Blades (balanced speed/damage)
+
+### Mid-game: Commander of the Sands
+- Two-phase fight with arena transition at 50% HP
+- Phase 1: Grounded combat, telegraphed sweeps and thrusts
+- Phase 2: Sand clones, must identify real one by slight color difference
+- Recommended weapon: Staff (range advantage against clones)
+
+## Skill Trees
+
+### Combat Mastery (Red)
+- Increases base attack damage (+3% per point, 10 points max)
+- Unlocks combo extensions
+- Reduces Sha-Chi cost for offensive skills
+
+### Shadow Arts (Blue)
+- Improves dodge i-frames and movement speed
+- Unlocks stealth takedown options
+- Reduces detection radius
+
+### Spirit Cultivation (Green)
+- Increases max HP and Sha-Chi capacity
+- Improves healing item effectiveness
+- Passive HP regeneration out of combat
+
+### Weapon Specialization (Gold)
+- Unlocks secondary weapon advanced techniques
+- Increases weapon swap speed
+- Elemental damage bonuses
+
+## Story & Lore
+
+Set in a dark wuxia-inspired fantasy world, Phantom Blade Zero follows Soul, an elite assassin framed for the murder of the Grandmaster. Key story elements:
+- Revenge-driven main narrative with branching choices
+- Three major factions: The Order (assassin guild), The Jade Court (imperial authority), The Shadow Sect (ancient cult)
+- 5 major endings based on key decisions throughout the game
+- Estimated 30-40 hours main story, 60+ for completionist
+
+## Phantom Blade Zero History
+
+Previously known as "Phantom Blade: Rainblood" mobile games. Phantom Blade Zero represents the franchise's AAA console debut. Developed by S-Game (Chinese studio), published for PS5 and PC. Known for high-speed combo-focused combat influenced by Devil May Cry, Ninja Gaiden, and Sekiro.
